@@ -1,0 +1,35 @@
+{
+  "name": "rssReader",
+  "version": "0.1",
+  "authors": [
+    "travsart <travsart27@gmail.com>"
+  ],
+  "main": "*",
+  "keywords": [
+    "node",
+    "matador",
+    "angularjs",
+    "ui-grid"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "~0.12.1",
+    "angular-ui-grid": "~3.0.0-rc.20",
+    "angular": "1.4.0",
+    "angularjs-toaster": "~0.4.12",
+    "bootstrap": "~3.3.4",
+    "jquery-ui": "^1.9",
+    "angular-dialog-service": "~5.2.6",
+    "moment": "~2.10.2",
+  },
+  "resolutions": {
+    "angular-bootstrap": "~0.12.1"
+  }
+}
