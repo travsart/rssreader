@@ -1,5 +1,5 @@
 {
-  "name": "rss",
+  "name": "rssreader",
   "private": true,
   "version": "0.0.0",
   "keywords": [],
@@ -29,7 +29,6 @@
     "sails-disk": "~0.10.0",
     "sails-hook-winston": "^0.2.0",
     "sails-mongo": "^0.10.6",
-    "sails-mysql": "~0.10.0",
     "xml2js": "^0.4.8"
   },
   "scripts": {
@@ -39,7 +38,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/travsart/rss_reader.git"
+    "url": "git://github.com/travsart/rssreader.git"
   },
   "author": "server",
   "license": ""

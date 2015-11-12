@@ -10,34 +10,46 @@
  * http://sailsjs.org/#/documentation/concepts/Logging
  */
 var winston = require('winston');
-process.env.LOG_PATH = require('path').resolve(__dirname + '.');
+process.env.LOG_PATH = require('path').resolve(process.env.OPENSHIFT_REPO_DIR);
 
 
 module.exports.log = {
-    transports: [new (winston.transports.DailyRotateFile)({
-        dirname: process.env.LOG_PATH,
-        datePattern: '_yyyy-MM-dd.log',
-        filename: 'log_debug',
-        timestamp: true,
-        level: 'debug',
-        json: true,
-        zippedArchive: true
-    }), new (winston.transports.DailyRotateFile)({
-        dirname: process.env.LOG_PATH,
-        datePattern: '_yyyy-MM-dd.log',
-        filename: 'log_info',
-        timestamp: true,
-        level: 'info',
-        json: true,
-        zippedArchive: true
-    }), new (winston.transports.DailyRotateFile)({
-        dirname: process.env.LOG_PATH,
-        datePattern: '_yyyy-MM-dd.log',
-        filename: 'log_warn',
-        timestamp: true,
-        level: 'warn',
-        json: true,
-        zippedArchive: true
-    })
-    ]
+    transports: [{
+		module: winston.transports.DailyRotateFile,
+		config:{
+			dirname: process.env.LOG_PATH,
+			name: 'dr.debug',
+			datePattern: '_yyyy-MM-dd.log',
+			filename: 'log_debug',
+			timestamp: true,
+			level: 'debug',
+			json: true,
+			zippedArchive: true
+		}
+	},
+	{
+		module: winston.transports.DailyRotateFile,
+		config:{
+			dirname: process.env.LOG_PATH,
+			name: 'dr.info',
+			datePattern: '_yyyy-MM-dd.log',
+			filename: 'log_info',
+			timestamp: true,
+			level: 'info',
+			json: true,
+			zippedArchive: true
+		}
+    }, {
+		module: winston.transports.DailyRotateFile,
+		config:{
+			dirname: process.env.LOG_PATH,
+			name: 'dr.warn',
+			datePattern: '_yyyy-MM-dd.log',
+			filename: 'log_warn',
+			timestamp: true,
+			level: 'warn',
+			json: true,
+			zippedArchive: true
+		}
+    }]
 };

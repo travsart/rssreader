@@ -28,6 +28,7 @@ module.exports = {
                 msg: ''
             };
             RssService.checkSite('Manga', page, 0).then(function (results) {
+				sails.log.warn(results);
                 resRss.success = resRss.success && results.success;
                 resRss.msg += results.msg;
 
@@ -47,7 +48,6 @@ module.exports = {
         } else {
             sails.log.debug('Checking type: ' + type);
             RssService.checkSite(type, page, 0).then(function (results) {
-                updatedRss.concat(results.rss);
                 res.json(results);
             }).catch(function (ex) {
                 sails.log.error(ex.stack);

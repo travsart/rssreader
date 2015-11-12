@@ -7,7 +7,7 @@ module.exports = {
 
     addLogFile: function (date, start, end, files, base) {
         var moment = require('moment');
-
+		var path = require('path');
         if (date.isBetween(start, end)) {
             files.push(path.resolve(process.env.LOG_PATH, base + date.format('YYYY-MM-DD') + '.log'));
             return this.addLogFile(date.subtract(1, 'days'), start, end, files, base)
@@ -20,7 +20,9 @@ module.exports = {
     },
 
     readLog: function (options, files, msgs) {
-
+		var moment = require('moment');
+		var path = require('path');
+		
         if (files.length > 0) {
             var file = files.shift();
 
@@ -47,26 +49,20 @@ module.exports = {
     // Then got to the line closest to the timestamp, and get all of the lines until limit, end, or end of file.
     getLog: function (options) {
         var me = this;
-
+		var moment = require('moment');
         return new Promise(function (resolve, reject) {
-            var path = require('path');
             var base = 'log_' + options.level;
             var files = [];
 
             var date = moment(options.end).subtract(30, 'seconds');
-
-            if (date.startOf('day').unix() == moment().startOf('day')) {
-                files.push(path.resolve(process.env.LOG_PATH, base + '.log'));
-            }
-
-            files = me.addLogFile(date.subtract(1, 'days'), options.start, options.end, files, base);
+            files = me.addLogFile(date, options.start, options.end, files, base);
 
             resolve(me.readLog(options, files, []));
         });
 
     },
-    checkPage: function (rss, type, page, preCount) {
-        var url = (type == 'Anime') ? 'http://animefreak.tv/tracker?page=' + page : 'http://mangapark.me/rss/latest.xml';
+    checkPage: function (rss, type, pageNum, preCount) {
+        var url = (type == 'Anime') ? 'http://animefreak.tv/tracker?page=' + pageNum : 'http://mangapark.me/rss/latest.xml';
         var request = require('request');
         var cheerio = require('cheerio');
         var moment = require('moment');
@@ -159,9 +155,9 @@ module.exports = {
                     }
                 });
                 sails.log.info(updatedRss);
-                sails.log.debug('type: ' + type + ' page: ' + page + ' precount: ' + (count + preCount));
-                if (page != 0) {
-                    me.checkPage(rss, 'Anime', page - 1, count + preCount);
+                sails.log.debug('type: ' + type + ' page: ' + pageNum + ' precount: ' + (count + preCount));
+                if (pageNum != 0) {
+                    me.checkPage(rss, 'Anime', pageNum - 1, count + preCount);
                 }
                 else {
                     return {

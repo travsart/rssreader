@@ -201,10 +201,6 @@ rssApp
             rssService.updateOrAddRss(rowEntity)
         };
 
-        $http.on('', function (message) {
-            console.log('sails published a message for item: ' + message);
-        });
-
         $scope.runCheck = function () {
             rssService.runCheck().then(function (data) {
                 data = data.data;
