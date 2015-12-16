@@ -10,7 +10,7 @@
  * http://sailsjs.org/#/documentation/concepts/Logging
  */
 var winston = require('winston');
-process.env.LOG_PATH = require('path').resolve(process.env.OPENSHIFT_REPO_DIR);
+process.env.LOG_PATH = require('path').resolve('.');
 
 
 module.exports.log = {

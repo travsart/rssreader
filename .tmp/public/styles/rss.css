@@ -1,0 +1,12 @@
+.rssGrid {
+	width: 100%;
+	height: 550px;
+}
+
+.modal {
+	display: block;
+}
+
+.dialog-header-confirm {
+	background-color: #333333;
+}

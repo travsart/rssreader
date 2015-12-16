@@ -1,0 +1,166 @@
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T20:46:06.782Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m               .-..-.","timestamp":"2015-12-16T20:46:06.788Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T20:46:06.788Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   Sails              <|    .-..-.","timestamp":"2015-12-16T20:46:06.789Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   v0.11.3             |\\","timestamp":"2015-12-16T20:46:06.789Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                      /|.\\","timestamp":"2015-12-16T20:46:06.790Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                     / || \\","timestamp":"2015-12-16T20:46:06.790Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                   ,'  |'  \\","timestamp":"2015-12-16T20:46:06.791Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                .-'.-==|/_--'","timestamp":"2015-12-16T20:46:06.791Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                `--'-------' ","timestamp":"2015-12-16T20:46:06.792Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   __---___--___---___--___---___--___","timestamp":"2015-12-16T20:46:06.795Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m ____---___--___---___--___---___--___-__","timestamp":"2015-12-16T20:46:06.795Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T20:46:06.796Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mServer lifted in `/home/server/git/rssreader`","timestamp":"2015-12-16T20:46:06.796Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mTo see your app, visit \u001b[4mhttp://127.0.0.1:8080\u001b[24m","timestamp":"2015-12-16T20:46:06.797Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mTo shut down Sails, press <CTRL> + C at any time.","timestamp":"2015-12-16T20:46:06.798Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m--------------------------------------------------------\u001b[39m","timestamp":"2015-12-16T20:46:06.798Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m:: Wed Dec 16 2015 15:46:06 GMT-0500 (EST)\u001b[39m","timestamp":"2015-12-16T20:46:06.798Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mEnvironment : test","timestamp":"2015-12-16T20:46:06.798Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mHost        : 127.0.0.1","timestamp":"2015-12-16T20:46:06.799Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mPort        : 8080","timestamp":"2015-12-16T20:46:06.799Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m--------------------------------------------------------\u001b[39m","timestamp":"2015-12-16T20:46:06.799Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T20:50:15.837Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m               .-..-.","timestamp":"2015-12-16T20:50:15.839Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T20:50:15.840Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   Sails              <|    .-..-.","timestamp":"2015-12-16T20:50:15.840Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   v0.11.3             |\\","timestamp":"2015-12-16T20:50:15.841Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                      /|.\\","timestamp":"2015-12-16T20:50:15.842Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                     / || \\","timestamp":"2015-12-16T20:50:15.842Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                   ,'  |'  \\","timestamp":"2015-12-16T20:50:15.842Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                .-'.-==|/_--'","timestamp":"2015-12-16T20:50:15.843Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                `--'-------' ","timestamp":"2015-12-16T20:50:15.843Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   __---___--___---___--___---___--___","timestamp":"2015-12-16T20:50:15.844Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m ____---___--___---___--___---___--___-__","timestamp":"2015-12-16T20:50:15.844Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T20:50:15.844Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mServer lifted in `/home/server/git/rssreader`","timestamp":"2015-12-16T20:50:15.845Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mTo see your app, visit \u001b[4mhttp://localhost:1337\u001b[24m","timestamp":"2015-12-16T20:50:15.846Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mTo shut down Sails, press <CTRL> + C at any time.","timestamp":"2015-12-16T20:50:15.846Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m--------------------------------------------------------\u001b[39m","timestamp":"2015-12-16T20:50:15.847Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m:: Wed Dec 16 2015 15:50:15 GMT-0500 (EST)\u001b[39m","timestamp":"2015-12-16T20:50:15.847Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mEnvironment : test","timestamp":"2015-12-16T20:50:15.847Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mPort        : 1337","timestamp":"2015-12-16T20:50:15.847Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m--------------------------------------------------------\u001b[39m","timestamp":"2015-12-16T20:50:15.848Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T20:57:20.321Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m               .-..-.","timestamp":"2015-12-16T20:57:20.325Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T20:57:20.326Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   Sails              <|    .-..-.","timestamp":"2015-12-16T20:57:20.326Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   v0.11.3             |\\","timestamp":"2015-12-16T20:57:20.326Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                      /|.\\","timestamp":"2015-12-16T20:57:20.326Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                     / || \\","timestamp":"2015-12-16T20:57:20.326Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                   ,'  |'  \\","timestamp":"2015-12-16T20:57:20.327Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                .-'.-==|/_--'","timestamp":"2015-12-16T20:57:20.327Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                `--'-------' ","timestamp":"2015-12-16T20:57:20.327Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   __---___--___---___--___---___--___","timestamp":"2015-12-16T20:57:20.329Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m ____---___--___---___--___---___--___-__","timestamp":"2015-12-16T20:57:20.329Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T20:57:20.329Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mServer lifted in `/home/server/git/rssreader`","timestamp":"2015-12-16T20:57:20.330Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mTo see your app, visit \u001b[4mhttp://localhost:1337\u001b[24m","timestamp":"2015-12-16T20:57:20.330Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mTo shut down Sails, press <CTRL> + C at any time.","timestamp":"2015-12-16T20:57:20.331Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m--------------------------------------------------------\u001b[39m","timestamp":"2015-12-16T20:57:20.331Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m:: Wed Dec 16 2015 15:57:20 GMT-0500 (EST)\u001b[39m","timestamp":"2015-12-16T20:57:20.332Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mEnvironment : test","timestamp":"2015-12-16T20:57:20.332Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mPort        : 1337","timestamp":"2015-12-16T20:57:20.332Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m--------------------------------------------------------\u001b[39m","timestamp":"2015-12-16T20:57:20.332Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T20:58:17.466Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m               .-..-.","timestamp":"2015-12-16T20:58:17.471Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T20:58:17.472Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   Sails              <|    .-..-.","timestamp":"2015-12-16T20:58:17.473Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   v0.11.3             |\\","timestamp":"2015-12-16T20:58:17.473Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                      /|.\\","timestamp":"2015-12-16T20:58:17.473Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                     / || \\","timestamp":"2015-12-16T20:58:17.474Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                   ,'  |'  \\","timestamp":"2015-12-16T20:58:17.474Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                .-'.-==|/_--'","timestamp":"2015-12-16T20:58:17.477Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                `--'-------' ","timestamp":"2015-12-16T20:58:17.477Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   __---___--___---___--___---___--___","timestamp":"2015-12-16T20:58:17.477Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m ____---___--___---___--___---___--___-__","timestamp":"2015-12-16T20:58:17.478Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T20:58:17.478Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mServer lifted in `/home/server/git/rssreader`","timestamp":"2015-12-16T20:58:17.478Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mTo see your app, visit \u001b[4mhttp://localhost/rssreader:1337\u001b[24m","timestamp":"2015-12-16T20:58:17.479Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mTo shut down Sails, press <CTRL> + C at any time.","timestamp":"2015-12-16T20:58:17.480Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m--------------------------------------------------------\u001b[39m","timestamp":"2015-12-16T20:58:17.480Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m:: Wed Dec 16 2015 15:58:17 GMT-0500 (EST)\u001b[39m","timestamp":"2015-12-16T20:58:17.481Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mEnvironment : test","timestamp":"2015-12-16T20:58:17.482Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mHost        : localhost/rssreader","timestamp":"2015-12-16T20:58:17.482Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mPort        : 1337","timestamp":"2015-12-16T20:58:17.482Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m--------------------------------------------------------\u001b[39m","timestamp":"2015-12-16T20:58:17.482Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T20:58:44.794Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m               .-..-.","timestamp":"2015-12-16T20:58:44.802Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T20:58:44.802Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   Sails              <|    .-..-.","timestamp":"2015-12-16T20:58:44.803Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   v0.11.3             |\\","timestamp":"2015-12-16T20:58:44.803Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                      /|.\\","timestamp":"2015-12-16T20:58:44.803Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                     / || \\","timestamp":"2015-12-16T20:58:44.803Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                   ,'  |'  \\","timestamp":"2015-12-16T20:58:44.804Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                .-'.-==|/_--'","timestamp":"2015-12-16T20:58:44.804Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                `--'-------' ","timestamp":"2015-12-16T20:58:44.804Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   __---___--___---___--___---___--___","timestamp":"2015-12-16T20:58:44.804Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m ____---___--___---___--___---___--___-__","timestamp":"2015-12-16T20:58:44.804Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T20:58:44.804Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mServer lifted in `/home/server/git/rssreader`","timestamp":"2015-12-16T20:58:44.805Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mTo see your app, visit \u001b[4mhttp://localhost/rssreader:1337\u001b[24m","timestamp":"2015-12-16T20:58:44.805Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mTo shut down Sails, press <CTRL> + C at any time.","timestamp":"2015-12-16T20:58:44.806Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m--------------------------------------------------------\u001b[39m","timestamp":"2015-12-16T20:58:44.806Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m:: Wed Dec 16 2015 15:58:44 GMT-0500 (EST)\u001b[39m","timestamp":"2015-12-16T20:58:44.806Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mEnvironment : test","timestamp":"2015-12-16T20:58:44.806Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mHost        : localhost/rssreader","timestamp":"2015-12-16T20:58:44.806Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mPort        : 1337","timestamp":"2015-12-16T20:58:44.807Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m--------------------------------------------------------\u001b[39m","timestamp":"2015-12-16T20:58:44.807Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T20:59:01.425Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m               .-..-.","timestamp":"2015-12-16T20:59:01.434Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T20:59:01.435Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   Sails              <|    .-..-.","timestamp":"2015-12-16T20:59:01.435Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   v0.11.3             |\\","timestamp":"2015-12-16T20:59:01.436Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                      /|.\\","timestamp":"2015-12-16T20:59:01.436Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                     / || \\","timestamp":"2015-12-16T20:59:01.437Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                   ,'  |'  \\","timestamp":"2015-12-16T20:59:01.437Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                .-'.-==|/_--'","timestamp":"2015-12-16T20:59:01.437Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                `--'-------' ","timestamp":"2015-12-16T20:59:01.438Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   __---___--___---___--___---___--___","timestamp":"2015-12-16T20:59:01.438Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m ____---___--___---___--___---___--___-__","timestamp":"2015-12-16T20:59:01.439Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T20:59:01.439Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mServer lifted in `/home/server/git/rssreader`","timestamp":"2015-12-16T20:59:01.439Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mTo see your app, visit \u001b[4mhttp://127.0.0.1/rssreader:1337\u001b[24m","timestamp":"2015-12-16T20:59:01.440Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mTo shut down Sails, press <CTRL> + C at any time.","timestamp":"2015-12-16T20:59:01.441Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m--------------------------------------------------------\u001b[39m","timestamp":"2015-12-16T20:59:01.441Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m:: Wed Dec 16 2015 15:59:01 GMT-0500 (EST)\u001b[39m","timestamp":"2015-12-16T20:59:01.441Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mEnvironment : test","timestamp":"2015-12-16T20:59:01.442Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mHost        : 127.0.0.1/rssreader","timestamp":"2015-12-16T20:59:01.442Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mPort        : 1337","timestamp":"2015-12-16T20:59:01.442Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m--------------------------------------------------------\u001b[39m","timestamp":"2015-12-16T20:59:01.442Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T21:01:24.544Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m               .-..-.","timestamp":"2015-12-16T21:01:24.547Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T21:01:24.547Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   Sails              <|    .-..-.","timestamp":"2015-12-16T21:01:24.551Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   v0.11.3             |\\","timestamp":"2015-12-16T21:01:24.551Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                      /|.\\","timestamp":"2015-12-16T21:01:24.552Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                     / || \\","timestamp":"2015-12-16T21:01:24.552Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                   ,'  |'  \\","timestamp":"2015-12-16T21:01:24.552Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                .-'.-==|/_--'","timestamp":"2015-12-16T21:01:24.552Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m                `--'-------' ","timestamp":"2015-12-16T21:01:24.553Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m   __---___--___---___--___---___--___","timestamp":"2015-12-16T21:01:24.553Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m ____---___--___---___--___---___--___-__","timestamp":"2015-12-16T21:01:24.553Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m","timestamp":"2015-12-16T21:01:24.553Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mServer lifted in `/home/server/git/rssreader`","timestamp":"2015-12-16T21:01:24.554Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mTo see your app, visit \u001b[4mhttp://localhost:8080\u001b[24m","timestamp":"2015-12-16T21:01:24.555Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39mTo shut down Sails, press <CTRL> + C at any time.","timestamp":"2015-12-16T21:01:24.558Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m--------------------------------------------------------\u001b[39m","timestamp":"2015-12-16T21:01:24.558Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m:: Wed Dec 16 2015 16:01:24 GMT-0500 (EST)\u001b[39m","timestamp":"2015-12-16T21:01:24.559Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mEnvironment : test","timestamp":"2015-12-16T21:01:24.559Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mPort        : 8080","timestamp":"2015-12-16T21:01:24.559Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39m\u001b[90m--------------------------------------------------------\u001b[39m","timestamp":"2015-12-16T21:01:24.559Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mtype: Manga page: 0","timestamp":"2015-12-16T22:09:38.972Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m[]","timestamp":"2015-12-16T22:09:39.467Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mtype: Manga page: 0 precount: 0","timestamp":"2015-12-16T22:09:39.468Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mtype: Manga page: 0","timestamp":"2015-12-16T22:10:07.637Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m[]","timestamp":"2015-12-16T22:10:07.879Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mtype: Manga page: 0 precount: 0","timestamp":"2015-12-16T22:10:07.879Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mtype: Manga page: 0","timestamp":"2015-12-16T22:12:03.146Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m[]","timestamp":"2015-12-16T22:12:03.361Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mtype: Manga page: 0 precount: 0","timestamp":"2015-12-16T22:12:03.361Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mtype: Manga page: 0","timestamp":"2015-12-16T22:12:37.654Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m[]","timestamp":"2015-12-16T22:12:37.886Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mtype: Manga page: 0 precount: 0","timestamp":"2015-12-16T22:12:37.886Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mtype: Manga page: 0","timestamp":"2015-12-16T22:13:15.167Z"}
+{"level":"info","message":"\u001b[32minfo: \u001b[39m[]","timestamp":"2015-12-16T22:13:15.394Z"}
+{"level":"debug","message":"\u001b[34mdebug: \u001b[39mtype: Manga page: 0 precount: 0","timestamp":"2015-12-16T22:13:15.395Z"}

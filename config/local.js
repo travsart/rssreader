@@ -59,11 +59,8 @@ module.exports = {
    * In env/production.js, you'll probably want to change this setting       *
    * to 80 (http://) or 443 (https://) if you have an SSL certificate        *
    ***************************************************************************/
-   host: process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1",
-   port:process.env.OPENSHIFT_NODEJS_PORT || 8080
    
- //  port: 1337,
-   //proxyHost: 'localhost/rssreader',
+   port: 8080,
 
   /***************************************************************************
    * The runtime "environment" of your Sails app is either typically         *

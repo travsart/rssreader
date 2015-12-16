@@ -30,10 +30,4 @@ module.exports = {
 
   // log: {
   // }
-  connections : {
-	db: {
-		adapter: 'sails-mongo',
-		url: process.env.MONGODB_URL + 'rssreader'
-	}
-  }
 };
