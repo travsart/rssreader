@@ -15,7 +15,7 @@ module.exports = {
             var chBody = cheerio(body);
 
             if (chBody.find('.no-match').length != 0 || page != end) {
-                cb(managList);
+                cb(mangaList);
             }
 
             var manga = {name: '', url: '', summary: '', genres: [], year: -1, status: 'Ongoing'};
