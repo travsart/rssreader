@@ -24,7 +24,7 @@ module.exports = {
                 sails.log.error(err.msg);
                 res.json({success: false, msg: err.msg, err: err});
             }
-            res, json({success: true, msg: ''});
+            res.json({success: true, msg: ''});
         }).catch(function (ex) {
             sails.log.error(ex.stack);
             res.json({success: false, msg: ex.message});
