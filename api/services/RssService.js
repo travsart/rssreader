@@ -62,7 +62,7 @@ module.exports = {
 
     },
     checkPage: function (rss, type, pageNum, preCount) {
-
+        sails.log.debug('type: ' + type + ' pageNum: ' + pageNum + ' precount: ' + preCount);
         return new Promise(function (resolve, reject) {
             var url = (type == 'Anime') ? 'http://animefreak.tv/tracker?page=' + pageNum : 'http://mangapark.me/rss/latest.xml';
             var request = require('request');
@@ -172,13 +172,14 @@ module.exports = {
         });
     },
     checkSite: function (type, page, preCount) {
+        sails.log.debug('type: ' + type + ' page: ' + page);
+
         var me = this;
         return new Promise(function (resolve, reject) {
             Rss.find({
                 check: true,
                 type: type
             }, function (err, rss) {
-                sails.log.debug('type: ' + type + ' page: ' + page);
                 me.checkPage(rss, type, page, preCount).then(function (ret) {
                     resolve(ret);
                 });

@@ -28,7 +28,7 @@ module.exports = {
                 msg: ''
             };
             RssService.checkSite('Manga', page, 0).then(function (results) {
-				sails.log.warn(results);
+				sails.log.info(results);
                 resRss.success = resRss.success && results.success;
                 resRss.msg += results.msg;
 

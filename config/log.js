@@ -23,7 +23,8 @@ module.exports.log = {
 			filename: 'log_debug',
 			timestamp: true,
 			level: 'debug',
-			json: true,
+			json: false,
+			colorize:false,
 			zippedArchive: true
 		}
 	},
@@ -36,7 +37,8 @@ module.exports.log = {
 			filename: 'log_info',
 			timestamp: true,
 			level: 'info',
-			json: true,
+			json: false,
+			colorize:false,
 			zippedArchive: true
 		}
     }, {
@@ -48,7 +50,8 @@ module.exports.log = {
 			filename: 'log_warn',
 			timestamp: true,
 			level: 'warn',
-			json: true,
+			json: false,
+			colorize:false,
 			zippedArchive: true
 		}
     }]
