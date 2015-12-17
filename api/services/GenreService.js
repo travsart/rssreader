@@ -13,6 +13,11 @@ module.exports = {
 
         request({url: url, headers: {'User-agent': userAgent}}, function (error, response, body) {
             var chBody = cheerio(body);
+
+            if (chBody.find('.no-match').length != 0 || page != end) {
+                cb(managList);
+            }
+
             var manga = {name: '', url: '', summary: '', genres: [], year: -1, status: 'Ongoing'};
             chBody.find('.manga-list').find('.item').each(function (index, child) {
                 manga = {name: '', url: '', summary: '', genres: [], year: -1, status: 'Ongoing'};
@@ -81,40 +86,35 @@ module.exports = {
                 }
             });
 
-            if (!manga.hasOwnProperty('name') || end == page) {
-                cb(mangaList);
-            }
-            else {
-                sails.log.info('Finished page :' + page);
-                if (mangaList.length > 1000) {
-                    Genre.create(mangaList).exec(function (err) {
-                        if (err) {
-                            sails.log.error('Error: ' + JSON.stringify(err));
+            sails.log.info('Finished page :' + page);
+            if (mangaList.length > 1000) {
+                Genre.create(mangaList).exec(function (err) {
+                    if (err) {
+                        sails.log.error('Error: ' + JSON.stringify(err));
 
-                            for (var g = 0; g < mangaList.length; g++) {
-                                var a = mangaList[g];
-                                sails.log.error('name ' + typeof a.name);
-                                sails.log.error('url ' + typeof a.url);
-                                sails.log.error('year ' + a.year + ' ' + typeof a.year);
-                                sails.log.error('summary ' + typeof a.summary);
-                                sails.log.error('status ' + a.status + ' ' + typeof a.status);
-                                sails.log.error('genres ' + typeof a.genres);
-                            }
+                        for (var g = 0; g < mangaList.length; g++) {
+                            var a = mangaList[g];
+                            sails.log.error('name ' + typeof a.name);
+                            sails.log.error('url ' + typeof a.url);
+                            sails.log.error('year ' + a.year + ' ' + typeof a.year);
+                            sails.log.error('summary ' + typeof a.summary);
+                            sails.log.error('status ' + a.status + ' ' + typeof a.status);
+                            sails.log.error('genres ' + typeof a.genres);
+                        }
 
-                            cb({error: true, msg: err.stack});
-                        }
-                        else {
-                            sails.log.info('Created :' + mangaList.length);
-                            me.generateManga([], page + 1, end, cb);
-                        }
-                    });
-                } else {
-                    me.generateManga(mangaList, page + 1, end, cb);
-                }
+                        cb({error: true, msg: err.stack});
+                    }
+                    else {
+                        sails.log.info('Created :' + mangaList.length);
+                        me.generateManga([], page + 1, end, cb);
+                    }
+                });
+            } else {
+                me.generateManga(mangaList, page + 1, end, cb);
             }
         });
     },
-    generate: function (end) {
+    generate: function (page, end) {
         var me = this;
         sails.log.info('generate');
         return new Promise(function (resolve, reject) {

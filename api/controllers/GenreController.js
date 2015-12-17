@@ -7,13 +7,19 @@
 
 module.exports = {
     generate: function (req, res) {
+        var page = req.param('page');
         var end = req.param('end');
 
-        if (end == null) {
+        if(isNaN(parseInt(page)) || page < 0){
+            page = 0;
+        }
+
+        if (end == null || end <= page) {
             end = -1;
         }
+
         sails.log.info('generate');
-        GenreService.generate(end).then(function (err) {
+        GenreService.generate(page,end).then(function (err) {
             if (err) {
                 sails.log.error(err.msg);
                 res.json({success: false, msg: err.msg, err: err});
