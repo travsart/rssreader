@@ -16,7 +16,7 @@ module.exports = {
             var chBody = cheerio(body);
 
             if (chBody.find('.no-match').length != 0 || page != end) {
-                sails.log.info(JSON.stringify(chBody.find('.no-match')));
+                sails.log.info(chBody.find('.no-match'));
                 cb(mangaList);
             }
 
