@@ -17,6 +17,7 @@ module.exports = {
 
             if (chBody.find('.no-match').length != 0 || page != end) {
                 sails.log.info(chBody.find('.no-match'));
+                sails.log.info(chBody.find('.no-match').length);
                 cb(mangaList);
             }
 
