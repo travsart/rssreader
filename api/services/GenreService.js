@@ -15,10 +15,7 @@ module.exports = {
         request({url: url, headers: {'User-agent': userAgent}}, function (error, response, body) {
             var chBody = cheerio(body);
 
-            if (chBody.find('.no-match').length != 0 || page != end) {
-               // sails.log.info(chBody.find('.no-match'));
-                sails.log.info(chBody.find('.no-match').length);
-                sails.log.info(typeof chBody.find('.no-match').length);
+            if (chBody.find('.no-match').length == 0 || page == end) {
                 cb(mangaList);
             }
 
