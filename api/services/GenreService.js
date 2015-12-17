@@ -132,7 +132,7 @@ module.exports = {
                             sails.log.error('Error: ' + err.stack)
                             reject({error: true, msg: err.stack});
                         }
-                        sails.log.info('Created :' + managList.length);
+                        sails.log.info('Created :' + mangaList.length);
                     });
                 }
                 resolve();
