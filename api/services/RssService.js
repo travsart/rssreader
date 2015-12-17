@@ -162,10 +162,10 @@ module.exports = {
                         me.checkPage(rss, 'Anime', pageNum - 1, count + preCount);
                     }
                     else {
-                        return {
+                        resolve({
                             success: true,
                             msg: 'Successfully updated count: ' + (preCount + count) + ' ' + type
-                        };
+                        });
                     }
                 }
             });
