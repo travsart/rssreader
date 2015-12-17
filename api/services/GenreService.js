@@ -10,12 +10,13 @@ module.exports = {
         var cheerio = require('cheerio');
         var userAgent = 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36';
         var me = this;
-        sails.log.debug('page :' + page + ' end: ' + end );
+        sails.log.info('page :' + page + ' end: ' + end );
 
         request({url: url, headers: {'User-agent': userAgent}}, function (error, response, body) {
             var chBody = cheerio(body);
 
             if (chBody.find('.no-match').length != 0 || page != end) {
+                sails.log.info(JSON.stringify(chBody.find('.no-match')));
                 cb(mangaList);
             }
 
