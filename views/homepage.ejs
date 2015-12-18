@@ -1,13 +1,13 @@
 <!-- Default home page -->
 <div class="default-page" ng-app="rss">
     <div ng-controller="rssController">
-    	<div class="header">
-        	<h1 id="main-title" class="container">{{appName}}</h1>
-    	</div>
-    	<button type="button" id="addData" class="btn btn-success" ng-click="addData()">Add Row</button>
-		<button type="button" id="runCheck" class="btn btn-success" ng-click="runCheck()">Check for updates</button>
-		<button type="button" id="refresh" class="btn btn-success" ng-click="refreshList()">Refresh</button>
-  		<div ui-grid="gridOptions" class="rssGrid" ui-grid-edit ui-grid-resize-columns ui-grid-move-columns></div>
-  		<toaster-container></toaster-container>
-	</div>
+        <div class="header">
+            <h1 id="main-title" class="container">{{appName}}</h1>
+        </div>
+        <button type="button" id="addData" class="btn btn-success" ng-click="addData()">Add Row</button>
+        <button type="button" id="runCheck" class="btn btn-success" ng-click="runCheck()">Check for updates</button>
+        <button type="button" id="refresh" class="btn btn-success" ng-click="refreshList()">Refresh</button>
+        <div ui-grid="gridOptions" class="rssGrid" ui-grid-edit ui-grid-resize-columns ui-grid-move-columns></div>
+        <toaster-container></toaster-container>
+    </div>
 </div>
