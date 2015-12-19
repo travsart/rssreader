@@ -1,0 +1,83 @@
+2015-12-19T09:02:00.662Z - info: [32minfo: [39m
+2015-12-19T09:02:00.664Z - info: [32minfo: [39m               .-..-.
+2015-12-19T09:02:00.665Z - info: [32minfo: [39m
+2015-12-19T09:02:00.665Z - info: [32minfo: [39m   Sails              <|    .-..-.
+2015-12-19T09:02:00.665Z - info: [32minfo: [39m   v0.11.3             |\
+2015-12-19T09:02:00.666Z - info: [32minfo: [39m                      /|.\
+2015-12-19T09:02:00.666Z - info: [32minfo: [39m                     / || \
+2015-12-19T09:02:00.666Z - info: [32minfo: [39m                   ,'  |'  \
+2015-12-19T09:02:00.667Z - info: [32minfo: [39m                .-'.-==|/_--'
+2015-12-19T09:02:00.667Z - info: [32minfo: [39m                `--'-------' 
+2015-12-19T09:02:00.667Z - info: [32minfo: [39m   __---___--___---___--___---___--___
+2015-12-19T09:02:00.667Z - info: [32minfo: [39m ____---___--___---___--___---___--___-__
+2015-12-19T09:02:00.668Z - info: [32minfo: [39m
+2015-12-19T09:02:00.668Z - info: [32minfo: [39mServer lifted in `/home/server/git/rssreader`
+2015-12-19T09:02:00.669Z - info: [32minfo: [39mTo see your app, visit [4mhttp://localhost:8080[24m
+2015-12-19T09:02:00.669Z - info: [32minfo: [39mTo shut down Sails, press <CTRL> + C at any time.
+2015-12-19T09:02:00.669Z - debug: [34mdebug: [39m[90m--------------------------------------------------------[39m
+2015-12-19T09:02:00.670Z - debug: [34mdebug: [39m[90m:: Sat Dec 19 2015 04:02:00 GMT-0500 (EST)[39m
+2015-12-19T09:02:00.670Z - debug: [34mdebug: [39mEnvironment : development
+2015-12-19T09:02:00.674Z - debug: [34mdebug: [39mPort        : 8080
+2015-12-19T09:02:00.674Z - debug: [34mdebug: [39m[90m--------------------------------------------------------[39m
+2015-12-19T09:02:04.872Z - info: [32minfo: [39mgenerateSeedList
+2015-12-19T09:33:09.793Z - info: [32minfo: [39mgenerateSeedList
+2015-12-19T09:33:15.329Z - debug: [34mdebug: [39mtype: Manga page: 0
+2015-12-19T09:33:15.356Z - debug: [34mdebug: [39mtype: Manga pageNum: 0 precount: 0
+2015-12-19T09:33:16.043Z - info: [32minfo: [39m[ { name: 'Red Storm',
+    url: 'Url',
+    start: '177',
+    lastChecked: '2015-12-19T09:33:16.028Z',
+    type: 'Manga',
+    check: false,
+    viewed: false,
+    createdAt: '2015-06-07T12:26:03.364Z',
+    updateUrl: 'http://mangapark.me/manga/red-storm/s3/c177',
+    id: '5574385b9bbb19d928f07e61' } ]
+2015-12-19T09:33:16.043Z - debug: [34mdebug: [39mtype: Manga page: 0 precount: 1
+2015-12-19T09:33:16.050Z - info: [32minfo: [39m{ success: true, msg: 'Successfully updated count: 1 Manga' }
+2015-12-19T09:33:16.051Z - debug: [34mdebug: [39mtype: Anime page: 0
+2015-12-19T09:33:16.055Z - debug: [34mdebug: [39mtype: Anime pageNum: 0 precount: 0
+2015-12-19T09:33:16.446Z - info: [32minfo: [39m[]
+2015-12-19T09:33:16.446Z - debug: [34mdebug: [39mtype: Anime page: 0 precount: 0
+2015-12-19T10:27:00.332Z - info: [32minfo: [39m
+2015-12-19T10:27:00.334Z - info: [32minfo: [39m               .-..-.
+2015-12-19T10:27:00.334Z - info: [32minfo: [39m
+2015-12-19T10:27:00.335Z - info: [32minfo: [39m   Sails              <|    .-..-.
+2015-12-19T10:27:00.335Z - info: [32minfo: [39m   v0.11.3             |\
+2015-12-19T10:27:00.335Z - info: [32minfo: [39m                      /|.\
+2015-12-19T10:27:00.336Z - info: [32minfo: [39m                     / || \
+2015-12-19T10:27:00.336Z - info: [32minfo: [39m                   ,'  |'  \
+2015-12-19T10:27:00.336Z - info: [32minfo: [39m                .-'.-==|/_--'
+2015-12-19T10:27:00.336Z - info: [32minfo: [39m                `--'-------' 
+2015-12-19T10:27:00.337Z - info: [32minfo: [39m   __---___--___---___--___---___--___
+2015-12-19T10:27:00.337Z - info: [32minfo: [39m ____---___--___---___--___---___--___-__
+2015-12-19T10:27:00.337Z - info: [32minfo: [39m
+2015-12-19T10:27:00.338Z - info: [32minfo: [39mServer lifted in `/home/server/git/rssreader`
+2015-12-19T10:27:00.339Z - info: [32minfo: [39mTo see your app, visit [4mhttp://localhost:8080[24m
+2015-12-19T10:27:00.339Z - info: [32minfo: [39mTo shut down Sails, press <CTRL> + C at any time.
+2015-12-19T10:27:00.339Z - debug: [34mdebug: [39m[90m--------------------------------------------------------[39m
+2015-12-19T10:27:00.340Z - debug: [34mdebug: [39m[90m:: Sat Dec 19 2015 05:27:00 GMT-0500 (EST)[39m
+2015-12-19T10:27:00.340Z - debug: [34mdebug: [39mEnvironment : development
+2015-12-19T10:27:00.340Z - debug: [34mdebug: [39mPort        : 8080
+2015-12-19T10:27:00.340Z - debug: [34mdebug: [39m[90m--------------------------------------------------------[39m
+2015-12-19T10:27:11.336Z - info: [32minfo: [39m
+2015-12-19T10:27:11.338Z - info: [32minfo: [39m               .-..-.
+2015-12-19T10:27:11.339Z - info: [32minfo: [39m
+2015-12-19T10:27:11.339Z - info: [32minfo: [39m   Sails              <|    .-..-.
+2015-12-19T10:27:11.339Z - info: [32minfo: [39m   v0.11.3             |\
+2015-12-19T10:27:11.340Z - info: [32minfo: [39m                      /|.\
+2015-12-19T10:27:11.340Z - info: [32minfo: [39m                     / || \
+2015-12-19T10:27:11.340Z - info: [32minfo: [39m                   ,'  |'  \
+2015-12-19T10:27:11.340Z - info: [32minfo: [39m                .-'.-==|/_--'
+2015-12-19T10:27:11.341Z - info: [32minfo: [39m                `--'-------' 
+2015-12-19T10:27:11.341Z - info: [32minfo: [39m   __---___--___---___--___---___--___
+2015-12-19T10:27:11.341Z - info: [32minfo: [39m ____---___--___---___--___---___--___-__
+2015-12-19T10:27:11.342Z - info: [32minfo: [39m
+2015-12-19T10:27:11.342Z - info: [32minfo: [39mServer lifted in `/home/server/git/rssreader`
+2015-12-19T10:27:11.343Z - info: [32minfo: [39mTo see your app, visit [4mhttp://localhost:8080[24m
+2015-12-19T10:27:11.343Z - info: [32minfo: [39mTo shut down Sails, press <CTRL> + C at any time.
+2015-12-19T10:27:11.343Z - debug: [34mdebug: [39m[90m--------------------------------------------------------[39m
+2015-12-19T10:27:11.344Z - debug: [34mdebug: [39m[90m:: Sat Dec 19 2015 05:27:11 GMT-0500 (EST)[39m
+2015-12-19T10:27:11.344Z - debug: [34mdebug: [39mEnvironment : development
+2015-12-19T10:27:11.344Z - debug: [34mdebug: [39mPort        : 8080
+2015-12-19T10:27:11.344Z - debug: [34mdebug: [39m[90m--------------------------------------------------------[39m

@@ -53,7 +53,6 @@ process.chdir(__dirname);
     }
   }
 
-  process.env.NODE_ENV='test'
   // Start server
   sails.lift(rc('sails'));
 })();
