@@ -229,7 +229,15 @@ rssApp
             }
 
             $scope.refreshList = function () {
-                $scope.gridApi.core.refresh();
+                rssService.getRss().then(function (data) {
+                    $scope.rssData = data.data;
+                }, function (error) {
+                    toaster.pop({
+                        type: 'error',
+                        title: 'Error',
+                        body: 'Error occured: ' + error
+                    });
+                });
             }
 
         }).filter('mapType', function () {
