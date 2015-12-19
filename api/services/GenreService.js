@@ -143,6 +143,21 @@ module.exports = {
             });
         });
     },
+    buildList: function(rsses,list,cb){
+        var me = this;
+        if(rsses.length == 0){
+            cb(list);
+        }
+        else{
+            var rss = rsses.shift();
+
+            Genre.find({name: rss.name}).then(function (g) {
+                list.push(g);
+                me.buildList(rsses,list,cb);
+            });
+
+        }
+    },
     generateSeedList: function () {
         var me = this;
         sails.log.info('generateSeedList');
@@ -150,13 +165,9 @@ module.exports = {
             var list = [];
 
             Rss.find({}).then(function (rsses) {
-                rsses.forEach(function (rss) {
-                    var genre = Genre.find({name: rss.name}).then(function (g) {
-                        return g;
-                    });
-                    list.push(genre);
+                me.buildList(rsses,[],function(list){
+                    resolve(list);
                 });
-                resolve(list);
             });
         });
     }
