@@ -166,7 +166,7 @@ module.exports = {
         return new Promise(function (resolve, reject) {
             var list = [];
 
-            Rss.find({}).then(function (rsses) {
+            Rss.find({type:'Manga'}).then(function (rsses) {
                 me.buildList(rsses, [], function (list) {
                     resolve(list);
                 });
