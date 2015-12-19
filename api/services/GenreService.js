@@ -65,7 +65,7 @@ module.exports = {
                                     var found = false;
                                     for (var i = 0; i < info2.length; i++) {
                                         if (found && info2[i].children != null && info2[i].children.length > 0) {
-                                            manga.genres.push(info2[i].children[0].data)
+                                            manga.genres.push(info2[i].children[0].data.toLowerCase().trim())
                                         }
                                         else if (info2[i].children != null && info2[i].children.length > 0 && info2[i].children[0].data == 'Genres:') {
                                             found = true;
@@ -143,17 +143,19 @@ module.exports = {
             });
         });
     },
-    buildList: function(rsses,list,cb){
+    buildList: function (rsses, list, cb) {
         var me = this;
-        if(rsses.length == 0){
+        if (rsses.length == 0) {
             cb(list);
         }
-        else{
+        else {
             var rss = rsses.shift();
 
             Genre.find({name: rss.name}).then(function (g) {
-                list.push(g);
-                me.buildList(rsses,list,cb);
+                if (g.length == 1) {
+                    list.push(g[0]);
+                }
+                me.buildList(rsses, list, cb);
             });
 
         }
@@ -165,7 +167,7 @@ module.exports = {
             var list = [];
 
             Rss.find({}).then(function (rsses) {
-                me.buildList(rsses,[],function(list){
+                me.buildList(rsses, [], function (list) {
                     resolve(list);
                 });
             });
