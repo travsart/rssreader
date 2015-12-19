@@ -142,5 +142,22 @@ module.exports = {
                 }
             });
         });
+    },
+    generateSeedList: function () {
+        var me = this;
+        sails.log.info('generateSeedList');
+        return new Promise(function (resolve, reject) {
+            var list = [];
+
+            Rss.find({}).then(function (rsses) {
+                rsses.forEach(function (rss) {
+                    var genre = Genre.find({name: rss.name}).then(function (g) {
+                        return g;
+                    });
+                    list.push(genre);
+                });
+                resolve(list);
+            });
+        });
     }
 }

@@ -10,7 +10,7 @@ module.exports = {
         var page = req.param('page');
         var end = req.param('end');
 
-        if(isNaN(parseInt(page)) || page < 0){
+        if (isNaN(parseInt(page)) || page < 0) {
             page = 0;
         }
 
@@ -19,7 +19,7 @@ module.exports = {
         }
 
         sails.log.info('generate');
-        GenreService.generate(page,end).then(function (err) {
+        GenreService.generate(page, end).then(function (err) {
             if (err) {
                 sails.log.error(err.msg);
                 res.json({success: false, msg: err.msg, err: err});
@@ -33,6 +33,14 @@ module.exports = {
     del: function (req, res) {
         Genre.destroy({}).then(function (err) {
             res.json({err: err});
+        });
+    },
+    generateSeedList: function (req, res) {
+        GenreService.generateSeedList().then(function (list) {
+            res.json({success: true, list: list});
+        }).catch(function (ex) {
+            sails.log.error(ex.stack);
+            res.json({success: false, msg: ex.message});
         });
     }
 };
