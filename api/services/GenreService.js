@@ -83,6 +83,8 @@ module.exports = {
                         if (isNaN(manga.year)) {
                             manga.year = 0;
                         }
+                        manga.raw = 0;
+                        manga.weighted = 0;
                         mangaList.push(manga);
                     }
                 });
@@ -116,7 +118,33 @@ module.exports = {
             }
         });
     },
-    generate: function (page, end) {
+    calculateWeights: function () {
+        sails.log.info('calculateWeights');
+
+        return new Promise(function (resolve, reject) {
+            Genre.find({}).then(function (gs) {
+                var genres = {};
+
+                gs.forEach(function (g) {
+                    genres[g.name] = g;
+                });
+                var updated = [];
+                Suggestion.find({}).then(function (suggestions) {
+
+                    suggestions.forEach(function (suggestion) {
+                        suggestion.genres.forEach(function (genre) {
+                            suggestion.weight += genres.weight;
+                        });
+                        updated.push(suggestion);
+                    });
+                    Suggestion.update(updated,function(err){
+                        resolve(err);
+                    });
+                });
+            });
+        });
+    },
+    generate: function (page, end, calculate) {
         var me = this;
         sails.log.info('generate ' + page + ' ' + end);
         return new Promise(function (resolve, reject) {
@@ -134,7 +162,15 @@ module.exports = {
                             reject({error: true, msg: err.stack});
                         }
                         sails.log.info('Created :' + mangaList.length);
-                        resolve();
+
+                        if (calculate) {
+                            calculateWeights.then(function(err1){
+                                resolve(err1);
+                            });
+                        }
+                        else {
+                            resolve();
+                        }
                     });
                 }
                 else {
@@ -174,17 +210,10 @@ module.exports = {
         });
     },
     seedGenre: function () {
-        var genres = ['Action', 'Fantasy', 'Adventure', 'Shounen', 'Seinen', 'Romance', 'Supernatural', 'Comedy', 'Drama', 'Martial arts', 'Sci fi', 'Ecchi', 'Historical', 'Mature', 'Webtoon', 'Tragedy', 'Harem', 'School life', 'Psychological', 'Mystery', 'Horror', 'Adult', 'Gender Bender', 'Mecha', 'Shoujo', 'Slice of life', 'Sports', '4 koma', 'Award winning', 'Cooking', 'Demons', 'Doujinshi', 'Josei', 'Magic', 'Medical', 'Music', 'Shoujo ai', 'Shounen ai', 'Smut', 'Yaoi', 'Yuri', 'One shot'];
-        var combo = {
-            'Action': ['Adventure', 'Fantasy', 'Martial arts', 'Tragedy'],
-            'Adventure': ['Action', 'Fantasy'],
-            'Fantasy': ['Action', 'Adventure', 'Supernatural'],
-            'Martial arts': ['Action', 'Tragedy'],
-            'Tragedy': ['Action', 'Martial arts'],
-            'Mystery': ['Psychological'],
-            'Psychological': ['Mystery'],
-            'Supernatural': ['Fantasy']
-        }
+        var genres = ['Action', 'Fantasy', 'Adventure', 'Shounen', 'Seinen', 'Romance', 'Supernatural', 'Comedy', 'Drama', 'Martial arts',
+            'Sci fi', 'Ecchi', 'Historical', 'Mature', 'Webtoon', 'Tragedy', 'Harem', 'School life', 'Psychological', 'Mystery', 'Horror',
+            'Adult', 'Gender Bender', 'Mecha', 'Shoujo', 'Slice of life', 'Sports', '4 koma', 'Award winning', 'Cooking', 'Demons', 'Doujinshi',
+            'Josei', 'Magic', 'Medical', 'Music', 'Shoujo ai', 'Shounen ai', 'Smut', 'Yaoi', 'Yuri', 'One shot'];
 
         var weights = {
             '4 koma': -4,
@@ -232,7 +261,7 @@ module.exports = {
         };
         var list = [];
         genres.forEach(function (genre) {
-            list.push({name: genre, weight: weights[genre], combo: (combo[genre]) ? combo[genre] : []});
+            list.push({name: genre, weight: weights[genre]});
         });
 
         sails.log.info('seedGenre');

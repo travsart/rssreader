@@ -9,9 +9,6 @@ module.exports = {
         weight: {
             type: 'integer',
             defaultsTo: 0
-        },
-        combos: {
-            type: 'array'
         }
     }
 };

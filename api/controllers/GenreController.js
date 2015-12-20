@@ -9,6 +9,7 @@ module.exports = {
     generate: function (req, res) {
         var page = req.param('page');
         var end = req.param('end');
+        var calculate = req.param('calculate');
 
         if (isNaN(parseInt(page)) || page < 0) {
             page = 0;
@@ -17,9 +18,12 @@ module.exports = {
         if (end == null || end <= page) {
             end = -1;
         }
+        if (calculate == null) {
+            calculate = false;
+        }
 
         sails.log.info('generate');
-        GenreService.generate(page, end).then(function (err) {
+        GenreService.generate(page, end, calculate).then(function (err) {
             if (err) {
                 sails.log.error(err.msg);
                 res.json({success: false, msg: err.msg, err: err});
@@ -45,6 +49,14 @@ module.exports = {
     },
     seedGenre: function (req, res) {
         GenreService.seedGenre().then(function (err) {
+            res.json({success: true, err: err});
+        }).catch(function (ex) {
+            sails.log.error(ex.stack);
+            res.json({success: false, msg: ex.message});
+        });
+    },
+    calculateWeights: function (req, res) {
+        GenreService.calculateWeights().then(function (err) {
             res.json({success: true, err: err});
         }).catch(function (ex) {
             sails.log.error(ex.stack);

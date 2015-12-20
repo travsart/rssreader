@@ -21,6 +21,9 @@ module.exports = {
         },
         summary: {
             type: 'string'
+        },
+        weight: {
+            type: 'float'
         }
     }
 };
