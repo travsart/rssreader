@@ -48,5 +48,6 @@ module.exports.routes = {
     '/runcheck': 'RssController.runCheck',
     '/genre/generate': 'GenreController.generate',
     '/genre/del': 'GenreController.del',
+    '/genre/compare': 'GenreController.generateSeedList',
     '/genre/seed': 'GenreController.generateSeedList'
 };

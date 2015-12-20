@@ -42,6 +42,14 @@ module.exports = {
             sails.log.error(ex.stack);
             res.json({success: false, msg: ex.message});
         });
+    },
+    seedGenre: function (req, res) {
+        GenreService.seedGenre().then(function (err) {
+            res.json({success: true, err: err});
+        }).catch(function (ex) {
+            sails.log.error(ex.stack);
+            res.json({success: false, msg: ex.message});
+        });
     }
 };
 

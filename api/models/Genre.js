@@ -6,21 +6,12 @@ module.exports = {
         name: {
             type: 'string'
         },
-        url: {
-            type: 'string'
+        weight: {
+            type: 'integer',
+            defaultsTo: 0
         },
-        status: {
-            type: 'string',
-            enum: ['Ongoing', 'Completed']
-        },
-        year: {
-            type: 'integer'
-        },
-        genres: {
+        combos: {
             type: 'array'
-        },
-        summary: {
-            type: 'string'
         }
     }
 };

@@ -89,7 +89,7 @@ module.exports = {
 
                 sails.log.info('Finished page :' + page);
                 if (mangaList.length > 1000) {
-                    Genre.create(mangaList).exec(function (err) {
+                    Suggestion.create(mangaList).exec(function (err) {
                         if (err) {
                             sails.log.error('Error: ' + JSON.stringify(err));
 
@@ -128,7 +128,7 @@ module.exports = {
 
                 sails.log.info('generate finished managList: ' + mangaList.length);
                 if (mangaList.length > 0) {
-                    Genre.create(mangaList).exec(function (err) {
+                    Suggestion.create(mangaList).exec(function (err) {
                         if (err) {
                             sails.log.error('Error: ' + err.stack)
                             reject({error: true, msg: err.stack});
@@ -151,7 +151,7 @@ module.exports = {
         else {
             var rss = rsses.shift();
 
-            Genre.find({name: rss.name}).then(function (g) {
+            Suggestion.find({name: rss.name}).then(function (g) {
                 if (g.length == 1) {
                     list.push(g[0]);
                 }
@@ -166,10 +166,79 @@ module.exports = {
         return new Promise(function (resolve, reject) {
             var list = [];
 
-            Rss.find({type:'Manga'}).then(function (rsses) {
+            Rss.find({type: 'Manga'}).then(function (rsses) {
                 me.buildList(rsses, [], function (list) {
                     resolve(list);
                 });
+            });
+        });
+    },
+    seedGenre: function () {
+        var genres = ['Action', 'Fantasy', 'Adventure', 'Shounen', 'Seinen', 'Romance', 'Supernatural', 'Comedy', 'Drama', 'Martial arts', 'Sci fi', 'Ecchi', 'Historical', 'Mature', 'Webtoon', 'Tragedy', 'Harem', 'School life', 'Psychological', 'Mystery', 'Horror', 'Adult', 'Gender Bender', 'Mecha', 'Shoujo', 'Slice of life', 'Sports', '4 koma', 'Award winning', 'Cooking', 'Demons', 'Doujinshi', 'Josei', 'Magic', 'Medical', 'Music', 'Shoujo ai', 'Shounen ai', 'Smut', 'Yaoi', 'Yuri', 'One shot'];
+        var combo = {
+            'Action': ['Adventure', 'Fantasy', 'Martial arts', 'Tragedy'],
+            'Adventure': ['Action', 'Fantasy'],
+            'Fantasy': ['Action', 'Adventure', 'Supernatural'],
+            'Martial arts': ['Action', 'Tragedy'],
+            'Tragedy': ['Action', 'Martial arts'],
+            'Mystery': ['Psychological'],
+            'Psychological': ['Mystery'],
+            'Supernatural': ['Fantasy']
+        }
+
+        var weights = {
+            '4 koma': -4,
+            'Action': 10,
+            'Adult': 3,
+            'Adventure': 9,
+            'Award winning': 0,
+            'Comedy': 6,
+            'Cooking': 0,
+            'Demons': 2,
+            'Doujinshi': 0,
+            'Drama': 7,
+            'Ecchi': 0,
+            'Fantasy': 9,
+            'Gender Bender': -2,
+            'Harem': 6,
+            'Historical': 6,
+            'Horror': 5,
+            'Josei': 0,
+            'Magic': 2,
+            'Martial arts': 7,
+            'Mature': 5,
+            'Mecha': 2,
+            'Medical': 0,
+            'Music': 0,
+            'Mystery': 4,
+            'One shot': -10,
+            'Psychological': 4,
+            'Romance': 4,
+            'School life': 3,
+            'Sci fi': 6,
+            'Seinen': 7,
+            'Shoujo': 0,
+            'Shoujo ai': 0,
+            'Shounen': 8,
+            'Shounen ai': -10,
+            'Slice of life': 1,
+            'Smut': 0,
+            'Sports': 0,
+            'Supernatural': 8,
+            'Tragedy': 5,
+            'Webtoon': 6,
+            'Yaoi': 0,
+            'Yuri': 0
+        };
+        var list = [];
+        genres.forEach(function (genre) {
+            list.push({name: genre, weight: weights[genre], combo: (combo[genre]) ? combo[genre] : []});
+        });
+
+        sails.log.info('seedGenre');
+        return new Promise(function (resolve, reject) {
+            Genre.create(list, function (err) {
+                resolve(err);
             });
         });
     }
