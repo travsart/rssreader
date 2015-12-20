@@ -49,5 +49,6 @@ module.exports.routes = {
     '/genre/generate': 'GenreController.generate',
     '/genre/del': 'GenreController.del',
     '/genre/compare': 'GenreController.generateSeedList',
-    '/genre/seed': 'GenreController.generateSeedList'
+    '/genre/seed': 'GenreController.seedGenre',
+    '/genre/calculate': 'GenreController.calculateWeights'
 };
