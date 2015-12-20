@@ -91,7 +91,7 @@ module.exports = {
 
                 sails.log.info('Finished page :' + page);
                 if (mangaList.length > 1000) {
-                    Suggestion.create(mangaList).exec(function (err) {
+                    Suggestion.create(mangaList).exec(function (err, created) {
                         if (err) {
                             sails.log.error('Error: ' + JSON.stringify(err));
 
@@ -108,7 +108,7 @@ module.exports = {
                             cb({error: true, msg: err.stack});
                         }
                         else {
-                            sails.log.info('Created :' + mangaList.length);
+                            sails.log.info('Created :' + created.length);
                             me.generateManga([], page + 1, end, cb);
                         }
                     });
@@ -137,7 +137,8 @@ module.exports = {
                         });
                         updated.push(suggestion);
                     });
-                    Suggestion.update(updated,function(err){
+                    Suggestion.update(updated, function (err) {
+                        sails.log.info('calculateWeights: Done ' + err);
                         resolve(err);
                     });
                 });
@@ -164,7 +165,7 @@ module.exports = {
                         sails.log.info('Created :' + mangaList.length);
 
                         if (calculate) {
-                            calculateWeights.then(function(err1){
+                            calculateWeights.then(function (err1) {
                                 resolve(err1);
                             });
                         }

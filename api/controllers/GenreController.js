@@ -35,7 +35,7 @@ module.exports = {
         });
     },
     del: function (req, res) {
-        Genre.destroy({}).then(function (err) {
+        Suggestion.destroy({}).then(function (err) {
             res.json({err: err});
         });
     },
