@@ -83,8 +83,7 @@ module.exports = {
                         if (isNaN(manga.year)) {
                             manga.year = 0;
                         }
-                        manga.raw = 0;
-                        manga.weighted = 0;
+                        manga.weight = 0;
                         mangaList.push(manga);
                     }
                 });
