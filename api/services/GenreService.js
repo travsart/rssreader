@@ -115,8 +115,29 @@ module.exports = {
             }
         });
     },
+    bulkUpdate: function (model, updates, field, cb) {
+
+        var me = this;
+        if (updates.length == 0) {
+            cb();
+        }
+        else {
+            var update = updates.shift();
+
+            model.update({field: update[field]}, update).exec(function (err, updated) {
+
+                if (err) {
+                    cb(err);
+                }
+                else {
+                    me.bulkUpdate(model, updates, field, cb);
+                }
+            });
+        }
+    },
     calculateWeights: function () {
         sails.log.info('calculateWeights');
+        var me = this;
 
         return new Promise(function (resolve, reject) {
             Genre.find({}).then(function (gs) {
@@ -136,7 +157,7 @@ module.exports = {
                         updated.push(suggestion);
                     });
                     sails.log.info('calculateWeights: Updating....');
-                    Suggestion.update(updated).then(function (err) {
+                    me.bulkUpdate(Suggestion, updated, 'name', function (err) {
                         sails.log.info('calculateWeights: Done ' + err);
                         resolve(err);
                     });
