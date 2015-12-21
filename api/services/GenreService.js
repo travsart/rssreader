@@ -160,7 +160,7 @@ module.exports = {
 
                     suggestions.forEach(function (suggestion) {
                         suggestion.genres.forEach(function (genre) {
-                            if(genres.hasOwnProperty(genre)){
+                            if (genres[genre]) {
                                 suggestion.weight += genres[genre].weight;
                             }
                         });
