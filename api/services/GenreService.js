@@ -44,7 +44,7 @@ module.exports = {
                                     var found = false;
                                     for (var i = 0; i < info2.length; i++) {
                                         if (found && info2[i].children != null && info2[i].children.length > 0) {
-                                            var g = info2[i].children[0].data.data.toLowerCase().trim();
+                                            var g = info2[i].children[0].data.toLowerCase().trim();
 
                                             if (g != '[no chapters]') {
                                                 manga.genres.push(g)
