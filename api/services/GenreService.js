@@ -152,10 +152,10 @@ module.exports = {
 
                     suggestions.forEach(function (suggestion) {
                         suggestion.genres.forEach(function (genre) {
-                            if (genre.length > 0) {
+                            try {
                                 suggestion.weight += genres[genre.toLowerCase()].weight;
                             }
-                            else {
+                            catch (e) {
                                 sails.log.info(suggestion);
                             }
                         });
