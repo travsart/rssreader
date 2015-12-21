@@ -152,7 +152,11 @@ module.exports = {
 
                     suggestions.forEach(function (suggestion) {
                         suggestion.genres.forEach(function (genre) {
-                            suggestion.weight += genres[genre.toLowerCase()].weight;
+                            if (genre.length > 0) {
+                                sails.log.info(genre);
+                                sails.log.info(genres);
+                                suggestion.weight += genres[genre.toLowerCase()].weight;
+                            }
                         });
                         updated.push(suggestion);
                     });
