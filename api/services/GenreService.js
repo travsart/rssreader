@@ -25,9 +25,9 @@ module.exports = {
                     cb(mangaList);
                 }
                 else {
-                    var manga = {name: '', url: '', summary: '', genres: [], year: -1, status: 'Ongoing'};
+                    var manga = {name: '', url: '', summary: '', genres: [], year: -1, status: 'Ongoing', weight: 0};
                     chBody.find('.manga-list').find('.item').each(function (index, child) {
-                        manga = {name: '', url: '', summary: '', genres: [], year: -1, status: 'Ongoing'};
+                        manga = {name: '', url: '', summary: '', genres: [], year: -1, status: 'Ongoing', weight: 0};
                         cheerio(child).find('td').each(function (index1, child1) {
                             if (child1.children.length == 3) {
                                 manga.url = 'http://mangapark.me/' + child1.children[1].attribs.href;
