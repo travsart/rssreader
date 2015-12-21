@@ -163,6 +163,10 @@ module.exports = {
                             if (genres[genre]) {
                                 suggestion.weight += genres[genre].weight;
                             }
+                            else{
+                                sails.log.info(genre);
+                                sails.log.info(genres);
+                            }
                         });
                         sails.log.info('calculated weights');
                         updated.push(suggestion);
