@@ -170,6 +170,7 @@ module.exports = {
                 if (mangaList.length > 0) {
                     Suggestion.create(mangaList).exec(function (err) {
                         if (err) {
+                            sails.log.error('Error: ' + JSON.stringify(err));
                             sails.log.error('Error: ' + err.stack)
                             reject({error: true, msg: err.stack});
                         }
