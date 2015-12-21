@@ -144,7 +144,7 @@ module.exports = {
                 var genres = {};
 
                 gs.forEach(function (g) {
-                    genres[g.name] = g;
+                    genres[g.name.toLowerCase()] = g;
                 });
                 sails.log.info('calculateWeights: Created genre map');
                 var updated = [];
@@ -152,8 +152,6 @@ module.exports = {
 
                     suggestions.forEach(function (suggestion) {
                         suggestion.genres.forEach(function (genre) {
-                            sails.log.info(genre);
-                            sails.log.info(genres);
                             suggestion.weight += genres[genre].weight;
                         });
                         updated.push(suggestion);
