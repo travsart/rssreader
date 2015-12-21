@@ -161,6 +161,7 @@ module.exports = {
                     suggestions.forEach(function (suggestion) {
                         suggestion.genres.forEach(function (genre) {
                             if (genres[genre]) {
+                                sails.log.info(genres[genre]);
                                 suggestion.weight += genres[genre].weight;
                             }
                             else{
