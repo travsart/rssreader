@@ -73,7 +73,8 @@ module.exports = {
                                     }
                                 }
                             });
-                            manga.summary = cheerio(child1).find('.summary').text();
+                            var summary = cheerio(child1).find('.summary');
+                            sails.log.info(summary);
                         }
                     });
 
@@ -125,6 +126,7 @@ module.exports = {
                 gs.forEach(function (g) {
                     genres[g.name] = g;
                 });
+                sails.log.info('calculateWeights: Created genre map');
                 var updated = [];
                 Suggestion.find({}).then(function (suggestions) {
 
@@ -163,7 +165,7 @@ module.exports = {
                         sails.log.info('Created :' + mangaList.length);
 
                         if (calculate) {
-                            me.calculateWeights.then(function (err1) {
+                            me.calculateWeights().then(function (err1) {
                                 resolve(err1);
                             });
                         }
