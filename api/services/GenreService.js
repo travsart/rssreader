@@ -72,10 +72,8 @@ module.exports = {
                                         }
                                     }
                                 }
-                                else {
-                                    manga.summary = cheerio(child2.children[3]).text();
-                                }
                             });
+                            manga.summary = cheerio(child2).find('.summary').text();
                         }
                     });
 
@@ -136,6 +134,7 @@ module.exports = {
                         });
                         updated.push(suggestion);
                     });
+                    sails.log.info('calculateWeights: Updating....');
                     Suggestion.update(updated, function (err) {
                         sails.log.info('calculateWeights: Done ' + err);
                         resolve(err);
@@ -164,7 +163,7 @@ module.exports = {
                         sails.log.info('Created :' + mangaList.length);
 
                         if (calculate) {
-                            calculateWeights.then(function (err1) {
+                            me.calculateWeights.then(function (err1) {
                                 resolve(err1);
                             });
                         }
