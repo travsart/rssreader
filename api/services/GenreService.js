@@ -153,11 +153,13 @@ module.exports = {
                     suggestions.forEach(function (suggestion) {
                         suggestion.genres.forEach(function (genre) {
                             if (genre.length > 0) {
-                                sails.log.info(genre);
-                                sails.log.info(genres);
                                 suggestion.weight += genres[genre.toLowerCase()].weight;
                             }
+                            else {
+                                sails.log.info(suggestion);
+                            }
                         });
+                        sails.log.info('calculated weights');
                         updated.push(suggestion);
                     });
                     sails.log.info('calculateWeights: Updating....');
