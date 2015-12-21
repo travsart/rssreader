@@ -44,7 +44,11 @@ module.exports = {
                                     var found = false;
                                     for (var i = 0; i < info2.length; i++) {
                                         if (found && info2[i].children != null && info2[i].children.length > 0) {
-                                            manga.genres.push(info2[i].children[0].data)
+                                            var g = info2[i].children[0].data.data.toLowerCase().trim();
+
+                                            if (g != '[no chapters]') {
+                                                manga.genres.push(g)
+                                            }
                                         }
                                         else if (info2[i].children != null && info2[i].children.length > 0 && info2[i].children[0].data == 'Genres:') {
                                             found = true;
@@ -65,7 +69,11 @@ module.exports = {
                                     var found = false;
                                     for (var i = 0; i < info2.length; i++) {
                                         if (found && info2[i].children != null && info2[i].children.length > 0) {
-                                            manga.genres.push(info2[i].children[0].data.toLowerCase().trim())
+                                            var g = info2[i].children[0].data.toLowerCase().trim();
+
+                                            if (g != '[no chapters]') {
+                                                manga.genres.push(g)
+                                            }
                                         }
                                         else if (info2[i].children != null && info2[i].children.length > 0 && info2[i].children[0].data == 'Genres:') {
                                             found = true;
@@ -152,11 +160,8 @@ module.exports = {
 
                     suggestions.forEach(function (suggestion) {
                         suggestion.genres.forEach(function (genre) {
-                            try {
-                                suggestion.weight += genres[genre.toLowerCase()].weight;
-                            }
-                            catch (e) {
-                                sails.log.info(suggestion);
+                            if(genres.hasOwnProperty(genre)){
+                                suggestion.weight += genres[genre].weight;
                             }
                         });
                         sails.log.info('calculated weights');
