@@ -73,7 +73,7 @@ module.exports = {
                                     }
                                 }
                             });
-                            var summary = cheerio(child1).find('.summary');
+                            var summary = cheerio(child1).find('.summary').html()
                             sails.log.info(summary);
                         }
                     });
