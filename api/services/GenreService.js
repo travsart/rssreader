@@ -152,6 +152,8 @@ module.exports = {
 
                     suggestions.forEach(function (suggestion) {
                         suggestion.genres.forEach(function (genre) {
+                            sails.log.info(genre);
+                            sails.log.info(genres);
                             suggestion.weight += genres[genre].weight;
                         });
                         updated.push(suggestion);
