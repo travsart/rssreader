@@ -11,116 +11,129 @@ module.exports = {
         var userAgent = 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36';
         var me = this;
         sails.log.info('page :' + page + ' end: ' + end);
+        Genre.find({}).then(function (gs) {
+            var genres = {};
 
-        request({url: url, headers: {'User-agent': userAgent}}, function (error, response, body) {
-            var chBody = cheerio(body);
+            gs.forEach(function (g) {
+                genres[g.name.toLowerCase()] = g;
+            });
 
-            if (chBody.find('.no-match').length > 0 || page == end) {
-                cb(mangaList);
-            }
-            else {
-                var manga = {name: '', url: '', summary: '', genres: [], year: -1, status: 'Ongoing'};
-                chBody.find('.manga-list').find('.item').each(function (index, child) {
-                    manga = {name: '', url: '', summary: '', genres: [], year: -1, status: 'Ongoing'};
-                    cheerio(child).find('td').each(function (index1, child1) {
-                        if (child1.children.length == 3) {
-                            manga.url = 'http://mangapark.me/' + child1.children[1].attribs.href;
-                            manga.name = child1.children[1].attribs.title;
-                        }
-                        else {
-                            cheerio(child1).find('.info').each(function (index2, child2) {
-                                if (child2.children.length == 7) {
-                                    var info1 = child2.children[3].children;
-                                    var info2 = child2.children[5].children;
+            request({url: url, headers: {'User-agent': userAgent}}, function (error, response, body) {
+                var chBody = cheerio(body);
 
-                                    for (var i = 0; i < info1.length; i++) {
-                                        if (info1[i].children != null && info1[i].children.length > 0 && info1[i].children[0].data == 'Status:') {
-                                            manga.status = info1[i + 1].children[0].data;
-                                            manga.year = parseInt(info1[i + 4].children[0].data);
-
-                                            break;
-                                        }
-                                    }
-                                    var found = false;
-                                    for (var i = 0; i < info2.length; i++) {
-                                        if (found && info2[i].children != null && info2[i].children.length > 0) {
-                                            var g = info2[i].children[0].data.toLowerCase().trim();
-
-                                            if (g != '[no chapters]') {
-                                                manga.genres.push(g)
-                                            }
-                                        }
-                                        else if (info2[i].children != null && info2[i].children.length > 0 && info2[i].children[0].data == 'Genres:') {
-                                            found = true;
-                                        }
-                                    }
-                                }
-                                else if (child2.children.length == 5) {
-                                    var info1 = child2.children[1].children;
-                                    var info2 = child2.children[3].children;
-
-                                    for (var i = 0; i < info1.length; i++) {
-                                        if (info1[i].children != null && info1[i].children.length > 0 && info1[i].children[0].data == 'Status:') {
-                                            manga.status = info1[i + 1].children[0].data;
-                                            manga.year = parseInt(info1[i + 4].children[0].data);
-                                            break;
-                                        }
-                                    }
-                                    var found = false;
-                                    for (var i = 0; i < info2.length; i++) {
-                                        if (found && info2[i].children != null && info2[i].children.length > 0) {
-                                            var g = info2[i].children[0].data.toLowerCase().trim();
-
-                                            if (g != '[no chapters]') {
-                                                manga.genres.push(g)
-                                            }
-                                        }
-                                        else if (info2[i].children != null && info2[i].children.length > 0 && info2[i].children[0].data == 'Genres:') {
-                                            found = true;
-                                        }
-                                    }
-                                }
-                            });
-                            manga.summary = cheerio(child1).find('.summary').html()
-                        }
-                    });
-
-                    if (manga.length != 0) {
-                        if (isNaN(manga.year)) {
-                            manga.year = 0;
-                        }
-                        manga.weight = 0;
-                        mangaList.push(manga);
-                    }
-                });
-
-                sails.log.info('Finished page :' + page);
-                if (mangaList.length > 1000) {
-                    Suggestion.create(mangaList).exec(function (err, created) {
-                        if (err) {
-                            sails.log.error('Error: ' + JSON.stringify(err));
-
-                            for (var g = 0; g < mangaList.length; g++) {
-                                var a = mangaList[g];
-                                sails.log.error('name ' + typeof a.name);
-                                sails.log.error('url ' + typeof a.url);
-                                sails.log.error('year ' + a.year + ' ' + typeof a.year);
-                                sails.log.error('summary ' + typeof a.summary);
-                                sails.log.error('status ' + a.status + ' ' + typeof a.status);
-                                sails.log.error('genres ' + typeof a.genres);
-                            }
-
-                            cb({error: true, msg: err.stack});
-                        }
-                        else {
-                            sails.log.info('Created :' + created.length);
-                            me.generateManga([], page + 1, end, cb);
-                        }
-                    });
-                } else {
-                    me.generateManga(mangaList, page + 1, end, cb);
+                if (chBody.find('.no-match').length > 0 || page == end) {
+                    cb(mangaList);
                 }
-            }
+                else {
+                    var manga = {name: '', url: '', summary: '', genres: [], year: -1, status: 'Ongoing'};
+                    chBody.find('.manga-list').find('.item').each(function (index, child) {
+                        manga = {name: '', url: '', summary: '', genres: [], year: -1, status: 'Ongoing'};
+                        cheerio(child).find('td').each(function (index1, child1) {
+                            if (child1.children.length == 3) {
+                                manga.url = 'http://mangapark.me/' + child1.children[1].attribs.href;
+                                manga.name = child1.children[1].attribs.title;
+                            }
+                            else {
+                                cheerio(child1).find('.info').each(function (index2, child2) {
+                                    if (child2.children.length == 7) {
+                                        var info1 = child2.children[3].children;
+                                        var info2 = child2.children[5].children;
+
+                                        for (var i = 0; i < info1.length; i++) {
+                                            if (info1[i].children != null && info1[i].children.length > 0 && info1[i].children[0].data == 'Status:') {
+                                                manga.status = info1[i + 1].children[0].data;
+                                                manga.year = parseInt(info1[i + 4].children[0].data);
+
+                                                break;
+                                            }
+                                        }
+                                        var found = false;
+                                        for (var i = 0; i < info2.length; i++) {
+                                            if (found && info2[i].children != null && info2[i].children.length > 0) {
+                                                var g = info2[i].children[0].data.toLowerCase().trim();
+
+                                                if (g != '[no chapters]') {
+                                                    if (genres[g]) {
+                                                        manga.weight += parseInt(genres[g].weight);
+                                                    }
+
+                                                    manga.genres.push(g)
+                                                }
+                                            }
+                                            else if (info2[i].children != null && info2[i].children.length > 0 && info2[i].children[0].data == 'Genres:') {
+                                                found = true;
+                                            }
+                                        }
+                                    }
+                                    else if (child2.children.length == 5) {
+                                        var info1 = child2.children[1].children;
+                                        var info2 = child2.children[3].children;
+
+                                        for (var i = 0; i < info1.length; i++) {
+                                            if (info1[i].children != null && info1[i].children.length > 0 && info1[i].children[0].data == 'Status:') {
+                                                manga.status = info1[i + 1].children[0].data;
+                                                manga.year = parseInt(info1[i + 4].children[0].data);
+                                                break;
+                                            }
+                                        }
+                                        var found = false;
+                                        for (var i = 0; i < info2.length; i++) {
+                                            if (found && info2[i].children != null && info2[i].children.length > 0) {
+                                                var g = info2[i].children[0].data.toLowerCase().trim();
+
+                                                if (g != '[no chapters]') {
+                                                    if (genres[g]) {
+                                                        manga.weight += parseInt(genres[g].weight);
+                                                    }
+                                                    manga.genres.push(g)
+                                                }
+                                            }
+                                            else if (info2[i].children != null && info2[i].children.length > 0 && info2[i].children[0].data == 'Genres:') {
+                                                found = true;
+                                            }
+                                        }
+                                    }
+                                });
+                                manga.summary = cheerio(child1).find('.summary').html()
+                            }
+                        });
+
+                        if (manga.length != 0) {
+                            if (isNaN(manga.year)) {
+                                manga.year = 0;
+                            }
+                            mangaList.push(manga);
+                        }
+                    });
+
+                    sails.log.info('Finished page :' + page);
+                    if (mangaList.length > 1000) {
+                        Suggestion.create(mangaList).exec(function (err, created) {
+                            if (err) {
+                                sails.log.error('Error: ' + JSON.stringify(err));
+
+                                for (var g = 0; g < mangaList.length; g++) {
+                                    var a = mangaList[g];
+                                    sails.log.error('name ' + typeof a.name);
+                                    sails.log.error('url ' + typeof a.url);
+                                    sails.log.error('year ' + a.year + ' ' + typeof a.year);
+                                    sails.log.error('summary ' + typeof a.summary);
+                                    sails.log.error('status ' + a.status + ' ' + typeof a.status);
+                                    sails.log.error('genres ' + typeof a.genres);
+                                }
+
+                                cb({error: true, msg: err.stack});
+                            }
+                            else {
+                                sails.log.info('Created :' + created.length);
+                                me.generateManga([], page + 1, end, cb);
+                            }
+                        });
+                    } else {
+                        me.generateManga(mangaList, page + 1, end, cb);
+                    }
+                }
+            });
         });
     },
     bulkUpdate: function (model, updates, field, cb) {
@@ -143,45 +156,7 @@ module.exports = {
             });
         }
     },
-    calculateWeights: function () {
-        sails.log.info('calculateWeights');
-        var me = this;
-
-        return new Promise(function (resolve, reject) {
-            Genre.find({}).then(function (gs) {
-                var genres = {};
-
-                gs.forEach(function (g) {
-                    genres[g.name.toLowerCase()] = g;
-                });
-                sails.log.info('calculateWeights: Created genre map');
-                var updated = [];
-                Suggestion.find({}).then(function (suggestions) {
-
-                    suggestions.forEach(function (suggestion) {
-                        suggestion.genres.forEach(function (genre) {
-                            if (genres[genre]) {
-                                sails.log.info(genres[genre]);
-                                suggestion.weight += genres[genre].weight;
-                            }
-                            else{
-                                sails.log.info(genre);
-                                sails.log.info(genres);
-                            }
-                        });
-                        sails.log.info('calculated weights');
-                        updated.push(suggestion);
-                    });
-                    sails.log.info('calculateWeights: Updating....');
-                    me.bulkUpdate(Suggestion, updated, 'name', function (err) {
-                        sails.log.info('calculateWeights: Done ' + err);
-                        resolve(err);
-                    });
-                });
-            });
-        });
-    },
-    generate: function (page, end, calculate) {
+    generate: function (page, end) {
         var me = this;
         sails.log.info('generate ' + page + ' ' + end);
         return new Promise(function (resolve, reject) {
@@ -199,15 +174,7 @@ module.exports = {
                             reject({error: true, msg: err.stack});
                         }
                         sails.log.info('Created :' + mangaList.length);
-
-                        if (calculate) {
-                            me.calculateWeights().then(function (err1) {
-                                resolve(err1);
-                            });
-                        }
-                        else {
-                            resolve();
-                        }
+                        resolve();
                     });
                 }
                 else {

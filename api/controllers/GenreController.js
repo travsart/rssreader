@@ -18,12 +18,9 @@ module.exports = {
         if (end == null || end <= page) {
             end = -1;
         }
-        if (calculate == null) {
-            calculate = false;
-        }
 
         sails.log.info('generate');
-        GenreService.generate(page, end, calculate).then(function (err) {
+        GenreService.generate(page, end).then(function (err) {
             if (err) {
                 sails.log.error(err.msg);
                 res.json({success: false, msg: err.msg, err: err});
