@@ -73,7 +73,7 @@ module.exports = {
                                     }
                                 }
                             });
-                            manga.summary = cheerio(child2).find('.summary').text();
+                            manga.summary = cheerio(child1).find('.summary').text();
                         }
                     });
 
