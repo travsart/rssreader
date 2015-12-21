@@ -152,7 +152,7 @@ module.exports = {
 
                     suggestions.forEach(function (suggestion) {
                         suggestion.genres.forEach(function (genre) {
-                            suggestion.weight += genres.weight;
+                            suggestion.weight += genres[genre].weight;
                         });
                         updated.push(suggestion);
                     });
