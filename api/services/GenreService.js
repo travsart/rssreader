@@ -73,8 +73,7 @@ module.exports = {
                                     }
                                 }
                             });
-                            var summary = cheerio(child1).find('.summary').html()
-                            sails.log.info(summary);
+                            manga.summary = cheerio(child1).find('.summary').html()
                         }
                     });
 
@@ -137,7 +136,7 @@ module.exports = {
                         updated.push(suggestion);
                     });
                     sails.log.info('calculateWeights: Updating....');
-                    Suggestion.update(updated, function (err) {
+                    Suggestion.update(updated).then(function (err) {
                         sails.log.info('calculateWeights: Done ' + err);
                         resolve(err);
                     });
