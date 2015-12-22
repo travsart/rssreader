@@ -22,7 +22,10 @@ module.exports = {
         summary: {
             type: 'string'
         },
-        weight: {
+        raw: {
+            type: 'integer'
+        },
+        weighted: {
             type: 'float'
         }
     }

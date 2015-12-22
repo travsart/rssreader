@@ -25,9 +25,28 @@ module.exports = {
                     cb(mangaList);
                 }
                 else {
-                    var manga = {name: '', url: '', summary: '', genres: [], year: -1, status: 'Ongoing', weight: 0};
+                    var manga = {
+                        name: '',
+                        url: '',
+                        summary: '',
+                        genres: [],
+                        year: -1,
+                        status: 'Ongoing',
+                        weighted: 0,
+                        raw: 0
+                    };
                     chBody.find('.manga-list').find('.item').each(function (index, child) {
-                        manga = {name: '', url: '', summary: '', genres: [], year: -1, status: 'Ongoing', weight: 0};
+                        manga = {
+                            name: '',
+                            url: '',
+                            summary: '',
+                            genres: [],
+                            year: -1,
+                            status: 'Ongoing',
+                            weight: 0,
+                            weighted: 0,
+                            raw: 0
+                        };
                         cheerio(child).find('td').each(function (index1, child1) {
                             if (child1.children.length == 3) {
                                 manga.url = 'http://mangapark.me/' + child1.children[1].attribs.href;
@@ -54,7 +73,7 @@ module.exports = {
 
                                                 if (g != '[no chapters]') {
                                                     if (genres[g]) {
-                                                        manga.weight += parseInt(genres[g].weight);
+                                                        manga.raw += parseInt(genres[g].weight);
                                                     }
 
                                                     manga.genres.push(g)
@@ -83,7 +102,7 @@ module.exports = {
 
                                                 if (g != '[no chapters]') {
                                                     if (genres[g]) {
-                                                        manga.weight += parseInt(genres[g].weight);
+                                                        manga.raw += parseInt(genres[g].weight);
                                                     }
                                                     manga.genres.push(g)
                                                 }
@@ -102,6 +121,7 @@ module.exports = {
                             if (isNaN(manga.year)) {
                                 manga.year = 0;
                             }
+                            manga.weighted = (manga.genres.length > 0) ? manga.raw / manga.genres.length : 0;
                             mangaList.push(manga);
                         }
                     });
