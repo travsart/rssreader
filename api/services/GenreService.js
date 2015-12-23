@@ -48,18 +48,20 @@ module.exports = {
                         };
                         cheerio(child).find('td').each(function (index1, child1) {
                             if (child1.children.length == 3) {
-                                manga.url = 'http://mangapark.me/' + child1.children[1].attribs.href;
+                                manga.url = 'http://mangapark.me' + child1.children[1].attribs.href;
                                 manga.name = child1.children[1].attribs.title;
                             }
                             else {
 
-                                manga.summary = cheerio(child1).find('.summary').html()
-                                if (manga.summary) {
+                                manga.summary = cheerio(child1).find('.summary').html();
+                                if (manga.summary && manga.summary != "") {
                                     manga.summary = cheerio(manga.summary).text().replace(/\r/g, '').replace(/<br>/g, '').trim();
                                 }
-                                else {
+                                else if(manga.summary == ""){
+                                    sails.log.info(cheerio(child1).find('.summary').html());
+                                } else {
                                     manga.summary = '';
-                                    sails.log.info(cheerio(child1).html());
+                                    sails.log.debug(cheerio(child1).html());
                                 }
 
                                 cheerio(child1).find('.info').each(function (index2, child2) {
