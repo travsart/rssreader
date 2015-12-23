@@ -53,6 +53,15 @@ module.exports = {
                                 manga.name = child1.children[1].attribs.title;
                             }
                             else {
+
+                                manga.summary = cheerio(child1).find('.summary').html()
+                                if (manga.summary) {
+                                    manga.summary = cheerio(manga.summary).text().replace(/\r/g, '').replace(/<br>/g, '').trim();
+                                }
+                                else {
+                                    manga.summary = '';
+                                }
+                                console.log(manga.summary);
                                 cheerio(child1).find('.info').each(function (index2, child2) {
                                     if (child2.children.length == 7) {
                                         var info1 = child2.children[3].children;
@@ -113,13 +122,6 @@ module.exports = {
                                         }
                                     }
                                 });
-                                manga.summary = cheerio(child1).find('.summary').html()
-                                if (manga.summary) {
-                                    manga.summary = cheerio(manga.summary).text().replace(/\r/g, '').replace(/<br>/g, '').trim();
-                                }
-                                else {
-                                    manga.summary = '';
-                                }
                             }
                         });
 
