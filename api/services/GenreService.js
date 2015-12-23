@@ -116,7 +116,7 @@ module.exports = {
                                 manga.summary = cheerio(child1).find('.summary').html();
 
                                 if(manga.name == 'Panlong'){
-                                    sails.log.info(cheerio(child1)).html());
+                                    sails.log.info(cheerio(child1).html());
                                     sails.log.info(cheerio(child1).find('.summary').html());
                                     sails.log.info(cheerio(cheerio(child1).find('.summary').html().text()));
                                 }
