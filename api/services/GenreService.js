@@ -5,7 +5,8 @@ var Promise = require('bluebird');
 
 module.exports = {
     generateManga: function (mangaList, page, end, cb) {
-        var url = 'http://mangapark.me/search?orderby=latest&chapters=1&st-ss=1&page=' + page;
+      //  var url = 'http://mangapark.me/search?orderby=latest&chapters=1&st-ss=1&page=' + page;
+        var url = 'http://mangapark.me/search?orderby=latest&q=long&chapters=1'
         var request = require('request');
         var cheerio = require('cheerio');
         var userAgent = 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36';
@@ -114,7 +115,7 @@ module.exports = {
                                 });
                                 manga.summary = cheerio(child1).find('.summary').html()
                                 if (manga.summary) {
-                                    manga.summary = cheerio(manga.summary).text().replace(/\r/g, '').replace(/<br>/g, '').replace(/\t/g, '');
+                                    manga.summary = cheerio(manga.summary).text().replace(/\r/g, '').replace(/<br>/g, '').trim();
                                 }
                                 else {
                                     manga.summary = '';
