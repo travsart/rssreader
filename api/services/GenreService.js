@@ -59,6 +59,7 @@ module.exports = {
                                 }
                                 else {
                                     manga.summary = '';
+                                    sails.log.info(cheerio(child1).html());
                                 }
 
                                 cheerio(child1).find('.info').each(function (index2, child2) {
