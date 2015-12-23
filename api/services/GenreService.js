@@ -52,18 +52,6 @@ module.exports = {
                                 manga.name = child1.children[1].attribs.title;
                             }
                             else {
-
-                                manga.summary = cheerio(child1).find('.summary').html();
-                                if (manga.summary && manga.summary != "") {
-                                    manga.summary = cheerio(manga.summary).text().replace(/\r/g, '').replace(/<br>/g, '').trim();
-                                }
-                                else if(manga.summary == ""){
-                                    sails.log.info(cheerio(child1).find('.summary').html());
-                                } else {
-                                    manga.summary = '';
-                                    sails.log.debug(cheerio(child1).html());
-                                }
-
                                 cheerio(child1).find('.info').each(function (index2, child2) {
                                     if (child2.children.length == 7) {
                                         var info1 = child2.children[3].children;
@@ -124,6 +112,23 @@ module.exports = {
                                         }
                                     }
                                 });
+
+                                manga.summary = cheerio(child1).find('.summary').html();
+
+                                if(manga.name == 'Panlong'){
+                                    sails.log.info(cheerio(child1)).html());
+                                    sails.log.info(cheerio(child1).find('.summary').html());
+                                    sails.log.info(cheerio(cheerio(child1).find('.summary').html().text()));
+                                }
+                                if (manga.summary && manga.summary != "") {
+                                    manga.summary = cheerio(manga.summary).text().replace(/\r/g, '').replace(/<br>/g, '').trim();
+                                }
+                                else if(manga.summary == ""){
+                                    sails.log.info(cheerio(child1).find('.summary').html());
+                                } else {
+                                    manga.summary = '';
+                                    sails.log.debug(cheerio(child1).html());
+                                }
                             }
                         });
 
