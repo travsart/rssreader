@@ -114,7 +114,7 @@ module.exports = {
                                 });
                                 manga.summary = cheerio(child1).find('.summary').html()
                                 if (manga.summary) {
-                                    manga.summary = manga.summary.text().replace(/\r/g, '').replace(/<br>/g, '').replace(/<\/br>/g, '');
+                                    manga.summary = cheerio(manga.summary).text().replace(/\r/g, '').replace(/<br>/g, '').replace(/<\/br>/g, '');
                                 }
                             }
                         });
