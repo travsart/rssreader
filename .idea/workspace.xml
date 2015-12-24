@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8852a0a-39ee-460b-af05-a2f0c29985c7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log_debug_2015-12-16.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log_debug_2015-12-19.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log_info_2015-12-16.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log_info_2015-12-19.log" afterPath="" />
+    <list default="true" id="e8852a0a-39ee-460b-af05-a2f0c29985c7" name="Default" comment="as">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/models/Suggestion.js" afterPath="$PROJECT_DIR$/api/models/Suggestion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/services/GenreService.js" afterPath="$PROJECT_DIR$/api/services/GenreService.js" />
     </list>
     <ignored path="rssreader.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,8 +38,8 @@
       <file leaf-file-name="GenreService.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.090747334">
-              <caret line="111" column="11" selection-start-line="111" selection-start-column="11" selection-end-line="111" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.45293072">
+              <caret line="47" column="67" selection-start-line="47" selection-start-column="67" selection-end-line="47" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -51,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/api/models/Suggestion.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -71,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/api/controllers/GenreController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+              <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -101,8 +99,8 @@
         <option value="$PROJECT_DIR$/api/models/Suggestions.js" />
         <option value="$PROJECT_DIR$/api/models/Genre.js" />
         <option value="$PROJECT_DIR$/api/controllers/SuggestionController.js" />
-        <option value="$PROJECT_DIR$/api/controllers/GenreController.js" />
         <option value="$PROJECT_DIR$/config/routes.js" />
+        <option value="$PROJECT_DIR$/api/controllers/GenreController.js" />
         <option value="$PROJECT_DIR$/api/models/Suggestion.js" />
         <option value="$PROJECT_DIR$/api/services/GenreService.js" />
       </list>
@@ -147,21 +145,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="rssreader">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -264,6 +247,21 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="rssreader">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -336,84 +334,6 @@
       <created>1448998890623</created>
       <option name="number" value="Default" />
       <updated>1448998890623</updated>
-    </task>
-    <task id="LOCAL-00004" summary=" ,">
-      <created>1450382453958</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1450382453958</updated>
-    </task>
-    <task id="LOCAL-00005" summary=" ,">
-      <created>1450382599502</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1450382599502</updated>
-    </task>
-    <task id="LOCAL-00006" summary=" ,">
-      <created>1450388695122</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1450388695122</updated>
-    </task>
-    <task id="LOCAL-00007" summary=" ,">
-      <created>1450390210659</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1450390210659</updated>
-    </task>
-    <task id="LOCAL-00008" summary=" ,">
-      <created>1450390298148</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1450390298148</updated>
-    </task>
-    <task id="LOCAL-00009" summary=" ,">
-      <created>1450390535114</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1450390535114</updated>
-    </task>
-    <task id="LOCAL-00010" summary=" ,">
-      <created>1450390633610</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1450390633610</updated>
-    </task>
-    <task id="LOCAL-00011" summary=" ,">
-      <created>1450390935302</created>
-      <option name="number" value="00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1450390935302</updated>
-    </task>
-    <task id="LOCAL-00012" summary=" ,">
-      <created>1450391029731</created>
-      <option name="number" value="00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1450391029731</updated>
-    </task>
-    <task id="LOCAL-00013" summary=" ,">
-      <created>1450391113456</created>
-      <option name="number" value="00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1450391113456</updated>
-    </task>
-    <task id="LOCAL-00014" summary=" ,">
-      <created>1450391284805</created>
-      <option name="number" value="00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1450391284805</updated>
-    </task>
-    <task id="LOCAL-00015" summary=" ,">
-      <created>1450391353586</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1450391353586</updated>
-    </task>
-    <task id="LOCAL-00016" summary=" ,">
-      <created>1450391408483</created>
-      <option name="number" value="00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1450391408483</updated>
     </task>
     <task id="LOCAL-00017" summary=" ,">
       <created>1450392046813</created>
@@ -631,27 +551,105 @@
       <option name="project" value="LOCAL" />
       <updated>1450866619551</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="as">
+      <created>1450866671514</created>
+      <option name="number" value="00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1450866671514</updated>
+    </task>
+    <task id="LOCAL-00054" summary="as">
+      <created>1450866748198</created>
+      <option name="number" value="00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1450866748198</updated>
+    </task>
+    <task id="LOCAL-00055" summary="as">
+      <created>1450866860082</created>
+      <option name="number" value="00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1450866860082</updated>
+    </task>
+    <task id="LOCAL-00056" summary="as">
+      <created>1450867177392</created>
+      <option name="number" value="00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1450867177392</updated>
+    </task>
+    <task id="LOCAL-00057" summary="as">
+      <created>1450870984539</created>
+      <option name="number" value="00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1450870984539</updated>
+    </task>
+    <task id="LOCAL-00058" summary="as">
+      <created>1450872126186</created>
+      <option name="number" value="00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1450872126186</updated>
+    </task>
+    <task id="LOCAL-00059" summary="as">
+      <created>1450873853347</created>
+      <option name="number" value="00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1450873853347</updated>
+    </task>
+    <task id="LOCAL-00060" summary="as">
+      <created>1450874576226</created>
+      <option name="number" value="00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1450874576227</updated>
+    </task>
+    <task id="LOCAL-00061" summary="as">
+      <created>1450874874473</created>
+      <option name="number" value="00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1450874874473</updated>
+    </task>
+    <task id="LOCAL-00062" summary="as">
+      <created>1450874938700</created>
+      <option name="number" value="00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1450874938700</updated>
+    </task>
+    <task id="LOCAL-00063" summary="as">
+      <created>1450875099355</created>
+      <option name="number" value="00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1450875099355</updated>
+    </task>
+    <task id="LOCAL-00064" summary="as">
+      <created>1450875224100</created>
+      <option name="number" value="00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1450875224100</updated>
+    </task>
+    <task id="LOCAL-00065" summary="as">
+      <created>1450875307380</created>
+      <option name="number" value="00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1450875307380</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1692" height="1017" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3325792" sideWeight="0.5122549" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3325792" sideWeight="0.4877451" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26531863" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26838234" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3322034" sideWeight="0.5147059" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3322034" sideWeight="0.4852941" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -683,6 +681,46 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="63" selection-start-line="117" selection-start-column="63" selection-end-line="117" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/Suggestion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/Genre.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/GenreController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -891,14 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/controllers/GenreController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -907,18 +937,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/GenreController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/models/Suggestion.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.090747334">
-          <caret line="111" column="11" selection-start-line="111" selection-start-column="11" selection-end-line="111" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.45293072">
+          <caret line="47" column="67" selection-start-line="47" selection-start-column="67" selection-end-line="47" selection-end-column="67" />
           <folding />
         </state>
       </provider>

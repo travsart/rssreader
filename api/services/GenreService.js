@@ -44,7 +44,8 @@ module.exports = {
                             year: -1,
                             status: 'Ongoing',
                             weighted: 0,
-                            raw: 0
+                            raw: 0,
+                            html: chBody.find('.manga-list').html()
                         };
                         cheerio(child).find('td').each(function (index1, child1) {
                             if (child1.children.length == 3) {
@@ -118,7 +119,7 @@ module.exports = {
                                 if (manga.summary && manga.summary != "") {
                                     manga.summary = manga.summary.replace(/\r/g, '').replace(/<br>/g, '').trim();
                                 }
-                                else if(manga.summary == ""){
+                                else if (manga.summary == "") {
                                     sails.log.info(cheerio(child1).find('.summary').html());
                                 } else {
                                     manga.summary = '';

@@ -27,6 +27,9 @@ module.exports = {
         },
         weighted: {
             type: 'float'
+        },
+        html: {
+            type: 'string'
         }
     }
 };
