@@ -138,7 +138,7 @@ module.exports = {
                     });
 
                     sails.log.info('Finished page :' + page);
-                    if (mangaList.length > 1000) {
+                    if (mangaList.length > 100) {
                         Suggestion.create(mangaList).exec(function (err, created) {
                             if (err) {
                                 sails.log.error('Error: ' + JSON.stringify(err));
