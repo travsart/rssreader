@@ -15,7 +15,7 @@ rssApp
                             title: 'Success',
                             body: data.msg
                         });
-                        USERNAME = user.username;
+                        var USERNAME = user.username;
                     }
                     else {
                         toaster.pop({
