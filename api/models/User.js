@@ -19,25 +19,8 @@ module.exports = {
             minLength: 6,
             maxLength: 50
         },
-        keys: {
-            collection: 'key',
-            via: 'owner'
-        },
-
         verifyPassword: function (password) {
             return bcrypt.compareSync(password, this.password);
-        },
-
-        changePassword: function(newPassword, cb){
-            this.newPassword = newPassword;
-            this.save(function(err, u) {
-                return cb(err,u);
-            });
-        },
-
-        toJSON: function() {
-            var obj = this.toObject();
-            return obj;
         }
     },
 
