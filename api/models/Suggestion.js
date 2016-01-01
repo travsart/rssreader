@@ -30,6 +30,9 @@ module.exports = {
         },
         html: {
             type: 'string'
+        },
+        lastReleased: {
+            type:'date'
         }
     }
 };
