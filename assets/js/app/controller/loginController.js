@@ -7,7 +7,9 @@ rssApp
             $scope.language = 'English';
 
             $scope.login = function (user) {
+                console.log(user);
                 loginService.login(user).then(function (data) {
+                    console.log(data);
                     data = data.data;
                     if (data.success) {
                         toaster.pop({
@@ -15,7 +17,7 @@ rssApp
                             title: 'Success',
                             body: data.msg
                         });
-                        var USERNAME = user.username;
+                        $scope.USERNAME = user.username;
                     }
                     else {
                         toaster.pop({
