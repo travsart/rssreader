@@ -2,10 +2,1049 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8852a0a-39ee-460b-af05-a2f0c29985c7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/controllers/AuthController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/lib/error/SAError.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/models/Passport.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/policies/basicAuth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/policies/passport.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/services/protocols/basic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/services/protocols/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/services/protocols/local.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/services/protocols/oauth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/services/protocols/oauth2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/services/protocols/openid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/bin/bcrypt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/dist/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/dist/bcrypt-isaac.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/dist/bcrypt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/dist/bcrypt.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/externs/bcrypt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/externs/minimal-env.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/scripts/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/impl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/prng/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/prng/accum.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/prng/isaac.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/util/base64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/tests/quickbrown.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/tests/suite.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/tests/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/chunk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/compact.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/difference.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/drop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/dropRight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/dropRightWhile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/dropWhile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/fill.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/findIndex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/findLastIndex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/first.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/flatten.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/flattenDeep.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/head.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/indexOf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/initial.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/intersection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/last.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/lastIndexOf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/object.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/pull.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/pullAt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/remove.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/rest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/slice.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/sortedIndex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/sortedLastIndex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/tail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/take.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/takeRight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/takeRightWhile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/takeWhile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/union.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/uniq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/unique.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/unzip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/without.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/xor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/zip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/array/zipObject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/chain.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/commit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/lodash.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/plant.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/reverse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/run.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/tap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/thru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/toJSON.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/toString.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/value.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/valueOf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/wrapperChain.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/wrapperCommit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/wrapperPlant.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/wrapperReverse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/wrapperToString.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/wrapperValue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/any.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/at.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/collect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/contains.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/countBy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/detect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/each.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/eachRight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/every.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/filter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/find.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/findLast.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/findWhere.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/foldl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/foldr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/forEach.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/forEachRight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/groupBy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/include.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/includes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/indexBy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/inject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/invoke.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/max.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/partition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/pluck.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/reduce.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/reduceRight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/reject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/sample.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/select.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/shuffle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/size.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/some.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/sortBy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/sortByAll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/where.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/date.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/date/now.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/after.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/ary.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/backflow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/before.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/bind.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/bindAll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/bindKey.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/compose.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/curry.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/curryRight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/debounce.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/defer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/delay.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/flow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/flowRight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/memoize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/negate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/once.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/partial.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/partialRight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/rearg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/spread.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/throttle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/function/wrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/LazyWrapper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/LodashWrapper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/MapCache.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/SetCache.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayCopy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayEach.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayEachRight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayEvery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayFilter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayMap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayMax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayMin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayReduce.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayReduceRight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arraySome.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/assignDefaults.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/assignOwnDefaults.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseAssign.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseAt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseBindAll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseCallback.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseClone.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseCompareAscending.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseCopy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseCreate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseDelay.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseDifference.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseEach.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseEachRight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseEvery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseFill.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseFilter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseFind.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseFlatten.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseFor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseForIn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseForOwn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseForOwnRight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseForRight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseFunctions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseIndexOf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseInvoke.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseIsEqual.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseIsEqualDeep.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseIsFunction.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseIsMatch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseLodash.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseMap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseMatches.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseMatchesProperty.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseMerge.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseMergeDeep.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseProperty.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/basePullAt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseRandom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseReduce.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseSetData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseSlice.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseSome.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseSortBy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseToString.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseUniq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseValues.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseWrapperValue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/binaryIndex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/binaryIndexBy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/bindCallback.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/bufferClone.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/cacheIndexOf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/cachePush.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/charAtCallback.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/charsLeftIndex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/charsRightIndex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/compareAscending.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/compareMultipleAscending.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/composeArgs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/composeArgsRight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createAggregator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createAssigner.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createBindWrapper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createCache.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createCompounder.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createCtorWrapper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createExtremum.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createHybridWrapper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createPad.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createPartialWrapper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createWrapper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/deburrLetter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/equalArrays.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/equalByTag.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/equalObjects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/escapeHtmlChar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/escapeStringChar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/extremumBy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/getData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/getView.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/indexOfNaN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/initCloneArray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/initCloneByTag.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/initCloneObject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/isBindable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/isIndex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/isIterateeCall.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/isLength.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/isObjectLike.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/isSpace.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/isStrictComparable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/lazyClone.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/lazyReverse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/lazyValue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/mapDelete.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/mapGet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/mapHas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/mapSet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/mergeData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/metaMap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/pickByArray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/pickByCallback.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/reEscape.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/reEvaluate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/reInterpolate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/reorder.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/replaceHolders.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/setData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/shimIsPlainObject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/shimKeys.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/sortedUniq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/toIterable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/toObject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/trimmedLeftIndex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/trimmedRightIndex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/unescapeHtmlChar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/wrapperClone.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/clone.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/cloneDeep.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isArguments.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isArray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isBoolean.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isDate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isElement.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isEmpty.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isEqual.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isError.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isFinite.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isFunction.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isMatch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isNaN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isNative.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isNull.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isNumber.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isObject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isPlainObject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isRegExp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isString.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isTypedArray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isUndefined.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/toArray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/toPlainObject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/number.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/number/inRange.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/number/random.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/assign.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/create.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/defaults.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/extend.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/findKey.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/findLastKey.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/forIn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/forInRight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/forOwn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/forOwnRight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/functions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/has.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/invert.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/keys.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/keysIn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/mapValues.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/merge.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/omit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/pairs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/pick.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/result.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/transform.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/values.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/object/valuesIn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/camelCase.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/capitalize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/deburr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/endsWith.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/escape.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/escapeRegExp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/kebabCase.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/pad.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/padLeft.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/padRight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/parseInt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/repeat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/snakeCase.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/startCase.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/startsWith.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/templateSettings.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/trim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/trimLeft.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/trimRight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/trunc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/unescape.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/string/words.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/utility.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/attempt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/callback.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/constant.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/identity.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/iteratee.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/matches.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/matchesProperty.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/mixin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/noop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/property.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/propertyOf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/range.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/times.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/uniqueId.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/lib/passport-http/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/lib/passport-http/strategies/basic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/lib/passport-http/strategies/digest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/lib/passport/context/http/actions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/lib/passport/context/http/context.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/lib/passport/http/request.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/lib/passport/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/lib/passport/middleware/authenticate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/lib/passport/middleware/initialize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/lib/passport/strategies/session.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/lib/passport/strategy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/node_modules/pause/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/node_modules/pause/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/node_modules/pause/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/node_modules/pause/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/node_modules/pause/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/node_modules/pause/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/docs/docco.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/docs/pkginfo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/examples/all-properties.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/examples/array-argument.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/examples/multiple-properties.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/examples/object-argument.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/examples/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/examples/single-property.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/lib/pkginfo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/test/pkginfo-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-http/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/lib/strategy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/lib/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/lib/strategy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/authenticator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/errors/authenticationerror.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/framework/connect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/http/request.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/middleware/authenticate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/middleware/initialize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/strategies/session.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/lib/strategy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/templates/class.template.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/templates/function.template.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/templates/static.template.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/test.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/.sailsrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/api/controllers/UserController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/api/hooks/sails-auth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/api/models/User.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/api/policies/sessionAuth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/api/services/passport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/assets/js/dependencies/sails.io.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/config/env/testing.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/config/locales/en.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/config/models.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/config/passport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/config/routes/sails-auth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/generator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/browser/bluebird.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/browser/bluebird.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/any.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/assert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/async.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/bind.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/bluebird.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/call_get.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/cancel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/captured_trace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/catch_filter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/context.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/debuggability.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/direct_resolve.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/each.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/errors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/es5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/filter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/finally.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/generators.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/join.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/method.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/nodeify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/progress.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/promise.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/promise_array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/promise_resolver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/promisify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/props.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/queue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/race.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/reduce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/schedule.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/settle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/some.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/synchronous_inspection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/thenables.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/timers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/using.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/js/main/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bluebird/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-google-oauth/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-google-oauth/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-google-oauth/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-google-oauth/lib/passport-google-oauth/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-google-oauth/lib/passport-google-oauth/oauth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-google-oauth/lib/passport-google-oauth/oauth2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-google-oauth/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/sails-generate-entities/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/test/bootstrap.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/test/mocha.opts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/test/unit/controllers/AuthController.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/test/unit/controllers/UserController.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/test/unit/models/Passport.test.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/LICENSE" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/api/controllers/AuthController.js" afterPath="$PROJECT_DIR$/api/controllers/AuthController.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/api/models/Passport.js" afterPath="$PROJECT_DIR$/api/models/Passport.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/api/policies/basicAuth.js" afterPath="$PROJECT_DIR$/api/policies/basicAuth.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/api/policies/passport.js" afterPath="$PROJECT_DIR$/api/policies/passport.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/api/services/protocols/basic.js" afterPath="$PROJECT_DIR$/api/services/protocols/basic.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/api/services/protocols/index.js" afterPath="$PROJECT_DIR$/api/services/protocols/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/api/services/protocols/local.js" afterPath="$PROJECT_DIR$/api/services/protocols/local.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/api/services/protocols/oauth.js" afterPath="$PROJECT_DIR$/api/services/protocols/oauth.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/api/services/protocols/oauth2.js" afterPath="$PROJECT_DIR$/api/services/protocols/oauth2.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/api/services/protocols/openid.js" afterPath="$PROJECT_DIR$/api/services/protocols/openid.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/lib/error/SAError.js" afterPath="$PROJECT_DIR$/api/lib/error/SAError.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/.npmignore" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/.travis.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/LICENSE" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/README.md" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/bin/bcrypt" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/bin/bcrypt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/bower.json" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/dist/README.md" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/dist/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/dist/bcrypt-isaac.min.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/dist/bcrypt-isaac.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/dist/bcrypt.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/dist/bcrypt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/dist/bcrypt.min.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/dist/bcrypt.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/externs/bcrypt.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/externs/bcrypt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/externs/minimal-env.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/externs/minimal-env.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/index.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/package.json" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/scripts/build.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/scripts/build.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/src/bcrypt.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/src/bcrypt/impl.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/impl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/src/bcrypt/prng/README.md" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/prng/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/src/bcrypt/prng/accum.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/prng/accum.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/src/bcrypt/prng/isaac.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/prng/isaac.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/src/bcrypt/util.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/util.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/src/bcrypt/util/base64.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/util/base64.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/src/bower.json" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/tests/quickbrown.txt" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/tests/quickbrown.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/tests/suite.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/tests/suite.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/bcryptjs/tests/test.html" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/tests/test.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/chunk.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/chunk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/compact.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/compact.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/difference.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/difference.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/drop.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/drop.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/dropRight.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/dropRight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/dropRightWhile.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/dropRightWhile.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/dropWhile.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/dropWhile.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/fill.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/fill.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/findIndex.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/findIndex.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/findLastIndex.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/findLastIndex.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/first.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/first.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/flatten.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/flatten.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/flattenDeep.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/flattenDeep.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/head.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/head.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/indexOf.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/indexOf.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/initial.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/initial.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/intersection.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/intersection.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/last.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/last.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/lastIndexOf.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/lastIndexOf.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/object.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/object.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/pull.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/pull.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/pullAt.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/pullAt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/remove.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/remove.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/rest.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/rest.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/slice.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/slice.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/sortedIndex.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/sortedIndex.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/sortedLastIndex.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/sortedLastIndex.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/tail.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/tail.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/take.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/take.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/takeRight.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/takeRight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/takeRightWhile.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/takeRightWhile.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/takeWhile.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/takeWhile.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/union.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/union.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/uniq.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/uniq.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/unique.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/unique.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/unzip.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/unzip.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/without.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/without.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/xor.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/xor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/zip.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/zip.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/array/zipObject.js" afterPath="$PROJECT_DIR$/node_modules/lodash/array/zipObject.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain/chain.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/chain.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain/commit.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/commit.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain/lodash.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/lodash.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain/plant.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/plant.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain/reverse.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/reverse.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain/run.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/run.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain/tap.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/tap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain/thru.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/thru.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain/toJSON.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/toJSON.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain/toString.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/toString.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain/value.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/value.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain/valueOf.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/valueOf.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain/wrapperChain.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/wrapperChain.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain/wrapperCommit.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/wrapperCommit.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain/wrapperPlant.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/wrapperPlant.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain/wrapperReverse.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/wrapperReverse.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain/wrapperToString.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/wrapperToString.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/chain/wrapperValue.js" afterPath="$PROJECT_DIR$/node_modules/lodash/chain/wrapperValue.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/all.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/all.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/any.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/any.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/at.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/at.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/collect.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/collect.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/contains.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/contains.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/countBy.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/countBy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/detect.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/detect.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/each.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/each.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/eachRight.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/eachRight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/every.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/every.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/filter.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/filter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/find.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/find.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/findLast.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/findLast.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/findWhere.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/findWhere.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/foldl.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/foldl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/foldr.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/foldr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/forEach.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/forEach.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/forEachRight.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/forEachRight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/groupBy.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/groupBy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/include.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/include.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/includes.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/includes.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/indexBy.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/indexBy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/inject.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/inject.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/invoke.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/invoke.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/map.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/map.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/max.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/max.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/min.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/partition.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/partition.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/pluck.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/pluck.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/reduce.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/reduce.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/reduceRight.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/reduceRight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/reject.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/reject.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/sample.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/sample.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/select.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/select.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/shuffle.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/shuffle.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/size.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/size.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/some.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/some.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/sortBy.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/sortBy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/sortByAll.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/sortByAll.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/collection/where.js" afterPath="$PROJECT_DIR$/node_modules/lodash/collection/where.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/date.js" afterPath="$PROJECT_DIR$/node_modules/lodash/date.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/date/now.js" afterPath="$PROJECT_DIR$/node_modules/lodash/date/now.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/after.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/after.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/ary.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/ary.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/backflow.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/backflow.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/before.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/before.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/bind.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/bind.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/bindAll.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/bindAll.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/bindKey.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/bindKey.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/compose.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/compose.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/curry.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/curry.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/curryRight.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/curryRight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/debounce.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/debounce.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/defer.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/defer.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/delay.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/delay.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/flow.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/flow.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/flowRight.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/flowRight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/memoize.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/memoize.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/negate.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/negate.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/once.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/once.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/partial.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/partial.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/partialRight.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/partialRight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/rearg.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/rearg.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/spread.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/spread.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/throttle.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/throttle.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/function/wrap.js" afterPath="$PROJECT_DIR$/node_modules/lodash/function/wrap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/index.js" afterPath="$PROJECT_DIR$/node_modules/lodash/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/LazyWrapper.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/LazyWrapper.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/LodashWrapper.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/LodashWrapper.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/MapCache.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/MapCache.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/SetCache.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/SetCache.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/arrayCopy.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayCopy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/arrayEach.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayEach.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/arrayEachRight.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayEachRight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/arrayEvery.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayEvery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/arrayFilter.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayFilter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/arrayMap.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayMap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/arrayMax.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayMax.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/arrayMin.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayMin.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/arrayReduce.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayReduce.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/arrayReduceRight.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arrayReduceRight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/arraySome.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/arraySome.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/assignDefaults.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/assignDefaults.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/assignOwnDefaults.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/assignOwnDefaults.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseAssign.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseAssign.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseAt.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseAt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseBindAll.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseBindAll.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseCallback.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseCallback.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseClone.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseClone.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseCompareAscending.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseCompareAscending.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseCopy.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseCopy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseCreate.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseCreate.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseDelay.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseDelay.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseDifference.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseDifference.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseEach.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseEach.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseEachRight.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseEachRight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseEvery.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseEvery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseFill.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseFill.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseFilter.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseFilter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseFind.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseFind.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseFlatten.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseFlatten.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseFor.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseFor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseForIn.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseForIn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseForOwn.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseForOwn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseForOwnRight.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseForOwnRight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseForRight.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseForRight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseFunctions.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseFunctions.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseIndexOf.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseIndexOf.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseInvoke.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseInvoke.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseIsEqual.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseIsEqual.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseIsEqualDeep.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseIsEqualDeep.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseIsFunction.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseIsFunction.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseIsMatch.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseIsMatch.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseLodash.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseLodash.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseMap.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseMap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseMatches.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseMatches.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseMatchesProperty.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseMatchesProperty.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseMerge.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseMerge.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseMergeDeep.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseMergeDeep.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseProperty.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseProperty.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/basePullAt.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/basePullAt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseRandom.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseRandom.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseReduce.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseReduce.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseSetData.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseSetData.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseSlice.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseSlice.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseSome.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseSome.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseSortBy.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseSortBy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseToString.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseToString.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseUniq.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseUniq.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseValues.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseValues.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/baseWrapperValue.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/baseWrapperValue.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/binaryIndex.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/binaryIndex.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/binaryIndexBy.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/binaryIndexBy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/bindCallback.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/bindCallback.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/bufferClone.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/bufferClone.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/cacheIndexOf.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/cacheIndexOf.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/cachePush.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/cachePush.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/charAtCallback.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/charAtCallback.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/charsLeftIndex.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/charsLeftIndex.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/charsRightIndex.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/charsRightIndex.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/compareAscending.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/compareAscending.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/compareMultipleAscending.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/compareMultipleAscending.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/composeArgs.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/composeArgs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/composeArgsRight.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/composeArgsRight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/createAggregator.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createAggregator.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/createAssigner.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createAssigner.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/createBindWrapper.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createBindWrapper.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/createCache.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createCache.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/createCompounder.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createCompounder.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/createCtorWrapper.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createCtorWrapper.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/createExtremum.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createExtremum.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/createHybridWrapper.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createHybridWrapper.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/createPad.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createPad.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/createPartialWrapper.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createPartialWrapper.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/createWrapper.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/createWrapper.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/deburrLetter.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/deburrLetter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/equalArrays.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/equalArrays.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/equalByTag.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/equalByTag.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/equalObjects.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/equalObjects.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/escapeHtmlChar.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/escapeHtmlChar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/escapeStringChar.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/escapeStringChar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/extremumBy.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/extremumBy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/getData.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/getData.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/getView.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/getView.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/indexOfNaN.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/indexOfNaN.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/initCloneArray.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/initCloneArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/initCloneByTag.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/initCloneByTag.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/initCloneObject.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/initCloneObject.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/isBindable.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/isBindable.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/isIndex.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/isIndex.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/isIterateeCall.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/isIterateeCall.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/isLength.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/isLength.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/isObjectLike.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/isObjectLike.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/isSpace.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/isSpace.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/isStrictComparable.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/isStrictComparable.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/lazyClone.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/lazyClone.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/lazyReverse.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/lazyReverse.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/lazyValue.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/lazyValue.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/mapDelete.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/mapDelete.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/mapGet.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/mapGet.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/mapHas.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/mapHas.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/mapSet.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/mapSet.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/mergeData.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/mergeData.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/metaMap.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/metaMap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/pickByArray.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/pickByArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/pickByCallback.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/pickByCallback.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/reEscape.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/reEscape.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/reEvaluate.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/reEvaluate.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/reInterpolate.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/reInterpolate.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/reorder.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/reorder.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/replaceHolders.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/replaceHolders.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/setData.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/setData.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/shimIsPlainObject.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/shimIsPlainObject.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/shimKeys.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/shimKeys.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/sortedUniq.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/sortedUniq.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/toIterable.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/toIterable.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/toObject.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/toObject.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/trimmedLeftIndex.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/trimmedLeftIndex.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/trimmedRightIndex.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/trimmedRightIndex.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/unescapeHtmlChar.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/unescapeHtmlChar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/internal/wrapperClone.js" afterPath="$PROJECT_DIR$/node_modules/lodash/internal/wrapperClone.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/clone.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/clone.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/cloneDeep.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/cloneDeep.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isArguments.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isArguments.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isArray.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isBoolean.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isBoolean.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isDate.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isDate.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isElement.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isElement.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isEmpty.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isEmpty.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isEqual.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isEqual.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isError.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isError.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isFinite.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isFinite.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isFunction.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isFunction.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isMatch.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isMatch.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isNaN.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isNaN.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isNative.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isNative.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isNull.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isNull.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isNumber.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isNumber.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isObject.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isObject.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isPlainObject.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isPlainObject.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isRegExp.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isRegExp.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isString.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isString.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isTypedArray.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isTypedArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/isUndefined.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/isUndefined.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/toArray.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/toArray.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/lang/toPlainObject.js" afterPath="$PROJECT_DIR$/node_modules/lodash/lang/toPlainObject.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/number.js" afterPath="$PROJECT_DIR$/node_modules/lodash/number.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/number/inRange.js" afterPath="$PROJECT_DIR$/node_modules/lodash/number/inRange.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/number/random.js" afterPath="$PROJECT_DIR$/node_modules/lodash/number/random.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/assign.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/assign.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/create.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/create.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/defaults.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/defaults.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/extend.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/extend.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/findKey.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/findKey.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/findLastKey.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/findLastKey.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/forIn.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/forIn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/forInRight.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/forInRight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/forOwn.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/forOwn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/forOwnRight.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/forOwnRight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/functions.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/functions.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/has.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/has.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/invert.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/invert.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/keys.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/keys.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/keysIn.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/keysIn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/mapValues.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/mapValues.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/merge.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/merge.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/methods.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/methods.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/omit.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/omit.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/pairs.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/pairs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/pick.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/pick.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/result.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/result.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/transform.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/transform.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/values.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/values.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/object/valuesIn.js" afterPath="$PROJECT_DIR$/node_modules/lodash/object/valuesIn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/camelCase.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/camelCase.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/capitalize.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/capitalize.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/deburr.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/deburr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/endsWith.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/endsWith.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/escape.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/escape.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/escapeRegExp.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/escapeRegExp.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/kebabCase.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/kebabCase.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/pad.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/pad.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/padLeft.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/padLeft.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/padRight.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/padRight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/parseInt.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/parseInt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/repeat.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/repeat.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/snakeCase.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/snakeCase.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/startCase.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/startCase.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/startsWith.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/startsWith.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/template.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/template.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/templateSettings.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/templateSettings.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/trim.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/trim.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/trimLeft.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/trimLeft.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/trimRight.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/trimRight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/trunc.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/trunc.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/unescape.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/unescape.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/string/words.js" afterPath="$PROJECT_DIR$/node_modules/lodash/string/words.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/support.js" afterPath="$PROJECT_DIR$/node_modules/lodash/support.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/utility.js" afterPath="$PROJECT_DIR$/node_modules/lodash/utility.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/utility/attempt.js" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/attempt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/utility/callback.js" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/callback.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/utility/constant.js" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/constant.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/utility/identity.js" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/identity.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/utility/iteratee.js" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/iteratee.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/utility/matches.js" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/matches.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/utility/matchesProperty.js" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/matchesProperty.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/utility/mixin.js" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/mixin.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/utility/noop.js" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/noop.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/utility/property.js" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/property.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/utility/propertyOf.js" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/propertyOf.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/utility/range.js" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/range.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/utility/times.js" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/times.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/lodash/utility/uniqueId.js" afterPath="$PROJECT_DIR$/node_modules/lodash/utility/uniqueId.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/passport-http/.travis.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/LICENSE" afterPath="$PROJECT_DIR$/node_modules/passport-http/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/README.md" afterPath="$PROJECT_DIR$/node_modules/passport-http/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/lib/passport-http/index.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/lib/passport-http/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/lib/passport-http/strategies/basic.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/lib/passport-http/strategies/basic.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/lib/passport-http/strategies/digest.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/lib/passport-http/strategies/digest.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/passport/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/.travis.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/passport/LICENSE" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/passport/README.md" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/passport/lib/passport/context/http/actions.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/lib/passport/context/http/actions.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/passport/lib/passport/context/http/context.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/lib/passport/context/http/context.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/passport/lib/passport/http/request.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/lib/passport/http/request.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/passport/lib/passport/index.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/lib/passport/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/passport/lib/passport/middleware/authenticate.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/lib/passport/middleware/authenticate.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/passport/lib/passport/middleware/initialize.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/lib/passport/middleware/initialize.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/passport/lib/passport/strategies/session.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/lib/passport/strategies/session.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/passport/lib/passport/strategy.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/lib/passport/strategy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/passport/node_modules/pause/.npmignore" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/node_modules/pause/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/passport/node_modules/pause/History.md" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/node_modules/pause/History.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/passport/node_modules/pause/Makefile" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/node_modules/pause/Makefile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/passport/node_modules/pause/Readme.md" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/node_modules/pause/Readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/passport/node_modules/pause/index.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/node_modules/pause/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/passport/node_modules/pause/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/node_modules/pause/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/passport/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/passport/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/pkginfo/.npmignore" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/pkginfo/README.md" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/pkginfo/docs/docco.css" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/docs/docco.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/pkginfo/docs/pkginfo.html" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/docs/pkginfo.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/pkginfo/examples/all-properties.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/examples/all-properties.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/pkginfo/examples/array-argument.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/examples/array-argument.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/pkginfo/examples/multiple-properties.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/examples/multiple-properties.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/pkginfo/examples/object-argument.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/examples/object-argument.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/pkginfo/examples/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/examples/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/pkginfo/examples/single-property.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/examples/single-property.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/pkginfo/lib/pkginfo.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/lib/pkginfo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/pkginfo/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/node_modules/pkginfo/test/pkginfo-test.js" afterPath="$PROJECT_DIR$/node_modules/passport-http/node_modules/pkginfo/test/pkginfo-test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-http/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-http/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-local/LICENSE" afterPath="$PROJECT_DIR$/node_modules/passport-local/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-local/README.md" afterPath="$PROJECT_DIR$/node_modules/passport-local/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-local/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/passport-local/lib/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-local/lib/strategy.js" afterPath="$PROJECT_DIR$/node_modules/passport-local/lib/strategy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-local/lib/utils.js" afterPath="$PROJECT_DIR$/node_modules/passport-local/lib/utils.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-local/node_modules/passport-strategy/.jshintrc" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/.jshintrc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-local/node_modules/passport-strategy/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/.travis.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-local/node_modules/passport-strategy/LICENSE" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-local/node_modules/passport-strategy/README.md" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-local/node_modules/passport-strategy/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/lib/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-local/node_modules/passport-strategy/lib/strategy.js" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/lib/strategy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-local/node_modules/passport-strategy/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport-local/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-local/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/LICENSE" afterPath="$PROJECT_DIR$/node_modules/passport/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/README.md" afterPath="$PROJECT_DIR$/node_modules/passport/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/lib/authenticator.js" afterPath="$PROJECT_DIR$/node_modules/passport/lib/authenticator.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/lib/errors/authenticationerror.js" afterPath="$PROJECT_DIR$/node_modules/passport/lib/errors/authenticationerror.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/lib/framework/connect.js" afterPath="$PROJECT_DIR$/node_modules/passport/lib/framework/connect.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/lib/http/request.js" afterPath="$PROJECT_DIR$/node_modules/passport/lib/http/request.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/passport/lib/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/lib/middleware/authenticate.js" afterPath="$PROJECT_DIR$/node_modules/passport/lib/middleware/authenticate.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/lib/middleware/initialize.js" afterPath="$PROJECT_DIR$/node_modules/passport/lib/middleware/initialize.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/lib/strategies/session.js" afterPath="$PROJECT_DIR$/node_modules/passport/lib/strategies/session.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/node_modules/passport-strategy/.jshintrc" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/.jshintrc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/node_modules/passport-strategy/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/.travis.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/node_modules/passport-strategy/LICENSE" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/node_modules/passport-strategy/README.md" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/node_modules/passport-strategy/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/lib/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/node_modules/passport-strategy/lib/strategy.js" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/lib/strategy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/node_modules/passport-strategy/package.json" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/node_modules/pause/.npmignore" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/node_modules/pause/History.md" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/History.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/node_modules/pause/Makefile" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/Makefile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/node_modules/pause/Readme.md" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/Readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/node_modules/pause/index.js" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/node_modules/pause/package.json" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/passport/package.json" afterPath="$PROJECT_DIR$/node_modules/passport/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/sails-generate-entities/.npmignore" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/sails-generate-entities/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/.travis.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/sails-generate-entities/README.md" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/sails-generate-entities/index.js" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/sails-generate-entities/package.json" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/sails-generate-entities/templates/class.template.ejs" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/templates/class.template.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/sails-generate-entities/templates/function.template.ejs" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/templates/function.template.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/sails-generate-entities/templates/static.template.ejs" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/templates/static.template.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/sails-auth/node_modules/sails-generate-entities/test.js" afterPath="$PROJECT_DIR$/node_modules/sails-generate-entities/test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/env/development.js" afterPath="$PROJECT_DIR$/config/env/development.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/env/production.js" afterPath="$PROJECT_DIR$/config/env/production.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/env/test.js" afterPath="$PROJECT_DIR$/config/env/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/UserController.js" afterPath="$PROJECT_DIR$/api/controllers/UserController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/models/User.js" afterPath="$PROJECT_DIR$/api/models/User.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/policies/sessionAuth.js" afterPath="$PROJECT_DIR$/api/policies/sessionAuth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/services/passport.js" afterPath="$PROJECT_DIR$/api/services/passport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/policies.js" afterPath="$PROJECT_DIR$/config/policies.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.js" afterPath="$PROJECT_DIR$/config/routes.js" />
     </list>
     <ignored path="rssreader.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,41 +1065,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="User.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/sails-auth/api/models/User.js">
+      <file leaf-file-name="SAError.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/lib/error/SAError.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="now.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/node_modules/lodash/date/now.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="development.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/env/development.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="production.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/env/production.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/env/test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47635728">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -90,7 +1109,6 @@
         <option value="$PROJECT_DIR$/api/models/Suggestions.js" />
         <option value="$PROJECT_DIR$/api/models/Genre.js" />
         <option value="$PROJECT_DIR$/api/controllers/SuggestionController.js" />
-        <option value="$PROJECT_DIR$/config/routes.js" />
         <option value="$PROJECT_DIR$/api/controllers/GenreController.js" />
         <option value="$PROJECT_DIR$/api/models/Suggestion.js" />
         <option value="$PROJECT_DIR$/api/services/GenreService.js" />
@@ -99,6 +1117,9 @@
         <option value="$PROJECT_DIR$/config/env/development.js" />
         <option value="$PROJECT_DIR$/config/env/production.js" />
         <option value="$PROJECT_DIR$/config/env/test.js" />
+        <option value="$PROJECT_DIR$/config/auth.js" />
+        <option value="$PROJECT_DIR$/config/routes.js" />
+        <option value="$PROJECT_DIR$/config/policies.js" />
       </list>
     </option>
   </component>
@@ -163,6 +1184,38 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="node_modules">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="rssreader">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="node_modules">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="bcryptjs">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="rssreader">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="config">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
@@ -199,6 +1252,10 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="services">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -213,7 +1270,57 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="policies">
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="rssreader">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="api">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="models">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="rssreader">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="api">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="lib">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="rssreader">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="api">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="controllers">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -335,7 +1442,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\travs_000\rssreader\api\controllers" />
+      <recent name="C:\Users\travs_000\rssreader\node_modules" />
+      <recent name="C:\Users\travs_000\rssreader\api" />
+      <recent name="C:\Users\travs_000\rssreader\api\services" />
+      <recent name="C:\Users\travs_000\rssreader\api\policies" />
+      <recent name="C:\Users\travs_000\rssreader\api\models" />
     </key>
   </component>
   <component name="RunManager">
@@ -398,18 +1509,6 @@
       <created>1448998890623</created>
       <option name="number" value="Default" />
       <updated>1448998890623</updated>
-    </task>
-    <task id="LOCAL-00020" summary="as">
-      <created>1450515692734</created>
-      <option name="number" value="00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1450515692734</updated>
-    </task>
-    <task id="LOCAL-00021" summary="as">
-      <created>1450520806899</created>
-      <option name="number" value="00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1450520806899</updated>
     </task>
     <task id="LOCAL-00022" summary="as">
       <created>1450544050061</created>
@@ -693,7 +1792,19 @@
       <option name="project" value="LOCAL" />
       <updated>1451655863528</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="as">
+      <created>1451656115798</created>
+      <option name="number" value="00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1451656115798</updated>
+    </task>
+    <task id="LOCAL-00070" summary="as">
+      <created>1451660635754</created>
+      <option name="number" value="00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1451660635754</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -708,7 +1819,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2848411" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2848411" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -741,130 +1852,12 @@
     <option name="LAST_COMMIT_MESSAGE" value="as" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/Suggestion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/Genre.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/controllers/GenreController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="117" column="63" selection-start-line="117" selection-start-column="63" selection-end-line="117" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/Suggestion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/Genre.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/controllers/GenreController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="123" column="109" selection-start-line="123" selection-start-column="109" selection-end-line="123" selection-end-column="109" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/Suggestion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/Genre.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/controllers/GenreController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1057,14 +2050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/policies.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.493007">
@@ -1073,49 +2058,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37587413">
-          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/policies/sessionAuth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/passport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20804195">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/sails-auth/config/passport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35664335">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/sails-auth/api/models/User.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/env/development.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.35726795">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
           <folding />
         </state>
@@ -1123,7 +2068,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/env/production.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.47635728">
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding />
         </state>
@@ -1133,6 +2078,94 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47635728">
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/blueprints.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.74430823">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23817864">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/UserController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/Passport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/policies/basicAuth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="60" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/policies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7145359">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/passport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/services/passport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/lib/error/SAError.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/lodash/date/now.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
