@@ -1,6 +1,6 @@
 <!-- Default home page -->
 <div ng-controller="rssController">
-    <input name="username" value="<%= username %>" hidden ng-init="username=<%= username %>" ng-model="username">
+    <input name="username" value="<%= username %>" style="display: none;" ng-model="username">
     <div class="header">
         <h1 id="main-title" class="container">{{appName}}</h1>
         <h3>Logged in as <%= username %></h3>
