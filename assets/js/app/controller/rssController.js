@@ -6,7 +6,6 @@ rssApp
             $scope.appName = "Rss Reader";
             $scope.lang = 'en-US';
             $scope.language = 'English';
-            $scope.user = userService.getUser();
 
                 $scope.linkTemplate = '<a href ="{{COL_FIELD}}">{{COL_FIELD}}</a>';
             $scope.highlightFilteredHeader = function (row, rowRenderIndex, col, colRenderIndex) {

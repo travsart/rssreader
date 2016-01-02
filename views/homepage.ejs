@@ -9,5 +9,7 @@
     <button type="button" id="refresh" class="btn btn-success" ng-click="refreshList()">Refresh</button>
     <div ui-grid="gridOptions" class="rssGrid" ui-grid-edit ui-grid-resize-columns ui-grid-move-columns></div>
     <toaster-container></toaster-container>
+    <input  ng-model="user.username" ng-value="<%= username %>" hidden>
+    {{username}}
 </div>
 

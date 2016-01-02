@@ -1,7 +1,7 @@
 rssApp
     .controller(
         'loginController',
-        function ($scope, $http, dialogs, loginService, userService, toaster) {
+        function ($scope, $http,$location, dialogs, loginService, userService, toaster) {
             $scope.appName = "Rss Reader";
             $scope.lang = 'en-US';
             $scope.language = 'English';

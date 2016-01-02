@@ -29,6 +29,7 @@ module.exports = {
                         res.json({success: false, msg: 'Error creating user ' + JSON.stringify(err)});
                     }
                     else {
+                        req.session.user = user;
                         res.json({success: true, msg: '', user: user});
                     }
                 });
@@ -39,5 +40,14 @@ module.exports = {
     logout: function (req, res) {
         req.session.user = '';
         res.json({success: true, msg: ''});
+    },
+
+    home: function (req, res) {
+        return res.view({
+            view: 'homepage',
+            locals: {
+                username: (req.session.user && req.session.user.hasOwnProperty('username')) ? req.session.user.username : ''
+            }
+        });
     }
 };
