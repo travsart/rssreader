@@ -12,7 +12,7 @@ module.exports = {
         }
         User.findOne({
             username: username
-        }).then(function (err, user) {
+        }).then(function (user, err) {
             if (user) {
                 if (user.verifyPassword(password)) {
                     req.session.user = user;
