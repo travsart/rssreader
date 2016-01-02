@@ -16,7 +16,7 @@ rssApp
                             body: data.msg
                         });
                         userService.setUser(user.username);
-                        scope.$apply(function() { $location.path("/"); });
+                        window.location = "/";
                     }
                     else {
                         toaster.pop({
