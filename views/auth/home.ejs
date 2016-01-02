@@ -2,13 +2,13 @@
 <div ng-controller="rssController">
     <div class="header">
         <h1 id="main-title" class="container">{{appName}}</h1>
-        <h3>Logged in as {{user}}</h3>
+        <h3>Logged in as <%= username %></h3>
     </div>
     <button type="button" id="addData" class="btn btn-success" ng-click="addData()">Add Row</button>
     <button type="button" id="runCheck" class="btn btn-success" ng-click="runCheck()">Check for updates</button>
     <button type="button" id="refresh" class="btn btn-success" ng-click="refreshList()">Refresh</button>
     <div ui-grid="gridOptions" class="rssGrid" ui-grid-edit ui-grid-resize-columns ui-grid-move-columns></div>
     <toaster-container></toaster-container>
-    <input ng-model="user.username" ng-value="<%= username %>" hidden id="username" name="username">
+    <input ng-model="user.username" value="<%= username %>" hidden>
 </div>
 
