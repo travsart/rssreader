@@ -6,8 +6,10 @@ rssApp
             $scope.appName = "Rss Reader";
             $scope.lang = 'en-US';
             $scope.language = 'English';
+            $scope.username = document.getElementById("username").value;
+            console.log($scope);
 
-                $scope.linkTemplate = '<a href ="{{COL_FIELD}}">{{COL_FIELD}}</a>';
+            $scope.linkTemplate = '<a href ="{{COL_FIELD}}">{{COL_FIELD}}</a>';
             $scope.highlightFilteredHeader = function (row, rowRenderIndex, col, colRenderIndex) {
                 if (col.filters[0].term) {
                     return 'header-filtered';
@@ -131,7 +133,6 @@ rssApp
             };
 
             rssService.getRss().then(function (data) {
-                console.log($scope);
                 $scope.rssData = data.data;
             }, function (error) {
                 toaster.pop({
