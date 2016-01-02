@@ -16,7 +16,7 @@ module.exports = {
             if (user) {
                 if (user.verifyPassword(password)) {
                     req.session.user = user;
-                    res.json({success: true, msg: ''});
+                    res.json({success: true, msg: '', user: user});
                 }
                 else {
                     res.json({success: false, msg: 'Password incorrect'});
