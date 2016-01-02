@@ -16,7 +16,6 @@ module.exports = {
         password:{
             type: 'string',
             required: true,
-            minLength: 6,
             maxLength: 50
         },
         verifyPassword: function (password) {
