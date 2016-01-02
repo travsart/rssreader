@@ -10,7 +10,7 @@ rssApp
                 loginService.login(user).then(function (data) {
                     console.log(data);
                     data = data.data;
-                    if (data.success) {
+                    if (data.success == true) {
                         toaster.pop({
                             type: 'success',
                             title: 'Success',
