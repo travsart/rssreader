@@ -44,7 +44,7 @@ module.exports = {
 
     home: function (req, res) {
         return res.view({
-            view: 'homepage',
+            view: '/homepage',
             locals: {
                 username: (req.session.user && req.session.user.hasOwnProperty('username')) ? req.session.user.username : ''
             }
