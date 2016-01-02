@@ -242,6 +242,12 @@ rssApp
                 });
             }
 
+            $scope.logout = function () {
+                rssService.logout().then(function () {
+                    window.location = '/login';
+                })
+            };
+
         }).filter('mapType', function () {
     var typeHash = {
         'Manga': 'Manga',

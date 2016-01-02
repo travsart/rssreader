@@ -20,6 +20,9 @@ rssApp.factory('rssService', function($http) {
 		},
 		runCheck : function() {
 			return $http.get('/runcheck');
+		},
+		logout : function(){
+			return $http.post('/logout');
 		}
 	};
 });
