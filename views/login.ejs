@@ -1,13 +1,12 @@
 <div ng-controller="loginController">
     <div class="container">
         <h1>Login to Rssreader</h1>
-        <form class="form-signin">
-            <h2 class="form-signin-heading">Please sign in</h2>
-            <label for="username" class="sr-only">Username</label>
-            <input type="text" ng-model="user.username" class="form-control" placeholder="Username" required autofocus>
-            <label for="password" class="sr-only">Password</label>
-            <input type="password" id="password" class="form-control" ng-model="user.password" placeholder="Password" required>
-            <button class="btn btn-primary btn-block" ng-click="loginUser(user)">Sign in</button>
-        </form>
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="username" class="sr-only">Username</label>
+        <input type="text" ng-model="user.username" class="form-control" placeholder="Username" required autofocus>
+        <label for="password" class="sr-only">Password</label>
+        <input type="password" id="password" class="form-control" ng-model="user.password" placeholder="Password"
+               required>
+        <button class="btn btn-primary btn-block" ng-click="loginUser(user)">Sign in</button>
     </div>
 </div>
