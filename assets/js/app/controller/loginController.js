@@ -6,32 +6,32 @@ rssApp
             $scope.lang = 'en-US';
             $scope.language = 'English';
 
-            $scope.login = function (user) {
+            $scope.loginUser = function (user) {
                 console.log(user);
-                loginService.login(user).then(function (data) {
-                    console.log(data);
-                    data = data.data;
-                    if (data.success) {
-                        toaster.pop({
-                            type: 'success',
-                            title: 'Success',
-                            body: data.msg
-                        });
-                        $scope.USERNAME = user.username;
-                    }
-                    else {
-                        toaster.pop({
-                            type: 'error',
-                            title: 'Error',
-                            body: 'Error occured: ' + data.msg
-                        });
-                    }
-                }, function (error) {
-                    toaster.pop({
-                        type: 'error',
-                        title: 'Error',
-                        body: 'Error occured: ' + error
-                    });
-                });
+                //loginService.login(user).then(function (data) {
+                //    console.log(data);
+                //    data = data.data;
+                //    if (data.success) {
+                //        toaster.pop({
+                //            type: 'success',
+                //            title: 'Success',
+                //            body: data.msg
+                //        });
+                //        $scope.USERNAME = user.username;
+                //    }
+                //    else {
+                //        toaster.pop({
+                //            type: 'error',
+                //            title: 'Error',
+                //            body: 'Error occured: ' + data.msg
+                //        });
+                //    }
+                //}, function (error) {
+                //    toaster.pop({
+                //        type: 'error',
+                //        title: 'Error',
+                //        body: 'Error occured: ' + error
+                //    });
+                //});
             };
         });

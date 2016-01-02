@@ -6,10 +6,8 @@
             <label for="username" class="sr-only">Username</label>
             <input type="text" ng-model="user.username" class="form-control" placeholder="Username" required autofocus>
             <label for="password" class="sr-only">Password</label>
-            <input type="password" id="password" class="form-control" placeholder="Password" required>
-            <input type="button" ng-click="reset()" class="btn btn-default" value="Reset"/>
-            <button class="btn btn-lg btn-primary btn-block" ng-click="login(user)">Sign in</button>
+            <input type="password" id="password" class="form-control" ng-model="user.password" placeholder="Password" required>
+            <button class="btn btn-primary btn-block" ng-click="loginUser(user)">Sign in</button>
         </form>
-
     </div>
 </div>
