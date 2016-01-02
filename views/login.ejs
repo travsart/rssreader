@@ -1,14 +1,15 @@
 <div ng-controller="loginController">
-    <form role="form">
-        <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" ng-model="user.username" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" ng-model="user.password" placeholder="Password">
-        </div>
-        <input type="button" ng-click="reset()" class="btn btn-default" value="Reset"/>
-        <input type="submit" ng-click="login(user)" class="btn btn-default" value="Submit"/>
-    </form>
+    <div class="container">
+        <h1>Login to Rssreader</h1>
+        <form class="form-signin">
+            <h2 class="form-signin-heading">Please sign in</h2>
+            <label for="username" class="sr-only">Username</label>
+            <input type="text" ng-model="user.username" class="form-control" placeholder="Username" required autofocus>
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" id="password" class="form-control" placeholder="Password" required>
+            <input type="button" ng-click="reset()" class="btn btn-default" value="Reset"/>
+            <button class="btn btn-lg btn-primary btn-block" ng-click="login(user)">Sign in</button>
+        </form>
+
+    </div>
 </div>
