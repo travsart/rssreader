@@ -1,5 +1,6 @@
 <!-- Default home page -->
 <div ng-controller="rssController">
+    <input name="username" value="<%= username %>" hidden>
     <div class="header">
         <h1 id="main-title" class="container">{{appName}}</h1>
         <h3>Logged in as <%= username %></h3>
@@ -9,6 +10,5 @@
     <button type="button" id="refresh" class="btn btn-success" ng-click="refreshList()">Refresh</button>
     <div ui-grid="gridOptions" class="rssGrid" ui-grid-edit ui-grid-resize-columns ui-grid-move-columns></div>
     <toaster-container></toaster-container>
-    <input ng-model="user.username" value="<%= username %>" hidden>
 </div>
 
