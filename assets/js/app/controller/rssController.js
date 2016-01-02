@@ -6,7 +6,7 @@ rssApp
             $scope.appName = "Rss Reader";
             $scope.lang = 'en-US';
             $scope.language = 'English';
-            console.log($scope.username);
+
                 $scope.linkTemplate = '<a href ="{{COL_FIELD}}">{{COL_FIELD}}</a>';
             $scope.highlightFilteredHeader = function (row, rowRenderIndex, col, colRenderIndex) {
                 if (col.filters[0].term) {
@@ -131,6 +131,7 @@ rssApp
             };
 
             rssService.getRss().then(function (data) {
+                console.log($scope);
                 $scope.rssData = data.data;
             }, function (error) {
                 toaster.pop({
