@@ -1,13 +1,14 @@
 rssApp
     .controller(
         'rssController',
-        function ($scope, $http, dialogs, toaster, rssService, uiGridConstants) {
+        function ($scope, $http, dialogs, toaster, rssService, userService, uiGridConstants) {
             $scope.rssData = [];
             $scope.appName = "Rss Reader";
             $scope.lang = 'en-US';
             $scope.language = 'English';
+            $scope.user = userService.getUser();
 
-            $scope.linkTemplate = '<a href ="{{COL_FIELD}}">{{COL_FIELD}}</a>';
+                $scope.linkTemplate = '<a href ="{{COL_FIELD}}">{{COL_FIELD}}</a>';
             $scope.highlightFilteredHeader = function (row, rowRenderIndex, col, colRenderIndex) {
                 if (col.filters[0].term) {
                     return 'header-filtered';

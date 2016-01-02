@@ -1,14 +1,13 @@
 rssApp
     .controller(
         'loginController',
-        function ($scope, $http, dialogs, loginService, toaster) {
+        function ($scope, $http, dialogs, loginService, userService, toaster) {
             $scope.appName = "Rss Reader";
             $scope.lang = 'en-US';
             $scope.language = 'English';
 
             $scope.loginUser = function (user) {
                 loginService.login(user).then(function (data) {
-                    console.log(data);
                     data = data.data;
                     if (data.success == true) {
                         toaster.pop({
@@ -16,7 +15,8 @@ rssApp
                             title: 'Success',
                             body: data.msg
                         });
-                        $scope.USERNAME = user.username;
+                        userService.setUser(user.username);
+                        scope.$apply(function() { $location.path("/"); });
                     }
                     else {
                         toaster.pop({

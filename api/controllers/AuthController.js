@@ -23,14 +23,13 @@ module.exports = {
                 }
             }
             else {
-                User.create({username: username, password: password}).then(function (err, user) {
-                    sails.log.info(JSON.stringify(err));
+                User.create({username: username, password: password}).then(function (user, err) {
+                    sails.log.info(JSON.stringify(user));
                     if (err) {
                         res.json({success: false, msg: 'Error creating user ' + JSON.stringify(err)});
                     }
                     else {
-                        req.session.user = user;
-                        res.json({success: true, msg: ''});
+                        res.json({success: true, msg: '', user: user});
                     }
                 });
             }
