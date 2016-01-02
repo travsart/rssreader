@@ -24,7 +24,7 @@ module.exports = {
             }
             else {
                 User.create({username: username, password: password}).then(function (err, user) {
-                    sails.info.log(JSON.stringify(err));
+                    sails.log.info(JSON.stringify(err));
                     if (err) {
                         res.json({success: false, msg: 'Error creating user ' + JSON.stringify(err)});
                     }
