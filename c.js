@@ -399,7 +399,7 @@ function p(items) {
     request.post(
         'http://localhost:8080/rss?name=' + json.name + '&type=' + json.type + '&viewed=' + json.viewed + '&check=' + json.check + '&updateUrl=' + json.updateUrl + '&user=' + json.user + '&start=' + json.start,
         function (error, response, body) {
-            if (!error && response.statusCode == 200) {
+            if (!error && response.statusCode == 201) {
                 console.log(body)
                 console.log(json);
             }
