@@ -397,7 +397,7 @@ function p(items) {
 
     var request = require('request');
     request.post(
-        'http://localhost:8080/rss?name=' + json.name + '&type=' + json.type + '&viewed=' + json.viewed + '&check=' + json.check + '&updateUrl=' + json.updateUrl + '&user=' + user + '&start=' + json.start,
+        'http://localhost:8080/rss?name=' + json.name + '&type=' + json.type + '&viewed=' + json.viewed + '&check=' + json.check + '&updateUrl=' + json.updateUrl + '&user=' + json.user + '&start=' + json.start,
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
                 console.log(body)
