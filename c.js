@@ -394,12 +394,18 @@ function p(items) {
     var json = items.shift();
     var request = require('request');
     request.post(
-        'http://127.0.0.1:8080/rss',
+        'http://localhost:8080/rss',
         json,
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
                 console.log(body)
                 console.log(json);
+            }
+            else{
+                console.log(error);
+                console.log(response);
+                console.log(body);
+                process.exit(1);
             }
             return p(items);
         }
