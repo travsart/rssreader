@@ -246,7 +246,10 @@ rssApp
             $scope.logout = function () {
                 rssService.logout().then(function () {
                     window.location = '/login';
-                })
+                });
+            };
+            $scope.login = function () {
+                window.location = '/login';
             };
 
         }).filter('mapType', function () {
