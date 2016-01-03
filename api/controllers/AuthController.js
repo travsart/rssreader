@@ -16,7 +16,7 @@ module.exports = {
         }).then(function (user, err) {
             if (user) {
                 if (user.verifyPassword(password)) {
-                    res.cookie('user', user, cookieSettings);
+                    res.cookie('user', user.username, cookieSettings);
                     res.json({success: true, msg: '', user: user});
                 }
                 else {
@@ -25,12 +25,12 @@ module.exports = {
             }
             else {
                 User.create({username: username, password: password}).then(function (user, err) {
-                    sails.log.info(JSON.stringify(user));
+                    sails.log.info(JSON.stringify(user.username));
                     if (err) {
                         res.json({success: false, msg: 'Error creating user ' + JSON.stringify(err)});
                     }
                     else {
-                        res.cookie('user', user, cookieSettings);
+                        res.cookie('user', user.username, cookieSettings);
                         res.json({success: true, msg: '', user: user});
                     }
                 });
@@ -47,7 +47,7 @@ module.exports = {
         return res.view({
             view: '/auth/home',
             locals: {
-                username: (req.cookies.user && req.cookies.user.hasOwnProperty('username')) ? req.cookies.user.username : ''
+                username: (req.cookies.user) ? req.cookies.user : ''
             }
         });
     }

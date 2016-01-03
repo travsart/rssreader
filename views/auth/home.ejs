@@ -7,7 +7,9 @@
     <button type="button" id="addData" class="btn btn-success" ng-click="addData()">Add Row</button>
     <button type="button" id="runCheck" class="btn btn-success" ng-click="runCheck()">Check for updates</button>
     <button type="button" id="refresh" class="btn btn-success" ng-click="refreshList()">Refresh</button>
-    <%= (username.length > 0) ? '<button type="button" id="logout" class="btn btn-success" ng-click="logout()">Logout</button>' : ''%>
+    <% if (username.length > 0) { %>
+    <button type="button" id="logout" class="btn btn-success" ng-click="logout()">Logout</button>
+    <% } %>
     <div ui-grid="gridOptions" class="rssGrid" ui-grid-edit ui-grid-resize-columns ui-grid-move-columns></div>
     <toaster-container></toaster-container>
 </div>
