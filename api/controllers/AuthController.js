@@ -2,20 +2,21 @@ module.exports = {
     login: function (req, res) {
         var username = req.param('username');
         var password = req.param('password');
-        req.session.user = '';
-
+        var cookieSettings = {maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true};
         if (username == null || username.length < 1) {
             res.json({success: false, msg: 'Username empty'});
         }
         if (password == null || password.length < 1) {
             res.json({success: false, msg: 'Password empty'});
         }
+
+        res.clearCookie('user');
         User.findOne({
             username: username
         }).then(function (user, err) {
             if (user) {
                 if (user.verifyPassword(password)) {
-                    req.session.user = user;
+                    res.cookie('user', user, cookieSettings);
                     res.json({success: true, msg: '', user: user});
                 }
                 else {
@@ -29,7 +30,7 @@ module.exports = {
                         res.json({success: false, msg: 'Error creating user ' + JSON.stringify(err)});
                     }
                     else {
-                        req.session.user = user;
+                        res.cookie('user', user, cookieSettings);
                         res.json({success: true, msg: '', user: user});
                     }
                 });
@@ -38,7 +39,7 @@ module.exports = {
         //req.session.user
     },
     logout: function (req, res) {
-        req.session.user = '';
+        res.clearCookie('user');
         res.json({success: true, msg: ''});
     },
 
@@ -46,7 +47,7 @@ module.exports = {
         return res.view({
             view: '/auth/home',
             locals: {
-                username: (req.session.user && req.session.user.hasOwnProperty('username')) ? req.session.user.username : ''
+                username: (req.cookies.user && req.cookies.user.hasOwnProperty('username')) ? req.cookies.user.username : ''
             }
         });
     }

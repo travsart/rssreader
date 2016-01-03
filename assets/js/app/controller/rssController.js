@@ -132,7 +132,7 @@ rssApp
                         });
             };
 
-            rssService.getRss().then(function (data) {
+            rssService.getRss($scope.username).then(function (data) {
                 $scope.rssData = data.data;
             }, function (error) {
                 toaster.pop({
@@ -144,13 +144,14 @@ rssApp
 
             $scope.addData = function () {
                 $scope.rssData.unshift({
-                    "name": "Name",
-                    "updateUrl": ' ',
-                    "start": 1,
-                    "lastChecked": new Date(),
-                    "type": 'Manga',
-                    "check": true,
-                    "viewed": true
+                    name: "Name",
+                    updateUrl: ' ',
+                    start: 1,
+                    lastChecked: new Date(),
+                    type: 'Manga',
+                    check: true,
+                    viewed: true,
+                    user: $scope.username
                 });
             };
 
@@ -231,7 +232,7 @@ rssApp
             }
 
             $scope.refreshList = function () {
-                rssService.getRss().then(function (data) {
+                rssService.getRss($scope.username).then(function (data) {
                     $scope.rssData = data.data;
                 }, function (error) {
                     toaster.pop({
