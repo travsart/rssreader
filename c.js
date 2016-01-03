@@ -5,7 +5,7 @@ var a = [
         "start": 1,
         "type": "Anime",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Log Horizon",
@@ -13,7 +13,7 @@ var a = [
         "start": 2,
         "type": "Anime",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Shingeki no Kyojin",
@@ -22,7 +22,7 @@ var a = [
         "type": "Anime",
         "check": true,
         "viewed": true,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Rurouni Kenshin",
@@ -30,7 +30,7 @@ var a = [
         "start": 1,
         "type": "Anime",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "",
@@ -38,7 +38,7 @@ var a = [
         "start": 1,
         "type": "Anime",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Fairy Tail",
@@ -46,7 +46,7 @@ var a = [
         "start": 151,
         "type": "Anime",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "One Piece",
@@ -54,7 +54,7 @@ var a = [
         "start": 638,
         "type": "Anime",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Ao Haru Ride",
@@ -62,7 +62,7 @@ var a = [
         "start": 4,
         "type": "Anime",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Naruto Shippuuden",
@@ -70,7 +70,7 @@ var a = [
         "start": 372,
         "type": "Anime",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Berserk - Golden Age Chapter I",
@@ -78,7 +78,7 @@ var a = [
         "start": 1,
         "type": "Anime",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Kekkaishi",
@@ -86,7 +86,7 @@ var a = [
         "start": 1,
         "type": "Anime",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Souten Kouro",
@@ -94,7 +94,7 @@ var a = [
         "start": 2,
         "type": "Anime",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Genji Monogatari Sennenki",
@@ -102,7 +102,7 @@ var a = [
         "start": 1,
         "type": "Anime",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Nurarihyon no Mago",
@@ -110,7 +110,7 @@ var a = [
         "start": 11,
         "type": "Anime",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Akatsuki no Yona",
@@ -119,7 +119,7 @@ var a = [
         "type": "Anime",
         "check": true,
         "viewed": true,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Namaikizakari",
@@ -127,7 +127,7 @@ var a = [
         "start": 6,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Migawari Hakushaku no Bouken",
@@ -135,7 +135,7 @@ var a = [
         "start": 12,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Goong",
@@ -143,7 +143,7 @@ var a = [
         "start": 165,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Faster Than a Kiss",
@@ -151,7 +151,7 @@ var a = [
         "start": 8,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Kaichou wa Maid-sama!",
@@ -159,7 +159,7 @@ var a = [
         "start": 1,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Nurarihyon no Mago",
@@ -167,7 +167,7 @@ var a = [
         "start": 164,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Gou - Himetachi no Sengoku",
@@ -175,7 +175,7 @@ var a = [
         "start": 8,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "1/2 Prince",
@@ -183,7 +183,7 @@ var a = [
         "start": 46,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Doupo Cangqiong",
@@ -191,7 +191,7 @@ var a = [
         "start": 35,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Akatsuki no Yona",
@@ -199,7 +199,7 @@ var a = [
         "start": 110,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Meiji Hiiro Kitan",
@@ -208,7 +208,7 @@ var a = [
         "type": "Manga",
         "check": true,
         "viewed": true,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Love So Life",
@@ -216,7 +216,7 @@ var a = [
         "start": 94,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Shiawase Kissa Sanchoume",
@@ -224,7 +224,7 @@ var a = [
         "start": 14,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Taiyou no Ie",
@@ -232,7 +232,7 @@ var a = [
         "start": 49,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Kainushi wa Akuma",
@@ -240,7 +240,7 @@ var a = [
         "start": 12.1,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Watashi no Ookami-kun",
@@ -249,7 +249,7 @@ var a = [
         "type": "Manga",
         "check": true,
         "viewed": true,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Kamisama Hajimemashita",
@@ -258,7 +258,7 @@ var a = [
         "type": "Manga",
         "check": true,
         "viewed": true,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "The New Gate",
@@ -266,7 +266,7 @@ var a = [
         "start": 11,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Owari no Seraph",
@@ -274,7 +274,7 @@ var a = [
         "start": 38,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Kamisama Hajimemashita",
@@ -282,7 +282,7 @@ var a = [
         "start": 9,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Chihayafuru",
@@ -290,7 +290,7 @@ var a = [
         "start": 153,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Tsubaki-chou Lonely Planet",
@@ -298,7 +298,7 @@ var a = [
         "start": 8,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Kimi ni Todoke",
@@ -306,7 +306,7 @@ var a = [
         "start": 13,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Tsuyokute New Saga",
@@ -315,7 +315,7 @@ var a = [
         "type": "Manga",
         "check": true,
         "viewed": true,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Akagami no Shirayukihime",
@@ -323,7 +323,7 @@ var a = [
         "start": 4,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Hirunaka no Ryuusei",
@@ -331,7 +331,7 @@ var a = [
         "start": 77,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Tate no Yuusha no Nariagari",
@@ -340,7 +340,7 @@ var a = [
         "type": "Manga",
         "check": true,
         "viewed": true,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Anatolia Story",
@@ -348,7 +348,7 @@ var a = [
         "start": 1,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Soredemo Sekai wa Utsukushii",
@@ -357,7 +357,7 @@ var a = [
         "type": "Manga",
         "check": true,
         "viewed": true,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Nisekoi",
@@ -365,7 +365,7 @@ var a = [
         "start": 54,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Ao no Exorcist",
@@ -373,7 +373,7 @@ var a = [
         "start": 13,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     },
     {
         "name": "Ookami-heika no Hanayome",
@@ -381,7 +381,7 @@ var a = [
         "start": 38,
         "type": "Manga",
         "check": false,
-        "user": "Jessica"
+        "user": "Jess"
     }
 ];
 
