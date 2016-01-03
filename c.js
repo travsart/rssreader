@@ -392,16 +392,18 @@ function p(items) {
     }
 
     var json = items.shift();
+    if (!json.hasOwnProperty('viewed'))
+        json.viewed = false;
+
     var request = require('request');
     request.post(
-        'http://localhost:8080/rss',
-        json,
+        'http://localhost:8080/rss?name=' + json.name + '&type=' + json.type + '&viewed=' + json.viewed + '&check=' + json.check + '&updateUrl=' + json.updateUrl + '&user=' + user + '&start=' + json.start,
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
                 console.log(body)
                 console.log(json);
             }
-            else{
+            else {
                 console.log(error);
                 console.log(response);
                 console.log(body);
