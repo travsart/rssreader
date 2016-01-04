@@ -48,7 +48,7 @@ module.exports = {
                         };
                         cheerio(child).find('td').each(function (index1, child1) {
                             manga.html = cheerio(child1).html();
-                            manga.html = manga.html.replace('\t', '').replace('\n', '').replace('\r', '');
+                            manga.html = manga.html.replace(/\t/g, '').replace(/\n/g, '').replace(/\r/g, '');
                             if (child1.children.length == 3) {
                                 manga.url = 'http://mangapark.me' + child1.children[1].attribs.href;
                                 manga.name = child1.children[1].attribs.title;
