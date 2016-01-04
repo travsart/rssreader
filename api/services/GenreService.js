@@ -44,10 +44,11 @@ module.exports = {
                             year: -1,
                             status: 'Ongoing',
                             weighted: 0,
-                            raw: 0,
-                            html: chBody.find('.manga-list').html()
+                            raw: 0
                         };
                         cheerio(child).find('td').each(function (index1, child1) {
+                            manga.html = cheerio(child1).html();
+
                             if (child1.children.length == 3) {
                                 manga.url = 'http://mangapark.me' + child1.children[1].attribs.href;
                                 manga.name = child1.children[1].attribs.title;
