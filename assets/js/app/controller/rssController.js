@@ -34,8 +34,8 @@ rssApp
                         width: '145'
                     },
                     {
-                        name: 'lastChecked',
-                        displayName: 'Last Checked',
+                        name: 'updatedAt',
+                        displayName: 'Last Updated',
                         type: 'date',
                         cellFilter: 'date:"MM-dd-yyyy HH:mm"',
                         width: '160'

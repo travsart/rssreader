@@ -8,7 +8,7 @@
 
 module.exports = {
     autoCreatedAt: true,
-    autoUpdatedAt: false,
+    autoUpdatedAt: true,
     autoPk: true,
     attributes: {
         name: {
@@ -20,12 +20,6 @@ module.exports = {
         start: {
             type: 'float',
             defaultsTo: '1'
-        },
-        lastChecked: {
-            type: 'datetime',
-            defaultsTo: function () {
-                return new Date();
-            }
         },
         type: {
             type: 'string',

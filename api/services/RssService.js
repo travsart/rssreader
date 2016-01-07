@@ -4,63 +4,6 @@
 var Promise = require('bluebird');
 
 module.exports = {
-
-    addLogFile: function (date, start, end, files, base) {
-        var moment = require('moment');
-        var path = require('path');
-        if (date.isBetween(start, end)) {
-            files.push(path.resolve(process.env.LOG_PATH, base + date.format('YYYY-MM-DD') + '.log'));
-            return this.addLogFile(date.subtract(1, 'days'), start, end, files, base)
-        }
-        else if (start.diff(start, 'minutes') > 0) {
-            return this.addLogFile(date.subtract(1, 'days'), start, end, files, base)
-        }
-
-        return files;
-    },
-
-    readLog: function (options, files, msgs) {
-        var moment = require('moment');
-        var path = require('path');
-
-        if (files.length > 0) {
-            var file = files.shift();
-
-            var rl = require('readline').createInterface({
-                input: require('fs').createReadStream(file)
-            });
-
-            rl.on('line', function (line) {
-                line = JSON.parse(line);
-
-                if (line.level == options.level) {
-                    if (moment(line.timestamp).isBetween(options.start, options.end)) {
-                        msgs.push(line.timestamp + ' ' + line.level + ' ' + line.message);
-                    }
-                }
-            });
-            return this.readLog(options, files, msgs);
-        }
-        else {
-            return msgs;
-        }
-    },
-    //Open log file that would contain the dates if needed open multiple. Filter all of the lines that contain the desired level.
-    // Then got to the line closest to the timestamp, and get all of the lines until limit, end, or end of file.
-    getLog: function (options) {
-        var me = this;
-        var moment = require('moment');
-        return new Promise(function (resolve, reject) {
-            var base = 'log_' + options.level;
-            var files = [];
-
-            var date = moment(options.end).subtract(30, 'seconds');
-            files = me.addLogFile(date, options.start, options.end, files, base);
-
-            resolve(me.readLog(options, files, []));
-        });
-
-    },
     checkPage: function (rss, type, pageNum, preCount) {
         sails.log.debug('type: ' + type + ' pageNum: ' + pageNum + ' precount: ' + preCount);
         return new Promise(function (resolve, reject) {
@@ -80,7 +23,7 @@ module.exports = {
                     var re;
 
                     if (type != 'Anime') {
-                        re = /(.*?) ch\.(\d+)/;
+                        re = /(.*) ch\.(\d+\.\d+|\d+)/;
 
                         page.find('item').each(function (index, child) {
                             var item = cheerio(cheerio(child).find('title'));
@@ -146,7 +89,6 @@ module.exports = {
                             if (index != -1) {
                                 r.start = newItem['start'][index];
                                 r.updateUrl = newItem['updateUrl'][index];
-                                r.lastChecked = new Date();
                                 r.viewed = false;
                                 r.check = false;
                                 r.save();
