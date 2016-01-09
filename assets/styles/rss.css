@@ -6,7 +6,7 @@
     margin-left: 2.5%;
 }
 body {
-    background-color:#3C5Bf5;
+    background: repeating-linear-gradient(#3C5BF5,#1e2d7a);
 }
 .modal {
     display: block;
