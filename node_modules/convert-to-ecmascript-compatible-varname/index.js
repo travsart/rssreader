@@ -39,7 +39,7 @@ module.exports = function makeECMAScriptCompatible(str) {
   // (i.e. don't clash with special JavaScript keywords, like "delete")
   if (!str.match(X_VALID_ECMA51_VARNAME)) {
     throw (function (){
-      var e = new Error(util.format('The string "%s" cannot be converted into an ECMAScript 5.1-compatible variable name.  "%s" collides with a JavaScript reserved word, or is otherwise invalid.', original));
+      var e = new Error(util.format('The string "%s" cannot be converted into an ECMAScript 5.1-compatible variable name.  "%s" collides with a JavaScript reserved word, or is otherwise invalid.', original,original));
       e.code = 'RESERVED';
       return e;
     })();

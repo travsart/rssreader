@@ -1,11 +1,13 @@
 rssApp
     .controller(
         'rssController',
-        function ($scope, $http, dialogs, toaster, rssService, uiGridConstants) {
+        function ($scope, $http, dialogs, toaster, rssService, userService, uiGridConstants) {
             $scope.rssData = [];
             $scope.appName = "Rss Reader";
             $scope.lang = 'en-US';
             $scope.language = 'English';
+            $scope.username = document.getElementById("username").value;
+            console.log($scope);
 
             $scope.linkTemplate = '<a href ="{{COL_FIELD}}">{{COL_FIELD}}</a>';
             $scope.highlightFilteredHeader = function (row, rowRenderIndex, col, colRenderIndex) {
@@ -32,8 +34,8 @@ rssApp
                         width: '145'
                     },
                     {
-                        name: 'lastChecked',
-                        displayName: 'Last Checked',
+                        name: 'updatedAt',
+                        displayName: 'Last Updated',
                         type: 'date',
                         cellFilter: 'date:"MM-dd-yyyy HH:mm"',
                         width: '160'
@@ -130,7 +132,7 @@ rssApp
                         });
             };
 
-            rssService.getRss().then(function (data) {
+            rssService.getRss($scope.username).then(function (data) {
                 $scope.rssData = data.data;
             }, function (error) {
                 toaster.pop({
@@ -142,13 +144,14 @@ rssApp
 
             $scope.addData = function () {
                 $scope.rssData.unshift({
-                    "name": "Name",
-                    "updateUrl": ' ',
-                    "start": 1,
-                    "lastChecked": new Date(),
-                    "type": 'Manga',
-                    "check": true,
-                    "viewed": true
+                    name: "Name",
+                    updateUrl: ' ',
+                    start: 1,
+                    lastChecked: new Date(),
+                    type: 'Manga',
+                    check: true,
+                    viewed: true,
+                    user: $scope.username
                 });
             };
 
@@ -229,7 +232,7 @@ rssApp
             }
 
             $scope.refreshList = function () {
-                rssService.getRss().then(function (data) {
+                rssService.getRss($scope.username).then(function (data) {
                     $scope.rssData = data.data;
                 }, function (error) {
                     toaster.pop({
@@ -239,6 +242,15 @@ rssApp
                     });
                 });
             }
+
+            $scope.logout = function () {
+                rssService.logout().then(function () {
+                    window.location = '/login';
+                });
+            };
+            $scope.login = function () {
+                window.location = '/login';
+            };
 
         }).filter('mapType', function () {
     var typeHash = {
