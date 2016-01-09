@@ -7,9 +7,9 @@ rssApp
             $scope.lang = 'en-US';
             $scope.language = 'English';
             $scope.username = document.getElementById("username").value;
-            console.log($scope);
 
-            $scope.linkTemplate = '<a href ="{{COL_FIELD}}">{{COL_FIELD}}</a>';
+            $scope.linkTemplate = '<a href ="{{COL_FIELD}}">Link</a>';
+
             $scope.highlightFilteredHeader = function (row, rowRenderIndex, col, colRenderIndex) {
                 if (col.filters[0].term) {
                     return 'header-filtered';
@@ -30,28 +30,21 @@ rssApp
                     },
                     {
                         name: 'start',
-                        displayName: 'Ch/Ep',
-                        type:'number',
-                        width: '85'
-                    },{
-                        name: 'rank',
-                        displayName: 'Rank',
-                        width: '85',
-                        type:'number',
-
+                        displayName: 'Chapter/Episode',
+                        width: '145'
                     },
                     {
                         name: 'updatedAt',
                         displayName: 'Last Updated',
                         type: 'date',
                         cellFilter: 'date:"MM-dd-yyyy HH:mm"',
-                        width: '140'
+                        width: '160'
                     },
                     {
                         name: 'updateUrl',
                         displayName: 'Updated Url',
                         cellTemplate: $scope.linkTemplate,
-                        width: '400',
+                        width: '130',
                         sort: {
                             direction: uiGridConstants.ASC,
                             priority: 1
@@ -86,17 +79,11 @@ rssApp
                         displayName: 'Viewed',
                         width: '75',
                         type: 'boolean'
-                    },{
-                        name: 'description',
-                        displayName: 'Description',
-                        width: '150',
-                        type:'number',
-
                     },
                     {
                         name: 'Delete',
                         enableCellEdit: false,
-                        width: '65',
+                        width: '75',
                         cellTemplate: '<div class="glyphicon glyphicon-remove" ng-click="grid.appScope.removeRow(grid, row)"></div>'
                     }],
                 data: 'rssData'
