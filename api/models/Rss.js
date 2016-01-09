@@ -36,6 +36,15 @@ module.exports = {
         },
         user: {
             type: 'string'
+        },
+        rank: {
+            type: 'int',
+            defaultsTo: 1,
+            min:0,
+            max:10
+        },
+        description : {
+            type: 'string'
         }
     }
 };

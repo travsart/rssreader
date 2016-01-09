@@ -9,7 +9,7 @@ rssApp
             $scope.username = document.getElementById("username").value;
             console.log($scope);
 
-            $scope.linkTemplate = '<a href ="{{COL_FIELD}}">{{COL_FIELD}}</a>';
+            $scope.linkTemplate = '<a href ="{{COL_FIELD}}">Link</a>';
             $scope.highlightFilteredHeader = function (row, rowRenderIndex, col, colRenderIndex) {
                 if (col.filters[0].term) {
                     return 'header-filtered';
@@ -44,7 +44,7 @@ rssApp
                         name: 'updateUrl',
                         displayName: 'Updated Url',
                         cellTemplate: $scope.linkTemplate,
-                        width: '400',
+                        width: '130',
                         sort: {
                             direction: uiGridConstants.ASC,
                             priority: 1
