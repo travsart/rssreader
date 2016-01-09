@@ -7,7 +7,6 @@ rssApp
             $scope.lang = 'en-US';
             $scope.language = 'English';
             $scope.username = document.getElementById("username").value;
-            console.log($scope);
 
             $scope.linkTemplate = '<a href ="{{COL_FIELD}}">Link</a>';
 
