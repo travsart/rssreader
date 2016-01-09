@@ -1,6 +1,8 @@
 .rssGrid {
     width: 95%;
     height: 600px;
+}
+.rssGrid .topBar{
     margin-left: 2.5%;
 }
 body {
