@@ -2,7 +2,9 @@
     width: 95%;
     height: 600px;
 }
-
+body {
+    background-color:#3C5Bf5;
+}
 .modal {
     display: block;
 }
@@ -18,12 +20,6 @@
     max-width: 400px;
     padding: 40px;
 }
-.ui-grid-row:nth-child(even) .ui-grid-cell .ui-grid-header-cell{
-    background-color: #B1BDFB;
-}
-.ui-grid-row:nth-child(odd) .ui-grid-cell {
-    background-color: #D8DEFD;
-}
-body {
-    background-color:#3C5Bf5;
+.header-filtered {
+    color: #B1BDFB;
 }
