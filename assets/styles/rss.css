@@ -2,18 +2,25 @@
     width: 95%;
     height: 600px;
 }
-.rssGrid, .topBar{
+
+.rssGrid, .topBar {
     margin-left: 2.5%;
 }
+
 body {
-    background: repeating-radial-gradient(#3C5BF5,#1e2d7a);
+    background: repeating-radial-gradient(#3C5BF5, #1e2d7a);
 }
+
 .modal {
     display: block;
 }
 
 .dialog-header-confirm {
     background-color: #111;
+}
+
+.header {
+    color: black;
 }
 
 .Absolute-Center {
@@ -23,12 +30,15 @@ body {
     max-width: 400px;
     padding: 40px;
 }
+
 .header-filtered {
     color: #B1BDFB;
 }
-.ui-grid-row:nth-child(even) .ui-grid-cell .ui-grid-header-cell{
+
+.ui-grid-row:nth-child(even) .ui-grid-cell .ui-grid-header-cell {
     background-color: #B1BDFB;
 }
+
 .ui-grid-row:nth-child(odd) .ui-grid-cell {
     background-color: #D8DEFD;
 }
