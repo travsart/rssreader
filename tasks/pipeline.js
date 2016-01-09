@@ -30,7 +30,7 @@ var jsFilesToInject = [
   // Load sails.io before everything else
   'bower_components/angular/angular.min.js',
   'bower_components/angular-ui-grid/ui-grid.js',
-  'bower_components/angular-bootstrap/ui-bootstrap.min.js',
+  //'bower_components/angular-bootstrap/ui-bootstrap.min.js',
   'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
   'bower_components/angular-animate/angular-animate.min.js',
   'bower_components/angular-sanitize/angular-sanitize.min.js',
