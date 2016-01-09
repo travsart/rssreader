@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e8852a0a-39ee-460b-af05-a2f0c29985c7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/rss.css" afterPath="$PROJECT_DIR$/assets/styles/rss.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/auth/home.ejs" afterPath="$PROJECT_DIR$/views/auth/home.ejs" />
     </list>
     <ignored path="rssreader.iws" />
@@ -25,21 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rss.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rss.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/styles/rss.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.38202247">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/auth/home.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.23876405">
-              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+            <state vertical-scroll-proportion="-1.3076923">
+              <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -468,36 +467,6 @@
       <option name="number" value="Default" />
       <updated>1448998890623</updated>
     </task>
-    <task id="LOCAL-00086" summary="as">
-      <created>1451769004993</created>
-      <option name="number" value="00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1451769004993</updated>
-    </task>
-    <task id="LOCAL-00087" summary="as">
-      <created>1451769082145</created>
-      <option name="number" value="00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1451769082145</updated>
-    </task>
-    <task id="LOCAL-00088" summary="as">
-      <created>1451769304810</created>
-      <option name="number" value="00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1451769304810</updated>
-    </task>
-    <task id="LOCAL-00089" summary="as">
-      <created>1451769516833</created>
-      <option name="number" value="00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1451769516833</updated>
-    </task>
-    <task id="LOCAL-00090" summary="as">
-      <created>1451769865009</created>
-      <option name="number" value="00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1451769865009</updated>
-    </task>
     <task id="LOCAL-00091" summary="as">
       <created>1451771348119</created>
       <option name="number" value="00091" />
@@ -762,7 +731,37 @@
       <option name="project" value="LOCAL" />
       <updated>1452358857099</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="as">
+      <created>1452359246126</created>
+      <option name="number" value="00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1452359246126</updated>
+    </task>
+    <task id="LOCAL-00136" summary="as">
+      <created>1452359691960</created>
+      <option name="number" value="00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1452359691960</updated>
+    </task>
+    <task id="LOCAL-00137" summary="as">
+      <created>1452359866734</created>
+      <option name="number" value="00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1452359866734</updated>
+    </task>
+    <task id="LOCAL-00138" summary="as">
+      <created>1452359897584</created>
+      <option name="number" value="00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1452359897584</updated>
+    </task>
+    <task id="LOCAL-00139" summary="as">
+      <created>1452359939459</created>
+      <option name="number" value="00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1452359939459</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1169,21 +1168,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/rss.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/auth/home.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.23876405">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/rss.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38202247">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
