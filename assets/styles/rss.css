@@ -6,7 +6,7 @@
     margin-left: 2.5%;
 }
 body {
-    background: repeating-linear-gradient(#3C5BF5,#1e2d7a);
+    background: repeating-radial-gradient(#3C5BF5,#1e2d7a);
 }
 .modal {
     display: block;
@@ -25,4 +25,10 @@ body {
 }
 .header-filtered {
     color: #B1BDFB;
+}
+.ui-grid-row:nth-child(even) .ui-grid-cell .ui-grid-header-cell{
+    background-color: #B1BDFB;
+}
+.ui-grid-row:nth-child(odd) .ui-grid-cell {
+    background-color: #D8DEFD;
 }
