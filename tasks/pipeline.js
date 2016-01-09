@@ -15,10 +15,10 @@
 // (if you're using LESS with the built-in default config, you'll want
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
-  'styles/dependencies/bootstrap.css',
-  'styles/dependencies/ui-grid.min.css',
-  'styles/dependencies/toaster.min.css',
-  'styles/dependencies/dialogs.min.css',
+  'bower_components/bootstrap/dist/css/bootstrap.css',
+  'bower_components/angular-ui-grid/ui-grid.min.css',
+  'bower_components/angularjs-toaster/toaster.min.css',
+  'bower_components/angular-dialog-service/dist/dialogs.min.css',
   'styles/**/*.css'
 ];
 
@@ -28,16 +28,16 @@ var cssFilesToInject = [
 var jsFilesToInject = [
   
   // Load sails.io before everything else
-  'js/dependencies/angular.min.js',
-  'js/dependencies/ui-grid.js',
-  'js/dependencies/angular-sails.min.js',
-  'js/dependencies/ui-bootstrap-tpls.min.js',
-  'js/dependencies/angular-animate.min.js',
-  'js/dependencies/angular-sanitize.min.js',
-  'js/dependencies/angular-translate.min.js',
-  'js/dependencies/dialogs-default-translations.min.js',
-  'js/dependencies/dialogs.min.js',
-  'js/dependencies/toaster.min.js',
+  'bower_components/angular/angular.min.js',
+  'bower_components/angular-ui-grid/ui-grid.js',
+  'bower_components/angular-bootstrap/ui-bootstrap.min.js',
+  'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
+  'bower_components/angular-animate/angular-animate.min.js',
+  'bower_components/angular-sanitize/angular-sanitize.min.js',
+  'bower_components/angular-translate/angular-translate.min.js',
+  'bower_components/angular-dialog-service/dist/dialogs-default-translations.min.js',
+  'bower_components/angular-dialog-service/dist/dialogs.min.js',
+  'bower_components/angularjs-toaster/toaster.min.js',
 
   // Dependencies like jQuery, or Angular are brought in here
   'js/app/app.js',
