@@ -10,6 +10,7 @@ rssApp
             console.log($scope);
 
             $scope.linkTemplate = '<a href ="{{COL_FIELD}}">Link</a>';
+
             $scope.highlightFilteredHeader = function (row, rowRenderIndex, col, colRenderIndex) {
                 if (col.filters[0].term) {
                     return 'header-filtered';
