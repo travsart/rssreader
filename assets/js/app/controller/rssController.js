@@ -31,10 +31,12 @@ rssApp
                     {
                         name: 'start',
                         displayName: 'Chapter/Episode',
+                        width: 95
                     }, {
                         name: 'rank',
                         displayName: 'Rank',
-                        type: 'number'
+                        type: 'number',
+                        width: 95
                     },
                     {
                         name: 'updatedAt',
@@ -50,7 +52,8 @@ rssApp
                         sort: {
                             direction: uiGridConstants.ASC,
                             priority: 1
-                        }
+                        },
+                        width: 100
                     },
                     {
                         name: 'type',
@@ -84,7 +87,6 @@ rssApp
                     }, {
                         name: 'description',
                         displayName: 'Description',
-                        width: '150',
                         type: 'number'
                     },
                     {
