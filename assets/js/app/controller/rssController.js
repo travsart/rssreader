@@ -116,6 +116,7 @@ rssApp
                                     rowEntity.check = true;
                                 }
                             }
+                            console.log(rowEntity.updateUrl)
                             rowEntity.updateUrl = rowEntity.updateUrl.trim();
                             rssService
                                 .updateOrAddRss(rowEntity)
