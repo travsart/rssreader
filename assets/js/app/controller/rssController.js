@@ -30,7 +30,7 @@ rssApp
                     },
                     {
                         name: 'start',
-                        displayName: 'Chapter/Episode',
+                        displayName: 'Ch/Ep',
                         width: 95
                     }, {
                         name: 'rank',
