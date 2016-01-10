@@ -37,6 +37,10 @@ rssApp
                         displayName: 'Rank',
                         type: 'number',
                         width: 95
+                    }, {
+                        name: 'description',
+                        displayName: 'Description',
+                        type: 'number'
                     },
                     {
                         name: 'updatedAt',
@@ -84,10 +88,6 @@ rssApp
                         displayName: 'Viewed',
                         width: '75',
                         type: 'boolean'
-                    }, {
-                        name: 'description',
-                        displayName: 'Description',
-                        type: 'number'
                     },
                     {
                         name: 'Delete',
