@@ -50,7 +50,7 @@ rssApp
                         name: 'updateUrl',
                         displayName: 'Updated Url',
                         cellTemplate: $scope.linkTemplate,
-                        width: '1',
+                        width: '100',
                         sort: {
                             direction: uiGridConstants.ASC,
                             priority: 1
