@@ -31,13 +31,10 @@ rssApp
                     {
                         name: 'start',
                         displayName: 'Chapter/Episode',
-                        width: '145'
                     }, {
                         name: 'rank',
                         displayName: 'Rank',
-                        width: '85',
                         type: 'number',
-
                     },
                     {
                         name: 'updatedAt',
@@ -49,8 +46,7 @@ rssApp
                     {
                         name: 'updateUrl',
                         displayName: 'Updated Url',
-                        cellTemplate: $scope.linkTemplate,
-                        width: '100',
+                        cellTemplate: $scope.linkTemplate
                         sort: {
                             direction: uiGridConstants.ASC,
                             priority: 1
@@ -89,8 +85,7 @@ rssApp
                         name: 'description',
                         displayName: 'Description',
                         width: '150',
-                        type: 'number',
-
+                        type: 'number'
                     },
                     {
                         name: 'Delete',
