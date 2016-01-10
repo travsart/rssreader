@@ -38,8 +38,8 @@ module.exports = {
             type: 'string'
         },
         rank: {
-            type: 'int',
-            defaultsTo: 1,
+            type: 'float',
+            defaultsTo: 0,
             min:0,
             max:10
         },
