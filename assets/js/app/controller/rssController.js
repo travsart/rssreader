@@ -8,7 +8,7 @@ rssApp
             $scope.language = 'English';
             $scope.username = document.getElementById("username").value;
 
-            $scope.linkTemplate = '<a href ="{{COL_FIELD}}">{{COL_FIELD.length == 0  ? COL_FIELD : "Link"}}</a>';
+            $scope.linkTemplate = '<a href ="{{COL_FIELD}}">{{COL_FIELD.trim().length == 0  ? COL_FIELD : "Link"}}</a>';
 
             $scope.highlightFilteredHeader = function (row, rowRenderIndex, col, colRenderIndex) {
                 if (col.filters[0].term) {
