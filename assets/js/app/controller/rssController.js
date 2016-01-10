@@ -34,7 +34,7 @@ rssApp
                     }, {
                         name: 'rank',
                         displayName: 'Rank',
-                        type: 'number',
+                        type: 'number'
                     },
                     {
                         name: 'updatedAt',
@@ -46,7 +46,7 @@ rssApp
                     {
                         name: 'updateUrl',
                         displayName: 'Updated Url',
-                        cellTemplate: $scope.linkTemplate
+                        cellTemplate: $scope.linkTemplate,
                         sort: {
                             direction: uiGridConstants.ASC,
                             priority: 1
