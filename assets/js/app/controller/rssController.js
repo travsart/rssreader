@@ -32,19 +32,25 @@ rssApp
                         name: 'start',
                         displayName: 'Chapter/Episode',
                         width: '145'
+                    }, {
+                        name: 'rank',
+                        displayName: 'Rank',
+                        width: '85',
+                        type: 'number',
+
                     },
                     {
                         name: 'updatedAt',
                         displayName: 'Last Updated',
                         type: 'date',
                         cellFilter: 'date:"MM-dd-yyyy HH:mm"',
-                        width: '160'
+                        width: '140'
                     },
                     {
                         name: 'updateUrl',
                         displayName: 'Updated Url',
                         cellTemplate: $scope.linkTemplate,
-                        width: '130',
+                        width: '400',
                         sort: {
                             direction: uiGridConstants.ASC,
                             priority: 1
@@ -79,11 +85,17 @@ rssApp
                         displayName: 'Viewed',
                         width: '75',
                         type: 'boolean'
+                    }, {
+                        name: 'description',
+                        displayName: 'Description',
+                        width: '150',
+                        type: 'number',
+
                     },
                     {
                         name: 'Delete',
                         enableCellEdit: false,
-                        width: '75',
+                        width: '65',
                         cellTemplate: '<div class="glyphicon glyphicon-remove" ng-click="grid.appScope.removeRow(grid, row)"></div>'
                     }],
                 data: 'rssData'
