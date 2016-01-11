@@ -39,8 +39,7 @@ rssApp
                         width: 95
                     }, {
                         name: 'description',
-                        displayName: 'Description',
-                        type: 'number'
+                        displayName: 'Description'
                     },
                     {
                         name: 'updatedAt',
