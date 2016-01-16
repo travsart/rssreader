@@ -307,5 +307,25 @@ module.exports = {
                 resolve(err);
             });
         });
+    },
+    similar: function (obj1, obj2) {
+        var score = 0;
+        var genreScoreModifier = Math.abs(obj1.genres.length - obj2.genres.length);
+
+        for (var i = 0; i < obj1.genres.length; i++) {
+            if (obj2.genres.indexOf(obj1.genres[i])) {
+                score++;
+            }
+        }
+        score = score / obj1.genres.length;
+        score = (genreScoreModifier != 0) ? score - (score * 1/genreScoreModifier) : score;
+
+        if (obj1.status == obj2.status) {
+            score++;
+        }
+        if (obj1.year == obj2.year) {
+            score++;
+        }
+        return score;
     }
 }

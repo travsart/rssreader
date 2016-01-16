@@ -31,7 +31,8 @@ rssApp
                     {
                         name: 'start',
                         displayName: 'Ch/Ep',
-                        width: 95
+                        width: 95,
+                        type: 'number'
                     }, {
                         name: 'rank',
                         displayName: 'Rank',

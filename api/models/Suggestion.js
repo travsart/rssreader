@@ -28,11 +28,19 @@ module.exports = {
         weighted: {
             type: 'float'
         },
+        score: {
+            type: 'float',
+            defaultsTo: 0
+        },
+        similar: {
+            type: 'string',
+            defaultsTo: 'N/A'
+        },
         html: {
             type: 'string'
         },
         lastReleased: {
-            type:'date'
+            type: 'date'
         }
     }
 };
