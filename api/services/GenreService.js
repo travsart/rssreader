@@ -198,10 +198,10 @@ module.exports = {
         sails.log.info('generate ' + page + ' ' + end);
         return new Promise(function (resolve, reject) {
 
-            Rss.find({user: user, type: 'Manga'}, function (err, r) {
+            Rss.find({user: user, type: 'Manga'}, function (err, rs) {
                 var rss = [];
 
-                r.forEach(function (rs) {
+                r.forEach(function (r) {
                     rss.push(r.name);
                 });
                 me.generateManga(user, [], 0, end, rss, function (mangaList) {
