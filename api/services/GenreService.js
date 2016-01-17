@@ -133,10 +133,9 @@ module.exports = {
                                 manga.year = 0;
                             }
                             manga.weighted = (manga.genres.length > 0) ? manga.raw / manga.genres.length : 0;
-                            var rssIndex = rss.indexOf(manga.name);
-                            if (rssIndex != -1) {
+                            if (rss.hasOwnProperty(manga.name)) {
                                 manga.rss = true;
-                                manga.rank = rss.rank;
+                                manga.rank = rss[manga.name];
                             }
                             manga.user = user;
                             mangaList.push(manga);
@@ -199,10 +198,10 @@ module.exports = {
         return new Promise(function (resolve, reject) {
 
             Rss.find({user: user, type: 'Manga'}, function (err, rs) {
-                var rss = [];
+                var rss = {};
 
                 rs.forEach(function (r) {
-                    rss.push(r.name);
+                    rss[r.name] = r.rank;
                 });
                 me.generateManga(user, [], 0, end, rss, function (mangaList) {
                     if (mangaList.error) {
@@ -355,9 +354,10 @@ module.exports = {
                 similar[score].push(item.rank);
             }
         });
-        if(keys.length > 0){
-        return this.median(similar[this.max(keys)]);}
-        else{
+        if (keys.length > 0) {
+            return this.median(similar[this.max(keys)]);
+        }
+        else {
             sails.log.silly(obj);
             return 0;
         }
