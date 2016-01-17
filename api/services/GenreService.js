@@ -4,7 +4,7 @@
 var Promise = require('bluebird');
 
 module.exports = {
-    generateManga: function (mangaList, page, end, cb) {
+    generateManga: function (mangaList, page, end, rss, cb) {
         var url = 'http://mangapark.me/search?orderby=latest&chapters=1&st-ss=1&page=' + page;
         var request = require('request');
         var cheerio = require('cheerio');
@@ -134,6 +134,11 @@ module.exports = {
                                 manga.year = 0;
                             }
                             manga.weighted = (manga.genres.length > 0) ? manga.raw / manga.genres.length : 0;
+                            var rssIndex = rss.indexOf(manga.name);
+                            if (rssIndex != -1) {
+                                manga.rss = true;
+                                manga.rank = rss.rank;
+                            }
                             mangaList.push(manga);
                         }
                     });
@@ -193,26 +198,33 @@ module.exports = {
         sails.log.info('generate ' + page + ' ' + end);
         return new Promise(function (resolve, reject) {
 
-            me.generateManga([], 0, end, function (mangaList) {
-                if (mangaList.error) {
-                    reject(mangaList);
-                }
+            Rss.find({user: user, type: 'Manga'}, function (err, r) {
+                var rss = [];
 
-                sails.log.info('generate finished managList: ' + mangaList.length);
-                if (mangaList.length > 0) {
-                    Suggestion.create(mangaList).exec(function (err) {
-                        if (err) {
-                            sails.log.error('Error: ' + JSON.stringify(err));
-                            sails.log.error('Error: ' + err.stack)
-                            reject({error: true, msg: err.stack});
-                        }
-                        sails.log.info('Created :' + mangaList.length);
+                r.forEach(function (rs) {
+                    rss.push(r.name);
+                });
+                me.generateManga([], 0, end, rss, function (mangaList) {
+                    if (mangaList.error) {
+                        reject(mangaList);
+                    }
+
+                    sails.log.info('generate finished managList: ' + mangaList.length);
+                    if (mangaList.length > 0) {
+                        Suggestion.create(mangaList).exec(function (err) {
+                            if (err) {
+                                sails.log.error('Error: ' + JSON.stringify(err));
+                                sails.log.error('Error: ' + err.stack)
+                                reject({error: true, msg: err.stack});
+                            }
+                            sails.log.info('Created :' + mangaList.length);
+                            resolve();
+                        });
+                    }
+                    else {
                         resolve();
-                    });
-                }
-                else {
-                    resolve();
-                }
+                    }
+                });
             });
         });
     },
@@ -301,7 +313,7 @@ module.exports = {
             list.push({name: genre, weight: weights[genre]});
         });
 
-        sails.log.info('seedGenre');
+        sails.log.info('seedGenre1');
         return new Promise(function (resolve, reject) {
             Genre.create(list, function (err) {
                 resolve(err);
@@ -318,7 +330,7 @@ module.exports = {
             }
         }
         score = score / obj1.genres.length;
-        score = (genreScoreModifier != 0) ? score - (score * 1/genreScoreModifier) : score;
+        score = (genreScoreModifier != 0) ? score - (score * 1 / genreScoreModifier) : score;
 
         if (obj1.status == obj2.status) {
             score++;
@@ -327,5 +339,48 @@ module.exports = {
             score++;
         }
         return score;
+    },
+    findMostSimilar: function (arr, obj) {
+        var similar = {};
+        var keys = [];
+        var _ = require('lodash');
+        require('lodash-math')(_);
+
+        arr.forEach(function (item) {
+            var score = this.similar(item, obj);
+            keys.push(score);
+            if (similar.hasOwnProperty(score)) {
+                similar[score].push(item.rank);
+            } else {
+                similar[score] = [];
+                similar[score].push(item.rank);
+            }
+        });
+        return _.median(similar[_.max(keys)]);
+    },
+    generateSuggestionRankings: function (user) {
+        sails.log.info('generateGenreSeed');
+        return new Promise(function (resolve, reject) {
+            Suggestion.find({rss: true}, function (err, seed) {
+
+                if (err) {
+                    resolve({err: err});
+                }
+                else {
+                    Suggestion.find({rss: false}, function (err, sugs) {
+
+                        if (err) {
+                            resolve({err: err});
+                        }
+                        else {
+                            sugs.forEach(function (sug) {
+                                sug.rank = findMostSimilar(seed, sug);
+                                sug.save();
+                            });
+                        }
+                    });
+                }
+            });
+        });
     }
 }

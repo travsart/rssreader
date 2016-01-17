@@ -9,6 +9,9 @@ module.exports = {
         weight: {
             type: 'integer',
             defaultsTo: 0
+        },
+        user: {
+            type: 'string'
         }
     }
 };

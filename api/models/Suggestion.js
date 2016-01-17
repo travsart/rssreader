@@ -41,6 +41,14 @@ module.exports = {
         },
         lastReleased: {
             type: 'date'
+        },
+        rss: {
+            type: 'boolean',
+            defaultsTo: false
+        },
+        rank: {
+            type: 'float',
+            defaultsTo: 0
         }
     }
 };
