@@ -340,22 +340,22 @@ module.exports = {
         return score;
     },
     findMostSimilar: function (arr, obj) {
-        var similar = {};
+        var sim = {};
         var keys = [];
 
         arr.forEach(function (item) {
             var score = this.similar(item, obj);
             sails.log.silly(score);
             keys.push(score);
-            if (similar.hasOwnProperty(score)) {
-                similar[score].push(item.rank);
+            if (sim.hasOwnProperty(score)) {
+                sim[score].push(item.rank);
             } else {
-                similar[score] = [];
-                similar[score].push(item.rank);
+                sim[score] = [];
+                sim[score].push(item.rank);
             }
         });
         if (keys.length > 0) {
-            return this.median(similar[this.max(keys)]);
+            return this.median(sim[this.max(keys)]);
         }
         else {
             sails.log.silly(obj);
