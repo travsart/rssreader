@@ -20,7 +20,7 @@ module.exports = {
         }
 
         sails.log.info('generate');
-        GenreService.generate(start, end).then(function (err) {
+        GenreService.generate(req.cookies.user, start, end).then(function (err) {
             if (err) {
                 sails.log.error(err.msg);
                 res.json({success: false, msg: err.msg, err: err});
