@@ -52,8 +52,8 @@ module.exports = {
             res.json({success: false, msg: ex.message});
         });
     },
-    calculateWeights: function (req, res) {
-        GenreService.calculateWeights().then(function (err) {
+    generateSuggestionRankings: function (req, res) {
+        GenreService.generateSuggestionRankings(req.cookies.user).then(function (err) {
             res.json({success: true, err: err});
         }).catch(function (ex) {
             sails.log.error(ex.stack);

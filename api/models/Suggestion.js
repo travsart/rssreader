@@ -49,6 +49,9 @@ module.exports = {
         rank: {
             type: 'float',
             defaultsTo: 0
+        },
+        user: {
+            type: 'string'
         }
     }
 };

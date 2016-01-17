@@ -4,7 +4,7 @@
 var Promise = require('bluebird');
 
 module.exports = {
-    generateManga: function (mangaList, page, end, rss, cb) {
+    generateManga: function (user, mangaList, page, end, rss, cb) {
         var url = 'http://mangapark.me/search?orderby=latest&chapters=1&st-ss=1&page=' + page;
         var request = require('request');
         var cheerio = require('cheerio');
@@ -138,6 +138,7 @@ module.exports = {
                             if (rssIndex != -1) {
                                 manga.rss = true;
                                 manga.rank = rss.rank;
+                                manga.user = user;
                             }
                             mangaList.push(manga);
                         }
@@ -193,7 +194,7 @@ module.exports = {
             });
         }
     },
-    generate: function (page, end) {
+    generate: function (user, page, end) {
         var me = this;
         sails.log.info('generate ' + page + ' ' + end);
         return new Promise(function (resolve, reject) {
@@ -204,7 +205,7 @@ module.exports = {
                 r.forEach(function (rs) {
                     rss.push(r.name);
                 });
-                me.generateManga([], 0, end, rss, function (mangaList) {
+                me.generateManga(user, [], 0, end, rss, function (mangaList) {
                     if (mangaList.error) {
                         reject(mangaList);
                     }
@@ -361,13 +362,13 @@ module.exports = {
     generateSuggestionRankings: function (user) {
         sails.log.info('generateGenreSeed');
         return new Promise(function (resolve, reject) {
-            Suggestion.find({rss: true}, function (err, seed) {
+            Suggestion.find({rss: true,user:user}, function (err, seed) {
 
                 if (err) {
                     resolve({err: err});
                 }
                 else {
-                    Suggestion.find({rss: false}, function (err, sugs) {
+                    Suggestion.find({rss: false,user:user}, function (err, sugs) {
 
                         if (err) {
                             resolve({err: err});
