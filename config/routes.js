@@ -38,6 +38,7 @@ module.exports.routes = {
     '/genre/del': 'GenreController.del',
     '/genre/compare': 'GenreController.generateSeedList',
     '/genre/seed': 'GenreController.seedGenre',
+    '/genre/similar': 'GenreController.generateSuggestionRankings',
     'GET /login' : {view: 'login'},
     'POST /login' : 'AuthController.login',
     'POST /logout' : 'AuthController.logout'
