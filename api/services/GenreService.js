@@ -164,11 +164,11 @@ module.exports = {
                             }
                             else {
                                 sails.log.info('Created :' + created.length);
-                                me.generateManga([], page + 1, end, cb);
+                                me.generateManga(user,[], page + 1, end, cb);
                             }
                         });
                     } else {
-                        me.generateManga(mangaList, page + 1, end, cb);
+                        me.generateManga(user,mangaList, page + 1, end, cb);
                     }
                 }
             });
