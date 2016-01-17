@@ -9,7 +9,7 @@ module.exports = {
     generate: function (req, res) {
         var start = req.param('start');
         var end = req.param('end');
-        var calculate = req.param('calculate');
+        var user = req.param('user');
 
         if (isNaN(parseInt(start)) || start < 0) {
             start = 0;
@@ -20,7 +20,7 @@ module.exports = {
         }
 
         sails.log.info('generate');
-        GenreService.generate(req.cookies.user, start, end).then(function (err) {
+        GenreService.generate(user, start, end).then(function (err) {
             if (err) {
                 sails.log.error(err.msg);
                 res.json({success: false, msg: err.msg, err: err});

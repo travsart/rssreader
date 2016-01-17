@@ -138,8 +138,8 @@ module.exports = {
                             if (rssIndex != -1) {
                                 manga.rss = true;
                                 manga.rank = rss.rank;
-                                manga.user = user;
                             }
+                            manga.user = user;
                             mangaList.push(manga);
                         }
                     });
@@ -347,6 +347,7 @@ module.exports = {
 
         arr.forEach(function (item) {
             var score = this.similar(item, obj);
+            sails.log.silly(score);
             keys.push(score);
             if (similar.hasOwnProperty(score)) {
                 similar[score].push(item.rank);
