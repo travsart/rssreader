@@ -164,11 +164,11 @@ module.exports = {
                             }
                             else {
                                 sails.log.info('Created :' + created.length);
-                                me.generateManga(user,[], page + 1, end, cb);
+                                me.generateManga(user, [], page + 1, end, rss, cb);
                             }
                         });
                     } else {
-                        me.generateManga(user,mangaList, page + 1, end, cb);
+                        me.generateManga(user, mangaList, page + 1, end, rss, cb);
                     }
                 }
             });
@@ -362,13 +362,13 @@ module.exports = {
     generateSuggestionRankings: function (user) {
         sails.log.info('generateGenreSeed');
         return new Promise(function (resolve, reject) {
-            Suggestion.find({rss: true,user:user}, function (err, seed) {
+            Suggestion.find({rss: true, user: user}, function (err, seed) {
 
                 if (err) {
                     resolve({err: err});
                 }
                 else {
-                    Suggestion.find({rss: false,user:user}, function (err, sugs) {
+                    Suggestion.find({rss: false, user: user}, function (err, sugs) {
 
                         if (err) {
                             resolve({err: err});
