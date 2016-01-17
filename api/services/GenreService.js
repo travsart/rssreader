@@ -344,8 +344,6 @@ module.exports = {
     findMostSimilar: function (arr, obj) {
         var similar = {};
         var keys = [];
-        var _ = require('lodash');
-        require('lodash-math')(_);
 
         arr.forEach(function (item) {
             var score = this.similar(item, obj);
@@ -357,7 +355,25 @@ module.exports = {
                 similar[score].push(item.rank);
             }
         });
-        return _.median(similar[_.max(keys)]);
+        return this.median(similar[this.max(keys)]);
+    },
+    median: function (arr) {
+        var m = arr.sort(function (a, b) {
+            return a - b
+        });
+
+        var middle = Math.floor((m.length - 1) / 2); // NB: operator precedence
+        if (m.length % 2) {
+            return m[middle];
+        } else {
+            return (m[middle] + m[middle + 1]) / 2.0;
+        }
+    },
+    max: function (arr) {
+        var sort = arr.sort(function (a, b) {
+            return b - a
+        });
+        return max[0];
     },
     generateSuggestionRankings: function (user) {
         sails.log.info('generateGenreSeed');
@@ -387,3 +403,4 @@ module.exports = {
         });
     }
 }
+
