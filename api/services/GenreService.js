@@ -201,7 +201,7 @@ module.exports = {
             Rss.find({user: user, type: 'Manga'}, function (err, rs) {
                 var rss = [];
 
-                r.forEach(function (r) {
+                rs.forEach(function (r) {
                     rss.push(r.name);
                 });
                 me.generateManga(user, [], 0, end, rss, function (mangaList) {
