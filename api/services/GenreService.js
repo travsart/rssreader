@@ -373,7 +373,7 @@ module.exports = {
         var sort = arr.sort(function (a, b) {
             return b - a
         });
-        return max[0];
+        return sort[0];
     },
     generateSuggestionRankings: function (user) {
         sails.log.info('generateGenreSeed');
