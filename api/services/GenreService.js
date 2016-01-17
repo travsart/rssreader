@@ -358,6 +358,7 @@ module.exports = {
         return this.median(similar[this.max(keys)]);
     },
     median: function (arr) {
+        sails.log.silly(arr);
         var m = arr.sort(function (a, b) {
             return a - b
         });
@@ -370,6 +371,7 @@ module.exports = {
         }
     },
     max: function (arr) {
+        sails.log.silly(arr);
         var sort = arr.sort(function (a, b) {
             return b - a
         });
