@@ -355,7 +355,12 @@ module.exports = {
                 similar[score].push(item.rank);
             }
         });
-        return this.median(similar[this.max(keys)]);
+        if(keys.length > 0){
+        return this.median(similar[this.max(keys)]);}
+        else{
+            sails.log.silly(obj);
+            return 0;
+        }
     },
     median: function (arr) {
         sails.log.silly(arr);
