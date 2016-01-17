@@ -361,6 +361,8 @@ module.exports = {
     },
     generateSuggestionRankings: function (user) {
         sails.log.info('generateGenreSeed');
+        var me = this;
+
         return new Promise(function (resolve, reject) {
             Suggestion.find({rss: true, user: user}, function (err, seed) {
 
@@ -375,7 +377,7 @@ module.exports = {
                         }
                         else {
                             sugs.forEach(function (sug) {
-                                sug.rank = findMostSimilar(seed, sug);
+                                sug.rank = me.findMostSimilar(seed, sug);
                                 sug.save();
                             });
                         }
