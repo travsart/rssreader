@@ -124,7 +124,6 @@ module.exports = {
                                     sails.log.info(cheerio(child1).find('.summary').html());
                                 } else {
                                     manga.summary = '';
-                                    sails.log.debug(cheerio(child1).html());
                                 }
                             }
                         });
