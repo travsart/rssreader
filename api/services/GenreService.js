@@ -339,11 +339,11 @@ module.exports = {
         }
         return score;
     },
-    findMostSimilar: function (arr, obj) {
+    findMostSimilar: function (scope,arr, obj) {
         var sim = {};
         var keys = [];
         arr.forEach(function (item) {
-            var score = similarScore(item, obj);
+            var score = scope.similarScore(item, obj);
             sails.log.silly(score);
             keys.push(score);
             if (sim.hasOwnProperty(score)) {
@@ -354,7 +354,7 @@ module.exports = {
             }
         });
         if (keys.length > 0) {
-            return this.median(sim[this.max(keys)]);
+            return scope.median(sim[scope.max(keys)]);
         }
         else {
             sails.log.silly(obj);
@@ -399,7 +399,7 @@ module.exports = {
                         }
                         else {
                             sugs.forEach(function (sug) {
-                                sug.rank = me.findMostSimilar(seed, sug);
+                                sug.rank = me.findMostSimilar(scope,seed, sug);
                                 sug.save();
                             });
                         }
