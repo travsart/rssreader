@@ -344,7 +344,6 @@ module.exports = {
         var keys = [];
         arr.forEach(function (item) {
             var score = scope.similarScore(item, obj);
-            sails.log.silly(score);
             keys.push(score);
             if (sim.hasOwnProperty(score)) {
                 sim[score].push(item.rank);
@@ -357,12 +356,10 @@ module.exports = {
             return scope.median(sim[scope.max(keys)]);
         }
         else {
-            sails.log.silly(obj);
             return 0;
         }
     },
     median: function (arr) {
-        sails.log.silly(arr);
         var m = arr.sort(function (a, b) {
             return a - b
         });
@@ -375,7 +372,6 @@ module.exports = {
         }
     },
     max: function (arr) {
-        sails.log.silly(arr);
         var sort = arr.sort(function (a, b) {
             return b - a
         });
