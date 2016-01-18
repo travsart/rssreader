@@ -342,9 +342,10 @@ module.exports = {
     findMostSimilar: function (arr, obj) {
         var sim = {};
         var keys = [];
-
+        console.log(this);
         arr.forEach(function (item) {
-            var score = this.similar(item, obj);
+            console.log(this);
+            var score = similar(item, obj);
             sails.log.silly(score);
             keys.push(score);
             if (sim.hasOwnProperty(score)) {
