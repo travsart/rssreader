@@ -319,7 +319,7 @@ module.exports = {
             });
         });
     },
-    similar: function (obj1, obj2) {
+    similarScore: function (obj1, obj2) {
         var score = 0;
         var genreScoreModifier = Math.abs(obj1.genres.length - obj2.genres.length);
 
@@ -342,10 +342,8 @@ module.exports = {
     findMostSimilar: function (arr, obj) {
         var sim = {};
         var keys = [];
-        console.log(this);
         arr.forEach(function (item) {
-            console.log(this);
-            var score = similar(item, obj);
+            var score = similarScore(item, obj);
             sails.log.silly(score);
             keys.push(score);
             if (sim.hasOwnProperty(score)) {
