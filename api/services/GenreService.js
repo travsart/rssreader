@@ -399,7 +399,7 @@ module.exports = {
                         }
                         else {
                             sugs.forEach(function (sug) {
-                                sug.rank = me.findMostSimilar(scope,seed, sug);
+                                sug.rank = me.findMostSimilar(me,seed, sug);
                                 sug.save();
                             });
                         }
