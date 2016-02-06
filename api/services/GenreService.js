@@ -10,6 +10,7 @@ module.exports = {
         var cheerio = require('cheerio');
         var userAgent = 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36';
         var me = this;
+
         sails.log.info('page :' + page + ' end: ' + end);
         Genre.find({}).then(function (gs) {
             var genres = {};
@@ -47,8 +48,6 @@ module.exports = {
                             raw: 0
                         };
                         cheerio(child).find('td').each(function (index1, child1) {
-                            manga.html = cheerio(child1).html();
-                            manga.html = manga.html.replace(/\t/g, '').replace(/\n/g, '').replace(/\r/g, '');
                             if (child1.children.length == 3) {
                                 manga.url = 'http://mangapark.me' + child1.children[1].attribs.href;
                                 manga.name = child1.children[1].attribs.title;
@@ -138,6 +137,7 @@ module.exports = {
                                 manga.rank = rss[manga.name];
                             }
                             manga.user = user;
+                            manga.genrehash = manga.genres.join('');
                             mangaList.push(manga);
                         }
                     });
@@ -339,7 +339,7 @@ module.exports = {
         }
         return score;
     },
-    findMostSimilar: function (scope,arr, obj) {
+    findMostSimilar: function (scope, arr, obj) {
         var sim = {};
         var keys = [];
         arr.forEach(function (item) {
@@ -395,7 +395,7 @@ module.exports = {
                         }
                         else {
                             sugs.forEach(function (sug) {
-                                sug.rank = me.findMostSimilar(me,seed, sug);
+                                sug.rank = me.findMostSimilar(me, seed, sug);
                                 sug.save();
                             });
                         }

@@ -19,6 +19,9 @@ module.exports = {
         genres: {
             type: 'array'
         },
+        genrehash: {
+            type: 'string'
+        },
         summary: {
             type: 'string'
         },
@@ -35,9 +38,6 @@ module.exports = {
         similar: {
             type: 'string',
             defaultsTo: 'N/A'
-        },
-        html: {
-            type: 'string'
         },
         lastReleased: {
             type: 'date'
