@@ -358,7 +358,7 @@ module.exports = {
             }
         });
         if (keys.length != 0) {
-            return sim[max(keys)];
+            return sim[me.max(keys)];
         } else {
             return null;
         }
@@ -389,7 +389,11 @@ module.exports = {
             var sug = items.shift();
             var me = this;
 
-            db.collection('suggestion').update({_id: new require('mongodb').ObjectID(sug._id)}, {'$set': {rank: sug.rank}}, function (err, results) {
+            db.collection('suggestion').update({_id: new require('mongodb').ObjectID(sug._id)}, {
+                '$set': {
+                    similar: sug.similar
+                }
+            }, function (err, results) {
                 me.save(db, items, cb);
             });
         }
