@@ -397,7 +397,7 @@ module.exports = {
                 '$set': {
                     similar: sug.similar,
                     score: sug.score,
-                    highest: sug.similar[0]
+                    highest: sug.similar[0].rank
                 }
             }, function (err, results) {
                 me.save(db, items, cb);
