@@ -19,16 +19,16 @@ module.exports = {
             end = -1;
         }
 
-        sails.log.info('generate');
+        res.json({success:true,msg:'Running'});
+        sails.log.info('Starting');
         GenreService.generate(user, start, end).then(function (err) {
             if (err) {
                 sails.log.error(err.msg);
-                res.json({success: false, msg: err.msg, err: err});
+
             }
-            res.json({success: true, msg: ''});
+            sails.log.info('done');
         }).catch(function (ex) {
             sails.log.error(ex.stack);
-            res.json({success: false, msg: ex.message});
         });
     },
     del: function (req, res) {
