@@ -345,8 +345,10 @@ module.exports = {
     findMostSimilar: function (rsses, sug) {
         var sim = {};
         var keys = [];
+        var me = this;
+
         rsses.forEach(function (rss) {
-            var score = similarScore(rss, sug);
+            var score = me.similarScore(rss, sug);
             keys.push(score);
             if (sim.hasOwnProperty(score)) {
                 sim[score].push({name: rss.name, rank: rss.rank});
@@ -386,7 +388,7 @@ module.exports = {
         else {
             var sug = items.shift();
             var me = this;
-            
+
             db.collection('suggestion').update({_id: new require('mongodb').ObjectID(sug._id)}, {'$set': {rank: sug.rank}}, function (err, results) {
                 me.save(db, items, cb);
             });
