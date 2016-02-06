@@ -360,7 +360,7 @@ module.exports = {
         if (keys.length != 0) {
             return {
                 similar: sim[me.max(keys)].sort(function (a, b) {
-                    return a.rank - b.rank
+                    return b.rank - a.rank
                 }), score: me.max(keys)
             };
         } else {
@@ -396,7 +396,8 @@ module.exports = {
             db.collection('suggestion').update({_id: new require('mongodb').ObjectID(sug._id)}, {
                 '$set': {
                     similar: sug.similar,
-                    score: sug.score
+                    score: sug.score,
+                    highest: sug.similar[0]
                 }
             }, function (err, results) {
                 me.save(db, items, cb);
