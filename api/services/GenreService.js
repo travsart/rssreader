@@ -319,44 +319,46 @@ module.exports = {
             });
         });
     },
-    similarScore: function (obj1, obj2) {
-        var score = 0;
-        var genreScoreModifier = Math.abs(obj1.genres.length - obj2.genres.length);
+    similarScore: function (rss, sug) {
+        if (rss.genrehash == sug.genrehash) {
+            return 1;
+        }
 
-        for (var i = 0; i < obj1.genres.length; i++) {
-            if (obj2.genres.indexOf(obj1.genres[i])) {
+        var score = 0;
+        var genreScoreModifier = 0;
+
+        if (rss.genres.length > sug.genres.length) {
+            genreScoreModifier = 1 - (rss.genres.length / sug.genres.length);
+        }
+        else if (rss.genres.length < sug.genres.length) {
+            genreScoreModifier = 1 - (sug.genres.length / rss.genres.length);
+        }
+
+        for (var i = 0; i < sug.genres.length; i++) {
+            if (rss.genres.indexOf(sug.genres[i]) != -1) {
                 score++;
             }
         }
-        score = score / obj1.genres.length;
-        score = (genreScoreModifier != 0) ? score - (score * 1 / genreScoreModifier) : score;
-
-        if (obj1.status == obj2.status) {
-            score++;
-        }
-        if (obj1.year == obj2.year) {
-            score++;
-        }
-        return score;
+        return (genreScoreModifier != 0) ? (score * genreScoreModifier) / rss.genres.length : score / rss.genres.length;
     },
-    findMostSimilar: function (scope, arr, obj) {
+
+    findMostSimilar: function (rsses, sug) {
         var sim = {};
         var keys = [];
-        arr.forEach(function (item) {
-            var score = scope.similarScore(item, obj);
+        rsses.forEach(function (rss) {
+            var score = similarScore(rss, sug);
             keys.push(score);
             if (sim.hasOwnProperty(score)) {
-                sim[score].push(item.rank);
+                sim[score].push({name: rss.name, rank: rss.rank});
             } else {
                 sim[score] = [];
-                sim[score].push(item.rank);
+                sim[score].push({name: rss.name, rank: rss.rank});
             }
         });
-        if (keys.length > 0) {
-            return scope.median(sim[scope.max(keys)]);
-        }
-        else {
-            return 0;
+        if (keys.length != 0) {
+            return sim[max(keys)];
+        } else {
+            return null;
         }
     },
     median: function (arr) {
@@ -373,35 +375,62 @@ module.exports = {
     },
     max: function (arr) {
         var sort = arr.sort(function (a, b) {
-            return b - a
+            return b - a;
         });
         return sort[0];
+    },
+    save: function (db, items, cb) {
+        if (items.length == 0) {
+            cb();
+        }
+        else {
+            var sug = items.shift();
+
+            db.collection('suggestion').update({_id: new require('mongodb').ObjectID(sug._id)}, {'$set': {rank: sug.rank}}, function (err, results) {
+                save(db, items, cb);
+            });
+        }
+    },
+    startSimilarMatching: function (cb) {
+        var mongodb = require('mongodb').MongoClient;
+
+        var url = 'mongodb://localhost:27017/rssreader';
+
+        mongodb.connect(url, function (err, db) {
+            if (err) {
+                sails.error('Unable to connect to the mongoDB server. Error:', err);
+            } else {
+                db.collection('suggestion').find({rss: true}).toArray(function (err, rssSuggestion) {
+                    var rsses = [];
+
+                    sails.log.info('startSimilarMatching: building rss');
+                    rssSuggestion.forEach(function (rss) {
+                        rsses.push({name: rss.name, genres: rss.genres, rank: rss.rank, genrehash: rss.genrehash});
+                    });
+                    db.collection('suggestion').find({rss: false}).toArray(function (err, s) {
+                        var sugs = [];
+
+                        sails.log.info('startSimilarMatching: building rankings');
+                        s.forEach(function (sug) {
+                            sug.similar = findMostSimilar(rsses, sug);
+                            sugs.push(sug);
+                        });
+                        sails.log.info('startSimilarMatching: saving');
+                        save(db, sugs, function () {
+                            db.close();
+                            cb();
+                        });
+                    });
+                });
+            }
+        });
     },
     generateSuggestionRankings: function (user) {
         sails.log.info('generateGenreSeed');
         var me = this;
 
         return new Promise(function (resolve, reject) {
-            Suggestion.find({rss: true, user: user}, function (err, seed) {
-
-                if (err) {
-                    resolve({err: err});
-                }
-                else {
-                    Suggestion.find({rss: false, user: user}, function (err, sugs) {
-
-                        if (err) {
-                            resolve({err: err});
-                        }
-                        else {
-                            sugs.forEach(function (sug) {
-                                sug.rank = me.findMostSimilar(me, seed, sug);
-                                sug.save();
-                            });
-                        }
-                    });
-                }
-            });
+            me.startSimilarMatching(resolve);
         });
     }
 }
