@@ -358,9 +358,13 @@ module.exports = {
             }
         });
         if (keys.length != 0) {
-            return sim[me.max(keys)];
+            return {
+                similar: sim[me.max(keys)].sort(function (a, b) {
+                    return a.rank - b.rank
+                }), score: me.max(keys)
+            };
         } else {
-            return null;
+            return {similar: null, score: 0};
         }
     },
     median: function (arr) {
@@ -391,7 +395,8 @@ module.exports = {
 
             db.collection('suggestion').update({_id: new require('mongodb').ObjectID(sug._id)}, {
                 '$set': {
-                    similar: sug.similar
+                    similar: sug.similar,
+                    score: sug.score
                 }
             }, function (err, results) {
                 me.save(db, items, cb);
@@ -420,7 +425,9 @@ module.exports = {
 
                         sails.log.info('startSimilarMatching: building rankings');
                         s.forEach(function (sug) {
-                            sug.similar = me.findMostSimilar(rsses, sug);
+                            var retSim = me.findMostSimilar(rsses, sug);
+                            sug.similar = retSim.similar;
+                            sug.score = retSim.score;
                             sugs.push(sug);
                         });
                         sails.log.info('startSimilarMatching: saving');
