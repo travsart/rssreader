@@ -392,6 +392,7 @@ module.exports = {
         }
     },
     startSimilarMatching: function (cb) {
+        var me = this;
         var mongodb = require('mongodb').MongoClient;
 
         var url = 'mongodb://localhost:27017/rssreader';
@@ -412,11 +413,11 @@ module.exports = {
 
                         sails.log.info('startSimilarMatching: building rankings');
                         s.forEach(function (sug) {
-                            sug.similar = findMostSimilar(rsses, sug);
+                            sug.similar = me.findMostSimilar(rsses, sug);
                             sugs.push(sug);
                         });
                         sails.log.info('startSimilarMatching: saving');
-                        save(db, sugs, function () {
+                        me.save(db, sugs, function () {
                             db.close();
                             cb();
                         });
