@@ -385,9 +385,10 @@ module.exports = {
         }
         else {
             var sug = items.shift();
-
+            var me = this;
+            
             db.collection('suggestion').update({_id: new require('mongodb').ObjectID(sug._id)}, {'$set': {rank: sug.rank}}, function (err, results) {
-                save(db, items, cb);
+                me.save(db, items, cb);
             });
         }
     },
