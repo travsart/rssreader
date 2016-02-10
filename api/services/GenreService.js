@@ -61,6 +61,7 @@ module.exports = {
                                         for (var i = 0; i < info1.length; i++) {
                                             if (info1[i].children != null && info1[i].children.length > 0 && info1[i].children[0].data == 'Status:') {
                                                 manga.status = info1[i + 1].children[0].data;
+                                                manga.type = info1[i + 1].children[0].data;
                                                 manga.year = parseInt(info1[i + 4].children[0].data);
 
                                                 break;
@@ -170,6 +171,39 @@ module.exports = {
                     }
                 }
             });
+        });
+    },parseList:function (error, response, body, cb) {
+        var cheerio = require('cheerio');
+        var chBody = cheerio(body);
+
+        if (chBody.find('.no-match').length > 0 || page == end) {
+            cb(mangaList);
+        }
+        else {
+            var urls = [];
+
+            chBody.find('.manga-list').find('.item').each(function (index, child) {
+                cheerio(child).find('td').each(function (index1, child1) {
+                    if (child1.children.length == 3) {
+                        urls.push({url: 'http://mangapark.me' + child1.children[1].attribs.href});
+                    }
+                });
+            });
+
+            cb(urls);
+        }
+    },
+    requestUrl:function (url, parseFunc, cb) {
+        var request = require('request');
+        var userAgent = 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36';
+
+        request({url: url, headers: {'User-agent': userAgent}}, function (error, response, body) {
+            if (error) {
+                cb({error:error});
+            }
+            else {
+                parseFunc(body, cb);
+            }
         });
     },
     bulkUpdate: function (model, updates, field, cb) {
