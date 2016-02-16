@@ -17,6 +17,12 @@ function parseManga (body, cb) {
     chBody.find('.content').each(function (index, content) {
         content = cheerio(content);
 
+        console.log(content.children[0]);
+        console.log(cheerio(content.children[0]).children[0]);
+        console.log(cheerio(content.children[0]).children[0]);
+        console.log(cheerio(cheerio(content.children[0]).children[0]));
+        console.log(cheerio(cheerio(content.children[0]).children[0]).children[0]);
+
         var header = cheerio(cheerio(cheerio(content.children[0]).children[0]).children[0]);
 
         manga.url = 'http://mangapark.me' + header.attribs.href;
