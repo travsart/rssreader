@@ -15,7 +15,7 @@ function parseManga (body, cb) {
         raw: 0
     };
     chBody.find('div.content').each(function (index, content) {
-        console.log(cheerio(content.children[1]).children[1]);
+        console.log(content.children[1]);
 
         var header = cheerio(cheerio(cheerio(content.children[1]).children[1]).children[1]);
 
