@@ -16,9 +16,9 @@ function parseManga (body, cb) {
     };
     chBody.find('div.content').each(function (index, content) {
         var header = content.children[1].children[1].children[0];
-
+        console.log(header);
         manga.url = 'http://mangapark.me' + header.attribs.href;
-        manga.name = header.text();
+        manga.name = header.contents();
         console.log(manga);
         var innerTable = cheerio(cheerio(content.children[1]).find('table .attr'));
 
