@@ -22,8 +22,6 @@ function parseManga(body, cb) {
 
         cheerio(cheerio(content).find('table.attr')).find('tr').each(function (row) {
             console.log(row);
-            console.log(row.children[0]);
-            console.log(row.children[1]);
         });
     });
 }
