@@ -4,180 +4,43 @@
 var Promise = require('bluebird');
 
 module.exports = {
-    generateManga: function (user, mangaList, page, end, rss, cb) {
-        var url = 'http://mangapark.me/search?orderby=latest&chapters=1&st-ss=1&page=' + page;
-        var request = require('request');
+    parseManga: function (error, response, body, cb) {
         var cheerio = require('cheerio');
-        var userAgent = 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36';
-        var me = this;
+        var chBody = cheerio(body);
+        var manga = {
+            name: '',
+            url: '',
+            summary: '',
+            genres: [],
+            year: -1,
+            status: 'Ongoing',
+            weighted: 0,
+            raw: 0
+        };
+        chBody.find('.content').each(function (index, content) {
+            content = cheerio(content);
 
-        sails.log.info('page :' + page + ' end: ' + end);
-        Genre.find({}).then(function (gs) {
-            var genres = {};
+            var header = cheerio(cheerio(cheerio(content.children[0]).children[0]).children[0]);
 
-            gs.forEach(function (g) {
-                genres[g.name.toLowerCase()] = g;
-            });
+            manga.url = 'http://mangapark.me' + header.attribs.href;
+            manga.name = header.text();
 
-            request({url: url, headers: {'User-agent': userAgent}}, function (error, response, body) {
-                var chBody = cheerio(body);
+            var innerTable = cheerio(cheerio(content.children[1]).find('table .attr'));
 
-                if (chBody.find('.no-match').length > 0 || page == end) {
-                    cb(mangaList);
-                }
-                else {
-                    var manga = {
-                        name: '',
-                        url: '',
-                        summary: '',
-                        genres: [],
-                        year: -1,
-                        status: 'Ongoing',
-                        weighted: 0,
-                        raw: 0
-                    };
-                    chBody.find('.manga-list').find('.item').each(function (index, child) {
-                        manga = {
-                            name: '',
-                            url: '',
-                            summary: '',
-                            genres: [],
-                            year: -1,
-                            status: 'Ongoing',
-                            weighted: 0,
-                            raw: 0
-                        };
-                        cheerio(child).find('td').each(function (index1, child1) {
-                            if (child1.children.length == 3) {
-                                manga.url = 'http://mangapark.me' + child1.children[1].attribs.href;
-                                manga.name = child1.children[1].attribs.title;
-                            }
-                            else {
-                                cheerio(child1).find('.info').each(function (index2, child2) {
-                                    if (child2.children.length == 7) {
-                                        var info1 = child2.children[3].children;
-                                        var info2 = child2.children[5].children;
-
-                                        for (var i = 0; i < info1.length; i++) {
-                                            if (info1[i].children != null && info1[i].children.length > 0 && info1[i].children[0].data == 'Status:') {
-                                                manga.status = info1[i + 1].children[0].data;
-                                                manga.type = info1[i + 1].children[0].data;
-                                                manga.year = parseInt(info1[i + 4].children[0].data);
-
-                                                break;
-                                            }
-                                        }
-                                        var found = false;
-                                        for (var i = 0; i < info2.length; i++) {
-                                            if (found && info2[i].children != null && info2[i].children.length > 0) {
-                                                var g = info2[i].children[0].data.toLowerCase().trim();
-
-                                                if (g != '[no chapters]') {
-                                                    if (genres[g]) {
-                                                        manga.raw += parseInt(genres[g].weight);
-                                                    }
-
-                                                    manga.genres.push(g)
-                                                }
-                                            }
-                                            else if (info2[i].children != null && info2[i].children.length > 0 && info2[i].children[0].data == 'Genres:') {
-                                                found = true;
-                                            }
-                                        }
-                                    }
-                                    else if (child2.children.length == 5) {
-                                        var info1 = child2.children[1].children;
-                                        var info2 = child2.children[3].children;
-
-                                        for (var i = 0; i < info1.length; i++) {
-                                            if (info1[i].children != null && info1[i].children.length > 0 && info1[i].children[0].data == 'Status:') {
-                                                manga.status = info1[i + 1].children[0].data;
-                                                manga.year = parseInt(info1[i + 4].children[0].data);
-                                                break;
-                                            }
-                                        }
-                                        var found = false;
-                                        for (var i = 0; i < info2.length; i++) {
-                                            if (found && info2[i].children != null && info2[i].children.length > 0) {
-                                                var g = info2[i].children[0].data.toLowerCase().trim();
-
-                                                if (g != '[no chapters]') {
-                                                    if (genres[g]) {
-                                                        manga.raw += parseInt(genres[g].weight);
-                                                    }
-                                                    manga.genres.push(g)
-                                                }
-                                            }
-                                            else if (info2[i].children != null && info2[i].children.length > 0 && info2[i].children[0].data == 'Genres:') {
-                                                found = true;
-                                            }
-                                        }
-                                    }
-                                });
-
-                                manga.summary = cheerio(child1).find('.summary').html();
-
-                                if (manga.summary && manga.summary != "") {
-                                    manga.summary = manga.summary.replace(/\r/g, '').replace(/<br>/g, '').trim();
-                                }
-                                else if (manga.summary == "") {
-                                    sails.log.info(cheerio(child1).find('.summary').html());
-                                } else {
-                                    manga.summary = '';
-                                }
-                            }
-                        });
-
-                        if (manga.length != 0) {
-                            if (isNaN(manga.year)) {
-                                manga.year = 0;
-                            }
-                            manga.weighted = (manga.genres.length > 0) ? manga.raw / manga.genres.length : 0;
-                            if (rss.hasOwnProperty(manga.name)) {
-                                manga.rss = true;
-                                manga.rank = rss[manga.name];
-                            }
-                            manga.user = user;
-                            manga.genrehash = manga.genres.join('');
-                            mangaList.push(manga);
-                        }
-                    });
-
-                    sails.log.info('Finished page :' + page);
-                    if (mangaList.length > 100) {
-                        Suggestion.create(mangaList).exec(function (err, created) {
-                            if (err) {
-                                sails.log.error('Error: ' + JSON.stringify(err));
-
-                                for (var g = 0; g < mangaList.length; g++) {
-                                    var a = mangaList[g];
-                                    sails.log.error('name ' + typeof a.name);
-                                    sails.log.error('url ' + typeof a.url);
-                                    sails.log.error('year ' + a.year + ' ' + typeof a.year);
-                                    sails.log.error('summary ' + typeof a.summary);
-                                    sails.log.error('status ' + a.status + ' ' + typeof a.status);
-                                    sails.log.error('genres ' + typeof a.genres);
-                                }
-
-                                cb({error: true, msg: err.stack});
-                            }
-                            else {
-                                sails.log.info('Created :' + created.length);
-                                me.generateManga(user, [], page + 1, end, rss, cb);
-                            }
-                        });
-                    } else {
-                        me.generateManga(user, mangaList, page + 1, end, rss, cb);
-                    }
-                }
+            innerTable.find('tr').each(function (row) {
+                console.log(row.html());
+                console.log(row.children[0]);
+                console.log(row.children[1]);
             });
         });
-    },parseList:function (error, response, body, cb) {
+
+    },
+    parseList: function (error, response, body, cb) {
         var cheerio = require('cheerio');
         var chBody = cheerio(body);
 
-        if (chBody.find('.no-match').length > 0 || page == end) {
-            cb(mangaList);
+        if (chBody.find('.no-match').length > 0) {
+            cb(null, null);
         }
         else {
             var urls = [];
@@ -190,22 +53,50 @@ module.exports = {
                 });
             });
 
-            cb(urls);
+            cb(null, urls);
         }
     },
-    requestUrl:function (url, parseFunc, cb) {
+    requestUrl: function (url, parseFunc, cb) {
         var request = require('request');
         var userAgent = 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36';
 
         request({url: url, headers: {'User-agent': userAgent}}, function (error, response, body) {
             if (error) {
-                cb({error:error});
+                cb({error: error});
             }
             else {
                 parseFunc(body, cb);
             }
         });
     },
+    buildUrls: function (page, cb) {
+        var me = this;
+        var url = 'http://mangapark.me/search?orderby=add&chapters=1&st-ss=0&page=' + page;
+
+        requestUrl(url, parseList, function (err, urls) {
+                if (err) {
+                    cb(err);
+                }
+                else {
+                    if (urls) {
+
+                        Url.create(urls).exec(function (err1, created) {
+                            if (err1) {
+                                cb(err1);
+                            }
+                            else {
+                                me.buildUrls(page + 1);
+                            }
+                        });
+                    }
+                    else {
+                        cb();
+                    }
+                }
+            }
+        );
+    },
+
     bulkUpdate: function (model, updates, field, cb) {
 
         var me = this;
