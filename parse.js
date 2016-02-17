@@ -19,7 +19,7 @@ function parseManga(body, cb) {
         weighted: 0,
         raw: 0
     };
-    chBody.('section.manga div.content').each(function (index, content) {
+    chBody('section.manga div.content').each(function (index, content) {
         console.log(content);
         var header = content.children[1].children[1].children[0];
 
