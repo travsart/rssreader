@@ -3,7 +3,8 @@ var url = 'http://mangapark.me/manga/dear-fujiwara-cocoa';
 
 function parseManga(body, cb) {
     var cheerio = require('cheerio');
-    body.replace('\r\n','');
+    body.replace(/\n/g, '').replace(/\r/g, '').replace(/\t/g, '');
+    
     var chBody = cheerio(cheerio(body).find('section.manga'));
     var manga = {
         name: '',
@@ -21,13 +22,13 @@ function parseManga(body, cb) {
         manga.url = 'http://mangapark.me' + header.attribs.href;
         manga.name = header.children[0].data;
 
-        cheerio(content).find('table.attr tr').each(function(index,row){
+        cheerio(content).find('table.attr tr').each(function (index, row) {
 
         });
 
-            //.find('tr').each(function (row) {
-          //  console.log(row);
-      //  });
+        //.find('tr').each(function (row) {
+        //  console.log(row);
+        //  });
     });
 }
 
