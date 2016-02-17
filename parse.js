@@ -20,9 +20,13 @@ function parseManga(body, cb) {
         manga.url = 'http://mangapark.me' + header.attribs.href;
         manga.name = header.children[0].data;
 
-        cheerio(cheerio(content).find('table .attr')).find('tr').each(function (row) {
-            console.log(row);
+        cheerio(content).find('table .attr').each(function(t){
+            console.log(t);
         });
+
+            //.find('tr').each(function (row) {
+          //  console.log(row);
+      //  });
     });
 }
 
