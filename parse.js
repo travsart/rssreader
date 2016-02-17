@@ -7,7 +7,7 @@ function parseManga(body, cb) {
         normalizeWhitespace: true,
         decodeEntities: true
     });
-    chBody = cheerio(chBody).find('section.manga div.content');
+
     var manga = {
         name: '',
         url: '',
@@ -18,7 +18,7 @@ function parseManga(body, cb) {
         weighted: 0,
         raw: 0
     };
-    chBody.each(function (index, content) {
+    cheerio(chBody).find('section div.content').each(function (index, content) {
         console.log(content);
         var header = content.children[1].children[1].children[0];
 
