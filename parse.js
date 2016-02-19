@@ -20,11 +20,14 @@ function parseManga(body, cb) {
         manga.name = header.children[0].data;
 
         cheerio(content).find('table.attr tr').each(function (index, row) {
-            var th = row.children[1];
-            var td = row.children[3];
+            var th = cheerio(row.children[1]);
+            var td = cheerio(row.children[3]);
             console.log(th);
-            console.log(th.text());
+
             console.log(td);
+
+            console.log(th.text());
+            console.log(td.text());
         });
     });
 }
