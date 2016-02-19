@@ -1,0 +1,106 @@
+2016-02-19T06:48:45.878Z - info: [32minfo: [39m
+2016-02-19T06:48:45.878Z - info: [32minfo: [39m               .-..-.
+2016-02-19T06:48:45.878Z - info: [32minfo: [39m
+2016-02-19T06:48:45.878Z - info: [32minfo: [39m   Sails              <|    .-..-.
+2016-02-19T06:48:45.879Z - info: [32minfo: [39m   v0.11.3             |\
+2016-02-19T06:48:45.879Z - info: [32minfo: [39m                      /|.\
+2016-02-19T06:48:45.879Z - info: [32minfo: [39m                     / || \
+2016-02-19T06:48:45.879Z - info: [32minfo: [39m                   ,'  |'  \
+2016-02-19T06:48:45.879Z - info: [32minfo: [39m                .-'.-==|/_--'
+2016-02-19T06:48:45.879Z - info: [32minfo: [39m                `--'-------' 
+2016-02-19T06:48:45.879Z - info: [32minfo: [39m   __---___--___---___--___---___--___
+2016-02-19T06:48:45.879Z - info: [32minfo: [39m ____---___--___---___--___---___--___-__
+2016-02-19T06:48:45.879Z - info: [32minfo: [39m
+2016-02-19T06:48:45.879Z - info: [32minfo: [39mServer lifted in `/home/server/git/rssreader`
+2016-02-19T06:48:45.880Z - info: [32minfo: [39mTo see your app, visit [4mhttp://localhost:8080[24m
+2016-02-19T06:48:45.880Z - info: [32minfo: [39mTo shut down Sails, press <CTRL> + C at any time.
+2016-02-19T08:00:02.614Z - info: [32minfo: [39m[ { name: 'Roppongi Black Cross',
+    url: 'Url',
+    start: '62',
+    lastChecked: '2015-12-22T19:00:01.986Z',
+    type: 'Manga',
+    check: false,
+    viewed: false,
+    createdAt: '2015-06-14T23:52:37.332Z',
+    updateUrl: 'http://mangapark.me/manga/roppongi-black-cross/s1/c62',
+    user: 'Travis',
+    rank: 7,
+    updatedAt: '2016-02-12T07:23:13.009Z',
+    id: '557e13c50c8302845fd56799' } ]
+2016-02-19T08:00:02.623Z - info: [32minfo: [39m{ success: true, msg: 'Successfully updated count: 1 Manga' }
+2016-02-19T08:00:03.611Z - info: [32minfo: [39m[ { name: 'Reikenzan: Hoshikuzu-tachi no Utage',
+    updateUrl: 'http://animefreak.tv/watch/reikenzan-hoshikuzu-tachi-no-utage-episode-5-online',
+    start: '5',
+    lastChecked: '2016-01-18T19:43:13.023Z',
+    type: 'Anime',
+    check: false,
+    viewed: false,
+    user: 'Travis',
+    rank: 8,
+    createdAt: '2016-01-18T19:43:15.178Z',
+    updatedAt: '2016-02-15T21:40:05.452Z',
+    id: '569d4053a3e3d9bb2cf32533' } ]
+2016-02-19T09:30:02.069Z - info: [32minfo: [39m[]
+2016-02-19T09:30:02.070Z - info: [32minfo: [39m{ success: true, msg: 'Successfully updated count: 0 Manga' }
+2016-02-19T09:30:02.659Z - info: [32minfo: [39m[]
+2016-02-19T11:00:02.077Z - info: [32minfo: [39m[]
+2016-02-19T11:00:02.078Z - info: [32minfo: [39m{ success: true, msg: 'Successfully updated count: 0 Manga' }
+2016-02-19T11:00:02.530Z - info: [32minfo: [39m[]
+2016-02-19T12:30:01.997Z - info: [32minfo: [39m[]
+2016-02-19T12:30:01.997Z - info: [32minfo: [39m{ success: true, msg: 'Successfully updated count: 0 Manga' }
+2016-02-19T12:30:02.530Z - info: [32minfo: [39m[]
+2016-02-19T14:00:01.927Z - info: [32minfo: [39m[]
+2016-02-19T14:00:01.928Z - info: [32minfo: [39m{ success: true, msg: 'Successfully updated count: 0 Manga' }
+2016-02-19T14:00:03.542Z - info: [32minfo: [39m[]
+2016-02-19T15:30:02.028Z - info: [32minfo: [39m[]
+2016-02-19T15:30:02.029Z - info: [32minfo: [39m{ success: true, msg: 'Successfully updated count: 0 Manga' }
+2016-02-19T15:30:02.547Z - info: [32minfo: [39m[]
+2016-02-19T17:00:01.981Z - info: [32minfo: [39m[]
+2016-02-19T17:00:01.981Z - info: [32minfo: [39m{ success: true, msg: 'Successfully updated count: 0 Manga' }
+2016-02-19T17:00:02.517Z - info: [32minfo: [39m[ { name: 'Heavy Object',
+    updateUrl: 'http://animefreak.tv/watch/heavy-object-episode-19-online',
+    start: '19',
+    lastChecked: '2015-12-25T19:00:09.580Z',
+    type: 'Anime',
+    check: false,
+    viewed: false,
+    createdAt: '2015-10-02T20:57:18.572Z',
+    user: 'Travis',
+    updatedAt: '2016-02-15T21:40:34.262Z',
+    rank: 8,
+    id: '560eefae1c1cc0560eacf49e' } ]
+2016-02-19T17:02:38.066Z - info: [32minfo: [39m[]
+2016-02-19T17:02:38.066Z - info: [32minfo: [39m{ success: true, msg: 'Successfully updated count: 0 Manga' }
+2016-02-19T17:02:39.336Z - info: [32minfo: [39m[]
+2016-02-19T17:02:39.580Z - info: [32minfo: [39m[]
+2016-02-19T17:02:39.581Z - info: [32minfo: [39m{ success: true, msg: 'Successfully updated count: 0 Manga' }
+2016-02-19T17:02:41.953Z - info: [32minfo: [39m[]
+2016-02-19T18:30:02.016Z - info: [32minfo: [39m[]
+2016-02-19T18:30:02.017Z - info: [32minfo: [39m{ success: true, msg: 'Successfully updated count: 0 Manga' }
+2016-02-19T18:30:02.599Z - info: [32minfo: [39m[]
+2016-02-19T19:30:02.030Z - info: [32minfo: [39m[]
+2016-02-19T19:30:02.030Z - info: [32minfo: [39m{ success: true, msg: 'Successfully updated count: 0 Manga' }
+2016-02-19T19:30:02.752Z - info: [32minfo: [39m[ { name: 'Gate: Jieitai Kanochi nite, Kaku Tatakaeri - Enryuu-hen',
+    updateUrl: 'http://animefreak.tv/watch/gate-jieitai-kanochi-nite-kaku-tatakaeri-enryuu-hen-episode-7-online',
+    start: '7',
+    lastChecked: '2016-01-10T08:19:14.140Z',
+    type: 'Anime',
+    check: false,
+    viewed: false,
+    user: 'Travis',
+    rank: 8,
+    createdAt: '2016-01-10T08:19:15.927Z',
+    updatedAt: '2016-02-15T21:40:19.752Z',
+    id: '56921403045169e47793065e' } ]
+2016-02-19T19:47:46.331Z - info: [32minfo: [39m[]
+2016-02-19T19:47:46.331Z - info: [32minfo: [39m{ success: true, msg: 'Successfully updated count: 0 Manga' }
+2016-02-19T19:47:46.784Z - info: [32minfo: [39m[]
+2016-02-19T19:52:20.257Z - info: [32minfo: [39m[]
+2016-02-19T19:52:20.257Z - info: [32minfo: [39m{ success: true, msg: 'Successfully updated count: 0 Manga' }
+2016-02-19T19:52:20.713Z - info: [32minfo: [39m[]
+2016-02-19T21:00:02.188Z - info: [32minfo: [39m[]
+2016-02-19T21:00:02.190Z - info: [32minfo: [39m{ success: true, msg: 'Successfully updated count: 0 Manga' }
+2016-02-19T21:00:04.059Z - info: [32minfo: [39m[]
+2016-02-19T22:00:01.489Z - info: [32minfo: [39m[]
+2016-02-19T22:00:01.493Z - info: [32minfo: [39m{ success: true, msg: 'Successfully updated count: 0 Manga' }
+2016-02-19T22:00:02.862Z - info: [32minfo: [39m[]
