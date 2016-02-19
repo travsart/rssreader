@@ -21,7 +21,7 @@ function parseManga(body, cb) {
 
         cheerio(content).find('table.attr tr').each(function (index, row) {
             var th = row.children[1];
-            var td = row.childrenm[3];
+            var td = row.children[3];
             console.log(th);
             console.log(tr);
         });
