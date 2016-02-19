@@ -58,8 +58,9 @@ function parseManga(body, cb) {
                     break;
             }
         });
-        console.log(cheerio(content).find('div.summary p.summary'));
-        console.log(cheerio(cheerio(content).find('div.summary p.summary')).text());
+        cheerio(content).find('div.summary p.summary').each(function(index,sum){
+            console.log(sum);
+        });
     });
     console.log(manga);
 }
