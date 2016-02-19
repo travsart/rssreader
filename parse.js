@@ -20,15 +20,17 @@ function parseManga(body, cb) {
         manga.name = header.children[0].data;
 
         cheerio(content).find('table.attr tr').each(function (index, row) {
-            console.log(row);
+            var th = row.children[1];
+            var td = row.childrenm[3];
+            console.log(th);
+            console.log(tr);
         });
     });
 }
 
 var request = require('request');
-var userAgent = 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36';
 
-request({url: url, headers: {'User-agent': userAgent}}, function (error, response, body) {
+request({url: url, headers: {'User-agent': require('random-ua').generate()}}, function (error, response, body) {
     if (error) {
         cb({error: error});
     }
