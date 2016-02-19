@@ -92,8 +92,7 @@ rssApp
                     {
                         name: 'Delete',
                         enableCellEdit: false,
-                        width: '65',
-                        cellTemplate: '<div class="glyphicon glyphicon-remove" ng-click="grid.appScope.removeRow(grid, row)"></div>'
+                        cellTemplate: '<div class="glyphicon glyphicon-remove" ng-click="grid.appScope.removeRow(grid, row)" style="display:block;text-align:center"></div>'
                     }],
                 data: 'rssData'
             };

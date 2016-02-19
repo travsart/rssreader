@@ -1,5 +1,5 @@
 module.exports.models = {
 	connection : 'db',
-	migrate : 'alter'
+	migrate : 'safe'
 	//migrate:'drop'
 };
