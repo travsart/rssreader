@@ -25,25 +25,25 @@ function parseManga(body, cb) {
             switch (th) {
                 case 'author(s)':
                     manga.authors = [];
-                    cheerio(row.children[3]).find('a').each(function(aIndex,a){
-                        console.log(a);
+                    cheerio(row.children[3]).find('a').each(function (aIndex, a) {
                         manga.authors.push(a.attribs.title);
                     });
                     break;
                 case 'artist(s)':
                     manga.artists = []
-                    cheerio(row.children[3]).find('a').each(function(aIndex,a){
+                    cheerio(row.children[3]).find('a').each(function (aIndex, a) {
                         manga.artists.push(a.attribs.title);
                     });
                     break;
                 case 'genre(s)':
                     manga.genres = []
-                    cheerio(row.children[3]).find('a').each(function(aIndex,a){
+                    cheerio(row.children[3]).find('a').each(function (aIndex, a) {
                         manga.genres.push(a.attribs.title.toLowerCase());
                     });
                     break;
                 case 'type':
                     manga.type = cheerio(row.children[3]).text().trim();
+                    manga.type = manga.type.substring(0, manga.type.indexOf('-') - 1);
                     break;
                 case 'release':
                     manga.release = cheerio(row.children[3]).text().trim();
@@ -52,18 +52,16 @@ function parseManga(body, cb) {
                     manga.status = (cheerio(row.children[3]).text().trim() != "Completed") ? "Ongoing" : "Completed";
                     break;
                 case 'latest':
-                    console.log(row.children[3].children[1]);
-                    console.log( row.children[3].children[1].children[1]);
                     console.log(row.children[3].children[1].children[1].children[1]);
-
+                    console.log(row.children[3].children[1].children[1].children[1].children[1]);
                     row.children[3].children[1].children[1].children[1];
                     break;
                 default:
                     break;
             }
-            console.log(manga);
         });
     });
+    console.log(manga);
 }
 
 var request = require('request');
