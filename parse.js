@@ -8,26 +8,60 @@ function parseManga(body, cb) {
         name: '',
         url: '',
         summary: '',
-        genres: [],
-        year: -1,
-        status: 'Ongoing',
         weighted: 0,
         raw: 0
     };
+
     cheerio(cheerio(body).find('section.manga')).find('div.content').each(function (index, content) {
         var header = content.children[1].children[1].children[0];
         manga.url = 'http://mangapark.me' + header.attribs.href;
         manga.name = header.children[0].data;
 
         cheerio(content).find('table.attr tr').each(function (index, row) {
-            var th = cheerio(row.children[1]);
-            var td = cheerio(row.children[3]);
-            console.log(th);
+            var th = cheerio(row.children[1]).text().toLocaleLowerCase();
 
-            console.log(td);
+            var td = cheerio(row.children[3]).text();
 
-            console.log(th.text());
-            console.log(td.text());
+            switch (th) {
+                case 'author(s)':
+                    manga.authors = [];
+                    cheerio(row.children[3]).find('a').each(function(aIndex,a){
+                        console.log(a);
+                        manga.authors.push(a.attribs.title);
+                    });
+                    break;
+                case 'artist(s)':
+                    manga.artists = []
+                    cheerio(row.children[3]).find('a').each(function(aIndex,a){
+                        manga.artists.push(a.attribs.title);
+                    });
+                    break;
+                case 'genre(s)':
+                    manga.genres = []
+                    cheerio(row.children[3]).find('a').each(function(aIndex,a){
+                        manga.genres.push(a.attribs.title.toLowerCase());
+                    });
+                    break;
+                case 'type':
+                    manga.type = cheerio(row.children[3]).text().trim();
+                    break;
+                case 'release':
+                    manga.release = cheerio(row.children[3]).text().trim();
+                    break;
+                case 'status':
+                    manga.status = (cheerio(row.children[3]).text().trim() != "Completed") ? "Ongoing" : "Completed";
+                    break;
+                case 'latest':
+                    console.log(row.children[3].children[1]);
+                    console.log( row.children[3].children[1].children[1]);
+                    console.log(row.children[3].children[1].children[1].children[1]);
+
+                    row.children[3].children[1].children[1].children[1];
+                    break;
+                default:
+                    break;
+            }
+            console.log(manga);
         });
     });
 }
