@@ -4,13 +4,7 @@ var url = 'http://mangapark.me/manga/dear-fujiwara-cocoa';
 function parseManga(body, cb) {
     var cheerio = require('cheerio');
 
-    var manga = {
-        name: '',
-        url: '',
-        summary: '',
-        weighted: 0,
-        raw: 0
-    };
+    var manga = {};
 
     cheerio(cheerio(body).find('section.manga')).find('div.content').each(function (index, content) {
         var header = content.children[1].children[1].children[0];
@@ -58,12 +52,7 @@ function parseManga(body, cb) {
                     break;
             }
         });
-        console.log(cheerio(content).find('p.summary'));
-        console.log(cheerio(cheerio(content).find('p.summary')).text());
-
-        cheerio(content).find('p.summary').each(function(index,sum){
-            console.log(sum);
-        });
+        manga.summary = cheerio(cheerio(content).find('p.summary')).text();
     });
     console.log(manga);
 }
