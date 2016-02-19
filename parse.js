@@ -23,7 +23,8 @@ function parseManga(body, cb) {
             var th = row.children[1];
             var td = row.children[3];
             console.log(th);
-            console.log(tr);
+            console.log(th.text());
+            console.log(td);
         });
     });
 }
