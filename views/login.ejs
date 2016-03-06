@@ -5,13 +5,13 @@
             <div class="col-s-3"><label for="username" class="sr-only">Username</label>
                 <input type="text" ng-model="user.username" class="form-control col-xs-3" placeholder="Username"
                        required
-                       autofocus x-autocompletetype="username">
+                       autofocus name="username">
             </div>
             <label for="password" class="sr-only">Password</label>
             <div class="col-s-3">
                 <input type="password" id="password" class="form-control" ng-model="user.password"
                        placeholder="Password"
-                       required x-autocompletetype="password"></div>
+                       required name="password"></div>
             <button type="submit" class="btn btn-primary btn-md" ng-click="">Sign in</button>
         </form>
         <toaster-container></toaster-container>
