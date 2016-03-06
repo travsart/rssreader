@@ -1,6 +1,6 @@
 <div ng-controller="loginController">
     <div class="container Absolute-Center">
-        <form ng-submit="loginUser(user)">
+        <form ng-submit="loginUser(user)" autocomplete=""on">
             <h2 class="form-signin-heading">Login to {{appName}}</h2>
             <div class="col-s-3"><label for="username" class="sr-only">Username</label>
                 <input type="text" ng-model="user.username" class="form-control col-xs-3" placeholder="Username"
