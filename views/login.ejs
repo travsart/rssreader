@@ -1,17 +1,17 @@
 <div ng-controller="loginController">
     <div class="container Absolute-Center">
-        <form ng-submit="loginUser(user)" autocomplete=""on">
+        <form ng-submit="loginUser(user)" autocomplete="on">
             <h2 class="form-signin-heading">Login to {{appName}}</h2>
             <div class="col-s-3"><label for="username" class="sr-only">Username</label>
                 <input type="text" ng-model="user.username" class="form-control col-xs-3" placeholder="Username"
                        required
-                       autofocus>
+                       autofocus x-autocompletetype="username" autocomplete="on">
             </div>
             <label for="password" class="sr-only">Password</label>
             <div class="col-s-3">
                 <input type="password" id="password" class="form-control" ng-model="user.password"
                        placeholder="Password"
-                       required></div>
+                       required x-autocompletetype="password" autocomplete="on"></div>
             <button type="submit" class="btn btn-primary btn-md" ng-click="">Sign in</button>
         </form>
         <toaster-container></toaster-container>
