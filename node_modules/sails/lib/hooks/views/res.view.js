@@ -8,7 +8,7 @@ var _ = require('lodash');
 
 
 /**
- * Adds res.view() method (an enhanced version of res.render) to response object.
+ * Adds `res.view()` (an enhanced version of res.render) and `res.guessView()` methods to response object.
  * `res.view()` automatically renders the appropriate view based on the calling middleware's source route
  * Note: the original function is still accessible via res.render()
  *
@@ -150,7 +150,9 @@ module.exports = function _addResViewMethod(req, res, next) {
 
     // Merge with config views locals
     if (sails.config.views.locals) {
-      _.merge(locals, sails.config.views.locals, _.defaults);
+      // Formerly a deep merge: `_.merge(locals, sails.config.views.locals, _.defaults);`
+      // Now shallow- see https://github.com/balderdashy/sails/issues/3500
+      _.defaults(locals, sails.config.views.locals);
     }
 
     // If the path was specified, but invalid
