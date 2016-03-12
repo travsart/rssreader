@@ -72,7 +72,7 @@ module.exports = {
     buildUrls: function (page, cb) {
         var me = this;
         var url = 'http://mangapark.me/search?orderby=add&chapters=1&st-ss=0&page=' + page;
-
+        sails.log.info('buildUrls ' + page);
         me.requestUrl(url, me.parseList, function (err, urls) {
                 if (err) {
                     cb(err);

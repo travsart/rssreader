@@ -5,6 +5,9 @@ module.exports = {
     attributes: {
         url: {
             type: 'string'
+        },
+        name: {
+            type: 'string'
         }
     }
 };
