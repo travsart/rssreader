@@ -118,6 +118,7 @@ module.exports = {
 
         var me = this;
         return new Promise(function (resolve, reject) {
+
             Rss.find({
                 check: true,
                 type: type
@@ -126,6 +127,7 @@ module.exports = {
                     resolve(ret);
                 });
             });
+            return null;
         });
     }
 };
