@@ -19,7 +19,7 @@ module.exports = {
             end = -1;
         }
 
-        res.json({success:true,msg:'Running'});
+        res.json({success: true, msg: 'Running'});
         sails.log.info('Starting');
         GenreService.generate(user, start, end).then(function (err) {
             if (err) {
@@ -53,24 +53,21 @@ module.exports = {
         });
     },
     generateSuggestionRankings: function (req, res) {
-        res.json({success:true,msg:'Running'});
+        res.json({success: true, msg: 'Running'});
         sails.log.info('Starting');
         GenreService.generateSuggestionRankings(req.cookies.user).then(function (err) {
-         //   res.json({success: true, err: err});
+            //   res.json({success: true, err: err});
             sails.log.info('done');
         }).catch(function (ex) {
             sails.log.error(ex.stack);
-          //  res.json({success: false, msg: ex.message});
+            //  res.json({success: false, msg: ex.message});
         });
     },
-    buildUrls:function(req,res){
-        res.json({success:true,msg:'Running'});
+    buildUrls: function (req, res) {
+        res.json({success: true, msg: 'Running'});
         sails.log.info('Starting buildUrls');
-        GenreService.buildUrls(0).then(function (err) {
+        GenreService.buildUrls(0, function (err) {
             sails.log.info('done buildUrls');
-        }).catch(function (ex) {
-            sails.log.error(ex.stack);
-            //  res.json({success: false, msg: ex.message});
         });
     }
 };
