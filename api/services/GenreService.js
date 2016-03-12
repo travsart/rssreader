@@ -80,7 +80,7 @@ module.exports = {
                 else {
                     if (urls) {
                         sails.log.debug(urls);
-                        throw new Exception();
+                        throw 'asd';
                         Url.create(urls).exec(function (err1, created) {
                             if (err1) {
                                 cb(err1);
