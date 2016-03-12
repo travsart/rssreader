@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e8852a0a-39ee-460b-af05-a2f0c29985c7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/models/Url.js" afterPath="$PROJECT_DIR$/api/models/Url.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/services/GenreService.js" afterPath="$PROJECT_DIR$/api/services/GenreService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/services/RssService.js" afterPath="$PROJECT_DIR$/api/services/RssService.js" />
     </list>
     <ignored path="rssreader.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,29 +25,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GenreService.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GenreService.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.385965">
-              <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.057761732">
+              <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
               <folding>
-                <element signature="e#5416#5777#0" expanded="false" />
-                <element signature="e#5806#7840#0" expanded="false" />
-                <element signature="e#7880#8597#0" expanded="false" />
-                <element signature="e#8643#9388#0" expanded="false" />
-                <element signature="e#9417#9724#0" expanded="false" />
-                <element signature="e#9750#9865#0" expanded="false" />
-                <element signature="e#9902#10428#0" expanded="false" />
-                <element signature="e#10470#12030#0" expanded="false" />
+                <element signature="e#5509#5870#0" expanded="false" />
+                <element signature="e#5899#7933#0" expanded="false" />
+                <element signature="e#7973#8690#0" expanded="false" />
+                <element signature="e#8736#9481#0" expanded="false" />
+                <element signature="e#9510#9817#0" expanded="false" />
+                <element signature="e#9843#9958#0" expanded="false" />
+                <element signature="e#9995#10521#0" expanded="false" />
+                <element signature="e#10563#12123#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Url.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Url.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/models/Url.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1722973">
+            <state vertical-scroll-proportion="0.0">
               <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
               <folding />
             </state>
@@ -78,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/api/services/RssService.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="122" column="19" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="19" />
+              <caret line="121" column="28" selection-start-line="121" selection-start-column="28" selection-end-line="121" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -156,9 +156,9 @@
         <option value="$PROJECT_DIR$/config/routes.js" />
         <option value="$PROJECT_DIR$/api/controllers/RssController.js" />
         <option value="$PROJECT_DIR$/api/controllers/GenreController.js" />
+        <option value="$PROJECT_DIR$/api/models/Url.js" />
         <option value="$PROJECT_DIR$/api/services/RssService.js" />
         <option value="$PROJECT_DIR$/api/services/GenreService.js" />
-        <option value="$PROJECT_DIR$/api/models/Url.js" />
       </list>
     </option>
   </component>
@@ -601,12 +601,6 @@
       <option name="number" value="Default" />
       <updated>1448998890623</updated>
     </task>
-    <task id="LOCAL-00159" summary="as">
-      <created>1452541833297</created>
-      <option name="number" value="00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1452541833297</updated>
-    </task>
     <task id="LOCAL-00160" summary="as">
       <created>1452542077878</created>
       <option name="number" value="00160" />
@@ -895,7 +889,13 @@
       <option name="project" value="LOCAL" />
       <updated>1457789665457</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="as">
+      <created>1457789803026</created>
+      <option name="number" value="00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1457789803027</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -910,7 +910,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19345239" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19345239" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -954,14 +954,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="69" column="11" selection-start-line="59" selection-start-column="7" selection-end-line="69" selection-end-column="11" />
           <folding>
-            <element signature="e#5416#5777#0" expanded="false" />
-            <element signature="e#5806#7840#0" expanded="false" />
-            <element signature="e#7880#8597#0" expanded="false" />
-            <element signature="e#8643#9388#0" expanded="false" />
-            <element signature="e#9417#9724#0" expanded="false" />
-            <element signature="e#9750#9865#0" expanded="false" />
-            <element signature="e#9902#10428#0" expanded="false" />
-            <element signature="e#10470#12030#0" expanded="false" />
+            <element signature="e#5509#5870#0" expanded="false" />
+            <element signature="e#5899#7933#0" expanded="false" />
+            <element signature="e#7973#8690#0" expanded="false" />
+            <element signature="e#8736#9481#0" expanded="false" />
+            <element signature="e#9510#9817#0" expanded="false" />
+            <element signature="e#9843#9958#0" expanded="false" />
+            <element signature="e#9995#10521#0" expanded="false" />
+            <element signature="e#10563#12123#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1281,10 +1281,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/RssController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="54" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/Url.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1297,44 +1313,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/controllers/RssController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="54" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/services/RssService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="122" column="19" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="19" />
+          <caret line="121" column="28" selection-start-line="121" selection-start-column="28" selection-end-line="121" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.385965">
-          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.057761732">
+          <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
           <folding>
-            <element signature="e#5416#5777#0" expanded="false" />
-            <element signature="e#5806#7840#0" expanded="false" />
-            <element signature="e#7880#8597#0" expanded="false" />
-            <element signature="e#8643#9388#0" expanded="false" />
-            <element signature="e#9417#9724#0" expanded="false" />
-            <element signature="e#9750#9865#0" expanded="false" />
-            <element signature="e#9902#10428#0" expanded="false" />
-            <element signature="e#10470#12030#0" expanded="false" />
+            <element signature="e#5509#5870#0" expanded="false" />
+            <element signature="e#5899#7933#0" expanded="false" />
+            <element signature="e#7973#8690#0" expanded="false" />
+            <element signature="e#8736#9481#0" expanded="false" />
+            <element signature="e#9510#9817#0" expanded="false" />
+            <element signature="e#9843#9958#0" expanded="false" />
+            <element signature="e#9995#10521#0" expanded="false" />
+            <element signature="e#10563#12123#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/Url.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1722973">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
