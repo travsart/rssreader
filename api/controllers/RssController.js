@@ -16,7 +16,7 @@ module.exports = {
 
         if (!(type == null || type == 'Manga' || type == 'Anime' || type == '')) {
             sails.log.error('Must send a valid type: Manga, Anime, or empty string to do both.');
-            return res.send({
+            return res.serverError({
                 success: false,
                 message: 'Must send a valid type: Manga, Anime, or empty string to do both.'
             });
@@ -36,22 +36,22 @@ module.exports = {
                     resRss.success = resRss.success && results.success;
                     resRss.msg += ' ' + results.msg;
 
-                    res.json(resRss);
+                    res.ok(resRss);
                 }).catch(function (ex) {
                     sails.log.error(ex.stack);
-                    res.json({success: false, msg: ex.message});
+                    res.serverError({success: false, msg: ex.message});
                 });
             }).catch(function (ex) {
                 sails.log.error(ex.stack);
-                res.json({success: false, msg: ex.message});
+                res.serverError({success: false, msg: ex.message});
             });
         } else {
             sails.log.debug('Checking type: ' + type);
             RssService.checkSite(type, page, 0).then(function (results) {
-                res.json(results);
+                res.ok(results);
             }).catch(function (ex) {
                 sails.log.error(ex.stack);
-                res.json({success: false, msg: ex.message});
+                res.serverError({success: false, msg: ex.message});
             });
         }
     }
