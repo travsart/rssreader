@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e8852a0a-39ee-460b-af05-a2f0c29985c7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/login.ejs" afterPath="$PROJECT_DIR$/views/login.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/GenreController.js" afterPath="$PROJECT_DIR$/api/controllers/GenreController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/services/GenreService.js" afterPath="$PROJECT_DIR$/api/services/GenreService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.js" afterPath="$PROJECT_DIR$/config/routes.js" />
     </list>
     <ignored path="rssreader.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,22 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="suggest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/suggest.js">
+      <file leaf-file-name="GenreService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="101" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Suggestion.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/models/Suggestion.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-4.9649124">
+              <caret line="71" column="13" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="13" />
+              <folding>
+                <element signature="e#5403#5764#0" expanded="false" />
+                <element signature="e#5793#7827#0" expanded="false" />
+                <element signature="e#7867#8584#0" expanded="false" />
+                <element signature="e#8630#9375#0" expanded="false" />
+                <element signature="e#9404#9711#0" expanded="false" />
+                <element signature="e#9737#9852#0" expanded="false" />
+                <element signature="e#9889#10415#0" expanded="false" />
+                <element signature="e#10457#12017#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,78 +49,17 @@
         <entry file="file://$PROJECT_DIR$/api/controllers/GenreController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+              <caret line="68" column="48" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Genre.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/models/Genre.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parse.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parse.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.ejs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/login.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3549884">
-              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenreService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="11" selection-start-line="59" selection-start-column="7" selection-end-line="69" selection-end-column="11" />
-              <folding>
-                <element signature="e#3115#3559#0" expanded="false" />
-                <element signature="e#4984#5364#0" expanded="false" />
-                <element signature="e#5400#5761#0" expanded="false" />
-                <element signature="e#5790#7824#0" expanded="false" />
-                <element signature="e#7864#8581#0" expanded="false" />
-                <element signature="e#8627#9372#0" expanded="false" />
-                <element signature="e#9401#9708#0" expanded="false" />
-                <element signature="e#9734#9849#0" expanded="false" />
-                <element signature="e#9886#10412#0" expanded="false" />
-                <element signature="e#10454#12014#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rssController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/app/controller/rssController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="94" column="146" selection-start-line="94" selection-start-column="146" selection-end-line="94" selection-end-column="146" />
+            <state vertical-scroll-proportion="0.6914191">
+              <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -179,16 +119,16 @@
         <option value="$PROJECT_DIR$/views/auth/home.ejs" />
         <option value="$PROJECT_DIR$/assets/js/app/app.js" />
         <option value="$PROJECT_DIR$/api/models/Genre.js" />
-        <option value="$PROJECT_DIR$/config/routes.js" />
         <option value="$PROJECT_DIR$/api/models/Suggestion.js" />
         <option value="$PROJECT_DIR$/suggest.js" />
-        <option value="$PROJECT_DIR$/api/controllers/GenreController.js" />
         <option value="$PROJECT_DIR$/api/services/test.html" />
         <option value="$PROJECT_DIR$/assets/js/app/controller/rssController.js" />
         <option value="$PROJECT_DIR$/api/models/Urlsa.js" />
-        <option value="$PROJECT_DIR$/api/services/GenreService.js" />
         <option value="$PROJECT_DIR$/parse.js" />
         <option value="$PROJECT_DIR$/views/login.ejs" />
+        <option value="$PROJECT_DIR$/api/services/GenreService.js" />
+        <option value="$PROJECT_DIR$/api/controllers/GenreController.js" />
+        <option value="$PROJECT_DIR$/config/routes.js" />
       </list>
     </option>
   </component>
@@ -202,10 +142,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="-1374" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -404,7 +344,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -507,6 +446,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -612,30 +552,6 @@
       <created>1448998890623</created>
       <option name="number" value="Default" />
       <updated>1448998890623</updated>
-    </task>
-    <task id="LOCAL-00147" summary="as">
-      <created>1452386836932</created>
-      <option name="number" value="00147" />
-      <option name="project" value="LOCAL" />
-      <updated>1452386836932</updated>
-    </task>
-    <task id="LOCAL-00148" summary="as">
-      <created>1452386914317</created>
-      <option name="number" value="00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1452386914317</updated>
-    </task>
-    <task id="LOCAL-00149" summary="as">
-      <created>1452387010924</created>
-      <option name="number" value="00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1452387010925</updated>
-    </task>
-    <task id="LOCAL-00150" summary="as">
-      <created>1452387091486</created>
-      <option name="number" value="00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1452387091486</updated>
     </task>
     <task id="LOCAL-00151" summary="as">
       <created>1452387137767</created>
@@ -907,15 +823,39 @@
       <option name="project" value="LOCAL" />
       <updated>1454773783393</updated>
     </task>
-    <option name="localTasksCounter" value="196" />
+    <task id="LOCAL-00196" summary="as">
+      <created>1457282948234</created>
+      <option name="number" value="00196" />
+      <option name="project" value="LOCAL" />
+      <updated>1457282948235</updated>
+    </task>
+    <task id="LOCAL-00197" summary="as">
+      <created>1457283181598</created>
+      <option name="number" value="00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1457283181598</updated>
+    </task>
+    <task id="LOCAL-00198" summary="as">
+      <created>1457283835503</created>
+      <option name="number" value="00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1457283835503</updated>
+    </task>
+    <task id="LOCAL-00199" summary="as">
+      <created>1457294716950</created>
+      <option name="number" value="00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1457294716950</updated>
+    </task>
+    <option name="localTasksCounter" value="200" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
+    <frame x="-1374" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19345239" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23792094" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19771242" sideWeight="0.50488997" order="10" side_tool="true" content_ui="tabs" />
@@ -956,7 +896,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -966,16 +906,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="69" column="11" selection-start-line="59" selection-start-column="7" selection-end-line="69" selection-end-column="11" />
           <folding>
-            <element signature="e#3115#3559#0" expanded="false" />
-            <element signature="e#4984#5364#0" expanded="false" />
-            <element signature="e#5400#5761#0" expanded="false" />
-            <element signature="e#5790#7824#0" expanded="false" />
-            <element signature="e#7864#8581#0" expanded="false" />
-            <element signature="e#8627#9372#0" expanded="false" />
-            <element signature="e#9401#9708#0" expanded="false" />
-            <element signature="e#9734#9849#0" expanded="false" />
-            <element signature="e#9886#10412#0" expanded="false" />
-            <element signature="e#10454#12014#0" expanded="false" />
+            <element signature="e#5403#5764#0" expanded="false" />
+            <element signature="e#5793#7827#0" expanded="false" />
+            <element signature="e#7867#8584#0" expanded="false" />
+            <element signature="e#8630#9375#0" expanded="false" />
+            <element signature="e#9404#9711#0" expanded="false" />
+            <element signature="e#9737#9852#0" expanded="false" />
+            <element signature="e#9889#10415#0" expanded="false" />
+            <element signature="e#10457#12017#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1262,22 +1200,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/controllers/GenreController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/c.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1316,25 +1238,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="11" selection-start-line="59" selection-start-column="7" selection-end-line="69" selection-end-column="11" />
-          <folding>
-            <element signature="e#3115#3559#0" expanded="false" />
-            <element signature="e#4984#5364#0" expanded="false" />
-            <element signature="e#5400#5761#0" expanded="false" />
-            <element signature="e#5790#7824#0" expanded="false" />
-            <element signature="e#7864#8581#0" expanded="false" />
-            <element signature="e#8627#9372#0" expanded="false" />
-            <element signature="e#9401#9708#0" expanded="false" />
-            <element signature="e#9734#9849#0" expanded="false" />
-            <element signature="e#9886#10412#0" expanded="false" />
-            <element signature="e#10454#12014#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parse.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1345,8 +1248,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/login.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3549884">
+        <state vertical-scroll-proportion="-11.769231">
           <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.9649124">
+          <caret line="71" column="13" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="13" />
+          <folding>
+            <element signature="e#5403#5764#0" expanded="false" />
+            <element signature="e#5793#7827#0" expanded="false" />
+            <element signature="e#7867#8584#0" expanded="false" />
+            <element signature="e#8630#9375#0" expanded="false" />
+            <element signature="e#9404#9711#0" expanded="false" />
+            <element signature="e#9737#9852#0" expanded="false" />
+            <element signature="e#9889#10415#0" expanded="false" />
+            <element signature="e#10457#12017#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/GenreController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="48" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6914191">
+          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
           <folding />
         </state>
       </provider>

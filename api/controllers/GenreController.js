@@ -62,6 +62,16 @@ module.exports = {
             sails.log.error(ex.stack);
           //  res.json({success: false, msg: ex.message});
         });
+    },
+    buildUrls:function(req,res){
+        res.json({success:true,msg:'Running'});
+        sails.log.info('Starting buildUrls');
+        GenreService.generateSuggestionRankings(0).then(function (err) {
+            sails.log.info('done buildUrls');
+        }).catch(function (ex) {
+            sails.log.error(ex.stack);
+            //  res.json({success: false, msg: ex.message});
+        });
     }
 };
 

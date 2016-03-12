@@ -73,7 +73,7 @@ module.exports = {
         var me = this;
         var url = 'http://mangapark.me/search?orderby=add&chapters=1&st-ss=0&page=' + page;
 
-        requestUrl(url, parseList, function (err, urls) {
+        me.requestUrl(url, parseList, function (err, urls) {
                 if (err) {
                     cb(err);
                 }
