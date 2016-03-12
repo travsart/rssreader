@@ -4,7 +4,7 @@
 var Promise = require('bluebird');
 
 module.exports = {
-    parseManga: function (error, response, body, cb) {
+    parseManga: function (body, cb) {
         var cheerio = require('cheerio');
         var chBody = cheerio(body);
         var manga = {
@@ -35,7 +35,7 @@ module.exports = {
         });
 
     },
-    parseList: function (error, response, body, cb) {
+    parseList: function (body, cb) {
         var cheerio = require('cheerio');
         var chBody = cheerio(body);
 
