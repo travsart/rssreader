@@ -123,7 +123,7 @@ module.exports = {
                 type: type
             }, function (err, rss) {
                 me.checkPage(rss, type, page, preCount).then(function (ret) {
-                    resolve(ret);
+                    return resolve(ret);
                 });
             });
         });
