@@ -118,8 +118,6 @@ module.exports = {
 
         var me = this;
         return new Promise(function (resolve, reject) {
-            var rss;
-
             return Rss.find({
                 check: true,
                 type: type
