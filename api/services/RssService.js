@@ -118,14 +118,14 @@ module.exports = {
 
         var me = this;
         return new Promise(function (resolve, reject) {
-            Rss.find({
+            resolve(Rss.find({
                 check: true,
                 type: type
             }, function (err, rss) {
                 me.checkPage(rss, type, page, preCount).then(function (ret) {
-                    resolve(ret);
+                    return ret;
                 });
-            });
+            }));
         });
     }
 };
