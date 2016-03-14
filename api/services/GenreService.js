@@ -84,7 +84,7 @@ module.exports = {
                                 cb(err1);
                             }
                             else {
-                                me.buildUrls(page + 1);
+                                me.buildUrls(page + 1,cb);
                             }
                         });
                     }
