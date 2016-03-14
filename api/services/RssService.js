@@ -118,7 +118,7 @@ module.exports = {
 
         var me = this;
         return new Promise(function (resolve, reject) {
-            return Rss.find({
+             Rss.find({
                 check: true,
                 type: type
             }).then(function (err, rss) {
