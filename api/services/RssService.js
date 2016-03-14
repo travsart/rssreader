@@ -122,6 +122,7 @@ module.exports = {
                 check: true,
                 type: type
             }).then(function (err, rss) {
+                console.log(rss);
                 return me.checkPage(rss, type, page, preCount).then(function (ret) {
                     resolve(ret);
                 });
