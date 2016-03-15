@@ -121,7 +121,7 @@ module.exports = {
             Rss.find({
                 check: true,
                 type: type
-            }, function (err, rss) {
+            }.then(function (err, rss) {
                 me.checkPage(rss, type, page, preCount).then(function (ret) {
                     resolve(ret);
                 });
