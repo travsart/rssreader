@@ -117,12 +117,15 @@ module.exports = {
         sails.log.debug('type: ' + type + ' page: ' + page);
 
         var me = this;
-
-        Rss.find({
-            check: true,
-            type: type
-        }).then(function (rss) {
-            return me.checkPage(rss, type, page, preCount);
+        return new Promise(function (resolve, reject) {
+            Rss.find({
+                check: true,
+                type: type
+            }).then(function (rss) {
+                return resolve(me.checkPage(rss, type, page, preCount));
+            }).catch(function (err) {
+                reject({success: false, msg: '', err: err});
+            });
         });
     }
 };
