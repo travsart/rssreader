@@ -122,7 +122,9 @@ module.exports = {
                 check: true,
                 type: type
             }).then(function (rss) {
-                return resolve(me.checkPage(rss, type, page, preCount));
+                me.checkPage(rss, type, page, preCount).then(function (ret) {
+                    resolve(ret);
+                });
             }).catch(function (err) {
                 reject({success: false, msg: '', err: err});
             });
