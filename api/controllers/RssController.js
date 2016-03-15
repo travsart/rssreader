@@ -36,7 +36,7 @@ module.exports = {
 
                 resRss.msg += results.msg;
 
-                RssService.checkSite('Anime', page, 0).then(function (results) {
+                return RssService.checkSite('Anime', page, 0).then(function (results) {
                     resRss.success = resRss.success && results.success;
                     resRss.msg += ' ' + results.msg;
 
