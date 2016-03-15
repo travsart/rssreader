@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e8852a0a-39ee-460b-af05-a2f0c29985c7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/services/GenreService.js" afterPath="$PROJECT_DIR$/api/services/GenreService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/RssController.js" afterPath="$PROJECT_DIR$/api/controllers/RssController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/services/RssService.js" afterPath="$PROJECT_DIR$/api/services/RssService.js" />
     </list>
     <ignored path="rssreader.iws" />
@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GenreService.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GenreService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.317757">
+            <state vertical-scroll-proportion="0.0">
               <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
               <folding>
                 <element signature="e#5418#5779#0" expanded="false" />
@@ -78,17 +78,17 @@
         <entry file="file://$PROJECT_DIR$/api/services/RssService.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="124" column="16" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
+              <caret line="124" column="23" selection-start-line="124" selection-start-column="23" selection-end-line="124" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RssController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RssController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/controllers/RssController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="54" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.7316422">
+              <caret line="57" column="73" selection-start-line="57" selection-start-column="73" selection-end-line="57" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -154,11 +154,11 @@
         <option value="$PROJECT_DIR$/parse.js" />
         <option value="$PROJECT_DIR$/views/login.ejs" />
         <option value="$PROJECT_DIR$/config/routes.js" />
-        <option value="$PROJECT_DIR$/api/controllers/RssController.js" />
         <option value="$PROJECT_DIR$/api/controllers/GenreController.js" />
         <option value="$PROJECT_DIR$/api/models/Url.js" />
         <option value="$PROJECT_DIR$/api/services/GenreService.js" />
         <option value="$PROJECT_DIR$/api/services/RssService.js" />
+        <option value="$PROJECT_DIR$/api/controllers/RssController.js" />
       </list>
     </option>
   </component>
@@ -711,54 +711,6 @@
       <option name="number" value="Default" />
       <updated>1448998890623</updated>
     </task>
-    <task id="LOCAL-00165" summary="as">
-      <created>1453049937270</created>
-      <option name="number" value="00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1453049937270</updated>
-    </task>
-    <task id="LOCAL-00166" summary="as">
-      <created>1453050000170</created>
-      <option name="number" value="00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1453050000170</updated>
-    </task>
-    <task id="LOCAL-00167" summary="as">
-      <created>1453050114138</created>
-      <option name="number" value="00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1453050114139</updated>
-    </task>
-    <task id="LOCAL-00168" summary="as">
-      <created>1453056204887</created>
-      <option name="number" value="00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1453056204887</updated>
-    </task>
-    <task id="LOCAL-00169" summary="as">
-      <created>1453059927284</created>
-      <option name="number" value="00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1453059927284</updated>
-    </task>
-    <task id="LOCAL-00170" summary="as">
-      <created>1453060221802</created>
-      <option name="number" value="00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1453060221803</updated>
-    </task>
-    <task id="LOCAL-00171" summary="as">
-      <created>1453060255414</created>
-      <option name="number" value="00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1453060255414</updated>
-    </task>
-    <task id="LOCAL-00172" summary="as">
-      <created>1453060360149</created>
-      <option name="number" value="00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1453060360150</updated>
-    </task>
     <task id="LOCAL-00173" summary="as">
       <created>1453066116805</created>
       <option name="number" value="00173" />
@@ -1005,7 +957,55 @@
       <option name="project" value="LOCAL" />
       <updated>1457995196187</updated>
     </task>
-    <option name="localTasksCounter" value="214" />
+    <task id="LOCAL-00214" summary="as">
+      <created>1457996201155</created>
+      <option name="number" value="00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1457996201155</updated>
+    </task>
+    <task id="LOCAL-00215" summary="as">
+      <created>1457996469394</created>
+      <option name="number" value="00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1457996469394</updated>
+    </task>
+    <task id="LOCAL-00216" summary="as">
+      <created>1457996516642</created>
+      <option name="number" value="00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1457996516642</updated>
+    </task>
+    <task id="LOCAL-00217" summary="as">
+      <created>1457996563602</created>
+      <option name="number" value="00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1457996563602</updated>
+    </task>
+    <task id="LOCAL-00218" summary="as">
+      <created>1457996676858</created>
+      <option name="number" value="00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1457996676858</updated>
+    </task>
+    <task id="LOCAL-00219" summary="as">
+      <created>1458022907325</created>
+      <option name="number" value="00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1458022907325</updated>
+    </task>
+    <task id="LOCAL-00220" summary="as">
+      <created>1458064010137</created>
+      <option name="number" value="00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1458064010137</updated>
+    </task>
+    <task id="LOCAL-00221" summary="as">
+      <created>1458064059294</created>
+      <option name="number" value="00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1458064059294</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1396,22 +1396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/controllers/RssController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="54" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/services/RssService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="124" column="16" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1430,7 +1414,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.317757">
+        <state vertical-scroll-proportion="0.0">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
           <folding>
             <element signature="e#5418#5779#0" expanded="false" />
@@ -1442,6 +1426,22 @@
             <element signature="e#9904#10430#0" expanded="false" />
             <element signature="e#10472#12032#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/services/RssService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="124" column="23" selection-start-line="124" selection-start-column="23" selection-end-line="124" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/RssController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7316422">
+          <caret line="57" column="73" selection-start-line="57" selection-start-column="73" selection-end-line="57" selection-end-column="73" />
+          <folding />
         </state>
       </provider>
     </entry>

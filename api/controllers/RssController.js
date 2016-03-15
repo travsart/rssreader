@@ -30,11 +30,19 @@ module.exports = {
             RssService.checkSite('Manga', page, 0).then(function (results) {
 				sails.log.info(results);
                 resRss.success = resRss.success && results.success;
+                if(!results.success){
+                    resRss.manga.err = results.err;
+                }
+
                 resRss.msg += results.msg;
 
                 RssService.checkSite('Anime', page, 0).then(function (results) {
                     resRss.success = resRss.success && results.success;
                     resRss.msg += ' ' + results.msg;
+
+                    if(!results.success){
+                        resRss.anime.err = results.err;
+                    }
 
                     res.ok(resRss);
                 }).catch(function (ex) {
