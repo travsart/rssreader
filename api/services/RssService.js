@@ -118,13 +118,14 @@ module.exports = {
 
         var me = this;
         return new Promise(function (resolve, reject) {
-            return Rss.find({
+            Rss.find({
                 check: true,
                 type: type
             }).then(function (rss) {
                 me.checkPage(rss, type, page, preCount).then(function (ret) {
                     resolve(ret);
                 });
+                return null;
             }).catch(function (err) {
                 reject({success: false, msg: '', err: err});
             });
