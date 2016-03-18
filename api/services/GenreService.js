@@ -25,7 +25,6 @@ module.exports = {
         var chBody = cheerio(body);
         var manga = {
             summary: '',
-            latest: 0,
             genres: [],
             authors: [],
             artists: [],
@@ -73,9 +72,10 @@ module.exports = {
                     manga.type = manga.type.substring(0, index).trim();
                 }
             }
-            sails.log.info(content.children[7]);
-            sails.log.info(manga);
-            cb({err: 'name'}, {});
+            manga.summary = content.children[7].children[0].data;
+            sails.debug.info(manga);
+
+            cb(null, manga);
         });
 
     },
@@ -163,13 +163,8 @@ module.exports = {
                             manga.name = url.name;
                             manga.url = url.url;
 
-                            Manga.create(manga).exec(function (err1, created) {
-                                if (err1) {
-                                    cb(err1);
-                                }
-                                else {
-                                    me.buildManga(urls, cb);
-                                }
+                            Manga.create(manga).then(function (created) {
+                                me.buildManga(urls, cb);
                             });
                         }
                         else {

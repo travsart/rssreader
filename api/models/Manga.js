@@ -16,18 +16,29 @@ module.exports = {
         year: {
             type: 'integer'
         },
+        authors: {
+            type: 'array'
+        },
+        artists: {
+            type: 'array'
+        },
         genres: {
             type: 'array'
         },
-        genrehash: {
+        authorshash: {
+            type: 'string'
+        },
+        artistshash: {
+            type: 'string'
+        },
+        genreshash: {
             type: 'string'
         },
         summary: {
             type: 'string'
         },
-        lastReleased: {
-            type: 'date',
-            required:false
+        type: {
+            type: 'string'
         }
     }
 };
