@@ -20,7 +20,11 @@ module.exports = {
             content = cheerio(content);
 
             var innerTable = cheerio(cheerio(content.children[3]).find('table .attr'));
-            sails.log.debug(content.children[3].children);
+            sails.log.debug(content.children[0]);
+            sails.log.debug(content.children[1]);
+            sails.log.debug(content.children[2]);
+            sails.log.debug(content.children[3]);
+            sails.log.debug(content.children[4]);
             innerTable.find('tr').each(function (row) {
                 sails.log.info(row.html());
                 sails.log.info(row.children[0]);
