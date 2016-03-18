@@ -68,6 +68,9 @@ module.exports = {
         sails.log.info('Starting buildUrls');
         GenreService.buildUrls(0, function (err) {
             sails.log.info('done buildUrls');
+        }).catch(function (ex) {
+            sails.log.error(ex.stack);
+            //  res.json({success: false, msg: ex.message});
         });
     },
     buildManga: function (req, res) {
@@ -77,6 +80,9 @@ module.exports = {
             return GenreService.buildManga(urls, function (err) {
                 sails.log.info('done buildManga');
             });
+        }).catch(function (ex) {
+            sails.log.error(ex.stack);
+            //  res.json({success: false, msg: ex.message});
         });
     }
 };
