@@ -148,7 +148,7 @@ module.exports = {
         if (urls.length > 0) {
             var url = urls.shift();
 
-            sails.log.info('buildManga: ' + url.name);
+            sails.log.info('buildManga: ' + url.name + ' Urls Left: ' + urls.length);
             me.requestUrl(url.url, me.parseManga, function (err, manga) {
                     if (err) {
                         cb(err);
