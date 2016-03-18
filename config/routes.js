@@ -40,7 +40,7 @@ module.exports.routes = {
     '/genre/seed': 'GenreController.seedGenre',
     '/genre/buildurls': 'GenreController.buildUrls',
     '/genre/buildmanga': 'GenreController.buildManga',
-    '/genre/similar': 'GenreController.generateSuggestionRankings',
+    '/genre/generaterssseed': 'GenreController.generateRssSeed',
     'GET /login' : {view: 'login'},
     'POST /login' : 'AuthController.login',
     'POST /logout' : 'AuthController.logout'

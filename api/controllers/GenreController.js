@@ -70,7 +70,6 @@ module.exports = {
             sails.log.info('done buildUrls');
         }).catch(function (ex) {
             sails.log.error(ex.stack);
-            //  res.json({success: false, msg: ex.message});
         });
     },
     buildManga: function (req, res) {
@@ -82,8 +81,30 @@ module.exports = {
             });
         }).catch(function (ex) {
             sails.log.error(ex.stack);
-            //  res.json({success: false, msg: ex.message});
         });
+    },
+    generateRssSeed: function (req, res) {
+        var user = req.param('user');
+
+        if (user == null) {
+            user = req.cookies.user;
+        }
+
+        if (user == null) {
+            res.json({success: false, msg: 'Could not dertermine user.'});
+        }
+        else {
+            res.json({success: true, msg: 'Running'});
+            sails.log.info('Starting generateRssSeed');
+            GenreService.generateRssSeed(user).then(function (err) {
+                sails.log.info('done generateRssSeed');
+                if (err) {
+                    sails.log.error(err);
+                }
+            }).catch(function (ex) {
+                sails.log.error(ex.stack);
+            });
+        }
     }
 };
 

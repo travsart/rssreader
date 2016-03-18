@@ -200,130 +200,41 @@ module.exports = {
             });
         }
     },
-    generate: function (user, page, end) {
+    generateRssSeed: function (user) {
         var me = this;
-        sails.log.info('generate ' + page + ' ' + end);
+        sails.log.info('generateRssSeed');
         return new Promise(function (resolve, reject) {
 
-            Rss.find({user: user, type: 'Manga'}, function (err, rs) {
+            Rss.find({user: user, type: 'Manga'}).then(function (rs) {
                 var rss = {};
 
                 rs.forEach(function (r) {
                     rss[r.name] = r.rank;
                 });
-                me.generateManga(user, [], 0, end, rss, function (mangaList) {
-                    if (mangaList.error) {
-                        reject(mangaList);
-                    }
 
-                    sails.log.info('generate finished managList: ' + mangaList.length);
-                    if (mangaList.length > 0) {
-                        Suggestion.create(mangaList).exec(function (err) {
-                            if (err) {
-                                sails.log.error('Error: ' + JSON.stringify(err));
-                                sails.log.error('Error: ' + err.stack)
-                                reject({error: true, msg: err.stack});
-                            }
-                            sails.log.info('Created :' + mangaList.length);
+                Manga.find({}).then(function (mangas) {
+                    var save = [];
+                    mangas.forEach(function (manga) {
+                        if (rss[manga.name]) {
+                            save.push({manga: manga, rss: true, rank: rss[manga.name], user: user});
+                        }
+                    });
+
+                    if (save.length > 0) {
+                        Suggestion.create(save).then(function (created) {
                             resolve();
+                        }).catch(function (ex) {
+                            reject(ex);
                         });
                     }
                     else {
-                        resolve();
+                        sails.log.warn('Did not find any managa associated with RSS for the user: ' + user);
                     }
+                }).catch(function (ex) {
+                    reject(ex);
                 });
-            });
-        });
-    },
-    buildList: function (rsses, list, cb) {
-        var me = this;
-        if (rsses.length == 0) {
-            cb(list);
-        }
-        else {
-            var rss = rsses.shift();
-
-            Suggestion.find({name: rss.name}).then(function (g) {
-                if (g.length == 1) {
-                    list.push(g[0]);
-                }
-                me.buildList(rsses, list, cb);
-            });
-
-        }
-    },
-    generateSeedList: function () {
-        var me = this;
-        sails.log.info('generateSeedList');
-        return new Promise(function (resolve, reject) {
-            var list = [];
-
-            Rss.find({type: 'Manga'}).then(function (rsses) {
-                me.buildList(rsses, [], function (list) {
-                    resolve(list);
-                });
-            });
-        });
-    },
-    seedGenre: function () {
-        var genres = ['Action', 'Fantasy', 'Adventure', 'Shounen', 'Seinen', 'Romance', 'Supernatural', 'Comedy', 'Drama', 'Martial arts',
-            'Sci fi', 'Ecchi', 'Historical', 'Mature', 'Webtoon', 'Tragedy', 'Harem', 'School life', 'Psychological', 'Mystery', 'Horror',
-            'Adult', 'Gender Bender', 'Mecha', 'Shoujo', 'Slice of life', 'Sports', '4 koma', 'Award winning', 'Cooking', 'Demons', 'Doujinshi',
-            'Josei', 'Magic', 'Medical', 'Music', 'Shoujo ai', 'Shounen ai', 'Smut', 'Yaoi', 'Yuri', 'One shot'];
-
-        var weights = {
-            '4 koma': -4,
-            'Action': 10,
-            'Adult': 3,
-            'Adventure': 9,
-            'Award winning': 0,
-            'Comedy': 6,
-            'Cooking': 0,
-            'Demons': 2,
-            'Doujinshi': 0,
-            'Drama': 7,
-            'Ecchi': 0,
-            'Fantasy': 9,
-            'Gender Bender': -2,
-            'Harem': 6,
-            'Historical': 6,
-            'Horror': 5,
-            'Josei': 0,
-            'Magic': 2,
-            'Martial arts': 7,
-            'Mature': 5,
-            'Mecha': 2,
-            'Medical': 0,
-            'Music': 0,
-            'Mystery': 4,
-            'One shot': -10,
-            'Psychological': 4,
-            'Romance': 4,
-            'School life': 3,
-            'Sci fi': 6,
-            'Seinen': 7,
-            'Shoujo': 0,
-            'Shoujo ai': 0,
-            'Shounen': 8,
-            'Shounen ai': -10,
-            'Slice of life': 1,
-            'Smut': 0,
-            'Sports': 0,
-            'Supernatural': 8,
-            'Tragedy': 5,
-            'Webtoon': 6,
-            'Yaoi': 0,
-            'Yuri': 0
-        };
-        var list = [];
-        genres.forEach(function (genre) {
-            list.push({name: genre, weight: weights[genre]});
-        });
-
-        sails.log.info('seedGenre1');
-        return new Promise(function (resolve, reject) {
-            Genre.create(list, function (err) {
-                resolve(err);
+            }).catch(function (ex) {
+                reject(ex);
             });
         });
     },
