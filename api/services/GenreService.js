@@ -21,11 +21,11 @@ module.exports = {
             var innerTable = cheerio(cheerio(content.children[1]).find('table .attr'));
 
             innerTable.find('tr').each(function (row) {
-                console.log(row.html());
-                console.log(row.children[0]);
-                console.log(row.children[1]);
+                sails.log.info(row.html());
+                sails.log.info(row.children[0]);
+                sails.log.info(row.children[1]);
             });
-            cb({err:'name'});
+            cb({err:'name'},{});
         });
 
     },
