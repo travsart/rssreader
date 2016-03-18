@@ -221,7 +221,7 @@ module.exports = {
                     });
 
                     if (save.length > 0) {
-                        Suggestion.create(save).then(function (created) {
+                        return Suggestion.create(save).then(function (created) {
                             resolve();
                         }).catch(function (ex) {
                             reject(ex);
