@@ -5,6 +5,8 @@ var Promise = require('bluebird');
 
 module.exports = {
     parseManga: function (body, cb) {
+        sails.log.debug('parseManga');
+        sails.log.debug(body);
         var cheerio = require('cheerio');
         var chBody = cheerio(body);
         var manga = {

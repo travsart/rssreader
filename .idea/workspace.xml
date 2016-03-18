@@ -4,7 +4,6 @@
     <list default="true" id="e8852a0a-39ee-460b-af05-a2f0c29985c7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/GenreController.js" afterPath="$PROJECT_DIR$/api/controllers/GenreController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/models/Url.js" afterPath="$PROJECT_DIR$/api/models/Url.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/services/GenreService.js" afterPath="$PROJECT_DIR$/api/services/GenreService.js" />
     </list>
     <ignored path="rssreader.iws" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="GenreController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/controllers/GenreController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+            <state relative-caret-position="314">
+              <caret line="75" column="43" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -39,17 +38,17 @@
       <file leaf-file-name="GenreService.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+            <state relative-caret-position="68">
+              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
               <folding>
-                <element signature="e#6606#6967#0" expanded="false" />
-                <element signature="e#6996#9030#0" expanded="false" />
-                <element signature="e#9070#9787#0" expanded="false" />
-                <element signature="e#9833#10578#0" expanded="false" />
-                <element signature="e#10607#10914#0" expanded="false" />
-                <element signature="e#10940#11055#0" expanded="false" />
-                <element signature="e#11092#11618#0" expanded="false" />
-                <element signature="e#11660#13220#0" expanded="false" />
+                <element signature="e#6676#7037#0" expanded="false" />
+                <element signature="e#7066#9100#0" expanded="false" />
+                <element signature="e#9140#9857#0" expanded="false" />
+                <element signature="e#9903#10648#0" expanded="false" />
+                <element signature="e#10677#10984#0" expanded="false" />
+                <element signature="e#11010#11125#0" expanded="false" />
+                <element signature="e#11162#11688#0" expanded="false" />
+                <element signature="e#11730#13290#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -138,8 +137,8 @@
         <option value="$PROJECT_DIR$/api/controllers/RssController.js" />
         <option value="$PROJECT_DIR$/api/models/Manga.js" />
         <option value="$PROJECT_DIR$/config/routes.js" />
-        <option value="$PROJECT_DIR$/api/controllers/GenreController.js" />
         <option value="$PROJECT_DIR$/api/models/Url.js" />
+        <option value="$PROJECT_DIR$/api/controllers/GenreController.js" />
         <option value="$PROJECT_DIR$/api/services/GenreService.js" />
       </list>
     </option>
@@ -700,21 +699,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1448998890623</updated>
-      <workItem from="1458284470488" duration="1830000" />
-    </task>
-    <task id="LOCAL-00186" summary="as">
-      <created>1454398228461</created>
-      <option name="number" value="00186" />
-      <option name="presentableId" value="LOCAL-00186" />
-      <option name="project" value="LOCAL" />
-      <updated>1454398228461</updated>
-    </task>
-    <task id="LOCAL-00187" summary="as">
-      <created>1454764016606</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1454764016606</updated>
+      <workItem from="1458284470488" duration="3358000" />
     </task>
     <task id="LOCAL-00188" summary="as">
       <created>1454766108051</created>
@@ -1045,15 +1030,29 @@
       <option name="project" value="LOCAL" />
       <updated>1458285500650</updated>
     </task>
-    <option name="localTasksCounter" value="235" />
+    <task id="LOCAL-00235" summary="as">
+      <created>1458316749621</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1458316749621</updated>
+    </task>
+    <task id="LOCAL-00236" summary="as">
+      <created>1458318241822</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1458318241822</updated>
+    </task>
+    <option name="localTasksCounter" value="237" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1830000" />
+    <option name="totallyTimeSpent" value="3358000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1374" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="false" />
+    <frame x="-1374" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1418,14 +1417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/Manga.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1450,27 +1441,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/Manga.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/controllers/GenreController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+        <state relative-caret-position="314">
+          <caret line="75" column="43" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+        <state relative-caret-position="68">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
           <folding>
-            <element signature="e#6606#6967#0" expanded="false" />
-            <element signature="e#6996#9030#0" expanded="false" />
-            <element signature="e#9070#9787#0" expanded="false" />
-            <element signature="e#9833#10578#0" expanded="false" />
-            <element signature="e#10607#10914#0" expanded="false" />
-            <element signature="e#10940#11055#0" expanded="false" />
-            <element signature="e#11092#11618#0" expanded="false" />
-            <element signature="e#11660#13220#0" expanded="false" />
+            <element signature="e#6676#7037#0" expanded="false" />
+            <element signature="e#7066#9100#0" expanded="false" />
+            <element signature="e#9140#9857#0" expanded="false" />
+            <element signature="e#9903#10648#0" expanded="false" />
+            <element signature="e#10677#10984#0" expanded="false" />
+            <element signature="e#11010#11125#0" expanded="false" />
+            <element signature="e#11162#11688#0" expanded="false" />
+            <element signature="e#11730#13290#0" expanded="false" />
           </folding>
         </state>
       </provider>
