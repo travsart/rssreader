@@ -69,6 +69,13 @@ module.exports = {
                     manga.type = manga.type.substring(0, index).trim();
                 }
             }
+
+            var index = manga.status.indexOf('-');
+
+            if (index != -1) {
+                manga.status = manga.status.substring(0, index).trim();
+            }
+
             manga.summary = content.children[7].children[0].data;
             cb(null, manga);
         });
