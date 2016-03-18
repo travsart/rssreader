@@ -58,7 +58,7 @@ module.exports = {
                         manga[textMapping[textIndex]] = td.children[0].data.trim();
                     }
                     else if (key == 'Latest') {
-                        sails.info.log(td.children[1]);
+                        sails.log.info(td.children[1]);
                     }
                 }
             });
