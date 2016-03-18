@@ -56,9 +56,6 @@ module.exports = {
                     else if (textIndex > -1) {
                         manga[textMapping[textIndex]] = td.children[0].data.trim();
                     }
-                    else if (key == 'Latest') {
-                        sails.log.info(td.children[1].children[1].children[1]);
-                    }
                 }
             });
             manga.authorshash = me.hashArray(manga.authors);
