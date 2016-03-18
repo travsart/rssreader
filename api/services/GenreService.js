@@ -73,8 +73,6 @@ module.exports = {
                 }
             }
             manga.summary = content.children[7].children[0].data;
-            sails.debug.info(manga);
-
             cb(null, manga);
         });
 
