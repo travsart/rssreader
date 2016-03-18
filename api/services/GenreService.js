@@ -4,7 +4,7 @@
 var Promise = require('bluebird');
 
 module.exports = {
-    parseManga: function (body, cb, rss) {
+    parseManga: function (body, cb) {
         var cheerio = require('cheerio');
         var chBody = cheerio(body);
         var manga = {
@@ -13,7 +13,6 @@ module.exports = {
             lastReleased: null,
             genres: [],
             year: -1,
-            rss: false,
             status: 'Ongoing'
         };
         chBody.find('.content').each(function (index, content) {
@@ -95,7 +94,7 @@ module.exports = {
             }
         );
     },
-    buildManga: function (urls, rss, cb) {
+    buildManga: function (urls, cb) {
         var me = this;
 
         if (urls.length > 0) {
@@ -116,7 +115,7 @@ module.exports = {
                                     cb(err1);
                                 }
                                 else {
-                                    me.buildManga(urls, rss, cb);
+                                    me.buildManga(urls, cb);
                                 }
                             });
                         }
@@ -124,7 +123,7 @@ module.exports = {
                             cb();
                         }
                     }
-                }, rss
+                }
             );
         }
         else {

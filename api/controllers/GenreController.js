@@ -73,8 +73,10 @@ module.exports = {
     buildManga: function (req, res) {
         res.json({success: true, msg: 'Running'});
         sails.log.info('Starting buildManga');
-        GenreService.buildManga(0, function (err) {
-            sails.log.info('done buildUrls');
+        Url.find({}).then(function (urls) {
+            return GenreService.buildManga(urls, function (err) {
+                sails.log.info('done buildUrls');
+            });
         });
     }
 };

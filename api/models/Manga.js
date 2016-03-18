@@ -28,10 +28,6 @@ module.exports = {
         lastReleased: {
             type: 'date',
             required:false
-        },
-        rss: {
-            type: 'boolean',
-            defaultsTo: false
         }
     }
 };
