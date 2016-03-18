@@ -4,7 +4,7 @@ module.exports = {
     autoPk: true,
     attributes: {
         manga: {
-            type: 'manga'
+            model: 'manga'
         },
         score: {
             type: 'float',
