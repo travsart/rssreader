@@ -58,7 +58,7 @@ module.exports = {
                         manga[textMapping[textIndex]] = td.children[0].data.trim();
                     }
                     else if (key == 'Latest') {
-                        sails.log.info(td.children[1].children[1].children[1].attribs.title);
+                        sails.log.info(td.children[1].children[1].children[1]);
                     }
                 }
             });
@@ -67,7 +67,7 @@ module.exports = {
             manga.genreshash = me.hashArray(manga.genres);
 
             if (manga.type != '') {
-                var index = mangatype.indexOf('-');
+                var index = manga.type.indexOf('-');
 
                 if (index != -1) {
                     manga.type = manga.type.substring(0, index).trim();
