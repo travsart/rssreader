@@ -15,12 +15,15 @@ module.exports = {
             genres: [],
             authors: [],
             artists: [],
+            type: '',
             year: -1,
             status: 'Ongoing'
         };
 
         var lists = ['Author(s)', 'Artist(s)', 'Genre(s)'];
+        var listsMapping = ['authors', 'artists', 'genres'];
         var text = ['Type', 'Release', 'Status', 'Latest'];
+        var textMapping = ['type', 'year', 'status', 'latest'];
 
         chBody.find('section.manga div.content').each(function (index, content) {
             cheerio(cheerio(content.children[3]).find('table .attr')).find('tr').each(function (index, row) {
@@ -29,17 +32,20 @@ module.exports = {
                 if (th.children.length == 1) {
                     var key = th.children[0].data;
                     var td = row.children[3];
+                    var listIndex = lists.indexOf(key);
+                    var textIndex = text.indexOf(key);
 
-                    if (lists.indexOf(key) > -1) {
+                    if (listIndex > -1) {
                         cheerio(td).find('a').each(function (index, link) {
-                            sails.log.info(link);
+                            manga[listsMapping[listIndex]].push(link.attribs.title);
                         });
                     }
-                    else if (text.indexOf(key) > -1) {
-                        sails.log.info(td);
+                    else if (textIndex > -1) {
+                        manga[textMapping[textIndex]] = td.children[0].data.trim();
                     }
                 }
             });
+            sails.info.log(manga);
             cb({err: 'name'}, {});
         });
 
