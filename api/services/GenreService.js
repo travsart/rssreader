@@ -45,7 +45,7 @@ module.exports = {
                     }
                 }
             });
-            sails.info.log(manga);
+            sails.log.info(manga);
             cb({err: 'name'}, {});
         });
 
