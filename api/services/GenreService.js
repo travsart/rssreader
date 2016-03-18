@@ -17,7 +17,7 @@ module.exports = {
             status: 'Ongoing'
         };
         chBody.find('section.manga div.content').each(function (index, content) {
-            cheerio(cheerio(content.children[3]).find('table .attr')).find('tr').each(function (row) {
+            cheerio(cheerio(content.children[3]).find('table .attr')).find('tr').each(function (index, row) {
                 sails.log.info(row);
                 sails.log.info(row.html());
                 sails.log.info(row.children[0]);
