@@ -4,13 +4,27 @@
 var Promise = require('bluebird');
 
 module.exports = {
+    hashCode: function (s) {
+        return s.split("").reduce(function (a, b) {
+            a = ((a << 5) - a) + b.charCodeAt(0);
+            return a & a
+        }, 0);
+    },
+    hashArray: function (arr) {
+        var hash = '';
+        arr.forEach(function (item) {
+            hash += item;
+        });
+
+        return hashcode(hash);
+    },
     parseManga: function (body, cb) {
         sails.log.debug('parseManga');
         var cheerio = require('cheerio');
+        var me = this;
         var chBody = cheerio(body);
         var manga = {
             summary: '',
-            genrehash: '',
             latest: 0,
             genres: [],
             authors: [],
@@ -22,8 +36,8 @@ module.exports = {
 
         var lists = ['Author(s)', 'Artist(s)', 'Genre(s)'];
         var listsMapping = ['authors', 'artists', 'genres'];
-        var text = ['Type', 'Release', 'Status', 'Latest'];
-        var textMapping = ['type', 'year', 'status', 'latest'];
+        var text = ['Type', 'Release', 'Status'];
+        var textMapping = ['type', 'year', 'status'];
 
         chBody.find('section.manga div.content').each(function (index, content) {
             cheerio(cheerio(content.children[3]).find('table .attr')).find('tr').each(function (index, row) {
@@ -43,8 +57,23 @@ module.exports = {
                     else if (textIndex > -1) {
                         manga[textMapping[textIndex]] = td.children[0].data.trim();
                     }
+                    else if (key == 'Latest') {
+                        sails.info.log(td.children[1]);
+                    }
                 }
             });
+            manga.authorshash = me.hashArray(manga.authors);
+            manga.artistshash = me.hashArray(manga.artists);
+            manga.genreshash = me.hashArray(manga.genres);
+
+            if (manga.type != '') {
+                var index = mangatype.indexOf('-');
+
+                if (index != -1) {
+                    manga.type = manga.type.substring(0, index).trim();
+                }
+            }
+            sails.log.info(content.children[7]);
             sails.log.info(manga);
             cb({err: 'name'}, {});
         });
