@@ -4,26 +4,20 @@
 var Promise = require('bluebird');
 
 module.exports = {
-    parseManga: function (body, cb) {
+    parseManga: function (body, cb, rss) {
         var cheerio = require('cheerio');
         var chBody = cheerio(body);
         var manga = {
-            name: '',
-            url: '',
             summary: '',
+            genrehash: '',
+            lastReleased: null,
             genres: [],
             year: -1,
-            status: 'Ongoing',
-            weighted: 0,
-            raw: 0
+            rss: false,
+            status: 'Ongoing'
         };
         chBody.find('.content').each(function (index, content) {
             content = cheerio(content);
-
-            var header = cheerio(cheerio(cheerio(content.children[0]).children[0]).children[0]);
-
-            manga.url = 'http://mangapark.me' + header.attribs.href;
-            manga.name = header.text();
 
             var innerTable = cheerio(cheerio(content.children[1]).find('table .attr'));
 
@@ -32,6 +26,7 @@ module.exports = {
                 console.log(row.children[0]);
                 console.log(row.children[1]);
             });
+            cb({err:'name'});
         });
 
     },
@@ -56,7 +51,7 @@ module.exports = {
             cb(null, urls);
         }
     },
-    requestUrl: function (url, parseFunc, cb) {
+    requestUrl: function (url, parseFunc, cb, params) {
         var request = require('request');
         var userAgent = 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36';
 
@@ -65,14 +60,19 @@ module.exports = {
                 cb({error: error});
             }
             else {
-                parseFunc(body, cb);
+                if (params) {
+                    parseFunc(body, params, cb);
+                }
+                else {
+                    parseFunc(body, cb);
+                }
             }
         });
     },
     buildUrls: function (page, cb) {
         var me = this;
         var url = 'http://mangapark.me/search?orderby=add&chapters=1&st-ss=0&page=' + page;
-        sails.log.info('buildUrls ' + page);
+        sails.log.info('buildUrls: ' + page);
         me.requestUrl(url, me.parseList, function (err, urls) {
                 if (err) {
                     cb(err);
@@ -84,7 +84,7 @@ module.exports = {
                                 cb(err1);
                             }
                             else {
-                                me.buildUrls(page + 1,cb);
+                                me.buildUrls(page + 1, cb);
                             }
                         });
                     }
@@ -95,7 +95,42 @@ module.exports = {
             }
         );
     },
+    buildManga: function (urls, rss, cb) {
+        var me = this;
 
+        if (urls.length > 0) {
+            var url = urls.shift();
+
+            sails.log.info('buildManga: ' + url.name);
+            me.requestUrl(url, me.parseManga, function (err, manga) {
+                    manga.name = url.name;
+                    manga.url = url.url;
+
+                    if (err) {
+                        cb(err);
+                    }
+                    else {
+                        if (manga) {
+                            Manga.create(manga).exec(function (err1, created) {
+                                if (err1) {
+                                    cb(err1);
+                                }
+                                else {
+                                    me.buildManga(urls, rss, cb);
+                                }
+                            });
+                        }
+                        else {
+                            cb();
+                        }
+                    }
+                }, rss
+            );
+        }
+        else {
+            cb();
+        }
+    },
     bulkUpdate: function (model, updates, field, cb) {
 
         var me = this;
