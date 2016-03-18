@@ -16,7 +16,8 @@ module.exports = {
             year: -1,
             status: 'Ongoing'
         };
-        chBody.find('.content').each(function (index, content) {
+        chBody.find('section.manga div.content').each(function (index, content) {
+            console.log(content);
             content = cheerio(content);
 
             var innerTable = cheerio(cheerio(content.children[1]).find('table .attr'));
