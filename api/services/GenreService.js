@@ -200,7 +200,7 @@ module.exports = {
             });
         }
     },
-    generateRssSeed: function (user) {
+    generateRss: function (user) {
         var me = this;
         sails.log.info('generateRssSeed');
         return new Promise(function (resolve, reject) {

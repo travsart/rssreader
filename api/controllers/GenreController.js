@@ -83,7 +83,7 @@ module.exports = {
             sails.log.error(ex.stack);
         });
     },
-    generateRssSeed: function (req, res) {
+    generateRss: function (req, res) {
         var user = req.param('user');
 
         if (user == null) {
@@ -96,7 +96,7 @@ module.exports = {
         else {
             res.json({success: true, msg: 'Running'});
             sails.log.info('Starting generateRssSeed');
-            GenreService.generateRssSeed(user).then(function (err) {
+            GenreService.generateRss(user).then(function (err) {
                 sails.log.info('done generateRssSeed');
                 if (err) {
                     sails.log.error(err);
