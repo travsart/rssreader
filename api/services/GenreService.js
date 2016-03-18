@@ -11,15 +11,34 @@ module.exports = {
         var manga = {
             summary: '',
             genrehash: '',
-            lastReleased: null,
+            latest: 0,
             genres: [],
+            authors: [],
+            artists: [],
             year: -1,
             status: 'Ongoing'
         };
+
+        var lists = ['Author(s)', 'Artist(s)', 'Genre(s)'];
+        var text = ['Type', 'Release', 'Status', 'Latest'];
+
         chBody.find('section.manga div.content').each(function (index, content) {
             cheerio(cheerio(content.children[3]).find('table .attr')).find('tr').each(function (index, row) {
-                sails.log.info(row.children[1]);
-                sails.log.info(row.children[3]);
+                var th = row.children[1];
+
+                if (th.children.length == 1) {
+                    var key = th.children[0].data;
+                    var td = row.children[3];
+
+                    if (lists.indexOf(key) > -1) {
+                        cheerio(td).find('a').each(function (index, link) {
+                            sails.log.info(link);
+                        });
+                    }
+                    else if (text.indexOf(key) > -1) {
+                        sails.log.info(td);
+                    }
+                }
             });
             cb({err: 'name'}, {});
         });
