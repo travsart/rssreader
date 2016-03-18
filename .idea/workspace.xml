@@ -4,7 +4,8 @@
     <list default="true" id="e8852a0a-39ee-460b-af05-a2f0c29985c7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/GenreController.js" afterPath="$PROJECT_DIR$/api/controllers/GenreController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.js" afterPath="$PROJECT_DIR$/config/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/models/Url.js" afterPath="$PROJECT_DIR$/api/models/Url.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/services/GenreService.js" afterPath="$PROJECT_DIR$/api/services/GenreService.js" />
     </list>
     <ignored path="rssreader.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,50 +26,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GenreController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GenreController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/controllers/GenreController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="77" column="47" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
+            <state relative-caret-position="348">
+              <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RssController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/controllers/RssController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-417">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenreService.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GenreService.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-629">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="34">
+              <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
               <folding>
-                <element signature="e#6454#6815#0" expanded="false" />
-                <element signature="e#6844#8878#0" expanded="false" />
-                <element signature="e#8918#9635#0" expanded="false" />
-                <element signature="e#9681#10426#0" expanded="false" />
-                <element signature="e#10455#10762#0" expanded="false" />
-                <element signature="e#10788#10903#0" expanded="false" />
-                <element signature="e#10940#11466#0" expanded="false" />
-                <element signature="e#11508#13068#0" expanded="false" />
+                <element signature="e#6606#6967#0" expanded="false" />
+                <element signature="e#6996#9030#0" expanded="false" />
+                <element signature="e#9070#9787#0" expanded="false" />
+                <element signature="e#9833#10578#0" expanded="false" />
+                <element signature="e#10607#10914#0" expanded="false" />
+                <element signature="e#10940#11055#0" expanded="false" />
+                <element signature="e#11092#11618#0" expanded="false" />
+                <element signature="e#11660#13220#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -87,8 +68,8 @@
       <file leaf-file-name="Url.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/models/Url.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+            <state relative-caret-position="153">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -153,13 +134,13 @@
         <option value="$PROJECT_DIR$/api/models/Urlsa.js" />
         <option value="$PROJECT_DIR$/parse.js" />
         <option value="$PROJECT_DIR$/views/login.ejs" />
-        <option value="$PROJECT_DIR$/api/models/Url.js" />
         <option value="$PROJECT_DIR$/api/services/RssService.js" />
         <option value="$PROJECT_DIR$/api/controllers/RssController.js" />
-        <option value="$PROJECT_DIR$/api/services/GenreService.js" />
         <option value="$PROJECT_DIR$/api/models/Manga.js" />
-        <option value="$PROJECT_DIR$/api/controllers/GenreController.js" />
         <option value="$PROJECT_DIR$/config/routes.js" />
+        <option value="$PROJECT_DIR$/api/controllers/GenreController.js" />
+        <option value="$PROJECT_DIR$/api/models/Url.js" />
+        <option value="$PROJECT_DIR$/api/services/GenreService.js" />
       </list>
     </option>
   </component>
@@ -719,28 +700,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1448998890623</updated>
-      <workItem from="1458284470488" duration="838000" />
-    </task>
-    <task id="LOCAL-00183" summary="as">
-      <created>1453107127240</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1453107127240</updated>
-    </task>
-    <task id="LOCAL-00184" summary="as">
-      <created>1453107545963</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1453107545963</updated>
-    </task>
-    <task id="LOCAL-00185" summary="as">
-      <created>1454358655623</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
-      <option name="project" value="LOCAL" />
-      <updated>1454358655624</updated>
+      <workItem from="1458284470488" duration="1830000" />
     </task>
     <task id="LOCAL-00186" summary="as">
       <created>1454398228461</created>
@@ -1064,11 +1024,32 @@
       <option name="project" value="LOCAL" />
       <updated>1458285260818</updated>
     </task>
-    <option name="localTasksCounter" value="232" />
+    <task id="LOCAL-00232" summary="as">
+      <created>1458285312720</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1458285312720</updated>
+    </task>
+    <task id="LOCAL-00233" summary="as">
+      <created>1458285420385</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1458285420385</updated>
+    </task>
+    <task id="LOCAL-00234" summary="as">
+      <created>1458285500650</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1458285500650</updated>
+    </task>
+    <option name="localTasksCounter" value="235" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="838000" />
+    <option name="totallyTimeSpent" value="1830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1374" y="-8" width="1382" height="744" extended-state="0" />
@@ -1437,44 +1418,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/controllers/RssController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-417">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/Url.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/models/Manga.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-629">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="e#6454#6815#0" expanded="false" />
-            <element signature="e#6844#8878#0" expanded="false" />
-            <element signature="e#8918#9635#0" expanded="false" />
-            <element signature="e#9681#10426#0" expanded="false" />
-            <element signature="e#10455#10762#0" expanded="false" />
-            <element signature="e#10788#10903#0" expanded="false" />
-            <element signature="e#10940#11466#0" expanded="false" />
-            <element signature="e#11508#13068#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1486,11 +1434,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/Url.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/RssController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/controllers/GenreController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="77" column="47" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
+        <state relative-caret-position="348">
+          <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/services/GenreService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+          <folding>
+            <element signature="e#6606#6967#0" expanded="false" />
+            <element signature="e#6996#9030#0" expanded="false" />
+            <element signature="e#9070#9787#0" expanded="false" />
+            <element signature="e#9833#10578#0" expanded="false" />
+            <element signature="e#10607#10914#0" expanded="false" />
+            <element signature="e#10940#11055#0" expanded="false" />
+            <element signature="e#11092#11618#0" expanded="false" />
+            <element signature="e#11660#13220#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

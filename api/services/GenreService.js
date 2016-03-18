@@ -25,7 +25,7 @@ module.exports = {
                 sails.log.info(row.children[0]);
                 sails.log.info(row.children[1]);
             });
-            cb({err:'name'},{});
+            cb({err: 'name'}, {});
         });
 
     },
@@ -42,7 +42,10 @@ module.exports = {
             chBody.find('.manga-list').find('.item').each(function (index, child) {
                 cheerio(child).find('td').each(function (index1, child1) {
                     if (child1.children.length == 3) {
-                        urls.push({url: 'http://mangapark.me' + child1.children[1].attribs.href});
+                        urls.push({
+                            url: 'http://mangapark.me' + child1.children[1].attribs.href,
+                            name: child1.children[1].attribs.title
+                        });
                     }
                 });
             });
