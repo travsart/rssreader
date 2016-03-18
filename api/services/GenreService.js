@@ -212,7 +212,7 @@ module.exports = {
                     rss[r.name] = r.rank;
                 });
 
-                Manga.find({}).then(function (mangas) {
+                return Manga.find({}).then(function (mangas) {
                     var save = [];
                     mangas.forEach(function (manga) {
                         if (rss[manga.name]) {

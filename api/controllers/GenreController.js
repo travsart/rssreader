@@ -96,7 +96,7 @@ module.exports = {
         else {
             res.json({success: true, msg: 'Running'});
             sails.log.info('Starting generateRssSeed');
-            GenreService.generateRss(user).then(function (err) {
+            return GenreService.generateRss(user).then(function (err) {
                 sails.log.info('done generateRssSeed');
                 if (err) {
                     sails.log.error(err);
