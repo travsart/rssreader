@@ -16,7 +16,7 @@ module.exports = {
             hash += item;
         });
 
-        return hashcode(hash);
+        return hashCode(hash);
     },
     parseManga: function (body, cb) {
         sails.log.debug('parseManga');
@@ -58,7 +58,7 @@ module.exports = {
                         manga[textMapping[textIndex]] = td.children[0].data.trim();
                     }
                     else if (key == 'Latest') {
-                        sails.log.info(td.children[1]);
+                        sails.log.info(td.children[1].children[1]);
                     }
                 }
             });
