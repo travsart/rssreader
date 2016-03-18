@@ -106,7 +106,7 @@ module.exports = {
             var url = urls.shift();
 
             sails.log.info('buildManga: ' + url.name);
-            me.requestUrl(url, me.parseManga, function (err, manga) {
+            me.requestUrl(url.url, me.parseManga, function (err, manga) {
                     if (err) {
                         cb(err);
                     }
