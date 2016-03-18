@@ -75,7 +75,7 @@ module.exports = {
         sails.log.info('Starting buildManga');
         Url.find({}).then(function (urls) {
             return GenreService.buildManga(urls, function (err) {
-                sails.log.info('done buildUrls');
+                sails.log.info('done buildManga');
             });
         });
     }
