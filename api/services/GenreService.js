@@ -102,14 +102,14 @@ module.exports = {
 
             sails.log.info('buildManga: ' + url.name);
             me.requestUrl(url, me.parseManga, function (err, manga) {
-                    manga.name = url.name;
-                    manga.url = url.url;
-
                     if (err) {
                         cb(err);
                     }
                     else {
                         if (manga) {
+                            manga.name = url.name;
+                            manga.url = url.url;
+
                             Manga.create(manga).exec(function (err1, created) {
                                 if (err1) {
                                     cb(err1);
