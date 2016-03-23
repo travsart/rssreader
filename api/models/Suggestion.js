@@ -10,6 +10,10 @@ module.exports = {
             type: 'float',
             defaultsTo: 0
         },
+        cosine: {
+            type: 'float',
+            defaultsTo: 0
+        },
         similar: {
             type: 'string',
             defaultsTo: 'N/A'

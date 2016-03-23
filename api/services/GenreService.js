@@ -202,7 +202,7 @@ module.exports = {
     },
     generateRss: function (user) {
         var me = this;
-        sails.log.info('generateRssSeed');
+        sails.log.info('generateRss');
         return new Promise(function (resolve, reject) {
 
             Rss.find({user: user, type: 'Manga'}).then(function (rs) {
@@ -229,6 +229,7 @@ module.exports = {
                     }
                     else {
                         sails.log.warn('Did not find any managa associated with RSS for the user: ' + user);
+                        resolve();
                     }
                 }).catch(function (ex) {
                     reject(ex);
@@ -286,18 +287,6 @@ module.exports = {
             return {similar: null, score: 0};
         }
     },
-    median: function (arr) {
-        var m = arr.sort(function (a, b) {
-            return a - b
-        });
-
-        var middle = Math.floor((m.length - 1) / 2); // NB: operator precedence
-        if (m.length % 2) {
-            return m[middle];
-        } else {
-            return (m[middle] + m[middle + 1]) / 2.0;
-        }
-    },
     max: function (arr) {
         var sort = arr.sort(function (a, b) {
             return b - a;
@@ -316,6 +305,7 @@ module.exports = {
                 '$set': {
                     similar: sug.similar,
                     score: sug.score,
+                    cosine: sug.cosine,
                     highest: sug.similar[0].rank
                 }
             }, function (err, results) {
