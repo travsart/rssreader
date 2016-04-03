@@ -120,6 +120,8 @@ module.exports = {
             console.log(created)
         }).catch(function (err) {
             console.log(err);
+            res.json(err);
+      
             if (err.code == 11000) {
                 sails.log.info('Found duplicate url. Will remove last one');
             }
