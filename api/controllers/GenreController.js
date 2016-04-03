@@ -120,11 +120,11 @@ module.exports = {
             count += list.length
             console.log(list)
 
-            list.forEach(function(item){
+            list.forEach(function (item) {
                 var i = 0;
-                while( i < urls.length){
-                    if(urls[i].name == item.name){
-                    .   urls.splice(i, 1);
+                while (i < urls.length) {
+                    if (urls[i].name == item.name) {
+                        urls.splice(i, 1);
                         break;
                     }
                     i++;
