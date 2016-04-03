@@ -122,6 +122,7 @@ module.exports = {
                 var i = 0;
                 while( i < urls.length){
                     i++;
+                    console.log(urls[i])
                     if(urls[i].name == item.name){
                         delete urls[i];
                         break;
