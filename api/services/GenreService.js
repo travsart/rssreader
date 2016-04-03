@@ -141,7 +141,9 @@ module.exports = {
                                 me.buildUrls(page + 1, cb);
                             }
                         }).catch(function(err){
-                            
+                            if(err.code == 11000){
+                                sails.log.info('Found duplicate url. Will remo')
+                            }
                         });
                     }
                     else {

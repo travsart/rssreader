@@ -104,6 +104,26 @@ module.exports = {
                 sails.log.error(ex.stack);
             });
         }
+    },
+    test: function (req, res) {
+        var urls = [{
+            name: '1'
+        }, {
+            name: '2'
+        }, {
+            name: '3'
+        }, {
+            name: '2'
+        }, {name: '4'}];
+
+        Url.create(urls).then(function (created) {
+            console.log(created)
+        }).catch(function (err) {
+            console.log(err);
+            if (err.code == 11000) {
+                sails.log.info('Found duplicate url. Will remove last one');
+            }
+        });
     }
 };
 

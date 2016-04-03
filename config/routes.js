@@ -41,6 +41,7 @@ module.exports.routes = {
     '/genre/buildurls': 'GenreController.buildUrls',
     '/genre/buildmanga': 'GenreController.buildManga',
     '/genre/generaterss': 'GenreController.generateRss',
+    '/genre/test': 'GenreController.test',
     'GET /login' : {view: 'login'},
     'POST /login' : 'AuthController.login',
     'POST /logout' : 'AuthController.logout'
