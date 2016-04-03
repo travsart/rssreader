@@ -114,19 +114,14 @@ module.exports = {
             name: '3'
         }, {
             name: '2'
-        }, {name: '4'}];
+        },
+            {name: '4'},{name:'3'}];
 
         Url.create(urls).then(function (created) {
             console.log(created)
         }).catch(function (err) {
-            var a = '';
 
-            for (var ab in err) {
-                console.log(ab)
-                a += JSON.stringify(err[ab]) + "\n"
-            }
-            res.json(a);
-
+            res.json(err);
             if (err.originalError.error == 11000) {
                 sails.log.info('Found duplicate url. Will remove last one');
             }
