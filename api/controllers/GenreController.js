@@ -122,7 +122,7 @@ module.exports = {
             var a = '';
 
             for (var ab in err) {
-                a += ' ' + JSON.stringify(err[ab])
+                a += JSON.stringify(err[ab]) + "\n"
             }
             res.json(a);
 
