@@ -123,6 +123,8 @@ module.exports = {
             list.forEach(function(item){
                 var i = 0;
                 while( i < urls.length){
+                    console.log(i)
+                    console.log(urls)
                     console.log(urls[i])
                     if(urls[i].name == item.name){
                         delete urls[i];
