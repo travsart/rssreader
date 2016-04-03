@@ -112,6 +112,8 @@ module.exports = {
             name: '2'
         }, {
             name: '3'
+        }, {
+            name: '5'
         }];
         var count = 0;
         Url.find(urls).then(function (list) {
@@ -121,23 +123,18 @@ module.exports = {
             list.forEach(function(item){
                 var i = 0;
                 while( i < urls.length){
-                    i++;
-                    console.log(urls[i])
                     if(urls[i].name == item.name){
                         delete urls[i];
                         break;
                     }
+                    i++;
                 }
-            })
+            });
 
             Url.create(urls).then(function (created) {
                 console.log(created)
             }).catch(function (err) {
-
-                res.json(err);
-                if (err.originalError.error == 11000) {
-                    sails.log.info('Found duplicate url. Will remove last one');
-                }
+                sails.log.err(err);
             });
         });
     }
