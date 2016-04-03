@@ -112,19 +112,32 @@ module.exports = {
             name: '2'
         }, {
             name: '3'
-        }, {
-            name: '2'
-        },
-            {name: '4'},{name:'3'}];
+        }];
+        var count = 0;
+        Url.find(urls).then(function (list) {
+            count += list.length
+            console.log(list)
 
-        Url.create(urls).then(function (created) {
-            console.log(created)
-        }).catch(function (err) {
+            list.forEach(function(item){
+                var i = 0;
+                while( i < urls.length){
+                    i++;
+                    if(urls[i].name == item.name){
+                        delete urls[i];
+                        break;
+                    }
+                }
+            })
 
-            res.json(err);
-            if (err.originalError.error == 11000) {
-                sails.log.info('Found duplicate url. Will remove last one');
-            }
+            Url.create(urls).then(function (created) {
+                console.log(created)
+            }).catch(function (err) {
+
+                res.json(err);
+                if (err.originalError.error == 11000) {
+                    sails.log.info('Found duplicate url. Will remove last one');
+                }
+            });
         });
     }
 };
