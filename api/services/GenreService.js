@@ -133,13 +133,15 @@ module.exports = {
                 }
                 else {
                     if (urls) {
-                        Url.create(urls).exec(function (err1, created) {
+                        Url.create(urls).then(function (created) {
                             if (err1) {
                                 cb(err1);
                             }
                             else {
                                 me.buildUrls(page + 1, cb);
                             }
+                        }).catch(function(err){
+                            
                         });
                     }
                     else {

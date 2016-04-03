@@ -60,7 +60,6 @@ module.exports = {
             sails.log.info('done');
         }).catch(function (ex) {
             sails.log.error(ex.stack);
-            //  res.json({success: false, msg: ex.message});
         });
     },
     buildUrls: function (req, res) {
