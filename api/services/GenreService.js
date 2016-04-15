@@ -4,6 +4,26 @@
 var Promise = require('bluebird');
 
 module.exports = {
+    findEnd: function (urls) {
+        return new Promise(function (resolve, reject) {
+            var count = 0;
+            Url.find(urls).then(function (list) {
+                count += list.length
+
+                list.forEach(function (item) {
+                    var i = 0;
+                    while (i < urls.length) {
+                        if (urls[i].name == item.name) {
+                            urls.splice(i, 1);
+                            break;
+                        }
+                        i++;
+                    }
+                });
+                resolve({urls: urls, count: count});
+            });
+        });
+    },
     hashCode: function (s) {
         return s.split("").reduce(function (a, b) {
             a = ((a << 5) - a) + b.charCodeAt(0);
@@ -133,16 +153,24 @@ module.exports = {
                 }
                 else {
                     if (urls) {
-                        Url.create(urls).then(function (created) {
-                            if (err1) {
-                                cb(err1);
+                        findEnd(urls).then(function (dedupedUrls, count) {
+                            if (dedupedUrls.length == 0) {
+                                sails.log.info('Stopped due to running into 30 duplicates.');
+                                cb()
                             }
                             else {
-                                me.buildUrls(page + 1, cb);
-                            }
-                        }).catch(function(err){
-                            if(err.code == 11000){
-                                sails.log.info('Found duplicate url. Will remo')
+                                Url.create(dedupedUrls).then(function (created) {
+                                    if (count > 20) {
+                                        sails.log.info('Stopped due to running into 20 duplicates.');
+                                        cb()
+                                    }
+                                    else {
+                                        me.buildUrls(page + 1, cb);
+                                    }
+                                }).catch(function (err1) {
+                                    sails.log.error(err1);
+                                    cb(err1);
+                                });
                             }
                         });
                     }
@@ -265,7 +293,6 @@ module.exports = {
         }
         return (genreScoreModifier != 0) ? (score * genreScoreModifier) / rss.genres.length : score / rss.genres.length;
     },
-
     findMostSimilar: function (rsses, sug) {
         var sim = {};
         var keys = [];

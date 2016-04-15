@@ -77,6 +77,7 @@ module.exports = {
                     var updatedRss = [];
 
                     rss.forEach(function (r) {
+                        console.log(updated)
                         if (updated[r.name] != null) {
                             var newItem = updated[r.name];
 
@@ -122,6 +123,7 @@ module.exports = {
                 check: true,
                 type: type
             }).then(function (rss) {
+                consol.log(rss)
                 me.checkPage(rss, type, page, preCount).then(function (ret) {
                     resolve(ret);
                 });

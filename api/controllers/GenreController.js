@@ -132,7 +132,7 @@ module.exports = {
             });
 
             Url.create(urls).then(function (created) {
-                console.log(created)
+                res.json(created)
             }).catch(function (err) {
                 sails.log.err(err);
             });
