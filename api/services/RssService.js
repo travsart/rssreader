@@ -123,7 +123,7 @@ module.exports = {
                 check: true,
                 type: type
             }).then(function (rss) {
-                consol.log(rss)
+                console.log(rss)
                 me.checkPage(rss, type, page, preCount).then(function (ret) {
                     resolve(ret);
                 });
