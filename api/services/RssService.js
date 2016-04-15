@@ -77,10 +77,10 @@ module.exports = {
                     var updatedRss = [];
 
                     rss.forEach(function (r) {
-                        console.log(updated)
+                        sails.log.debug(r)
                         if (updated[r.name] != null) {
                             var newItem = updated[r.name];
-
+                            sails.log.debug(updated)
                             var index = -1;
                             for (var i = 0; i < newItem['start'].length; i++) {
                                 if (r.start < newItem['start'][i]) {
@@ -123,7 +123,6 @@ module.exports = {
                 check: true,
                 type: type
             }).then(function (rss) {
-                console.log(rss)
                 me.checkPage(rss, type, page, preCount).then(function (ret) {
                     resolve(ret);
                 });
