@@ -14,6 +14,7 @@ process.env.LOG_PATH = require('path').resolve('.');
 
 winston.remove(winston.transports.Console);
 module.exports.log = {
+    level: 'info',
     transports: [{
         module: winston.transports.DailyRotateFile,
         config: {
