@@ -39,7 +39,7 @@
     "xml2js": "*"
   },
   "scripts": {
-    "start": "node app.js --prod",
+    "start": "node app.js",
     "debug": "node debug app.js"
   },
   "main": "app.js",
