@@ -6,28 +6,11 @@ module.exports = {
         manga: {
             model: 'manga'
         },
-        score: {
-            type: 'float',
-            defaultsTo: 0
+        similarCosine: {
+            type: 'array'
         },
-        cosine: {
-            type: 'float',
-            defaultsTo: 0
-        },
-        similar: {
-            type: 'string',
-            defaultsTo: 'N/A'
-        },
-        rss: {
-            type: 'boolean',
-            defaultsTo: false
-        },
-        rank: {
-            type: 'float',
-            defaultsTo: 0
-        },
-        user: {
-            type: 'string'
+        similarWeight: {
+            type: 'array'
         }
     }
 };
