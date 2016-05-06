@@ -1,7 +1,4 @@
-var ComputeSimilarity = function () {
-};
-
-ComputeSimilarity.prototype = {
+ComputeSimilarity = {
     removeStopWords: function (array) {
         retArr = [];
 
