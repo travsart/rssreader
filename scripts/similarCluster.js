@@ -7,7 +7,7 @@ const computeSimilarity = require('./computeSimilarity.js');
 if (cluster.isMaster) {
     console.log('Master cluster setting up ' + numCPUs + ' workers...');
 
-    var cs = new ComputeSimilarity();
+    var cs = new computeSimilarity.ComputeSimilarity();
     cs.setDb().then(function () {
         cs.getManga().then(function (mangas) {
             var len = mangas.length / numCPUs;
