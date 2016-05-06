@@ -177,4 +177,4 @@ ComputeSimilarity.prototype = {
     }
 };
 
-modules.export = ComputeSimilarity;
+export.ComputeSimilarity = ComputeSimilarity;
