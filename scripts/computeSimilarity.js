@@ -1,4 +1,4 @@
-var ComputeSimilarity = function() {
+var ComputeSimilarity = function () {
 };
 
 ComputeSimilarity.prototype = {
@@ -142,6 +142,11 @@ ComputeSimilarity.prototype = {
 
             me.save(manga.id, similar).then(function () {
                 me.createSimilar(compare, mangas);
+                me.completed += 1;
+
+                if (me.completed % 100 == 0) {
+                    console.log('Completed : ' + me.completed);
+                }
             }).catch(function () {
                 console.log('Skipping ' + manga);
                 me.createSimilar(compare, mangas);
@@ -150,9 +155,10 @@ ComputeSimilarity.prototype = {
     },
     start: function (compare, mangas) {
         console.log('Starting to generate similar manga');
-        createSimilar(compare, mangas);
+        this.completed = 0;
+        this.createSimilar(compare, mangas);
         console.log('Finished generating similar manga');
-        close();
+        this.close();
     },
     save: function (id, similar) {
         return new Promise(function (resolve, reject) {
