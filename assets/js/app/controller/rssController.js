@@ -82,7 +82,8 @@ rssApp
                         displayName: 'Check',
                         width: '75',
                         enableCellEdit: false,
-                        cellTemplate: '<button type="button" class="btn btn-primary" ng-click="grid.appScope.removeRow(grid, row)">{{COL_FIELD  ? "Uncheck" : "Check"}}</button>'
+                        cellTemplate: '<div class="col-sm-offset-5 col-sm-2 text-center"><button type="button" class="btn btn-primary btn-xs" ng-click="grid.appScope.removeRow(grid, row)">{{COL_FIELD  ? "Uncheck" : "Check"}}</button></div>'
+
                     },
                     {
                         name: 'Delete',
