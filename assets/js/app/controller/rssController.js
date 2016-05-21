@@ -97,8 +97,8 @@ rssApp
 
             $scope.checkManga = function (grid, row) {
                 var obj = row.entity;
-                console.log(obj);
-                if (obj.check == true) {
+
+                if (obj.check == false) {
                     obj.updateUrl = '';
                     obj.check = true;
                 }
