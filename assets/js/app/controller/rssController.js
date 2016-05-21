@@ -118,7 +118,7 @@ rssApp
                                     'success',
                                     "Success",
                                     "Successfully changed a record.");
-                            $scope.rssData[index]['id'] = data.data.id;
+                            $scope.rssData[index] = data.data;
                         },
                         function (error) {
                             toaster
@@ -153,7 +153,7 @@ rssApp
                                                 'success',
                                                 "Success",
                                                 "Successfully added/changed a record.");
-                                        $scope.rssData[index]['id'] = data.data.id;
+                                        $scope.rssData[index] = data.data;
                                     },
                                     function (error) {
                                         toaster
@@ -186,7 +186,6 @@ rssApp
                     lastChecked: new Date(),
                     type: 'Manga',
                     check: true,
-                    viewed: true,
                     user: $scope.username
                 });
             };
@@ -232,13 +231,6 @@ rssApp
                                 });
                     });
 
-            };
-
-            $scope.setViewed = function (grid, row) {
-                var index = $scope.findIndex(row.entity.$$hashKey);
-                var rowEntity = $scope.rssData[index];
-                rowEntity.view = true;
-                rssService.updateOrAddRss(rowEntity)
             };
 
             $scope.runCheck = function () {
