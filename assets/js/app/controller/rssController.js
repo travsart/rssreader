@@ -107,9 +107,7 @@ rssApp
                 }
 
                 var index = $scope
-                    .findIndex(rowEntity.$$hashKey);
-
-                obj.updateUrl = rowEntity.updateUrl.trim();
+                    .findIndex(obj.$$hashKey);
 
                 rssService
                     .updateOrAddRss(obj)
