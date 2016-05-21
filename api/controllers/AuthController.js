@@ -43,21 +43,11 @@ module.exports = {
     },
 
     home: function (req, res) {
-
-        if (req.cookies.user != undefined) {
-            sails.log.info(req.cookies.user)
-            return res.view({
-                view: '/auth/home',
-                locals: {
-                    username: req.cookies.user
-                }
-            });
-        }
-        else {
-            sails.log.info('s')
-            return res.view({
-                view: '/login'
-            });
-        }
+        return res.view({
+            view: '/auth/home',
+            locals: {
+                username: (req.cookies.user) ? req.cookies.user : ''
+            }
+        });
     }
 };
