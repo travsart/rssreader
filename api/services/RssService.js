@@ -37,6 +37,7 @@ module.exports = {
                             if (match != null) {
                                 var name = match[1];
                                 name = name.replace(/vol.\d+/g, '');
+                                name = name.replace(/vol.TBD /g, '');
                                 name = name.replace(/\(.*\)/g, '').trim();
                                 var newStart = match[2].trim();
 
