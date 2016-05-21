@@ -88,7 +88,6 @@ module.exports = {
                             if (index != -1) {
                                 r.start = newItem['start'][index];
                                 r.updateUrl = newItem['updateUrl'][index];
-                                r.viewed = false;
                                 r.check = false;
                                 r.save();
                                 updatedRss.push(r);

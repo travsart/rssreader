@@ -81,13 +81,8 @@ rssApp
                         name: 'check',
                         displayName: 'Check',
                         width: '75',
-                        type: 'boolean'
-                    },
-                    {
-                        name: 'viewed',
-                        displayName: 'Viewed',
-                        width: '75',
-                        type: 'boolean'
+                        enableCellEdit: false,
+                        cellTemplate: '<button type="button" class="btn btn-primary" ng-click="grid.appScope.removeRow(grid, row)">{{COL_FIELD  ? "Uncheck" : "Check"}}</button>'
                     },
                     {
                         name: 'Delete',
@@ -99,6 +94,45 @@ rssApp
 
             $scope.msg = {};
 
+            $scope.checkManga = function (grid, row) {
+                var obj = row.entity;
+
+                if (obj.check == true) {
+                    rowEntity.updateUrl = '';
+                    rowEntity.check = true;
+                }
+                else {
+                    rowEntity.check = false;
+                }
+
+                var index = $scope
+                    .findIndex(rowEntity.$$hashKey);
+
+                obj.updateUrl = rowEntity.updateUrl.trim();
+
+                rssService
+                    .updateOrAddRss(obj)
+                    .then(
+                        function (data) {
+                            toaster
+                                .pop(
+                                    'success',
+                                    "Success",
+                                    "Successfully changed a record.");
+                            $scope.rssData[index]['id'] = data.data.id;
+                        },
+                        function (error) {
+                            toaster
+                                .pop({
+                                    type: 'error',
+                                    title: 'Error',
+                                    body: 'Error occured: '
+                                    + error
+                                });
+                        });
+                $scope.$apply();
+            };
+
             $scope.gridOptions.onRegisterApi = function (gridApi) {
 
                 $scope.gridApi = gridApi;
@@ -109,13 +143,7 @@ rssApp
                                   oldValue) {
                             var index = $scope
                                 .findIndex(rowEntity.$$hashKey);
-                            if (colDef.name == 'viewed') {
-                                if (rowEntity.viewed == true) {
-                                    rowEntity.updateUrl = '';
-                                    rowEntity.check = true;
-                                }
-                            }
-                            console.log(rowEntity.updateUrl)
+
                             rowEntity.updateUrl = rowEntity.updateUrl.trim();
                             rssService
                                 .updateOrAddRss(rowEntity)

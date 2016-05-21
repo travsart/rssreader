@@ -30,10 +30,6 @@ module.exports = {
             type: 'boolean',
             defaultsTo: false
         },
-        viewed: {
-            type: 'boolean',
-            defaultsTo: false
-        },
         user: {
             type: 'string'
         },
