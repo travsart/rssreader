@@ -129,7 +129,6 @@ rssApp
                                     + error
                                 });
                         });
-                $scope.$apply();
             };
 
             $scope.gridOptions.onRegisterApi = function (gridApi) {
@@ -164,6 +163,7 @@ rssApp
                                                 + error
                                             });
                                     });
+                            $scope.$apply();
                         });
             };
 
