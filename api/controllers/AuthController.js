@@ -43,7 +43,8 @@ module.exports = {
     },
 
     home: function (req, res) {
-        if (req.cookies.user != '') {
+        sails.log.info(req.cookies.user)
+        if (req.cookies.user != undefined) {
             return res.view({
                 view: '/auth/home',
                 locals: {
