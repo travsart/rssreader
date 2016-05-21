@@ -36,7 +36,6 @@ module.exports = {
                 });
             }
         });
-        //req.session.user
     },
     logout: function (req, res) {
         res.clearCookie('user');
@@ -44,11 +43,18 @@ module.exports = {
     },
 
     home: function (req, res) {
-        return res.view({
-            view: '/auth/home',
-            locals: {
-                username: (req.cookies.user) ? req.cookies.user : ''
-            }
-        });
+        if (req.cookies.user) {
+            return res.view({
+                view: '/auth/home',
+                locals: {
+                    username: req.cookies.user
+                }
+            });
+        }
+        else {
+            return res.view({
+                view: '/login'
+            });
+        }
     }
 };
