@@ -43,7 +43,7 @@ module.exports = {
     },
 
     home: function (req, res) {
-        if (req.cookies.user) {
+        if (req.cookies.user != '') {
             return res.view({
                 view: '/auth/home',
                 locals: {
