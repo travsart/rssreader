@@ -164,7 +164,6 @@ rssApp
                                                 + error
                                             });
                                     });
-                            $scope.$apply();
                         });
             };
 
