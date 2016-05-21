@@ -129,6 +129,7 @@ rssApp
                                     + error
                                 });
                         });
+                $scope.$apply();
             };
 
             $scope.gridOptions.onRegisterApi = function (gridApi) {
@@ -287,7 +288,7 @@ rssApp
                 window.location = '/login';
             };
 
-            if($scope.username == ''){
+            if ($scope.username == '') {
                 $scope.login();
             }
 
