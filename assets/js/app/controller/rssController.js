@@ -99,11 +99,11 @@ rssApp
                 var obj = row.entity;
 
                 if (obj.check == true) {
-                    rowEntity.updateUrl = '';
-                    rowEntity.check = true;
+                    obj.updateUrl = '';
+                    obj.check = true;
                 }
                 else {
-                    rowEntity.check = false;
+                    obj.check = false;
                 }
 
                 var index = $scope
