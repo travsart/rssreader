@@ -8,9 +8,6 @@ rssApp
             $scope.language = 'English';
             $scope.username = document.getElementById("username").value;
 
-            if($scope.username == ''){
-                $scope.login();
-            }
             $scope.linkTemplate = '<a href ="{{COL_FIELD}}">{{COL_FIELD.trim().length == 0  ? COL_FIELD : "Link"}}</a>';
 
             $scope.highlightFilteredHeader = function (row, rowRenderIndex, col, colRenderIndex) {
@@ -289,6 +286,10 @@ rssApp
             $scope.login = function () {
                 window.location = '/login';
             };
+
+            if($scope.username == ''){
+                $scope.login();
+            }
 
         }).filter('mapType', function () {
     var typeHash = {
