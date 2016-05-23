@@ -82,7 +82,7 @@ rssApp
                         displayName: 'Check',
                         width: '90',
                         enableCellEdit: false,
-                        cellTemplate: '<div class="col-sm-2 text-center"><button type="button" class="btn btn-primary btn-xs" ng-click="grid.appScope.checkManga(grid, row)">{{COL_FIELD  ? "Uncheck" : "Check"}}</button></div>'
+                        cellTemplate: '<div class="col-sm-2 text-center"><button type="button" class="btn btn-primary btn-xs" ng-click="grid.appScope.checkManga(grid, row)">{{COL_FIELD  ? "Check" : "Uncheck"}}</button></div>'
 
                     },
                     {
