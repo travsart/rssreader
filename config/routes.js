@@ -34,6 +34,7 @@ module.exports.routes = {
 
     '/': 'AuthController.home',
     '/runcheck': 'RssController.runCheck',
+    '/rss/seed': 'RssController.seed',
     '/genre/generate': 'GenreController.generate',
     '/genre/del': 'GenreController.del',
     '/genre/compare': 'GenreController.generateSeedList',
