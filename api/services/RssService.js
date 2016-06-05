@@ -128,5 +128,12 @@ module.exports = {
                 reject({success: false, msg: '', err: err});
             });
         });
+    },
+    seed: function (items) {
+        return new Promise(function (resolve, reject) {
+            Rss.create(items, function (err) {
+                resolve(err);
+            });
+        });
     }
 };

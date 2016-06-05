@@ -62,6 +62,20 @@ module.exports = {
                 res.serverError({success: false, msg: ex.message});
             });
         }
+    },
+    seed: function(req,res){
+        var json =  req.param('seed');
+
+        RssService.seed(json).then(function(err){
+           if(err){
+               sails.log.error(ex.stack);
+               res.serverError({success: false, msg: ex.message});
+           }
+            else{
+               res.ok();
+           }
+        });
+
     }
 };
 
