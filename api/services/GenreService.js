@@ -153,7 +153,7 @@ module.exports = {
                 }
                 else {
                     if (urls) {
-                        findEnd(urls).then(function (dedupedUrls, count) {
+                        me.findEnd(urls).then(function (dedupedUrls, count) {
                             if (dedupedUrls.length == 0) {
                                 sails.log.info('Stopped due to running into 30 duplicates.');
                                 cb()

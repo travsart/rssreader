@@ -135,5 +135,36 @@ module.exports = {
                 resolve(err);
             });
         });
+    },
+    findIp: function () {
+        return new Promise(function (resolve, reject) {
+            var os = require('os');
+            var ifaces = os.networkInterfaces();
+
+            var ips = [];
+            ifaces.keys().forEach(function (ifname) {
+                ifaces[ifname].forEach(function (iface) {
+                    if ('IPv4' == iface.family && iface.internal == false) {
+                        ips.append(iface)
+                    }
+                });
+            });
+
+            resolve(ips);
+        });
+    },
+    
+    updateAllRss: function () {
+        return new Promise(function (resolve, reject) {
+            Rss.find({
+                updateUrl: '',
+            }).then(function (rss) {
+                me.checkPage(rss, type, page, preCount).then(function (ret) {
+                    resolve(ret);
+                });
+            }).catch(function (err) {
+                reject({success: false, msg: '', err: err});
+            });
+        });
     }
 };
