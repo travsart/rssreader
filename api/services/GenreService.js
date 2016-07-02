@@ -185,8 +185,13 @@ module.exports = {
                 else {
                     if (urls) {
                         me.removeDuplicates(urls).then(function (err1) {
-                            sails.log.error(err1);
-                            cb(err1);
+                            if (err1) {
+                                sails.log.error(err1);
+                                cb(err1);
+                            }
+                            else {
+                                me.buildUrls(page + 1, cb);
+                            }
                         });
                     }
                     else {
