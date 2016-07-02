@@ -50,7 +50,8 @@ module.exports = {
             artists: [],
             type: '',
             year: -1,
-            status: 'Ongoing'
+            status: 'Ongoing',
+            latestChapters : []
         };
 
         var lists = ['Author(s)', 'Artist(s)', 'Genre(s)'];
@@ -97,6 +98,29 @@ module.exports = {
             }
 
             manga.summary = content.children[7].children[0].data;
+
+            var latestChapters = [];
+            var addedCh = [];
+
+            chBody.find('ul.lest li a').each(function(index, href) {
+                var url = href.attribs.href;
+                var ch = href.children[0].data;
+                re = /.*ch\.(\d+\.\d+|\d+)/;
+
+                var match = re.exec(ch);
+                if (match != null && match.length == 2) {
+                    ch = match[1];
+
+                    if (addedCh.indexOf(ch) == -1) {
+                        latestChapters.push({
+                            url: url,
+                            ch: ch
+                        });
+                        addedCh.push(ch)
+                    }
+                }
+            });
+            manga.latestChapters = latestChapters;
             cb(null, manga);
         });
 

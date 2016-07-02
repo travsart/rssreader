@@ -25,6 +25,9 @@ module.exports = {
         genres: {
             type: 'array'
         },
+        latestChapters : {
+            type: 'array'
+        },
         authorshash: {
             type: 'string'
         },
