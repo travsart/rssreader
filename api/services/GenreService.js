@@ -4,23 +4,29 @@
 var Promise = require('bluebird');
 
 module.exports = {
-    findEnd: function (urls) {
-        return new Promise(function (resolve, reject) {
-            var count = 0;
-            Url.find(urls).then(function (list) {
-                count += list.length
+    createUrl: function (urls, cb) {
+        var me = this;
 
-                list.forEach(function (item) {
-                    var i = 0;
-                    while (i < urls.length) {
-                        if (urls[i].name == item.name) {
-                            urls.splice(i, 1);
-                            break;
-                        }
-                        i++;
-                    }
-                });
-                resolve({urls: urls, count: count});
+        if (urls.length == 0) {
+            cb();
+        }
+        else {
+            var url = urls.shift();
+            Url.create(url).exec(function (err) {
+                if (err == null || err.code == 'E_VALIDATION') {
+                    me.createUrl(urls, cb);
+                }
+                else {
+                    cb(err);
+                }
+            });
+        }
+    },
+    removeDuplicates: function (urls) {
+        var me = this;
+        return new Promise(function (resolve, reject) {
+            me.createUrl(function (err) {
+                resolve(err);
             });
         });
     },
@@ -51,7 +57,7 @@ module.exports = {
             type: '',
             year: -1,
             status: 'Ongoing',
-            latestChapters : []
+            latestChapters: []
         };
 
         var lists = ['Author(s)', 'Artist(s)', 'Genre(s)'];
@@ -102,7 +108,7 @@ module.exports = {
             var latestChapters = [];
             var addedCh = [];
 
-            chBody.find('ul.lest li a').each(function(index, href) {
+            chBody.find('ul.lest li a').each(function (index, href) {
                 var url = href.attribs.href;
                 var ch = href.children[0].data;
                 re = /.*ch\.(\d+\.\d+|\d+)/;
@@ -177,25 +183,8 @@ module.exports = {
                 }
                 else {
                     if (urls) {
-                        me.findEnd(urls).then(function (dedupedUrls, count) {
-                            if (dedupedUrls.length == 0) {
-                                sails.log.info('Stopped due to running into 30 duplicates.');
-                                cb()
-                            }
-                            else {
-                                Url.create(dedupedUrls).then(function (created) {
-                                    if (count > 20) {
-                                        sails.log.info('Stopped due to running into 20 duplicates.');
-                                        cb()
-                                    }
-                                    else {
-                                        me.buildUrls(page + 1, cb);
-                                    }
-                                }).catch(function (err1) {
-                                    sails.log.error(err1);
-                                    cb(err1);
-                                });
-                            }
+                        me.removeDuplicates(urls).then(function (err1) {
+                            cb(err);
                         });
                     }
                     else {
