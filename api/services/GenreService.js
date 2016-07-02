@@ -183,7 +183,7 @@ module.exports = {
                                 cb()
                             }
                             else {
-                                Url.create(dedupedUrls).then(function (created) {
+                                Url.create(dedupedUrls.urls).then(function (created) {
                                     if (count > 20) {
                                         sails.log.info('Stopped due to running into 20 duplicates.');
                                         cb()
