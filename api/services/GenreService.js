@@ -25,7 +25,7 @@ module.exports = {
     removeDuplicates: function (urls) {
         var me = this;
         return new Promise(function (resolve, reject) {
-            me.createUrl(function (err) {
+            me.createUrl(urls, function (err) {
                 resolve(err);
             });
         });
@@ -179,12 +179,14 @@ module.exports = {
         sails.log.info('buildUrls: ' + page);
         me.requestUrl(url, me.parseList, function (err, urls) {
                 if (err) {
+                    sails.log.error(err);
                     cb(err);
                 }
                 else {
                     if (urls) {
                         me.removeDuplicates(urls).then(function (err1) {
-                            cb(err);
+                            sails.log.error(err1);
+                            cb(err1);
                         });
                     }
                     else {
