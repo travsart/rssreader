@@ -108,9 +108,10 @@ module.exports = {
             var latestChapters = [];
             var addedCh = [];
 
-            chBody.find('ul.lest li a').each(function (index, href) {
-                var url = href.attribs.href;
+            chBody.find('ul.chapter span a').each(function (index, href) {
+                var url = href.attribs.href.substr(0, href.attribs.href.length - 2);
                 var ch = href.children[0].data;
+                
                 re = /.*ch\.(\d+\.\d+|\d+)/;
 
                 var match = re.exec(ch);

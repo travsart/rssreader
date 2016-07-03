@@ -159,9 +159,7 @@ module.exports = {
             Rss.find({
                 updateUrl: '',
             }).then(function (rss) {
-                me.checkPage(rss, type, page, preCount).then(function (ret) {
-                    resolve(ret);
-                });
+                resolve();
             }).catch(function (err) {
                 reject({success: false, msg: '', err: err});
             });
