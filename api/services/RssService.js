@@ -139,7 +139,6 @@ module.exports = {
     checkIp: function () {
         var me = this;
         return new Promise(function (resolve, reject) {
-            var request = require('request');
             return me.getIp(['http://geoip.hmageo.com/ip/', 'icanhazip.com', 'ipecho.net/plain'], function (ip) {
                 resolve(ip);
             });
@@ -147,6 +146,7 @@ module.exports = {
     },
     getIp: function (urls, cb) {
         var me = this;
+        var request = require('request');
         if (urls.length == 0) {
             cb();
         }
