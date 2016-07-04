@@ -31,6 +31,7 @@
     "lodash": "*",
     "mime-types": "*",
     "moment": "*",
+    "nodemailer": "*",
     "object-hash": "*",
     "random-useragent": "*",
     "rc": "*",

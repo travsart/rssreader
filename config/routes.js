@@ -37,6 +37,7 @@ module.exports.routes = {
     '/rss/seed': 'RssController.seed',
     '/rss/updateall': 'RssController.updateAllRss',
     '/checkip': 'RssController.checkip',
+    '/sendip': 'RssController.checkip',
     '/genre/generate': 'GenreController.generate',
     '/genre/del': 'GenreController.del',
     '/genre/compare': 'GenreController.generateSeedList',
@@ -45,7 +46,7 @@ module.exports.routes = {
     '/genre/buildmanga': 'GenreController.buildManga',
     '/genre/generaterss': 'GenreController.generateRss',
     '/genre/test': 'GenreController.test',
-    'GET /login' : {view: 'login'},
-    'POST /login' : 'AuthController.login',
-    'POST /logout' : 'AuthController.logout'
+    'GET /login': {view: 'login'},
+    'POST /login': 'AuthController.login',
+    'POST /logout': 'AuthController.logout'
 };

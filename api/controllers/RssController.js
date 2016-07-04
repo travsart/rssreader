@@ -84,6 +84,35 @@ module.exports = {
             res.serverError({success: false, msg: ex.message});
         });
     },
+    sendip: function (re, res) {
+        var nodemailer = require('nodemailer');
+
+        var transporter = nodemailer.createTransport('smtps://ukcineworld2%40gmail.com:number271@smtp.gmail.com');
+        var mailOptions = {
+            from: 'rssreader@rssreader.com',
+            to: 'travsart27@gmail.com',
+            subject: 'IP',
+            text: ''
+        };
+
+        RssService.checkIp().then(function (ip) {
+            mailOptions.text = 'Rssreader\'s ip is: ' + ip;
+            transporter.sendMail(mailOptions, function (error, info) {
+                if (error) {
+                    sails.log.error(error.stack);
+                    res.serverError({success: false, msg: error.message});
+                }
+                else {
+                    sails.log.info('Email sent');
+                    res.ok({msg: 'Email sent'});
+                }
+            });
+
+        }).catch(function (ex) {
+            sails.log.error(ex.stack);
+            res.serverError({success: false, msg: ex.message});
+        });
+    },
     updateAllRss: function (req, res) {
         RssService.updateAllRss().then(function (err) {
             if (err) {

@@ -140,6 +140,9 @@ module.exports = {
         var me = this;
         return new Promise(function (resolve, reject) {
             return me.getIp(['http://geoip.hmageo.com/ip/', 'icanhazip.com', 'ipecho.net/plain'], function (ip) {
+                if(ip == null){
+                    ip = '';
+                }
                 resolve(ip);
             });
         });
