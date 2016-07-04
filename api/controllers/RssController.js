@@ -28,9 +28,9 @@ module.exports = {
                 msg: ''
             };
             RssService.checkSite('Manga', page, 0).then(function (results) {
-				sails.log.info(results);
+                sails.log.info(results);
                 resRss.success = resRss.success && results.success;
-                if(!results.success){
+                if (!results.success) {
                     resRss.manga.err = results.err;
                 }
 
@@ -40,7 +40,7 @@ module.exports = {
                     resRss.success = resRss.success && results.success;
                     resRss.msg += ' ' + results.msg;
 
-                    if(!results.success){
+                    if (!results.success) {
                         resRss.anime.err = results.err;
                     }
 
@@ -63,37 +63,34 @@ module.exports = {
             });
         }
     },
-    seed: function(req,res){
-        var json =  req.param('seed');
+    seed: function (req, res) {
+        var json = req.param('seed');
 
-        RssService.seed(json).then(function(err){
-           if(err){
-               sails.log.error(ex.stack);
-               res.serverError({success: false, msg: ex.message});
-           }
-            else{
-               res.ok();
-           }
-        });
-    },
-    checkIp:function(req,res){
-        RssService.checkIp().then(function(err){
-            if(err){
+        RssService.seed(json).then(function (err) {
+            if (err) {
                 sails.log.error(ex.stack);
                 res.serverError({success: false, msg: ex.message});
             }
-            else{
+            else {
                 res.ok();
             }
         });
     },
-    updateAllRss:function(req,res){
-        RssService.updateAllRss().then(function(err){
-            if(err){
+    checkIp: function (req, res) {
+        RssService.checkIp().then(function (ip) {
+            res.ok(ip);
+        }).catch(function (ex) {
+            sails.log.error(ex.stack);
+            res.serverError({success: false, msg: ex.message});
+        });
+    },
+    updateAllRss: function (req, res) {
+        RssService.updateAllRss().then(function (err) {
+            if (err) {
                 sails.log.error(ex.stack);
                 res.serverError({success: false, msg: ex.message});
             }
-            else{
+            else {
                 res.ok();
             }
         });
