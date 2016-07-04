@@ -111,7 +111,7 @@ module.exports = {
             chBody.find('ul.chapter span a').each(function (index, href) {
                 var url = href.attribs.href.substr(0, href.attribs.href.length - 2);
                 var ch = href.children[0].data;
-                
+
                 re = /.*ch\.(\d+\.\d+|\d+)/;
 
                 var match = re.exec(ch);
@@ -158,7 +158,7 @@ module.exports = {
     },
     requestUrl: function (url, parseFunc, cb, params) {
         var request = require('request');
-        var userAgent = 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36';
+        var userAgent = require('random-useragent').getRandom();
 
         request({url: url, headers: {'User-agent': userAgent}}, function (error, response, body) {
             if (error) {

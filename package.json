@@ -32,7 +32,7 @@
     "mime-types": "*",
     "moment": "*",
     "object-hash": "*",
-    "random-ua": "*",
+    "random-useragent": "*",
     "rc": "*",
     "request": "*",
     "sails": "*",

@@ -11,7 +11,7 @@ module.exports = {
             var request = require('request');
             var cheerio = require('cheerio');
             var moment = require('moment');
-            var userAgent = 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36';
+            var userAgent = require('random-useragent').getRandom();
             var me = this;
 
             request({url: url, headers: {'User-agent': userAgent}}, function (error, response, body) {
@@ -137,29 +137,86 @@ module.exports = {
         });
     },
     findIp: function () {
+        var me = this;
         return new Promise(function (resolve, reject) {
-            var os = require('os');
-            var ifaces = os.networkInterfaces();
-
-            var ips = [];
-            ifaces.keys().forEach(function (ifname) {
-                ifaces[ifname].forEach(function (iface) {
-                    if ('IPv4' == iface.family && iface.internal == false) {
-                        ips.append(iface)
-                    }
-                });
+            var request = require('request');
+            return me.getIp(['http://geoip.hmageo.com/ip/', 'icanhazip.com', 'ipecho.net/plain'], function (ip) {
+                resolve(ip);
             });
-
-            resolve(ips);
         });
     },
-    
+    getIp: function (urls, cb) {
+        var me = this;
+        if (urls.length == 0) {
+            cb();
+        }
+        else {
+            request({
+                url: urls.shift(),
+                headers: {'User-agent': require('random-useragent').getRandom()}
+            }, function (error, response, body) {
+                if (body == null || body == '') {
+                    me.getIp(urls, cb);
+                }
+                else {
+                    cb(body);
+                }
+            });
+        }
+
+    },
+    updateRssFromManga: function (rsses, cb) {
+        var me = this;
+        if (rsses.length == 0) {
+            cb();
+        }
+        else {
+            var rss = rsses.shift();
+            Manga.find({
+                name: rss.name,
+            }).exec(function (err, manga) {
+                if (err) {
+                    sails.log.error(err);
+                    me.updateRssFromManga(rsses, cb);
+                }
+
+                chs = manga.latestChapters;
+                chs.sort(function (a, b) {
+                    return a.ch - b.ch;
+                });
+
+                var i = 0;
+                while (i < chs.length) {
+                    var ch = chs[i];
+                    if (rss.check == true && ch.ch > rss.start) {
+                        rss.check = false;
+                        rss.start = ch.ch;
+                        rss.updateUrl = 'http://mangapark.me/' + ch.url;
+                        r.save();
+                        break;
+                    }
+                    else if (rss.check == false && ch.ch == rss.start) {
+                        rss.start = ch.ch;
+                        rss.updateUrl = 'http://mangapark.me/' + ch.url;
+                        r.save();
+                        break;
+                    }
+                }
+                me.updateRssFromManga(rsses, cb);
+            });
+        }
+    },
     updateAllRss: function () {
+        var me = this;
+
         return new Promise(function (resolve, reject) {
-            Rss.find({
+            return Rss.find({
                 updateUrl: '',
-            }).then(function (rss) {
-                resolve();
+                type: 'Manga'
+            }).then(function (rsses) {
+                me.updateRssFromManga(rsses, function () {
+                    resolve();
+                });
             }).catch(function (err) {
                 reject({success: false, msg: '', err: err});
             });
