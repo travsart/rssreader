@@ -136,7 +136,7 @@ module.exports = {
             });
         });
     },
-    findIp: function () {
+    checkIp: function () {
         var me = this;
         return new Promise(function (resolve, reject) {
             var request = require('request');

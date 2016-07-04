@@ -75,7 +75,28 @@ module.exports = {
                res.ok();
            }
         });
-
+    },
+    checkIp:function(req,res){
+        RssService.checkIp().then(function(err){
+            if(err){
+                sails.log.error(ex.stack);
+                res.serverError({success: false, msg: ex.message});
+            }
+            else{
+                res.ok();
+            }
+        });
+    },
+    updateAllRss:function(req,res){
+        RssService.updateAllRss().then(function(err){
+            if(err){
+                sails.log.error(ex.stack);
+                res.serverError({success: false, msg: ex.message});
+            }
+            else{
+                res.ok();
+            }
+        });
     }
 };
 
