@@ -63,13 +63,11 @@ module.exports = {
         });
     },
     buildUrls: function (req, res) {
-        res.json({success: true, msg: 'Running'});
         sails.log.info('Starting buildUrls');
         GenreService.buildUrls(0, function (err) {
             sails.log.info('done buildUrls');
-        }).catch(function (ex) {
-            sails.log.error(ex.stack);
         });
+        res.json({success: true, msg: 'Running'});
     },
     buildManga: function (req, res) {
         res.json({success: true, msg: 'Running'});
