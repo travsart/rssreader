@@ -43,11 +43,16 @@ module.exports = {
     },
 
     home: function (req, res) {
-        return res.view({
-            view: '/auth/home',
-            locals: {
-                username: (req.cookies.user) ? req.cookies.user : ''
-            }
-        });
+        if (req.cookies.user) {
+            return res.view({
+                view: '/auth/home',
+                locals: {
+                    username: req.cookies.user
+                }
+            });
+        }
+        else{
+            res.redirect('/login')
+        }
     }
 };

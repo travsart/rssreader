@@ -70,7 +70,6 @@ module.exports = {
         res.json({success: true, msg: 'Running'});
     },
     buildManga: function (req, res) {
-        res.json({success: true, msg: 'Running'});
         sails.log.info('Starting buildManga');
         Url.find({}).then(function (urls) {
             return GenreService.buildManga(urls, function (err) {
@@ -79,6 +78,7 @@ module.exports = {
         }).catch(function (ex) {
             sails.log.error(ex.stack);
         });
+        res.json({success: true, msg: 'Running'});
     },
     generateRss: function (req, res) {
         var user = req.param('user');
