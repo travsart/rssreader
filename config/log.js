@@ -8,7 +8,8 @@ customLogger.add(winston.transports.DailyRotateFile, {
     datePattern: '_yyyy-MM-dd.log',
     filename: 'log_info',
     timestamp: true,
-    zippedArchive: true
+    zippedArchive: true,
+    json: false
 });
 
 process.env.LOG_PATH = require('path').resolve('.');
