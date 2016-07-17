@@ -2,8 +2,193 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8852a0a-39ee-460b-af05-a2f0c29985c7" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/.babelrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/.bumpedrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/lib/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/async/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/async/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/async/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/async/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/async/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/async/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/async/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/async/lib/async.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/async/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/async/support/sync-package-managers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/MIT-LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/ReadMe.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/examples/normal-usage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/examples/safe-string.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/lib/colors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/lib/custom/trap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/lib/custom/zalgo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/lib/extendStringPrototype.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/lib/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/lib/maps/america.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/lib/maps/rainbow.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/lib/maps/random.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/lib/maps/zebra.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/lib/styles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/lib/system/supports-colors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/safe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/screenshots/colors.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/tests/basic-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/tests/safe-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/colors/themes/generic-logging.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/ender.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/af.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/ar-ma.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/ar-sa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/ar-tn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/ar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/az.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/bg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/bn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/bo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/bs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/cs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/cv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/cy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/de-at.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/dv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/el.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/en-au.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/en-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/en-ie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/en-nz.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/eo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/et.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/eu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/fa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/fi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/fo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/fr-ch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/fy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/gd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/gl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/he.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/hi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/hr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/hu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/hy-am.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/id.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/is.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/ja.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/jv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/ka.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/kk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/km.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/ko.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/lb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/lo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/lt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/lv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/me.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/mk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/ml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/mr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/ms-my.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/ms.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/my.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/nb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/ne.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/nn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/pt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/ro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/se.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/si.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/sk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/sl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/sq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/sr-cyrl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/sr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/sv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/sw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/ta.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/te.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/th.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/tl-ph.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/tlh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/tr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/tzl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/tzm-latn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/tzm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/uk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/uz.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/vi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/locale/zh-tw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/min/locales.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/min/locales.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/min/moment-with-locales.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/min/moment-with-locales.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/min/moment.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/min/tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/moment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/package.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/moment/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/lib/winston.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/lib/winston/common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/lib/winston/config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/lib/winston/config/cli-config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/lib/winston/config/npm-config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/lib/winston/config/syslog-config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/lib/winston/container.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/lib/winston/exception.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/lib/winston/logger.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/lib/winston/transports.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/lib/winston/transports/console.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/lib/winston/transports/file.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/lib/winston/transports/http.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/lib/winston/transports/memory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/lib/winston/transports/transport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/test/helpers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/test/transports/console-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/test/transports/file-archive-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/test/transports/file-maxfiles-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/test/transports/file-maxsize-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/test/transports/file-open-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/test/transports/file-stress-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/test/transports/file-tailrolling-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/test/transports/file-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/test/transports/http-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/test/transports/memory-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/node_modules/winston/test/transports/transport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sails-hook-winston/package.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sails/lib/hooks/logger/index.js" afterPath="$PROJECT_DIR$/node_modules/sails/lib/hooks/logger/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/log.js" afterPath="$PROJECT_DIR$/config/log.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="rssreader.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,71 +208,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/sails-hook-winston/lib/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/captains-log/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sails-console.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/sails/bin/sails-console.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/node_modules/sails/lib/hooks/logger/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wrap.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/captains-log/lib/wrap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="configure.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/captains-log/lib/configure.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="92" column="46" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="log.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/log.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            <state relative-caret-position="170">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -152,16 +277,16 @@
         <option value="$PROJECT_DIR$/api/models/Manga.js" />
         <option value="$PROJECT_DIR$/api/services/GenreService.js" />
         <option value="$PROJECT_DIR$/api/services/RssService.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/api/controllers/RssController.js" />
         <option value="$PROJECT_DIR$/config/routes.js" />
         <option value="$PROJECT_DIR$/api/controllers/GenreController.js" />
         <option value="$PROJECT_DIR$/api/controllers/AuthController.js" />
-        <option value="$PROJECT_DIR$/config/log.js" />
         <option value="$PROJECT_DIR$/node_modules/winston/lib/winston/common.js" />
-        <option value="$PROJECT_DIR$/node_modules/sails-hook-winston/lib/index.js" />
         <option value="$PROJECT_DIR$/node_modules/captains-log/lib/configure.js" />
         <option value="$PROJECT_DIR$/node_modules/sails/lib/hooks/logger/index.js" />
+        <option value="$PROJECT_DIR$/node_modules/sails-hook-winston/lib/index.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/config/log.js" />
       </list>
     </option>
   </component>
@@ -235,160 +360,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rssreader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rssreader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="winston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rssreader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rssreader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="winston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rssreader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rssreader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="winston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="winston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rssreader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rssreader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="winston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="winston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transports" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rssreader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rssreader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sails-hook-winston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rssreader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rssreader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sails-hook-winston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rssreader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rssreader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sails" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -763,21 +734,7 @@
       <workItem from="1467480768881" duration="21665000" />
       <workItem from="1467922154025" duration="3190000" />
       <workItem from="1468697157421" duration="1425000" />
-      <workItem from="1468768175894" duration="3155000" />
-    </task>
-    <task id="LOCAL-00293" summary="as">
-      <created>1460921552389</created>
-      <option name="number" value="00293" />
-      <option name="presentableId" value="LOCAL-00293" />
-      <option name="project" value="LOCAL" />
-      <updated>1460921552390</updated>
-    </task>
-    <task id="LOCAL-00294" summary="as">
-      <created>1460921571486</created>
-      <option name="number" value="00294" />
-      <option name="presentableId" value="LOCAL-00294" />
-      <option name="project" value="LOCAL" />
-      <updated>1460921571486</updated>
+      <workItem from="1468768175894" duration="3702000" />
     </task>
     <task id="LOCAL-00295" summary="as">
       <created>1460921722221</created>
@@ -1108,11 +1065,25 @@
       <option name="project" value="LOCAL" />
       <updated>1468781271169</updated>
     </task>
-    <option name="localTasksCounter" value="342" />
+    <task id="LOCAL-00342" summary="as">
+      <created>1468781660816</created>
+      <option name="number" value="00342" />
+      <option name="presentableId" value="LOCAL-00342" />
+      <option name="project" value="LOCAL" />
+      <updated>1468781660816</updated>
+    </task>
+    <task id="LOCAL-00343" summary="as">
+      <created>1468781769892</created>
+      <option name="number" value="00343" />
+      <option name="presentableId" value="LOCAL-00343" />
+      <option name="project" value="LOCAL" />
+      <updated>1468781769892</updated>
+    </task>
+    <option name="localTasksCounter" value="344" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101398000" />
+    <option name="totallyTimeSpent" value="101945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -1125,7 +1096,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23571429" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23392858" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32751092" sideWeight="0.49511003" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1167,35 +1138,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/js/app/service/loginService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/sails/lib/app/private/exposeGlobals.js" />
-    <entry file="file://$PROJECT_DIR$/api/controllers/SuggestionController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/Genre.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/login.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1306,13 +1248,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/services/RssService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2431">
@@ -1419,14 +1354,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/log.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/captains-log/lib/captains.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1439,14 +1366,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
           <caret line="92" column="46" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/sails-hook-winston/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1477,8 +1396,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/sails/lib/hooks/logger/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
+        <state relative-caret-position="724">
           <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/sails-hook-winston/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/sails/lib/hooks/pubsub/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/sails/lib/hooks/i18n/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/sails/node_modules/captains-log/lib/wrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/sails/bin/sails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/sails/bin/sails-lift.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/log.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding />
         </state>
       </provider>

@@ -7,7 +7,6 @@
     "bcrypt": "*",
     "bluebird": "*",
     "bower": "*",
-    "captains-log": "*",
     "cheerio": "*",
     "coffee-script": "*",
     "colors": "*",
@@ -38,7 +37,6 @@
     "request": "*",
     "sails": "*",
     "sails-disk": "*",
-    "sails-hook-winston": "*",
     "sails-mongo": "*",
     "xml2js": "*"
   },
