@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8852a0a-39ee-460b-af05-a2f0c29985c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/models/Ip.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/RssController.js" afterPath="$PROJECT_DIR$/api/controllers/RssController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/services/RssService.js" afterPath="$PROJECT_DIR$/api/services/RssService.js" />
     </list>
     <ignored path="rssreader.iws" />
@@ -62,11 +62,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RssService.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RssService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/services/RssService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="131" column="24" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RssController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/controllers/RssController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="98" column="65" selection-start-line="98" selection-start-column="65" selection-end-line="98" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -149,7 +159,6 @@
         <option value="$PROJECT_DIR$/assets/js/app/controller/rssController.js" />
         <option value="$PROJECT_DIR$/api/models/Manga.js" />
         <option value="$PROJECT_DIR$/api/services/GenreService.js" />
-        <option value="$PROJECT_DIR$/api/controllers/RssController.js" />
         <option value="$PROJECT_DIR$/config/routes.js" />
         <option value="$PROJECT_DIR$/api/controllers/GenreController.js" />
         <option value="$PROJECT_DIR$/api/controllers/AuthController.js" />
@@ -161,6 +170,7 @@
         <option value="$PROJECT_DIR$/config/log.js" />
         <option value="$PROJECT_DIR$/api/models/Ip.js" />
         <option value="$PROJECT_DIR$/api/services/RssService.js" />
+        <option value="$PROJECT_DIR$/api/controllers/RssController.js" />
       </list>
     </option>
   </component>
@@ -595,14 +605,7 @@
       <workItem from="1467922154025" duration="3190000" />
       <workItem from="1468697157421" duration="1425000" />
       <workItem from="1468768175894" duration="5382000" />
-      <workItem from="1469965438443" duration="2762000" />
-    </task>
-    <task id="LOCAL-00297" summary="as">
-      <created>1463826772824</created>
-      <option name="number" value="00297" />
-      <option name="presentableId" value="LOCAL-00297" />
-      <option name="project" value="LOCAL" />
-      <updated>1463826772829</updated>
+      <workItem from="1469965438443" duration="3493000" />
     </task>
     <task id="LOCAL-00298" summary="as">
       <created>1463829719149</created>
@@ -940,15 +943,22 @@
       <option name="project" value="LOCAL" />
       <updated>1468782324700</updated>
     </task>
-    <option name="localTasksCounter" value="346" />
+    <task id="LOCAL-00346" summary="as">
+      <created>1469968922812</created>
+      <option name="number" value="00346" />
+      <option name="presentableId" value="LOCAL-00346" />
+      <option name="project" value="LOCAL" />
+      <updated>1469968922813</updated>
+    </task>
+    <option name="localTasksCounter" value="347" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106387000" />
+    <option name="totallyTimeSpent" value="107118000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23392858" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1092,13 +1102,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/controllers/RssController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="86" column="10" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1297,8 +1300,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/services/RssService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="131" column="24" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/RssController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="98" column="65" selection-start-line="98" selection-start-column="65" selection-end-line="98" selection-end-column="65" />
           <folding />
         </state>
       </provider>

@@ -143,7 +143,7 @@ module.exports = {
                 if (ip == null) {
                     ip = '';
                     sails.log.warn('Could not find ip from ip list');
-                    resolve('Could not find ip');
+                    resolve({err: true, msg: 'Could not find ip'});
                 }
                 else {
                     return Ip.findOne({ip: ip}).then(function (dbIp) {
@@ -153,10 +153,15 @@ module.exports = {
                             });
                         }
                         else {
-                            if (dbIp.updatedAt) {
-
+                            var moment = require('moment');
+                            var diff = moment.duration(moment().diff(moment(dbIp.updatedAt)))
+                            if (diff._data.days > 7) {
+                                dbIp.save();
+                                resolve(ip)
                             }
-                            resolve(ip);
+                            else {
+                                resolve();
+                            }
                         }
                     });
                 }

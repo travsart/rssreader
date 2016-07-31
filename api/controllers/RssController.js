@@ -96,17 +96,19 @@ module.exports = {
         };
 
         RssService.checkIp().then(function (ip) {
-            mailOptions.text = 'Rssreader\'s ip is: ' + ip;
-            transporter.sendMail(mailOptions, function (error, info) {
-                if (error) {
-                    sails.log.error(error.stack);
-                    res.serverError({success: false, msg: error.message});
-                }
-                else {
-                    sails.log.info('Email sent');
-                    res.ok({msg: 'Email sent'});
-                }
-            });
+            if (ip != null || ip != '' | typeof ip != 'object') {
+                mailOptions.text = 'Rssreader\'s ip is: ' + ip;
+                transporter.sendMail(mailOptions, function (error, info) {
+                    if (error) {
+                        sails.log.error(error.stack);
+                        res.serverError({success: false, msg: error.message});
+                    }
+                    else {
+                        sails.log.info('Email sent');
+                        res.ok({msg: 'Email sent'});
+                    }
+                });
+            }
 
         }).catch(function (ex) {
             sails.log.error(ex.stack);
