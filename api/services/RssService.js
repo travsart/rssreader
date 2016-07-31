@@ -140,10 +140,26 @@ module.exports = {
         var me = this;
         return new Promise(function (resolve, reject) {
             return me.getIp(['http://geoip.hmageo.com/ip/', 'icanhazip.com', 'ipecho.net/plain'], function (ip) {
-                if(ip == null){
+                if (ip == null) {
                     ip = '';
+                    sails.log.warn('Could not find ip from ip list');
+                    resolve('Could not find ip');
                 }
-                resolve(ip);
+                else {
+                    return Ip.findOne({ip: ip}).then(function (dbIp) {
+                        if (dbIp == null || dbIp == '') {
+                            Ip.create({ip: ip}).then(function () {
+                                resolve(ip);
+                            });
+                        }
+                        else {
+                            if (dbIp.updatedAt) {
+
+                            }
+                            resolve(ip);
+                        }
+                    });
+                }
             });
         });
     },
