@@ -146,13 +146,14 @@ module.exports = {
                     resolve({err: true, msg: 'Could not find ip'});
                 }
                 else {
-                    return Ip.findOne({ip: ip}).then(function (dbIp) {
-                        if (dbIp == null || dbIp == '') {
+                    return Ip.find({ip: ip}).then(function (dbIp) {
+                        if (dbIp == null || dbIp == '' || dbIp.length == 0) {
                             Ip.create({ip: ip}).then(function () {
                                 resolve(ip);
                             });
                         }
                         else {
+                            dbIp = dbIp[0]
                             var moment = require('moment');
                             var diff = moment.duration(moment().diff(moment(dbIp.updatedAt)))
                             sails.log.warn(dbIp)
