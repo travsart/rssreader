@@ -159,7 +159,7 @@ module.exports = {
                             sails.log.warn(dbIp.updatedAt)
                             sails.log.warn(diff)
                             if (1 == 1) {
-                                resolve();
+                                resolve({});
                             }
                             else {
                                 if (diff._data.days > 7) {
@@ -167,7 +167,7 @@ module.exports = {
                                     resolve(ip)
                                 }
                                 else {
-                                    resolve();
+                                    resolve({});
                                 }
                             }
                         }
