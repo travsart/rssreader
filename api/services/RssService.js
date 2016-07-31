@@ -155,8 +155,8 @@ module.exports = {
                         else {
                             var moment = require('moment');
                             var diff = moment.duration(moment().diff(moment(dbIp.updatedAt)))
+                            sails.log.warn(dbIp)
                             sails.log.warn(dbIp.updatedAt)
-                            sails.log.warn(moment(dbIp.updatedAt))
                             sails.log.warn(diff)
                             if (diff._data.days > 7) {
                                 dbIp.save();
