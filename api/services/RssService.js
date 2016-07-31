@@ -158,18 +158,15 @@ module.exports = {
                             sails.log.warn(dbIp.keys())
                             sails.log.warn(dbIp.updatedAt)
                             sails.log.warn(diff)
-                            if (1 == 1) {
-                                resolve({});
+
+                            if (diff._data.days > 7) {
+                                dbIp.save();
+                                resolve(ip)
                             }
                             else {
-                                if (diff._data.days > 7) {
-                                    dbIp.save();
-                                    resolve(ip)
-                                }
-                                else {
-                                    resolve({});
-                                }
+                                resolve({});
                             }
+
                         }
                     });
                 }
