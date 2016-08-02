@@ -205,7 +205,7 @@ rssApp
             $scope.removeRow = function (grid, row) {
                 var index = $scope.findIndex(row.entity.$$hashKey);
                 dlg = dialogs.confirm('Confirm Delete',
-                    'Are you sure you want to delete this record?');
+                    'Are you sure you want to delete ' + $scope.rssData[index].name + '?');
                 dlg.result
                     .then(function (btn) {
                         rssService
