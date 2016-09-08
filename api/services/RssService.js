@@ -146,7 +146,9 @@ module.exports = {
                     resolve({err: true, msg: 'Could not find ip'});
                 }
                 else {
-                    return Ip.findOne({ip: ip}).then(function (dbIp) {
+                    sails.log.info('Found Ip');
+                    resolve(ip);
+                    /*return Ip.findOne({ip: ip}).then(function (dbIp) {
                         if (dbIp == null || dbIp == '') {
                             Ip.create({ip: ip}).then(function () {
                                 resolve(ip);
@@ -168,20 +170,24 @@ module.exports = {
                             }
 
                         }
-                    });
+                    });*/
                 }
             });
         });
     },
     getIp: function (urls, cb) {
         var me = this;
+
         var request = require('request');
         if (urls.length == 0) {
             cb();
         }
         else {
+            url = urls.shift()
+            sails.log.info('getting ip: ' + url)
+
             request({
-                url: urls.shift(),
+                url: url,
                 headers: {'User-agent': require('random-useragent').getRandom()}
             }, function (error, response, body) {
                 if (body == null || body == '') {
