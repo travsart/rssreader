@@ -147,7 +147,7 @@ module.exports = {
                 }
                 else {
                     sails.log.info('Found Ip');
-                    resolve(ip);
+                    resolve(ip + ':8080');
                     /*return Ip.findOne({ip: ip}).then(function (dbIp) {
                         if (dbIp == null || dbIp == '') {
                             Ip.create({ip: ip}).then(function () {
