@@ -146,7 +146,7 @@ module.exports = {
                     resolve({err: true, msg: 'Could not find ip'});
                 }
                 else {
-                    sails.log.info('Found Ip');
+                    sails.log.info('Found Ip: ' + ip);
                     resolve(ip + ':8080');
                     /*return Ip.findOne({ip: ip}).then(function (dbIp) {
                         if (dbIp == null || dbIp == '') {
