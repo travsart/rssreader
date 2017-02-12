@@ -1,0 +1,468 @@
+2017-02-12T13:26:38.700Z - verbose: logger hook loaded successfully.
+2017-02-12T13:26:38.701Z - verbose: request hook loaded successfully.
+2017-02-12T13:26:38.703Z - verbose: Loading the app's models and any custom adapters...
+2017-02-12T13:26:38.703Z - verbose: Loading app models...
+2017-02-12T13:26:38.709Z - error: A hook (`orm`) failed to load!
+2017-02-12T13:26:38.709Z - verbose: Lowering sails...
+2017-02-12T13:26:38.710Z - verbose: Shutting down socket server...
+2017-02-12T13:26:38.710Z - verbose: Error occurred closing socket server: 
+2017-02-12T13:26:38.713Z - verbose: Overriding ejs engine config with ejslocals to implement layout support...
+2017-02-12T13:26:38.713Z - verbose: views hook loaded successfully.
+2017-02-12T13:26:38.714Z - verbose: Loading blueprint middleware...
+2017-02-12T13:26:38.714Z - verbose: blueprints hook loaded successfully.
+2017-02-12T13:26:38.714Z - verbose: responses hook loaded successfully.
+2017-02-12T13:26:38.719Z - verbose: controllers hook loaded successfully.
+2017-02-12T13:26:38.722Z - verbose: Loading policy modules from app...
+2017-02-12T13:26:38.768Z - verbose: Finished loading policy middleware logic.
+2017-02-12T13:26:38.768Z - verbose: policies hook loaded successfully.
+2017-02-12T13:26:38.768Z - verbose: services hook loaded successfully.
+2017-02-12T13:26:38.768Z - verbose: csrf hook loaded successfully.
+2017-02-12T13:26:38.768Z - verbose: cors hook loaded successfully.
+2017-02-12T13:26:38.817Z - verbose: i18n hook loaded successfully.
+2017-02-12T13:26:38.826Z - verbose: session hook loaded successfully.
+2017-02-12T13:26:38.826Z - verbose: Loading app Gruntfile...
+2017-02-12T13:26:38.839Z - verbose: Tracking new grunt child process...
+2017-02-12T13:26:38.840Z - verbose: grunt hook loaded successfully.
+2017-02-12T13:26:38.853Z - verbose: Setting default Express view engine to ejs...
+2017-02-12T13:26:38.952Z - verbose: http hook loaded successfully.
+2017-02-12T13:26:38.953Z - verbose: Preparing socket.io...
+2017-02-12T13:26:38.963Z - verbose: sockets hook loaded successfully.
+2017-02-12T13:26:39.828Z - verbose: Grunt :: Running "clean:dev" (clean) task
+2017-02-12T13:26:40.088Z - verbose: Grunt :: >> 1337 paths cleaned.
+2017-02-12T13:26:40.091Z - verbose: Grunt :: Running "jst:dev" (jst) task
+2017-02-12T13:26:40.096Z - verbose: Grunt :: >> Destination not written because compiled files were empty.
+2017-02-12T13:26:40.096Z - verbose: Grunt :: Running "less:dev" (less) task
+2017-02-12T13:26:40.101Z - verbose: Grunt :: Running "copy:dev" (copy) task
+2017-02-12T13:26:40.630Z - verbose: Grunt :: Copied 1213 files
+2017-02-12T13:26:40.630Z - verbose: Grunt :: Running "coffee:dev" (coffee) task
+2017-02-12T13:26:40.632Z - verbose: Grunt :: >> 0 files created.
+2017-02-12T13:26:40.632Z - verbose: Grunt :: Running "sails-linker:devJsRelative" (sails-linker) task
+2017-02-12T13:26:40.699Z - verbose: Grunt :: padding length 0
+2017-02-12T13:26:40.700Z - verbose: Grunt :: File "views/layout.ejs" updated.
+2017-02-12T13:26:40.700Z - verbose: Grunt :: Running "sails-linker:devStylesRelative" (sails-linker) task
+2017-02-12T13:26:40.748Z - verbose: Grunt :: padding length 4
+2017-02-12T13:26:40.748Z - verbose: Grunt :: File "views/layout.ejs" updated.
+2017-02-12T13:26:40.748Z - verbose: Grunt :: Running "sails-linker:devTpl" (sails-linker) task
+2017-02-12T13:26:40.751Z - verbose: Grunt :: Running "sails-linker:devJsRelativeJade" (sails-linker) task
+2017-02-12T13:26:40.755Z - verbose: Grunt :: Running "sails-linker:devStylesRelativeJade" (sails-linker) task
+2017-02-12T13:26:40.757Z - verbose: Grunt :: Running "sails-linker:devTplJade" (sails-linker) task
+2017-02-12T13:26:40.758Z - verbose: Grunt :: Running "watch" task
+2017-02-12T13:26:40.758Z - verbose: Grunt :: Waiting...
+2017-02-12T13:41:39.215Z - verbose: logger hook loaded successfully.
+2017-02-12T13:41:39.216Z - verbose: request hook loaded successfully.
+2017-02-12T13:41:39.218Z - verbose: Loading the app's models and any custom adapters...
+2017-02-12T13:41:39.218Z - verbose: Loading app models...
+2017-02-12T13:41:39.223Z - error: A hook (`orm`) failed to load!
+2017-02-12T13:41:39.223Z - error: 
+2017-02-12T13:41:39.224Z - verbose: Lowering sails...
+2017-02-12T13:41:39.225Z - verbose: Shutting down socket server...
+2017-02-12T13:41:39.225Z - verbose: Error occurred closing socket server: 
+2017-02-12T13:41:39.228Z - verbose: Overriding ejs engine config with ejslocals to implement layout support...
+2017-02-12T13:41:39.228Z - verbose: views hook loaded successfully.
+2017-02-12T13:41:39.229Z - verbose: Loading blueprint middleware...
+2017-02-12T13:41:39.229Z - verbose: blueprints hook loaded successfully.
+2017-02-12T13:41:39.229Z - verbose: responses hook loaded successfully.
+2017-02-12T13:41:39.234Z - verbose: controllers hook loaded successfully.
+2017-02-12T13:41:39.237Z - verbose: Loading policy modules from app...
+2017-02-12T13:41:39.282Z - verbose: Finished loading policy middleware logic.
+2017-02-12T13:41:39.282Z - verbose: policies hook loaded successfully.
+2017-02-12T13:41:39.282Z - verbose: services hook loaded successfully.
+2017-02-12T13:41:39.282Z - verbose: csrf hook loaded successfully.
+2017-02-12T13:41:39.282Z - verbose: cors hook loaded successfully.
+2017-02-12T13:41:39.332Z - verbose: i18n hook loaded successfully.
+2017-02-12T13:41:39.341Z - verbose: session hook loaded successfully.
+2017-02-12T13:41:39.341Z - verbose: Loading app Gruntfile...
+2017-02-12T13:41:39.353Z - verbose: Tracking new grunt child process...
+2017-02-12T13:41:39.353Z - verbose: grunt hook loaded successfully.
+2017-02-12T13:41:39.368Z - verbose: Setting default Express view engine to ejs...
+2017-02-12T13:41:39.490Z - verbose: http hook loaded successfully.
+2017-02-12T13:41:39.490Z - verbose: Preparing socket.io...
+2017-02-12T13:41:39.503Z - verbose: sockets hook loaded successfully.
+2017-02-12T13:41:40.362Z - verbose: Grunt :: Running "clean:dev" (clean) task
+2017-02-12T13:41:40.618Z - verbose: Grunt :: >> 1337 paths cleaned.
+2017-02-12T13:41:40.620Z - verbose: Grunt :: Running "jst:dev" (jst) task
+2017-02-12T13:41:40.625Z - verbose: Grunt :: >> Destination not written because compiled files were empty.
+2017-02-12T13:41:40.625Z - verbose: Grunt :: Running "less:dev" (less) task
+2017-02-12T13:41:40.629Z - verbose: Grunt :: Running "copy:dev" (copy) task
+2017-02-12T13:41:41.157Z - verbose: Grunt :: Copied 1213 files
+2017-02-12T13:41:41.157Z - verbose: Grunt :: Running "coffee:dev" (coffee) task
+2017-02-12T13:41:41.159Z - verbose: Grunt :: >> 0 files created.
+2017-02-12T13:41:41.159Z - verbose: Grunt :: Running "sails-linker:devJsRelative" (sails-linker) task
+2017-02-12T13:41:41.226Z - verbose: Grunt :: padding length 0
+2017-02-12T13:41:41.227Z - verbose: Grunt :: File "views/layout.ejs" updated.
+2017-02-12T13:41:41.228Z - verbose: Grunt :: Running "sails-linker:devStylesRelative" (sails-linker) task
+2017-02-12T13:41:41.274Z - verbose: Grunt :: padding length 4
+2017-02-12T13:41:41.274Z - verbose: Grunt :: File "views/layout.ejs" updated.
+2017-02-12T13:41:41.275Z - verbose: Grunt :: Running "sails-linker:devTpl" (sails-linker) task
+2017-02-12T13:41:41.277Z - verbose: Grunt :: Running "sails-linker:devJsRelativeJade" (sails-linker) task
+2017-02-12T13:41:41.281Z - verbose: Grunt :: Running "sails-linker:devStylesRelativeJade" (sails-linker) task
+2017-02-12T13:41:41.283Z - verbose: Grunt :: Running "sails-linker:devTplJade" (sails-linker) task
+2017-02-12T13:41:41.283Z - verbose: Grunt :: Running "watch" task
+2017-02-12T13:41:41.284Z - verbose: Grunt :: Waiting...
+2017-02-12T13:43:09.654Z - verbose: logger hook loaded successfully.
+2017-02-12T13:43:09.655Z - verbose: request hook loaded successfully.
+2017-02-12T13:43:09.657Z - verbose: Loading the app's models and any custom adapters...
+2017-02-12T13:43:09.657Z - verbose: Loading app models...
+2017-02-12T13:43:09.662Z - error: A hook (`orm`) failed to load!
+2017-02-12T13:43:09.663Z - verbose: Lowering sails...
+2017-02-12T13:43:09.664Z - verbose: Shutting down socket server...
+2017-02-12T13:43:09.664Z - verbose: Error occurred closing socket server: 
+2017-02-12T13:43:09.667Z - verbose: Overriding ejs engine config with ejslocals to implement layout support...
+2017-02-12T13:43:09.668Z - verbose: views hook loaded successfully.
+2017-02-12T13:43:09.669Z - verbose: Loading blueprint middleware...
+2017-02-12T13:43:09.669Z - verbose: blueprints hook loaded successfully.
+2017-02-12T13:43:09.669Z - verbose: responses hook loaded successfully.
+2017-02-12T13:43:09.674Z - verbose: controllers hook loaded successfully.
+2017-02-12T13:43:09.677Z - verbose: Loading policy modules from app...
+2017-02-12T13:43:09.722Z - verbose: Finished loading policy middleware logic.
+2017-02-12T13:43:09.722Z - verbose: policies hook loaded successfully.
+2017-02-12T13:43:09.722Z - verbose: services hook loaded successfully.
+2017-02-12T13:43:09.722Z - verbose: csrf hook loaded successfully.
+2017-02-12T13:43:09.722Z - verbose: cors hook loaded successfully.
+2017-02-12T13:43:09.772Z - verbose: i18n hook loaded successfully.
+2017-02-12T13:43:09.781Z - verbose: session hook loaded successfully.
+2017-02-12T13:43:09.781Z - verbose: Loading app Gruntfile...
+2017-02-12T13:43:09.793Z - verbose: Tracking new grunt child process...
+2017-02-12T13:43:09.793Z - verbose: grunt hook loaded successfully.
+2017-02-12T13:43:09.809Z - verbose: Setting default Express view engine to ejs...
+2017-02-12T13:43:09.927Z - verbose: http hook loaded successfully.
+2017-02-12T13:43:09.928Z - verbose: Preparing socket.io...
+2017-02-12T13:43:09.941Z - verbose: sockets hook loaded successfully.
+2017-02-12T13:43:10.798Z - verbose: Grunt :: Running "clean:dev" (clean) task
+2017-02-12T13:43:11.053Z - verbose: Grunt :: >> 1337 paths cleaned.
+2017-02-12T13:43:11.055Z - verbose: Grunt :: Running "jst:dev" (jst) task
+2017-02-12T13:43:11.059Z - verbose: Grunt :: >> Destination not written because compiled files were empty.
+2017-02-12T13:43:11.060Z - verbose: Grunt :: Running "less:dev" (less) task
+2017-02-12T13:43:11.063Z - verbose: Grunt :: Running "copy:dev" (copy) task
+2017-02-12T13:43:11.585Z - verbose: Grunt :: Copied 1213 files
+2017-02-12T13:43:11.585Z - verbose: Grunt :: Running "coffee:dev" (coffee) task
+2017-02-12T13:43:11.588Z - verbose: Grunt :: >> 0 files created.
+2017-02-12T13:43:11.588Z - verbose: Grunt :: Running "sails-linker:devJsRelative" (sails-linker) task
+2017-02-12T13:43:11.656Z - verbose: Grunt :: padding length 0
+2017-02-12T13:43:11.658Z - verbose: Grunt :: File "views/layout.ejs" updated.
+2017-02-12T13:43:11.658Z - verbose: Grunt :: Running "sails-linker:devStylesRelative" (sails-linker) task
+2017-02-12T13:43:11.705Z - verbose: Grunt :: padding length 4
+2017-02-12T13:43:11.705Z - verbose: Grunt :: File "views/layout.ejs" updated.
+2017-02-12T13:43:11.705Z - verbose: Grunt :: Running "sails-linker:devTpl" (sails-linker) task
+2017-02-12T13:43:11.708Z - verbose: Grunt :: Running "sails-linker:devJsRelativeJade" (sails-linker) task
+2017-02-12T13:43:11.712Z - verbose: Grunt :: Running "sails-linker:devStylesRelativeJade" (sails-linker) task
+2017-02-12T13:43:11.714Z - verbose: Grunt :: Running "sails-linker:devTplJade" (sails-linker) task
+2017-02-12T13:43:11.715Z - verbose: Grunt :: Running "watch" task
+2017-02-12T13:43:11.716Z - verbose: Grunt :: Waiting...
+2017-02-12T13:43:58.103Z - verbose: logger hook loaded successfully.
+2017-02-12T13:43:58.104Z - verbose: request hook loaded successfully.
+2017-02-12T13:43:58.106Z - verbose: Loading the app's models and any custom adapters...
+2017-02-12T13:43:58.106Z - verbose: Loading app models...
+2017-02-12T13:43:58.114Z - verbose: Loading app adapters...
+2017-02-12T13:43:58.118Z - verbose: Overriding ejs engine config with ejslocals to implement layout support...
+2017-02-12T13:43:58.118Z - verbose: views hook loaded successfully.
+2017-02-12T13:43:58.119Z - verbose: Loading blueprint middleware...
+2017-02-12T13:43:58.119Z - verbose: blueprints hook loaded successfully.
+2017-02-12T13:43:58.119Z - verbose: responses hook loaded successfully.
+2017-02-12T13:43:58.124Z - verbose: controllers hook loaded successfully.
+2017-02-12T13:43:58.127Z - verbose: Loading policy modules from app...
+2017-02-12T13:43:58.173Z - verbose: Finished loading policy middleware logic.
+2017-02-12T13:43:58.173Z - verbose: policies hook loaded successfully.
+2017-02-12T13:43:58.173Z - verbose: services hook loaded successfully.
+2017-02-12T13:43:58.173Z - verbose: csrf hook loaded successfully.
+2017-02-12T13:43:58.173Z - verbose: cors hook loaded successfully.
+2017-02-12T13:43:58.223Z - verbose: i18n hook loaded successfully.
+2017-02-12T13:43:58.232Z - verbose: session hook loaded successfully.
+2017-02-12T13:43:58.232Z - verbose: Loading app Gruntfile...
+2017-02-12T13:43:58.246Z - verbose: Tracking new grunt child process...
+2017-02-12T13:43:58.246Z - verbose: grunt hook loaded successfully.
+2017-02-12T13:43:58.259Z - verbose: Setting default Express view engine to ejs...
+2017-02-12T13:43:58.357Z - verbose: http hook loaded successfully.
+2017-02-12T13:43:58.357Z - verbose: Preparing socket.io...
+2017-02-12T13:43:58.368Z - verbose: sockets hook loaded successfully.
+2017-02-12T13:43:58.373Z - verbose: Loading adapter (`sails-mongo`) from this app's `node_modules/` directory...
+2017-02-12T13:43:58.549Z - verbose: Starting ORM...
+2017-02-12T13:43:58.550Z - silly: Registering model `genre` in Waterline (ORM)
+2017-02-12T13:43:58.550Z - silly: Registering model `ip` in Waterline (ORM)
+2017-02-12T13:43:58.550Z - silly: Registering model `manga` in Waterline (ORM)
+2017-02-12T13:43:58.550Z - silly: Registering model `rss` in Waterline (ORM)
+2017-02-12T13:43:58.550Z - silly: Registering model `suggestion` in Waterline (ORM)
+2017-02-12T13:43:58.551Z - silly: Registering model `url` in Waterline (ORM)
+2017-02-12T13:43:58.551Z - silly: Registering model `user` in Waterline (ORM)
+2017-02-12T13:43:58.633Z - verbose: orm hook loaded successfully.
+2017-02-12T13:43:58.637Z - verbose: pubsub hook loaded successfully.
+2017-02-12T13:43:58.638Z - verbose: Built-in hooks are ready.
+2017-02-12T13:43:58.638Z - verbose: Instantiating registry...
+2017-02-12T13:43:58.638Z - verbose: Loading router...
+2017-02-12T13:43:58.640Z - silly: Binding route ::  all /* (REQUEST HOOK: addMixins)
+2017-02-12T13:43:58.643Z - silly: Binding route ::  all /* (RESPONSES HOOK: addResponseMethods)
+2017-02-12T13:43:58.645Z - silly: Binding route ::  all /* (I18N HOOK: addLocalizationMethod)
+2017-02-12T13:43:58.647Z - silly: Binding route ::  all /* (VIEWS HOOK: addResViewMethod)
+2017-02-12T13:43:58.650Z - verbose: Policy-controller bindings complete!
+2017-02-12T13:43:58.650Z - silly: Binding route ::   /* (CSRF HOOK: CSRF)
+2017-02-12T13:43:58.651Z - silly: Binding route ::  all /* (CORS HOOK: clearHeaders)
+2017-02-12T13:43:58.653Z - silly: Binding route ::   /csrfToken (CORS HOOK: sendHeaders)
+2017-02-12T13:43:58.654Z - silly: Binding route ::  options /csrftoken (CORS HOOK: preflight)
+2017-02-12T13:43:58.654Z - silly: Binding route ::   /csrfToken (FUNCTION: csrfToken)
+2017-02-12T13:43:58.657Z - silly: Binding route ::   / (POLICY: alwaysAllow)
+2017-02-12T13:43:58.658Z - silly: Binding route ::   / (ACTION: auth/home)
+2017-02-12T13:43:58.660Z - silly: Binding route ::   /runcheck (POLICY: alwaysAllow)
+2017-02-12T13:43:58.661Z - silly: Binding route ::   /runcheck (ACTION: rss/runcheck)
+2017-02-12T13:43:58.662Z - silly: Binding route ::   /rss/seed (POLICY: alwaysAllow)
+2017-02-12T13:43:58.663Z - silly: Binding route ::   /rss/seed (ACTION: rss/seed)
+2017-02-12T13:43:58.664Z - silly: Binding route ::   /rss/updateall (POLICY: alwaysAllow)
+2017-02-12T13:43:58.665Z - silly: Binding route ::   /rss/updateall (ACTION: rss/updateallrss)
+2017-02-12T13:43:58.667Z - silly: Binding route ::   /checkip (POLICY: alwaysAllow)
+2017-02-12T13:43:58.668Z - silly: Binding route ::   /checkip (ACTION: rss/checkip)
+2017-02-12T13:43:58.670Z - silly: Binding route ::   /sendip (POLICY: alwaysAllow)
+2017-02-12T13:43:58.671Z - silly: Binding route ::   /sendip (ACTION: rss/sendip)
+2017-02-12T13:43:58.672Z - silly: Binding route ::   /genre/generate (POLICY: alwaysAllow)
+2017-02-12T13:43:58.674Z - silly: Binding route ::   /genre/generate (ACTION: genre/generate)
+2017-02-12T13:43:58.675Z - silly: Binding route ::   /genre/del (POLICY: alwaysAllow)
+2017-02-12T13:43:58.677Z - silly: Binding route ::   /genre/del (ACTION: genre/del)
+2017-02-12T13:43:58.678Z - silly: Binding route ::   /genre/compare (POLICY: alwaysAllow)
+2017-02-12T13:43:58.679Z - silly: Binding route ::   /genre/compare (ACTION: genre/generateseedlist)
+2017-02-12T13:43:58.679Z - silly: Binding route ::   /genre/seed (POLICY: alwaysAllow)
+2017-02-12T13:43:58.681Z - silly: Binding route ::   /genre/seed (ACTION: genre/seedgenre)
+2017-02-12T13:43:58.682Z - silly: Binding route ::   /genre/buildurls (POLICY: alwaysAllow)
+2017-02-12T13:43:58.683Z - silly: Binding route ::   /genre/buildurls (ACTION: genre/buildurls)
+2017-02-12T13:43:58.685Z - silly: Binding route ::   /genre/buildmanga (POLICY: alwaysAllow)
+2017-02-12T13:43:58.686Z - silly: Binding route ::   /genre/buildmanga (ACTION: genre/buildmanga)
+2017-02-12T13:43:58.687Z - silly: Binding route ::   /genre/generaterss (POLICY: alwaysAllow)
+2017-02-12T13:43:58.688Z - silly: Binding route ::   /genre/generaterss (ACTION: genre/generaterss)
+2017-02-12T13:43:58.689Z - silly: Binding route ::   /genre/test (POLICY: alwaysAllow)
+2017-02-12T13:43:58.690Z - silly: Binding route ::   /genre/test (ACTION: genre/test)
+2017-02-12T13:43:58.692Z - silly: Binding route ::  get /login (FUNCTION: serveView)
+2017-02-12T13:43:58.693Z - silly: Binding route ::  post /login (POLICY: alwaysAllow)
+2017-02-12T13:43:58.693Z - silly: Binding route ::  post /login (ACTION: auth/login)
+2017-02-12T13:43:58.693Z - silly: Binding route ::  post /logout (POLICY: alwaysAllow)
+2017-02-12T13:43:58.694Z - silly: Binding route ::  post /logout (ACTION: auth/logout)
+2017-02-12T13:43:58.694Z - silly: Binding route ::  get /__getcookie (SOCKETS HOOK: GET /__getcookie)
+2017-02-12T13:43:58.695Z - silly: Binding action (login) blueprint/shadow route for controller: auth
+2017-02-12T13:43:58.695Z - silly: Binding route ::   /auth/login/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.696Z - silly: Binding route ::   /auth/login/:id? (ACTION: auth/login)
+2017-02-12T13:43:58.697Z - silly: Binding action (logout) blueprint/shadow route for controller: auth
+2017-02-12T13:43:58.697Z - silly: Binding route ::   /auth/logout/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.698Z - silly: Binding route ::   /auth/logout/:id? (ACTION: auth/logout)
+2017-02-12T13:43:58.698Z - silly: Binding action (home) blueprint/shadow route for controller: auth
+2017-02-12T13:43:58.698Z - silly: Binding route ::   /auth/home/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.699Z - silly: Binding route ::   /auth/home/:id? (ACTION: auth/home)
+2017-02-12T13:43:58.700Z - silly: Binding action (identity) blueprint/shadow route for controller: auth
+2017-02-12T13:43:58.700Z - silly: Binding action (globalid) blueprint/shadow route for controller: auth
+2017-02-12T13:43:58.700Z - silly: Binding action (sails) blueprint/shadow route for controller: auth
+2017-02-12T13:43:58.714Z - silly: Binding action (generate) blueprint/shadow route for controller: genre
+2017-02-12T13:43:58.715Z - silly: Binding route ::   /genre/generate/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.717Z - silly: Binding route ::   /genre/generate/:id? (ACTION: genre/generate)
+2017-02-12T13:43:58.717Z - silly: Binding action (del) blueprint/shadow route for controller: genre
+2017-02-12T13:43:58.717Z - silly: Binding route ::   /genre/del/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.719Z - silly: Binding route ::   /genre/del/:id? (ACTION: genre/del)
+2017-02-12T13:43:58.719Z - silly: Binding action (generateseedlist) blueprint/shadow route for controller: genre
+2017-02-12T13:43:58.719Z - silly: Binding route ::   /genre/generateseedlist/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.720Z - silly: Binding route ::   /genre/generateseedlist/:id? (ACTION: genre/generateseedlist)
+2017-02-12T13:43:58.721Z - silly: Binding action (seedgenre) blueprint/shadow route for controller: genre
+2017-02-12T13:43:58.721Z - silly: Binding route ::   /genre/seedgenre/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.722Z - silly: Binding route ::   /genre/seedgenre/:id? (ACTION: genre/seedgenre)
+2017-02-12T13:43:58.723Z - silly: Binding action (generatesuggestionrankings) blueprint/shadow route for controller: genre
+2017-02-12T13:43:58.723Z - silly: Binding route ::   /genre/generatesuggestionrankings/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.725Z - silly: Binding route ::   /genre/generatesuggestionrankings/:id? (ACTION: genre/generatesuggestionrankings)
+2017-02-12T13:43:58.726Z - silly: Binding action (buildurls) blueprint/shadow route for controller: genre
+2017-02-12T13:43:58.726Z - silly: Binding route ::   /genre/buildurls/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.727Z - silly: Binding route ::   /genre/buildurls/:id? (ACTION: genre/buildurls)
+2017-02-12T13:43:58.728Z - silly: Binding action (buildmanga) blueprint/shadow route for controller: genre
+2017-02-12T13:43:58.728Z - silly: Binding route ::   /genre/buildmanga/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.728Z - silly: Binding route ::   /genre/buildmanga/:id? (ACTION: genre/buildmanga)
+2017-02-12T13:43:58.729Z - silly: Binding action (generaterss) blueprint/shadow route for controller: genre
+2017-02-12T13:43:58.729Z - silly: Binding route ::   /genre/generaterss/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.730Z - silly: Binding route ::   /genre/generaterss/:id? (ACTION: genre/generaterss)
+2017-02-12T13:43:58.731Z - silly: Binding action (test) blueprint/shadow route for controller: genre
+2017-02-12T13:43:58.731Z - silly: Binding route ::   /genre/test/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.732Z - silly: Binding route ::   /genre/test/:id? (ACTION: genre/test)
+2017-02-12T13:43:58.732Z - silly: Binding action (identity) blueprint/shadow route for controller: genre
+2017-02-12T13:43:58.733Z - silly: Binding action (globalid) blueprint/shadow route for controller: genre
+2017-02-12T13:43:58.733Z - silly: Binding action (sails) blueprint/shadow route for controller: genre
+2017-02-12T13:43:58.740Z - silly: Binding shortcut blueprint/shadow routes for model  genre  on controller: genre
+2017-02-12T13:43:58.741Z - silly: Binding route ::   /genre/find (POLICY: alwaysAllow)
+2017-02-12T13:43:58.742Z - silly: Binding route ::   /genre/find (BLUEPRINT: findRecords)
+2017-02-12T13:43:58.743Z - silly: Binding route ::   /genre/find/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.745Z - silly: Binding route ::   /genre/find/:id (BLUEPRINT: findOneRecord)
+2017-02-12T13:43:58.747Z - silly: Binding route ::   /genre/create (POLICY: alwaysAllow)
+2017-02-12T13:43:58.749Z - silly: Binding route ::   /genre/create (BLUEPRINT: createRecord)
+2017-02-12T13:43:58.751Z - silly: Binding route ::   /genre/update/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.752Z - silly: Binding route ::   /genre/update/:id (BLUEPRINT: updateOneRecord)
+2017-02-12T13:43:58.753Z - silly: Binding route ::   /genre/destroy/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.755Z - silly: Binding route ::   /genre/destroy/:id? (BLUEPRINT: destroyOneRecord)
+2017-02-12T13:43:58.757Z - silly: Binding RESTful blueprint/shadow routes for model+controller: genre
+2017-02-12T13:43:58.757Z - silly: Binding route ::  get /genre (POLICY: alwaysAllow)
+2017-02-12T13:43:58.757Z - silly: Binding route ::  get /genre (BLUEPRINT: findRecords)
+2017-02-12T13:43:58.758Z - silly: Binding route ::  get /genre/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.758Z - silly: Binding route ::  get /genre/:id (BLUEPRINT: findOneRecord)
+2017-02-12T13:43:58.759Z - silly: Binding route ::  post /genre (POLICY: alwaysAllow)
+2017-02-12T13:43:58.759Z - silly: Binding route ::  post /genre (BLUEPRINT: createRecord)
+2017-02-12T13:43:58.760Z - silly: Binding route ::  put /genre/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.761Z - silly: Binding route ::  put /genre/:id (BLUEPRINT: updateOneRecord)
+2017-02-12T13:43:58.762Z - silly: Binding route ::  post /genre/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.763Z - silly: Binding route ::  post /genre/:id (BLUEPRINT: updateOneRecord)
+2017-02-12T13:43:58.763Z - silly: Binding route ::  delete /genre/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.764Z - silly: Binding route ::  delete /genre/:id? (BLUEPRINT: destroyOneRecord)
+2017-02-12T13:43:58.765Z - silly: Binding action (runcheck) blueprint/shadow route for controller: rss
+2017-02-12T13:43:58.765Z - silly: Binding route ::   /rss/runcheck/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.766Z - silly: Binding route ::   /rss/runcheck/:id? (ACTION: rss/runcheck)
+2017-02-12T13:43:58.766Z - silly: Binding action (seed) blueprint/shadow route for controller: rss
+2017-02-12T13:43:58.766Z - silly: Binding route ::   /rss/seed/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.767Z - silly: Binding route ::   /rss/seed/:id? (ACTION: rss/seed)
+2017-02-12T13:43:58.767Z - silly: Binding action (checkip) blueprint/shadow route for controller: rss
+2017-02-12T13:43:58.768Z - silly: Binding route ::   /rss/checkip/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.768Z - silly: Binding route ::   /rss/checkip/:id? (ACTION: rss/checkip)
+2017-02-12T13:43:58.769Z - silly: Binding action (sendip) blueprint/shadow route for controller: rss
+2017-02-12T13:43:58.769Z - silly: Binding route ::   /rss/sendip/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.770Z - silly: Binding route ::   /rss/sendip/:id? (ACTION: rss/sendip)
+2017-02-12T13:43:58.770Z - silly: Binding action (updateallrss) blueprint/shadow route for controller: rss
+2017-02-12T13:43:58.770Z - silly: Binding route ::   /rss/updateallrss/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.771Z - silly: Binding route ::   /rss/updateallrss/:id? (ACTION: rss/updateallrss)
+2017-02-12T13:43:58.772Z - silly: Binding action (identity) blueprint/shadow route for controller: rss
+2017-02-12T13:43:58.772Z - silly: Binding action (globalid) blueprint/shadow route for controller: rss
+2017-02-12T13:43:58.772Z - silly: Binding action (sails) blueprint/shadow route for controller: rss
+2017-02-12T13:43:58.776Z - silly: Binding shortcut blueprint/shadow routes for model  rss  on controller: rss
+2017-02-12T13:43:58.776Z - silly: Binding route ::   /rss/find (POLICY: alwaysAllow)
+2017-02-12T13:43:58.777Z - silly: Binding route ::   /rss/find (BLUEPRINT: findRecords)
+2017-02-12T13:43:58.778Z - silly: Binding route ::   /rss/find/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.779Z - silly: Binding route ::   /rss/find/:id (BLUEPRINT: findOneRecord)
+2017-02-12T13:43:58.780Z - silly: Binding route ::   /rss/create (POLICY: alwaysAllow)
+2017-02-12T13:43:58.781Z - silly: Binding route ::   /rss/create (BLUEPRINT: createRecord)
+2017-02-12T13:43:58.782Z - silly: Binding route ::   /rss/update/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.783Z - silly: Binding route ::   /rss/update/:id (BLUEPRINT: updateOneRecord)
+2017-02-12T13:43:58.785Z - silly: Binding route ::   /rss/destroy/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.786Z - silly: Binding route ::   /rss/destroy/:id? (BLUEPRINT: destroyOneRecord)
+2017-02-12T13:43:58.787Z - silly: Binding RESTful blueprint/shadow routes for model+controller: rss
+2017-02-12T13:43:58.787Z - silly: Binding route ::  get /rss (POLICY: alwaysAllow)
+2017-02-12T13:43:58.787Z - silly: Binding route ::  get /rss (BLUEPRINT: findRecords)
+2017-02-12T13:43:58.788Z - silly: Binding route ::  get /rss/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.788Z - silly: Binding route ::  get /rss/:id (BLUEPRINT: findOneRecord)
+2017-02-12T13:43:58.788Z - silly: Binding route ::  post /rss (POLICY: alwaysAllow)
+2017-02-12T13:43:58.789Z - silly: Binding route ::  post /rss (BLUEPRINT: createRecord)
+2017-02-12T13:43:58.789Z - silly: Binding route ::  put /rss/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.790Z - silly: Binding route ::  put /rss/:id (BLUEPRINT: updateOneRecord)
+2017-02-12T13:43:58.790Z - silly: Binding route ::  post /rss/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.790Z - silly: Binding route ::  post /rss/:id (BLUEPRINT: updateOneRecord)
+2017-02-12T13:43:58.791Z - silly: Binding route ::  delete /rss/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.791Z - silly: Binding route ::  delete /rss/:id? (BLUEPRINT: destroyOneRecord)
+2017-02-12T13:43:58.792Z - silly: Binding action (identity) blueprint/shadow route for controller: suggestion
+2017-02-12T13:43:58.792Z - silly: Binding action (globalid) blueprint/shadow route for controller: suggestion
+2017-02-12T13:43:58.792Z - silly: Binding action (sails) blueprint/shadow route for controller: suggestion
+2017-02-12T13:43:58.795Z - silly: Binding shortcut blueprint/shadow routes for model  suggestion  on controller: suggestion
+2017-02-12T13:43:58.796Z - silly: Binding route ::   /suggestion/find (POLICY: alwaysAllow)
+2017-02-12T13:43:58.797Z - silly: Binding route ::   /suggestion/find (BLUEPRINT: findRecords)
+2017-02-12T13:43:58.798Z - silly: Binding route ::   /suggestion/find/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.799Z - silly: Binding route ::   /suggestion/find/:id (BLUEPRINT: findOneRecord)
+2017-02-12T13:43:58.800Z - silly: Binding route ::   /suggestion/create (POLICY: alwaysAllow)
+2017-02-12T13:43:58.801Z - silly: Binding route ::   /suggestion/create (BLUEPRINT: createRecord)
+2017-02-12T13:43:58.803Z - silly: Binding route ::   /suggestion/update/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.804Z - silly: Binding route ::   /suggestion/update/:id (BLUEPRINT: updateOneRecord)
+2017-02-12T13:43:58.805Z - silly: Binding route ::   /suggestion/destroy/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.806Z - silly: Binding route ::   /suggestion/destroy/:id? (BLUEPRINT: destroyOneRecord)
+2017-02-12T13:43:58.807Z - silly: Binding RESTful blueprint/shadow routes for model+controller: suggestion
+2017-02-12T13:43:58.807Z - silly: Binding route ::  get /suggestion (POLICY: alwaysAllow)
+2017-02-12T13:43:58.808Z - silly: Binding route ::  get /suggestion (BLUEPRINT: findRecords)
+2017-02-12T13:43:58.808Z - silly: Binding route ::  get /suggestion/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.809Z - silly: Binding route ::  get /suggestion/:id (BLUEPRINT: findOneRecord)
+2017-02-12T13:43:58.809Z - silly: Binding route ::  post /suggestion (POLICY: alwaysAllow)
+2017-02-12T13:43:58.810Z - silly: Binding route ::  post /suggestion (BLUEPRINT: createRecord)
+2017-02-12T13:43:58.810Z - silly: Binding route ::  put /suggestion/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.810Z - silly: Binding route ::  put /suggestion/:id (BLUEPRINT: updateOneRecord)
+2017-02-12T13:43:58.811Z - silly: Binding route ::  post /suggestion/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.811Z - silly: Binding route ::  post /suggestion/:id (BLUEPRINT: updateOneRecord)
+2017-02-12T13:43:58.812Z - silly: Binding route ::  delete /suggestion/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.812Z - silly: Binding route ::  delete /suggestion/:id? (BLUEPRINT: destroyOneRecord)
+2017-02-12T13:43:58.813Z - silly: Binding RESTful association blueprint `manga` for suggestion
+2017-02-12T13:43:58.813Z - silly: Binding route ::  get /suggestion/:parentid/manga/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.814Z - silly: Binding route ::  get /suggestion/:parentid/manga/:id? (BLUEPRINT: expand)
+2017-02-12T13:43:58.814Z - silly: Binding action (identity) blueprint/shadow route for controller: url
+2017-02-12T13:43:58.814Z - silly: Binding action (globalid) blueprint/shadow route for controller: url
+2017-02-12T13:43:58.814Z - silly: Binding action (sails) blueprint/shadow route for controller: url
+2017-02-12T13:43:58.831Z - silly: Binding shortcut blueprint/shadow routes for model  url  on controller: url
+2017-02-12T13:43:58.831Z - silly: Binding route ::   /url/find (POLICY: alwaysAllow)
+2017-02-12T13:43:58.832Z - silly: Binding route ::   /url/find (BLUEPRINT: findRecords)
+2017-02-12T13:43:58.833Z - silly: Binding route ::   /url/find/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.834Z - silly: Binding route ::   /url/find/:id (BLUEPRINT: findOneRecord)
+2017-02-12T13:43:58.836Z - silly: Binding route ::   /url/create (POLICY: alwaysAllow)
+2017-02-12T13:43:58.837Z - silly: Binding route ::   /url/create (BLUEPRINT: createRecord)
+2017-02-12T13:43:58.838Z - silly: Binding route ::   /url/update/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.839Z - silly: Binding route ::   /url/update/:id (BLUEPRINT: updateOneRecord)
+2017-02-12T13:43:58.840Z - silly: Binding route ::   /url/destroy/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.841Z - silly: Binding route ::   /url/destroy/:id? (BLUEPRINT: destroyOneRecord)
+2017-02-12T13:43:58.842Z - silly: Binding RESTful blueprint/shadow routes for model+controller: url
+2017-02-12T13:43:58.842Z - silly: Binding route ::  get /url (POLICY: alwaysAllow)
+2017-02-12T13:43:58.843Z - silly: Binding route ::  get /url (BLUEPRINT: findRecords)
+2017-02-12T13:43:58.843Z - silly: Binding route ::  get /url/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.843Z - silly: Binding route ::  get /url/:id (BLUEPRINT: findOneRecord)
+2017-02-12T13:43:58.844Z - silly: Binding route ::  post /url (POLICY: alwaysAllow)
+2017-02-12T13:43:58.844Z - silly: Binding route ::  post /url (BLUEPRINT: createRecord)
+2017-02-12T13:43:58.845Z - silly: Binding route ::  put /url/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.845Z - silly: Binding route ::  put /url/:id (BLUEPRINT: updateOneRecord)
+2017-02-12T13:43:58.846Z - silly: Binding route ::  post /url/:id (POLICY: alwaysAllow)
+2017-02-12T13:43:58.846Z - silly: Binding route ::  post /url/:id (BLUEPRINT: updateOneRecord)
+2017-02-12T13:43:58.846Z - silly: Binding route ::  delete /url/:id? (POLICY: alwaysAllow)
+2017-02-12T13:43:58.847Z - silly: Binding route ::  delete /url/:id? (BLUEPRINT: destroyOneRecord)
+2017-02-12T13:43:58.847Z - silly: Binding route ::  get /csrfToken (FUNCTION: csrfToken)
+2017-02-12T13:43:58.848Z - verbose: All hooks were loaded successfully.
+2017-02-12T13:43:58.848Z - verbose: Starting app at /home/server/git/rssreader...
+2017-02-12T13:43:58.848Z - verbose: Running the setup logic in `sails.config.bootstrap(cb)`...
+2017-02-12T13:43:58.855Z - info: Server lifted in `/home/server/git/rssreader`
+2017-02-12T13:43:58.856Z - info: [4mTo see your app, visit http://localhost:8080[24m
+2017-02-12T13:43:58.857Z - info: To shut down Sails, press <CTRL> + C at any time.
+2017-02-12T13:43:58.857Z - debug: [90m-------------------------------------------------------[39m
+2017-02-12T13:43:58.857Z - debug: [90m:: Sun Feb 12 2017 13:43:58 GMT+0000 (GMT)[39m
+2017-02-12T13:43:58.857Z - debug: Environment : development
+2017-02-12T13:43:58.857Z - debug: Port        : 8080
+2017-02-12T13:43:58.857Z - debug: [90m-------------------------------------------------------[39m
+2017-02-12T13:43:59.246Z - verbose: Grunt :: Running "clean:dev" (clean) task
+2017-02-12T13:43:59.499Z - verbose: Grunt :: >> 1337 paths cleaned.
+2017-02-12T13:43:59.501Z - verbose: Grunt :: Running "jst:dev" (jst) task
+2017-02-12T13:43:59.505Z - verbose: Grunt :: >> Destination not written because compiled files were empty.
+2017-02-12T13:43:59.505Z - verbose: Grunt :: Running "less:dev" (less) task
+2017-02-12T13:43:59.510Z - verbose: Grunt :: Running "copy:dev" (copy) task
+2017-02-12T13:44:00.034Z - verbose: Grunt :: Copied 1213 files
+2017-02-12T13:44:00.035Z - verbose: Grunt :: Running "coffee:dev" (coffee) task
+2017-02-12T13:44:00.037Z - verbose: Grunt :: >> 0 files created.
+2017-02-12T13:44:00.037Z - verbose: Grunt :: Running "sails-linker:devJsRelative" (sails-linker) task
+2017-02-12T13:44:00.106Z - verbose: Grunt :: padding length 0
+2017-02-12T13:44:00.108Z - verbose: Grunt :: File "views/layout.ejs" updated.
+2017-02-12T13:44:00.108Z - verbose: Grunt :: Running "sails-linker:devStylesRelative" (sails-linker) task
+2017-02-12T13:44:00.155Z - verbose: Grunt :: padding length 4
+2017-02-12T13:44:00.155Z - verbose: Grunt :: File "views/layout.ejs" updated.
+
+Running "sails-linker:devTpl" (sails-linker) task
+2017-02-12T13:44:00.157Z - verbose: Grunt :: Running "sails-linker:devJsRelativeJade" (sails-linker) task
+2017-02-12T13:44:00.161Z - verbose: Grunt :: Running "sails-linker:devStylesRelativeJade" (sails-linker) task
+2017-02-12T13:44:00.163Z - verbose: Grunt :: Running "sails-linker:devTplJade" (sails-linker) task
+2017-02-12T13:44:00.164Z - verbose: Grunt :: Running "watch" task
+2017-02-12T13:44:00.164Z - verbose: Grunt :: Waiting...
+2017-02-12T13:44:02.707Z - silly: View override argument passed to res.view():  view=/auth/home, username=Travis
+2017-02-12T13:44:02.708Z - silly: Serving view at rel path:  auth/home
+2017-02-12T13:44:02.708Z - silly: View root:  /home/server/git/rssreader/views
+2017-02-12T13:44:02.719Z - verbose: Rendering view: "auth/home" (located @ "/home/server/git/rssreader/views/auth/home")
+2017-02-12T13:44:02.719Z - verbose: • using configured layout:: layout (located @ "/home/server/git/rssreader/views/layout")
+2017-02-12T13:44:03.323Z - silly: res.ok() :: Sending 200 ("OK") response
+2017-02-12T13:44:14.599Z - silly: View override argument passed to res.view():  view=/auth/home, username=Travis
+2017-02-12T13:44:14.599Z - silly: Serving view at rel path:  auth/home
+2017-02-12T13:44:14.599Z - silly: View root:  /home/server/git/rssreader/views
+2017-02-12T13:44:14.611Z - verbose: Rendering view: "auth/home" (located @ "/home/server/git/rssreader/views/auth/home")
+2017-02-12T13:44:14.611Z - verbose: • using configured layout:: layout (located @ "/home/server/git/rssreader/views/layout")
+2017-02-12T13:44:15.063Z - silly: res.ok() :: Sending 200 ("OK") response
+2017-02-12T13:44:18.134Z - verbose: Lowering sails...
+2017-02-12T13:44:18.135Z - verbose: Sent kill signal to child process (3017)...
+2017-02-12T13:44:18.144Z - verbose: Shutting down HTTP server...
+2017-02-12T13:44:18.246Z - verbose: Destroying http server...
+2017-02-12T13:46:40.176Z - info: Server lifted in `/home/server/git/rssreader`
+2017-02-12T13:46:40.178Z - info: To see your app, visit http://localhost:8080
+2017-02-12T13:46:40.179Z - info: To shut down Sails, press <CTRL> + C at any time.
+2017-02-12T13:46:56.507Z - info:  name=Plunderer, updateUrl=http://mangapark.me/manga/plunderer-minazuki-suu/s5/c17, start=17, lastChecked=2015-11-17T21:27:01.165Z, type=Manga, check=false, viewed=true, createdAt=Tue Nov 17 2015 21:27:11 GMT+0000 (GMT), user=Travis, rank=6.5, updatedAt=Mon May 02 2016 06:40:32 GMT+0100 (BST), id=564b9baf57da6184f9b19544, name=Dead Tube, updateUrl=http://mangapark.me/manga/dead-tube-yamaguchi-mikoto/s1/v7/c30, start=30, lastChecked=2017-02-04T23:08:07.442Z, type=Manga, check=false, user=test, rank=0, createdAt=Sat Feb 04 2017 23:08:10 GMT+0000 (GMT), updatedAt=Wed Feb 08 2017 22:26:59 GMT+0000 (GMT), id=58965eda3f2c19cd04a72b5a, name=Ouja no Yuugi, url=Url, start=16, lastChecked=2015-10-21T16:39:07.280Z, type=Manga, check=false, viewed=true, createdAt=Wed Jun 10 2015 03:15:14 GMT+0100 (BST), updateUrl=http://mangapark.me/manga/ouja-no-yuugi/s2/v3/c16, user=Travis, rank=7.5, updatedAt=Fri Feb 03 2017 21:58:22 GMT+0000 (GMT), id=55779db20c8302845fd5678f
+2017-02-12T13:46:56.516Z - info:  success=true, msg=Successfully updated count: 3 Manga
+2017-02-12T13:46:58.164Z - info: 
+2017-02-12T14:32:31.162Z - info: 
+2017-02-12T14:32:31.164Z - info:  success=true, msg=Successfully updated count: 0 Manga
+2017-02-12T14:32:31.651Z - info: 
+2017-02-12T14:47:05.976Z - info: 
+2017-02-12T14:47:05.976Z - info:  success=true, msg=Successfully updated count: 0 Manga
+2017-02-12T14:47:06.502Z - info: 
+2017-02-12T15:00:01.980Z - info: 
+2017-02-12T15:00:01.982Z - info:  success=true, msg=Successfully updated count: 0 Manga
+2017-02-12T15:00:04.496Z - info: 
+2017-02-12T15:30:01.982Z - info: 
+2017-02-12T15:30:01.982Z - info:  success=true, msg=Successfully updated count: 0 Manga
+2017-02-12T15:30:02.540Z - info: 
