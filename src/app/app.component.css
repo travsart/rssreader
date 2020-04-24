@@ -1,0 +1,12 @@
+
+body {
+    margin: 0;
+}
+
+main {
+    margin: 30px;
+}
+
+.home-click {
+    cursor: pointer;
+  }

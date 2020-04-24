@@ -1,0 +1,31 @@
+.prefForm {
+  max-width: 500px;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.form-rows {
+  margin-bottom: 50px;
+}
+
+.slider-label {
+  margin-right: 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.left-button {
+  margin-right: 25px;
+}
+
+.pref-label {
+  font-weight: bolder;
+}
+
+.mat-select {
+  margin-top: 20px;
+}
+
+.first-row {
+  margin-top: 20px;
+}

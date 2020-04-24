@@ -1,0 +1,33 @@
+<mat-card class="prefForm">
+  <mat-card-title>Preferences</mat-card-title>
+  <form [formGroup]="form">
+    <section class="form-rows first-row">
+      <mat-label class="pref-label">Sort Column</mat-label>
+      <mat-select formControlName="sortCol">
+        <mat-option *ngFor=" let column of selectColumns" [value]="column.val">
+          {{column.title}}
+        </mat-option>
+      </mat-select>
+    </section>
+    <section class="form-rows">
+      <mat-label class="slider-label pref-label">Sort Direction</mat-label>ASC
+      <mat-slide-toggle formControlName="sortDir" class="slider" color="primary" [(checked)]="sortDir">DESC
+      </mat-slide-toggle>
+    </section>
+    <section class="form-rows">
+      <mat-label class="pref-label">Filter Column</mat-label>
+      <mat-select formControlName="filterCol">
+        <mat-option *ngFor=" let column of selectColumns" [value]="column.val">
+          {{column.title}}
+        </mat-option>
+      </mat-select>
+    </section>
+    <section class="form-rows">
+      <mat-form-field>
+        <input matInput placeholder="Filter" formControlName="filterVal" />
+      </mat-form-field>
+    </section>
+    <button mat-raised-button color="primary" (click)="save()" class="left-button">Save</button>
+    <button mat-raised-button color="primary" (click)="reset()">Reset</button>
+  </form>
+</mat-card>

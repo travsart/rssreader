@@ -1,0 +1,70 @@
+<div class="rsscardlist">
+  <h2>Rssreader</h2>
+  <mat-form-field>
+    <input #filterinput matInput type="text" placeholder="Search name rss entries" (keyup)="filterRss($event.target.value)" />
+  </mat-form-field>
+  <mat-form-field class="select-field">
+    <mat-select [(value)]="sort" (selectionChange)="loadRss(false);">
+      <mat-option *ngFor="let column of selectColumns" [value]="column.val">
+        {{column.title}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="select-field">
+    <mat-select [(value)]="dir" (selectionChange)="loadRss(false);" placeholder=" Select sort direction">
+      <mat-option value="ASC">ASC</mat-option>
+      <mat-option value="DESC">DESC</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br />
+  <button mat-raised-button (click)="addEntry()" class="rsstablebutton">Add Entry</button>
+  <button mat-raised-button (click)="loadRss(true)" class="rsstablebutton">Refresh Table</button>
+  <button mat-raised-button (click)="runCheck()" class="rsstablebutton">Run Check</button>
+  <!-- want to replace with pref -->
+  <mat-table class="rss-table mat-elevation-z8" [dataSource]="dataSource">
+    <ng-container matColumnDef="card">
+      <mat-header-cell *matHeaderCellDef></mat-header-cell>
+      <mat-cell *matCellDef="let rss" class="card-cell">
+        <mat-card class="rss-card" [id]="rss.id">
+          <mat-card-header>
+            <mat-card-title class="card-wrap">{{rss.name}}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <div class="card-rows">
+              <mat-label class="card-label">CH/EP: </mat-label><span class="card-numbers">{{rss.start}}</span>
+              <mat-label class="card-label">Pre: </mat-label><span class="card-numbers">{{rss.pre}}</span>
+              <mat-label class="card-label">Rating: </mat-label><span class="card-numbers">{{rss.rating}}</span>
+            </div>
+            <div class="card-rows">
+              <p class="card-wrap">
+                <mat-label class="card-label">Description: </mat-label>{{rss.description}}
+              </p>
+            </div>
+            <div class="card-rows">
+              <mat-label class="card-label">Update Url: </mat-label><a *ngIf="rss.updateUrl.length > 0" href="{{ rss.updateUrl }}">Link</a>
+            </div><br />
+            <div class="card-rows">
+              <mat-label class="card-label">Updated: </mat-label><span
+                class="card-date">{{rss.updatedAt | date: "yyyy-MM-dd HH:mm:ss"}}</span>
+            </div>
+            <div class="card-rows">
+              <mat-label class="card-label">Type </mat-label><span>{{rss._type}}</span>
+            </div>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-flat-button color="primary" (click)="check(rss)">{{ rss._check ? "Check" : "Uncheck" }}</button>
+            <button mat-button>
+              <mat-icon (click)="edit(rss)">edit</mat-icon>
+            </button>
+            <button mat-button>
+              <mat-icon (click)="delete(rss)">delete</mat-icon>
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+  </mat-table>
+  <mat-paginator [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions"></mat-paginator>
+</div>

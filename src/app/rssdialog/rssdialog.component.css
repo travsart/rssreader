@@ -1,0 +1,19 @@
+.number-field{
+    display:  block;
+    margin-right: 10px;
+}
+.number-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+}
+.long-field {
+    display:  block;
+}
+.select-field {
+    margin-right: 20px;
+}
+.button-grp{
+    margin-right: 20px;
+}

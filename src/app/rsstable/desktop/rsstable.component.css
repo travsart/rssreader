@@ -1,0 +1,56 @@
+.mat-cell,
+.mat-footer-cell .mat-header-cell {
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.table-header {
+  text-align: center;
+}
+
+.rsstablebutton {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.rsstable {
+  margin: 10px;
+  padding: 10px;
+  overflow-x: auto;
+  min-width: 450px;
+}
+
+.header-title {
+  margin-top: 10px;
+}
+
+.mat-header-cell {
+  display: block;
+}
+
+.mat-form-field {
+  width: 90%;
+}
+
+.mat-row:nth-child(even) {
+  background-color: #ADD8E6;
+}
+
+.icon-click {
+  cursor: pointer;
+}
+
+.mat-column-name {
+  flex: 0 0 25% !important;
+  min-width: 104px !important;
+}
+
+.mat-column-description {
+  flex: 0 0 25% !important;
+  min-width: 104px !important;
+}
+
+.mat-column-updatedAt {
+  flex: 0 0 10% !important;
+  min-width: 104px !important;
+}

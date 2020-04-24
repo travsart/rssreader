@@ -1,0 +1,27 @@
+.rsscardlist {
+  margin: 10px;
+  padding: 10px;
+}
+.card-numbers{
+  padding-right:20px;
+}
+.card-label {
+  font-weight:bolder;
+}
+.card-rows{
+  padding-top:10px;
+  margin-bottom:5px;
+}
+.card-date{
+  padding-right:20px;
+}
+.rsstablebutton {
+  margin-bottom:15px;
+  margin-right: 5px;
+}
+.card-wrap {
+  word-break: break-word;
+}
+.card-cell {
+  margin-bottom:15px;
+}
