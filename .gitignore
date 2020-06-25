@@ -168,6 +168,7 @@ testem.log
 /typings
 log-info*
 .env
+.*-audit.json
 # e2e
 /e2e/*.js
 /e2e/*.map
