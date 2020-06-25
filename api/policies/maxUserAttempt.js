@@ -4,7 +4,7 @@ module.exports = function (req, res, next) {
       error: function (err) {
         return res.serverError(err);
       },
-      invalid: function () {
+      failed: function () {
         return res.forbidden();
       },
       success: function () {

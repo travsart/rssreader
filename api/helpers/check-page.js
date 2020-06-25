@@ -49,7 +49,7 @@ module.exports = {
       });
     }
     else {
-      updated = await sails.helpers.parseManga();
+      updated = await sails.helpers.parseManga();  
       const count = await sails.helpers.compareUpdate(updated, type);
       return exits.success(count);
     }

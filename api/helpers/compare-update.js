@@ -23,8 +23,6 @@ module.exports = {
     try {
       let rsses = await Rss.find({ _check: true, _type: type });
       sails.log.debug(rsses.length);
-
-
       await rsses.forEach(async (rss) => {
         try {
           // maybe should do this case insinsitive
@@ -33,7 +31,7 @@ module.exports = {
             let newItem = updated[checkName];
             let index = -1;
             for (let i = 0; i < newItem['start'].length; i++) {
-              let newStart = newItem['start'][i];
+              let newStart = parseInt(newItem['start'][i]);
               if (newStart > rss.start && (newStart < newItem['start'][index] || index == -1)) {
                 index = i;
               }
@@ -51,7 +49,7 @@ module.exports = {
         }
         catch (ex) {
           sails.log.info('error');
-          sails.log.info(ex.message);
+          sails.log.info(ex.stack);
         }
       });
       sails.log.info('Finished updating');

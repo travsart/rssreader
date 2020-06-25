@@ -108,7 +108,7 @@ export class RssCardComponent implements OnInit {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.autoFocus = true;
     dialogConfig.disableClose = true;
-    dialogConfig.data = { title: `Edit {rss.name}`, rss: data };
+    dialogConfig.data = { title: `Edit ${data.name}`, rss: data };
     dialogConfig.width = '800px';
     dialogConfig.height = '500px';
     const dialogRef = this.dialog.open(RssDialogComponent, dialogConfig);

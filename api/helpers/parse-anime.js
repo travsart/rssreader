@@ -14,7 +14,7 @@ module.exports = {
     let page = cheerio(inputs.page);
 
     let re = /(.*)-\n\s+Episode (\d+)/;
-    let updated = [];
+    let updated = {};
     let items = page.find('div.name');
     Object.values(items).forEach(item => {
       if (typeof item.children == 'object') {

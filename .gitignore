@@ -46,7 +46,7 @@
 ################################################
 
 config/local.js
-.env
+
 
 ################################################
 # Dependencies
@@ -166,7 +166,8 @@ lib-cov
 npm-debug.log
 testem.log
 /typings
-
+log-info*
+.env
 # e2e
 /e2e/*.js
 /e2e/*.map
