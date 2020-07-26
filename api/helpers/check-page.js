@@ -49,7 +49,9 @@ module.exports = {
       });
     }
     else {
-      updated = await sails.helpers.parseManga();  
+      sails.log.info('Starting Manga');
+      updated = await sails.helpers.parseManga();
+      sails.log.info('Finished Manga');
       const count = await sails.helpers.compareUpdate(updated, type);
       return exits.success(count);
     }

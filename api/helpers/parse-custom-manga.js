@@ -36,8 +36,7 @@ module.exports = {
 
     let updated = inputs.updated;
     try {
-
-      if (inputs.site == 'leviatanscans') {
+      if (inputs.site == 'leviatanscans' || inputs.site == 'reaperscans') {
         return rp({
           url: inputs.url,
           headers: {
